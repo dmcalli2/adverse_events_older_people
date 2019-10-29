@@ -43,7 +43,13 @@ sae <- sae %>%
 ## create lookup table
 no_sae <- aact$studies %>% 
   anti_join(sae) %>% 
-  select(nct_id, phase, source)
+  select(nct_id, phase, source) 
+ids <- aact$id_information %>% 
+  group_by(nct_id) %>% 
+  summarise(other_id = paste(id_value, collapse = "|")) %>% 
+  ungroup()
+no_sae <- no_sae %>% 
+  left_join(ids)
 no_sae$nct_id %>% unique()
 
 no_sae_intvn <- no_sae %>% 
