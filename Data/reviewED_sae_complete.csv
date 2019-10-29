@@ -1,0 +1,307 @@
+nct_id,other_id,phase,source,subjects_affected,subjects_at_risk,arm,notes,,,,unq_name,type_label,name,ctg_str,ctg_str_original
+NCT00750113,12313|2006-006436-22,Phase 4,Bayer,3,201,nifedipine and telmisartan,,,,,nifedipine,drugs,Nifidipine,nifidipine,nifidipine
+NCT00750113,12313|2006-006436-22,Phase 4,Bayer,3,103,nifedipine,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00750113,12313|2006-006436-22,Phase 4,Bayer,2,101,telmisartan,,,,,nifedipine,drugs,Nifedipine/Telmisartan,nifedipine,nifedipine/telmisartan
+NCT00750113,12313|2006-006436-22,Phase 4,Bayer,,,,,,,,telmisartan,drugs,Nifedipine/Telmisartan,telmisartan,nifedipine/telmisartan
+NCT00993109,14511|ADVISE,Phase 4,Bayer,2,,nifedipine,Treatment emergent,,,,nifedipine,drugs,"Adalat (Nifedipine, BAYA1040)",adalat (nifedipine,"adalat (nifedipine, baya1040)"
+NCT00993109,14511|ADVISE,Phase 4,Bayer,1,,telmisartan,Treatment emergent,,,,valsartan,drugs,Diovan (Valsartan),diovan (valsartan),diovan (valsartan)
+NCT00993109,14511|ADVISE,Phase 4,Bayer,,,,,,,,nifedipine,drugs,"Adalat (Nifedipine, BAYA1040)",baya1040),"adalat (nifedipine, baya1040)"
+NCT01071122,14696,Phase 4,Bayer,1,181,,persons,,,,nifedipine,drugs,"Nifedipine (Adalat, BAYA1040) and Valsartan",nifedipine (adalat,"nifedipine (adalat, baya1040) and valsartan"
+NCT01071122,14696,Phase 4,Bayer,1,181,,persons,,,,nifedipine,drugs,"Nifedipine (Adalat, BAYA1040)",nifedipine (adalat,"nifedipine (adalat, baya1040)"
+NCT01071122,14696,Phase 4,Bayer,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT01071122,14696,Phase 4,Bayer,,,,,,,,nifedipine,drugs,"Nifedipine (Adalat, BAYA1040) and Valsartan",baya1040),"nifedipine (adalat, baya1040) and valsartan"
+NCT01071122,14696,Phase 4,Bayer,,,,,,,,nifedipine,drugs,"Nifedipine (Adalat, BAYA1040)",baya1040),"nifedipine (adalat, baya1040)"
+NCT01071122,14696,Phase 4,Bayer,,,,,,,,valsartan,drugs,"Nifedipine (Adalat, BAYA1040) and Valsartan",valsartan,"nifedipine (adalat, baya1040) and valsartan"
+NCT01518855,11518,Phase 4,Bayer,3,,adalat CR,no deaths,,,,nifedipine,drugs,"Nifedipine (Adalat, BAYA1040)",nifedipine (adalat,"nifedipine (adalat, baya1040)"
+NCT01518855,11518,Phase 4,Bayer,4,,norvasc,,,,,amlodipine,drugs,Amlodipine (Norvasc),amlodipine (norvasc),amlodipine (norvasc)
+NCT01518855,11518,Phase 4,Bayer,,,,,,,,valsartan,drugs,Diovan,diovan,diovan
+NCT01518855,11518,Phase 4,Bayer,,,,,,,,nifedipine,drugs,"Nifedipine (Adalat, BAYA1040)",baya1040),"nifedipine (adalat, baya1040)"
+NCT00034840,502.327,Phase 4,Boehringer Ingelheim,2,,telmisartan,,,,,telmisartan,drugs,"telmisartan, valsartan",telmisartan,"telmisartan, valsartan"
+NCT00034840,502.327,Phase 4,Boehringer Ingelheim,1,,valsartan,,,,,valsartan,drugs,"telmisartan, valsartan",valsartan,"telmisartan, valsartan"
+NCT00146341,502.472,Phase 3,Boehringer Ingelheim,3,,telmisartan/hctz,,,,,telmisartan,drugs,Telmisartan/HCTZ,telmisartan,telmisartan/hctz
+NCT00146341,502.472,Phase 3,Boehringer Ingelheim,0,,telmisartan,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00146341,502.472,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Telmisartan/HCTZ,hctz,telmisartan/hctz
+NCT00153023,502.396,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00153023,502.396,Phase 4,Boehringer Ingelheim,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT00168779,502.476,Phase 4,Boehringer Ingelheim,,,,,,,Ten patients reported SAEs during the active treatment phase (eight in the T80-T80/H25 arm and two in the V160-V160/H25 arm),telmisartan,drugs,telmisartan 80 mg / hydrochlorothiazide 25 mg,telmisartan 80 mg,telmisartan 80 mg / hydrochlorothiazide 25 mg
+NCT00168779,502.476,Phase 4,Boehringer Ingelheim,,,,,,,,valsartan,drugs,valsartan 160 mg / hydrochlorothiazide 25 mg,valsartan 160 mg,valsartan 160 mg / hydrochlorothiazide 25 mg
+NCT00168779,502.476,Phase 4,Boehringer Ingelheim,,,,,,,,placebo,other,placebo,placebo,placebo
+NCT00168779,502.476,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,telmisartan 80 mg / hydrochlorothiazide 25 mg,hydrochlorothiazide 25 mg,telmisartan 80 mg / hydrochlorothiazide 25 mg
+NCT00168779,502.476,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,valsartan 160 mg / hydrochlorothiazide 25 mg,hydrochlorothiazide 25 mg,valsartan 160 mg / hydrochlorothiazide 25 mg
+NCT00168857,502.397,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,telmisartan,telmisartan,telmisartan
+NCT00168857,502.397,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,drugs,losartan,losartan,losartan
+NCT00239369,502.48,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Fixed dose combination telmisartan 80 mg + HCTZ 25 mg,fixed dose combination telmisartan 80 mg,fixed dose combination telmisartan 80 mg + hctz 25 mg
+NCT00239369,502.48,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Fixed dose combination telmisartan 80 mg + HCTZ 12.5 mg,fixed dose combination telmisartan 80 mg,fixed dose combination telmisartan 80 mg + hctz 12.5 mg
+NCT00239369,502.48,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Fixed dose combination telmisartan 80 mg + HCTZ 25 mg,hctz 25 mg,fixed dose combination telmisartan 80 mg + hctz 25 mg
+NCT00239369,502.48,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Fixed dose combination telmisartan 80 mg + HCTZ 12.5 mg,hctz 12.5 mg,fixed dose combination telmisartan 80 mg + hctz 12.5 mg
+NCT00240448,502.421,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,telmisartan 80 mg/hydrochlorothiazide 25 mg,telmisartan 80 mg,telmisartan 80 mg/hydrochlorothiazide 25 mg
+NCT00240448,502.421,Phase 4,Boehringer Ingelheim,,,,,,,,valsartan,drugs,valsartan 160 mg/hydrochlorothiazide 25 mg,valsartan 160 mg,valsartan 160 mg/hydrochlorothiazide 25 mg
+NCT00240448,502.421,Phase 4,Boehringer Ingelheim,,,,,,,,placebo,other,placebo,placebo,placebo
+NCT00240448,502.421,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,telmisartan 80 mg/hydrochlorothiazide 25 mg,hydrochlorothiazide 25 mg,telmisartan 80 mg/hydrochlorothiazide 25 mg
+NCT00240448,502.421,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,valsartan 160 mg/hydrochlorothiazide 25 mg,hydrochlorothiazide 25 mg,valsartan 160 mg/hydrochlorothiazide 25 mg
+NCT00240474,502.4,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan 80 mg + hydrochlorothiazide 12.5 mg,telmisartan 80 mg,telmisartan 80 mg + hydrochlorothiazide 12.5 mg
+NCT00240474,502.4,Phase 4,Boehringer Ingelheim,,,,,,,,amlodipine,drugs,Amlodipine 10 mg + hydrochlorothiazide 12.5 mg,amlodipine 10 mg,amlodipine 10 mg + hydrochlorothiazide 12.5 mg
+NCT00240474,502.4,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Telmisartan 80 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide 12.5 mg,telmisartan 80 mg + hydrochlorothiazide 12.5 mg
+NCT00240474,502.4,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Amlodipine 10 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide 12.5 mg,amlodipine 10 mg + hydrochlorothiazide 12.5 mg
+NCT00274599,502.392,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00274599,502.392,Phase 4,Boehringer Ingelheim,,,,,,,,ramipril,drugs,Ramipril,ramipril,ramipril
+NCT00274612,502.391,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00274612,502.391,Phase 4,Boehringer Ingelheim,,,,,,,,ramipril,drugs,Ramipril,ramipril,ramipril
+NCT00281593,1236.1,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00281593,1236.1,Phase 3,Boehringer Ingelheim,,,,,,,,ramipril,drugs,Ramipril,ramipril,ramipril
+NCT00316095,1228.1|EudraCT No.: 2005-002851-41,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,telmisartan,telmisartan,telmisartan
+NCT00316095,1228.1|EudraCT No.: 2005-002851-41,Phase 3,Boehringer Ingelheim,,,,,,,,simvastatin,drugs,simvastatin,simvastatin,simvastatin
+NCT02172586,502.316,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02172586,502.316,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,drugs,Losartan,losartan,losartan
+NCT02172586,502.316,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT02175355,502.254,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Low dose of MicardisÂ®,low dose of micardisâ®,low dose of micardisâ®
+NCT02175355,502.254,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Medium dose of MicardisÂ®,medium dose of micardisâ®,medium dose of micardisâ®
+NCT02175355,502.254,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,High dose of MicardisÂ®,high dose of micardisâ®,high dose of micardisâ®
+NCT02175355,502.254,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT02175355,502.254,Phase 3,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02177396,502.256,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02177396,502.256,Phase 3,Boehringer Ingelheim,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT02177396,502.256,Phase 3,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02177409,502.258,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02177409,502.258,Phase 3,Boehringer Ingelheim,,,,,,,,amlodipine,drugs,Amlodipine,amlodipine,amlodipine
+NCT02177409,502.258,Phase 3,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02177435,502.261,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02177435,502.261,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan/Hydrochlorothiazide,telmisartan,telmisartan/hydrochlorothiazide
+NCT02177435,502.261,Phase 3,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02177435,502.261,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Telmisartan/Hydrochlorothiazide,hydrochlorothiazide,telmisartan/hydrochlorothiazide
+NCT02177461,502.317,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02177461,502.317,Phase 4,Boehringer Ingelheim,,,,,,,,enalapril,drugs,Enalapril,enalapril,enalapril
+NCT02177461,502.317,Phase 4,Boehringer Ingelheim,,,,,,,,clonidine,drugs,Clonidine,clonidine,clonidine
+NCT02177500,502.323,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan + hydrochlorothiazide,telmisartan,telmisartan + hydrochlorothiazide
+NCT02177500,502.323,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02177500,502.323,Phase 3,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02177500,502.323,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Telmisartan + hydrochlorothiazide,hydrochlorothiazide,telmisartan + hydrochlorothiazide
+NCT02183701,502.257,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02183701,502.257,Phase 3,Boehringer Ingelheim,,,,,,,,losartan,drugs,Losartan + Hydrochlorothiazide,losartan,losartan + hydrochlorothiazide
+NCT02183701,502.257,Phase 3,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02183701,502.257,Phase 3,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,drugs,Losartan + Hydrochlorothiazide,hydrochlorothiazide,losartan + hydrochlorothiazide
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,"High dose of MicardisÂ®, once daily",high dose of micardisâ®,"high dose of micardisâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,"Low dose of MicardisÂ®, once daily",low dose of micardisâ®,"low dose of micardisâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,drugs,"Low dose of COZAARÂ®, once daily",low dose of cozaarâ®,"low dose of cozaarâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,drugs,"High dose of COZAARÂ®, once daily",high dose of cozaarâ®,"high dose of cozaarâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"High dose of MicardisÂ®, once daily",once daily,"high dose of micardisâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"Low dose of MicardisÂ®, once daily",once daily,"low dose of micardisâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"Low dose of COZAARÂ®, once daily",once daily,"low dose of cozaarâ®, once daily"
+NCT02200640,502.343,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"High dose of COZAARÂ®, once daily",once daily,"high dose of cozaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,"High dose of MICARDISÂ®, once daily",high dose of micardisâ®,"high dose of micardisâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,"Low dose of MICARDISÂ®, once daily",low dose of micardisâ®,"low dose of micardisâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,drugs,"Low dose of COZAARÂ® / LORZAARÂ®, once daily",low dose of cozaarâ®,"low dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,drugs,"High dose of COZAARÂ® / LORZAARÂ®, once daily",high dose of cozaarâ®,"high dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"High dose of MICARDISÂ®, once daily",once daily,"high dose of micardisâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"Low dose of MICARDISÂ®, once daily",once daily,"low dose of micardisâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,combination,"Low dose of COZAARÂ® / LORZAARÂ®, once daily",lorzaarâ®,"low dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,combination,"Low dose of COZAARÂ® / LORZAARÂ®, once daily",lorzaarâ®,"low dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,hydrochlorothiazide,combination,"High dose of COZAARÂ® / LORZAARÂ®, once daily",lorzaarâ®,"high dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,losartan,combination,"High dose of COZAARÂ® / LORZAARÂ®, once daily",lorzaarâ®,"high dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"Low dose of COZAARÂ® / LORZAARÂ®, once daily",once daily,"low dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02200653,502.344,Phase 4,Boehringer Ingelheim,,,,,,,,not a drug,other,"High dose of COZAARÂ® / LORZAARÂ®, once daily",once daily,"high dose of cozaarâ® / lorzaarâ®, once daily"
+NCT02242318,502.376,Phase 4,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT02242318,502.376,Phase 4,Boehringer Ingelheim,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT02242318,502.376,Phase 4,Boehringer Ingelheim,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02269176,502.365,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,Low dose of telmisartan,low dose of telmisartan,low dose of telmisartan
+NCT02269176,502.365,Phase 3,Boehringer Ingelheim,,,,,,,,telmisartan,drugs,High dose of telmisartan,high dose of telmisartan,high dose of telmisartan
+NCT02269176,502.365,Phase 3,Boehringer Ingelheim,,,,,,,,losartan,drugs,Low dose of losartan,low dose of losartan,low dose of losartan
+NCT02269176,502.365,Phase 3,Boehringer Ingelheim,,,,,,,,losartan,drugs,High dose of losartan,high dose of losartan,high dose of losartan
+NCT02495324,BR-FVO-CT-401,Phase 4,"Boryung Pharmaceutical Co., Ltd",,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT02495324,BR-FVO-CT-401,Phase 4,"Boryung Pharmaceutical Co., Ltd",,,,,,,,fimasartan,drugs,Fimasartan,fimasartan,fimasartan
+NCT02495324,BR-FVO-CT-401,Phase 4,"Boryung Pharmaceutical Co., Ltd",,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT02495324,BR-FVO-CT-401,Phase 4,"Boryung Pharmaceutical Co., Ltd",,,,,,,,olmesartan,drugs,Olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00095394,CV131-176,Phase 3,Bristol-Myers Squibb,,,,,,,,irbesartan,drugs,Irbesartan/HCTZ,irbesartan,irbesartan/hctz
+NCT00095394,CV131-176,Phase 3,Bristol-Myers Squibb,,,,,,,,irbesartan,drugs,Irbesartan monotherapy,irbesartan monotherapy,irbesartan monotherapy
+NCT00095394,CV131-176,Phase 3,Bristol-Myers Squibb,,,,,,,,hydrochlorothiazide,drugs,Irbesartan/HCTZ,hctz,irbesartan/hctz
+NCT00095550,CV131-185,Phase 3,Bristol-Myers Squibb,,,,,,,,irbesartan,drugs,Irbesartan/HCTZ,irbesartan,irbesartan/hctz
+NCT00095550,CV131-185,Phase 3,Bristol-Myers Squibb,,,,,,,,irbesartan,drugs,Irbesartan monotherapy,irbesartan monotherapy,irbesartan monotherapy
+NCT00095550,CV131-185,Phase 3,Bristol-Myers Squibb,,,,,,,,not a drug,other,HCTZ monotherapy,hctz monotherapy,hctz monotherapy
+NCT00095550,CV131-185,Phase 3,Bristol-Myers Squibb,,,,,,,,hydrochlorothiazide,drugs,Irbesartan/HCTZ,hctz,irbesartan/hctz
+NCT00110422,CV131-186,Phase 4,Bristol-Myers Squibb,,,,,,,,irbesartan,drugs,Irbesartan,irbesartan,irbesartan
+NCT00110422,CV131-186,Phase 4,Bristol-Myers Squibb,,,,,,,,hydrochlorothiazide,drugs,Hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT00454662,31-JAN-2007|COLM001,Phase 4,COLM Study Research Organization,,,,,,,,olmesartan,drugs,olmesartan medoxomil / amlodipine or azelnidipine,olmesartan medoxomil,olmesartan medoxomil / amlodipine or azelnidipine
+NCT00454662,31-JAN-2007|COLM001,Phase 4,COLM Study Research Organization,,,,,,,,olmesartan,drugs,olmesartan medoxomil / low dose thiazide type drug,olmesartan medoxomil,olmesartan medoxomil / low dose thiazide type drug
+NCT00454662,31-JAN-2007|COLM001,Phase 4,COLM Study Research Organization,,,,,,,,amlodipine,drugs,olmesartan medoxomil / amlodipine or azelnidipine,amlodipine,olmesartan medoxomil / amlodipine or azelnidipine
+NCT00454662,31-JAN-2007|COLM001,Phase 4,COLM Study Research Organization,,,,,,,,"C03A LOW-CEILING DIURETICS, THIAZIDES",classes,olmesartan medoxomil / low dose thiazide type drug,low dose thiazide type drug,olmesartan medoxomil / low dose thiazide type drug
+NCT00454662,31-JAN-2007|COLM001,Phase 4,COLM Study Research Organization,,,,,,,,azelnidipine,drugs,olmesartan medoxomil / amlodipine or azelnidipine,azelnidipine,olmesartan medoxomil / amlodipine or azelnidipine
+NCT00151827,SE-866/43,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,Olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00151827,SE-866/43,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,losartan,drugs,Losartan,losartan,losartan
+NCT00151827,SE-866/43,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,furosemide,drugs,Furosemide oral tablets,furosemide oral tablets,furosemide oral tablets
+NCT00185133,CS8663-A-U301,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,Olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00185133,CS8663-A-U301,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,amlodipine,drugs,Amlodipine,amlodipine,amlodipine
+NCT00185172,SP-OLM-01-00,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,placebo,other,placebo,placebo,placebo
+NCT00185172,SP-OLM-01-00,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00185172,SP-OLM-01-00,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,"olmesartan medoxomil oral tablets, hydrochlorothiazide oral tablets",olmesartan medoxomil oral tablets,"olmesartan medoxomil oral tablets, hydrochlorothiazide oral tablets"
+NCT00185172,SP-OLM-01-00,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"olmesartan medoxomil oral tablets, hydrochlorothiazide oral tablets",hydrochlorothiazide oral tablets,"olmesartan medoxomil oral tablets, hydrochlorothiazide oral tablets"
+NCT00220220,CS8663-A-E302,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00220220,CS8663-A-E302,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,amlodipine,drugs,amlodipine,amlodipine,amlodipine
+NCT00220233,CS8663-A-E303,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00220233,CS8663-A-E303,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,amlodipine,drugs,amlodipine,amlodipine,amlodipine
+NCT00220233,CS8663-A-E303,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT00751751,SE-866/36,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,"olmesartan medoxomil + hydrochlorothiazide, if necessary",olmesartan medoxomil,"olmesartan medoxomil + hydrochlorothiazide, if necessary"
+NCT00751751,SE-866/36,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,losartan,drugs,"losartan + hydrochlorothiazide, if necessary",losartan,"losartan + hydrochlorothiazide, if necessary"
+NCT00751751,SE-866/36,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"olmesartan medoxomil + hydrochlorothiazide, if necessary",hydrochlorothiazide,"olmesartan medoxomil + hydrochlorothiazide, if necessary"
+NCT00751751,SE-866/36,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"losartan + hydrochlorothiazide, if necessary",hydrochlorothiazide,"losartan + hydrochlorothiazide, if necessary"
+NCT00751751,SE-866/36,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,"olmesartan medoxomil + hydrochlorothiazide, if necessary",if necessary,"olmesartan medoxomil + hydrochlorothiazide, if necessary"
+NCT00751751,SE-866/36,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,"losartan + hydrochlorothiazide, if necessary",if necessary,"losartan + hydrochlorothiazide, if necessary"
+NCT00751829,SE-866/37,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,nitrendipine,drugs,"nitrendipine + hydrochlorothiazide, if necessary",nitrendipine,"nitrendipine + hydrochlorothiazide, if necessary"
+NCT00751829,SE-866/37,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,"olmesartan medoxomil + hydrochlorothiazide, if necessary",olmesartan medoxomil,"olmesartan medoxomil + hydrochlorothiazide, if necessary"
+NCT00751829,SE-866/37,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"nitrendipine + hydrochlorothiazide, if necessary",hydrochlorothiazide,"nitrendipine + hydrochlorothiazide, if necessary"
+NCT00751829,SE-866/37,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"olmesartan medoxomil + hydrochlorothiazide, if necessary",hydrochlorothiazide,"olmesartan medoxomil + hydrochlorothiazide, if necessary"
+NCT00751829,SE-866/37,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,"nitrendipine + hydrochlorothiazide, if necessary",if necessary,"nitrendipine + hydrochlorothiazide, if necessary"
+NCT00751829,SE-866/37,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,"olmesartan medoxomil + hydrochlorothiazide, if necessary",if necessary,"olmesartan medoxomil + hydrochlorothiazide, if necessary"
+NCT00872586,SS-866 CMB/01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,olmesartan medoxomil + hydrochlorothiazide,olmesartan medoxomil,olmesartan medoxomil + hydrochlorothiazide
+NCT00872586,SS-866 CMB/01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00872586,SS-866 CMB/01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,olmesartan medoxomil + hydrochlorothiazide,hydrochlorothiazide,olmesartan medoxomil + hydrochlorothiazide
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,perindopril,drugs,"Perindopril + amlodipine + if necessary, hydrochlorothiazide",perindopril,"perindopril + amlodipine + if necessary, hydrochlorothiazide"
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,"olmesartan/amlodipine + hydrochlorothiazide, if necessary.",olmesartan,"olmesartan/amlodipine + hydrochlorothiazide, if necessary."
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,amlodipine,drugs,"Perindopril + amlodipine + if necessary, hydrochlorothiazide",amlodipine,"perindopril + amlodipine + if necessary, hydrochlorothiazide"
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,amlodipine,drugs,"olmesartan/amlodipine + hydrochlorothiazide, if necessary.",amlodipine,"olmesartan/amlodipine + hydrochlorothiazide, if necessary."
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,"Perindopril + amlodipine + if necessary, hydrochlorothiazide",if necessary,"perindopril + amlodipine + if necessary, hydrochlorothiazide"
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"olmesartan/amlodipine + hydrochlorothiazide, if necessary.",hydrochlorothiazide,"olmesartan/amlodipine + hydrochlorothiazide, if necessary."
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,drugs,"Perindopril + amlodipine + if necessary, hydrochlorothiazide",hydrochlorothiazide,"perindopril + amlodipine + if necessary, hydrochlorothiazide"
+NCT01101009,DSE- SEV-02-09|2009-012966-30,Phase 4,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,"olmesartan/amlodipine + hydrochlorothiazide, if necessary.",if necessary.,"olmesartan/amlodipine + hydrochlorothiazide, if necessary."
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,amlodipine,combination,CS8635 20/5/12.5mg and placebo,cs8635 20,cs8635 20/5/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,hydrochlorothiazide,combination,CS8635 20/5/12.5mg and placebo,cs8635 20,cs8635 20/5/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,combination,CS8635 20/5/12.5mg and placebo,cs8635 20,cs8635 20/5/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,olmesartan,drugs,OlmetecÂ® Plus 20/12.5mg and placebo,olmetecâ®,olmetecâ® plus 20/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,CS8635 20/5/12.5mg and placebo,5,cs8635 20/5/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,OlmetecÂ® Plus 20/12.5mg and placebo,20,olmetecâ® plus 20/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,CS8635 20/5/12.5mg and placebo,12.5mg,cs8635 20/5/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,not a drug,other,OlmetecÂ® Plus 20/12.5mg and placebo,12.5mg,olmetecâ® plus 20/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,placebo,other,CS8635 20/5/12.5mg and placebo,placebo,cs8635 20/5/12.5mg and placebo
+NCT01838850,CS8635-SIT-11-01,Phase 3,"Daiichi Sankyo, Inc.",,,,,,,,placebo,other,OlmetecÂ® Plus 20/12.5mg and placebo,placebo,olmetecâ® plus 20/12.5mg and placebo
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,nebivolol,drugs,Nebivolol and Valsartan 1,nebivolol,nebivolol and valsartan 1
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,nebivolol,drugs,Nebivolol and Valsartan 2,nebivolol,nebivolol and valsartan 2
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,nebivolol,drugs,Nebivolol and Valsartan 3,nebivolol,nebivolol and valsartan 3
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,nebivolol,drugs,Nebivolol 1,nebivolol 1,nebivolol 1
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,nebivolol,drugs,Nebivolol 2,nebivolol 2,nebivolol 2
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,valsartan,drugs,Valsartan 1,valsartan 1,valsartan 1
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,valsartan,drugs,Valsartan 2,valsartan 2,valsartan 2
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,placebo,other,Placebo,placebo,placebo
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,valsartan,drugs,Nebivolol and Valsartan 1,valsartan 1,nebivolol and valsartan 1
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,valsartan,drugs,Nebivolol and Valsartan 2,valsartan 2,nebivolol and valsartan 2
+NCT01508026,NAC-MD-01,Phase 3,Forest Laboratories,,,,,,,,valsartan,drugs,Nebivolol and Valsartan 3,valsartan 3,nebivolol and valsartan 3
+NCT02738632,ID-TAH-301,Phase 3,IlDong Pharmaceutical Co Ltd,,,,,,,,telmisartan,drugs,Telmisartan/Amlodipine+Hydrochlorothiazide,telmisartan,telmisartan/amlodipine+hydrochlorothiazide
+NCT02738632,ID-TAH-301,Phase 3,IlDong Pharmaceutical Co Ltd,,,,,,,,telmisartan,drugs,Telmisartan/Amlodipine,telmisartan,telmisartan/amlodipine
+NCT02738632,ID-TAH-301,Phase 3,IlDong Pharmaceutical Co Ltd,,,,,,,,placebo,other,Placebo for Hydrochlorothiazide,placebo for hydrochlorothiazide,placebo for hydrochlorothiazide
+NCT02738632,ID-TAH-301,Phase 3,IlDong Pharmaceutical Co Ltd,,,,,,,,amlodipine,drugs,Telmisartan/Amlodipine+Hydrochlorothiazide,amlodipine,telmisartan/amlodipine+hydrochlorothiazide
+NCT02738632,ID-TAH-301,Phase 3,IlDong Pharmaceutical Co Ltd,,,,,,,,amlodipine,drugs,Telmisartan/Amlodipine,amlodipine,telmisartan/amlodipine
+NCT02738632,ID-TAH-301,Phase 3,IlDong Pharmaceutical Co Ltd,,,,,,,,hydrochlorothiazide,drugs,Telmisartan/Amlodipine+Hydrochlorothiazide,hydrochlorothiazide,telmisartan/amlodipine+hydrochlorothiazide
+NCT01075698,H21-1,Phase 4,Kumamoto University,,,,,,,,not a drug,other,Non-ARB (standard therapy),non-arb (standard therapy),non-arb (standard therapy)
+NCT01075698,H21-1,Phase 4,Kumamoto University,,,,,,,,telmisartan,drugs,ARB (Telmisartan),arb (telmisartan),arb (telmisartan)
+NCT00190580,620,Phase 4,KVT-Study Group,,,,,,,,valsartan,drugs,valsartan,valsartan,valsartan
+NCT00190580,620,Phase 4,KVT-Study Group,,,,,,,,C02 ANTIHYPERTENSIVES,classes,Conventional antihypertensive drugs,conventional antihypertensive drugs,conventional antihypertensive drugs
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,lercanidipine,drugs,Lercanidipine 10mg,lercanidipine 10mg,lercanidipine 10mg
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,lercanidipine,drugs,Lercanidipine10mg /Valsartan 80mg,lercanidipine10mg,lercanidipine10mg /valsartan 80mg
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,lercanidipine,drugs,Lercanidipine 10mg /Valsartan 160mg,lercanidipine 10mg,lercanidipine 10mg /valsartan 160mg
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,placebo,other,Lercanidipin 10mg Placebo,lercanidipin 10mg placebo,lercanidipin 10mg placebo
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,lercanidipine,drugs,Lercanidipine10mg /Valsartan 80mg Placebo,lercanidipine10mg,lercanidipine10mg /valsartan 80mg placebo
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,lercanidipine,drugs,Lercanidipine 10mg /Valsartan 160mg Placebo,lercanidipine 10mg,lercanidipine 10mg /valsartan 160mg placebo
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,valsartan,drugs,Lercanidipine10mg /Valsartan 80mg,valsartan 80mg,lercanidipine10mg /valsartan 80mg
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,valsartan,drugs,Lercanidipine 10mg /Valsartan 160mg,valsartan 160mg,lercanidipine 10mg /valsartan 160mg
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,placebo,other,Lercanidipine10mg /Valsartan 80mg Placebo,valsartan 80mg placebo,lercanidipine10mg /valsartan 80mg placebo
+NCT01928628,LG-ZVCL005,Phase 3,LG Life Sciences,,,,,,,,placebo,other,Lercanidipine 10mg /Valsartan 160mg Placebo,valsartan 160mg placebo,lercanidipine 10mg /valsartan 160mg placebo
+NCT00129233,169,Phase 4,Nagoya University,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT00129233,169,Phase 4,Nagoya University,,,,,,,,amlodipine,drugs,Amlodipine,amlodipine,amlodipine
+NCT00154271,CVAH631DUS02,Phase 4,Novartis,,,,,,,,valsartan,drugs,"Valsartan, Valsartan HCT",valsartan,"valsartan, valsartan hct"
+NCT00154271,CVAH631DUS02,Phase 4,Novartis,,,,,,,,valsartan,drugs,"Valsartan, Valsartan HCT",valsartan hct,"valsartan, valsartan hct"
+NCT00170924,CVAL489AUS52,Phase 4,Novartis,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT00170963,CVAA489A2305,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan/amlodipine,valsartan,valsartan/amlodipine
+NCT00170963,CVAA489A2305,Phase 3,Novartis,,,,,,,,amlodipine,drugs,valsartan/amlodipine,amlodipine,valsartan/amlodipine
+NCT00170989,CVAH631C2302,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan plus hydrochlorothiazide,valsartan,valsartan plus hydrochlorothiazide
+NCT00170989,CVAH631C2302,Phase 3,Novartis,,,,,,,,hydrochlorothiazide,drugs,valsartan plus hydrochlorothiazide,hydrochlorothiazide,valsartan plus hydrochlorothiazide
+NCT00171002,CVAA489A2306,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan/amlodipine,valsartan,valsartan/amlodipine
+NCT00171002,CVAA489A2306,Phase 3,Novartis,,,,,,,,amlodipine,drugs,valsartan/amlodipine,amlodipine,valsartan/amlodipine
+NCT00171093,CVAS489A2316,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan + simvastatin,valsartan,valsartan + simvastatin
+NCT00171093,CVAS489A2316,Phase 3,Novartis,,,,,,,,simvastatin,drugs,valsartan + simvastatin,simvastatin,valsartan + simvastatin
+NCT00219024,CSPP100A2204,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219037,CSPP100A2302,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219063,CSPP100A2306,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219076,CSPP100A2305,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219089,CSPP100A2307,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219102,CSPP100A2310,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219115,CSPP100A2309,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219128,CSPP100A2308,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219154,CSPP100A2323,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219167,CSPP100A2324,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219180,CSPP100A2327,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00219193,CSPP100A2331,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00260923,CSPP100A2328,Phase 3,Novartis,,,,,,,,aliskiren,drugs,aliskiren,aliskiren,aliskiren
+NCT00262236,CSPP100A2304,Phase 3,Novartis,,,,,,,,aliskiren,drugs,Aliskiren,aliskiren,aliskiren
+NCT00273299,CVAH631D2301,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan plus hydrochlorothiazide,valsartan,valsartan plus hydrochlorothiazide
+NCT00273299,CVAH631D2301,Phase 3,Novartis,,,,,,,,hydrochlorothiazide,drugs,valsartan plus hydrochlorothiazide,hydrochlorothiazide,valsartan plus hydrochlorothiazide
+NCT00277472,CVAH631BUS04,Phase 4,Novartis,,,,,,,,valsartan,drugs,Valsartan/Hydrochlorothiazide,valsartan,valsartan/hydrochlorothiazide
+NCT00277472,CVAH631BUS04,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,HCTZ,hctz,hctz
+NCT00277472,CVAH631BUS04,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,Valsartan/Hydrochlorothiazide,hydrochlorothiazide,valsartan/hydrochlorothiazide
+NCT00280540,CVAH631BUS05,Phase 4,Novartis,,,,,,,,valsartan,drugs,Valsartan/Hydrochlorothiazide,valsartan,valsartan/hydrochlorothiazide
+NCT00280540,CVAH631BUS05,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,Valsartan/Hydrochlorothiazide,hydrochlorothiazide,valsartan/hydrochlorothiazide
+NCT00294710,CSPP100A2323E,Phase 3,Novartis,,,,,,,,aliskiren,drugs,Aliskiren,aliskiren,aliskiren
+NCT00311740,CVAH631B1303,Phase 3,Novartis,,,,,,,,valsartan,drugs,Valsartan,valsartan,valsartan
+NCT00311740,CVAH631B1303,Phase 3,Novartis,,,,,,,,hydrochlorothiazide,drugs,Hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT00327145,CVAA489A2401,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan,valsartan,valsartan
+NCT00327145,CVAA489A2401,Phase 3,Novartis,,,,,,,,hydrochlorothiazide,drugs,hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT00327145,CVAA489A2401,Phase 3,Novartis,,,,,,,,amlodipine,drugs,amlodipine,amlodipine,amlodipine
+NCT00333489,CVAL489ABR02,Phase 4,Novartis,,,,,,,,valsartan,drugs,valsartan,valsartan,valsartan
+NCT00343551,CSPP100A2351,Phase 3,Novartis,,,,,,,,aliskiren,drugs,Aliskiren,aliskiren,aliskiren
+NCT00344110,CSPP100A1301,Phase 3,Novartis,,,,,,,,aliskiren,drugs,Aliskiren,aliskiren,aliskiren
+NCT00350168,CVAA489A2403,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan + amlodipine,valsartan,valsartan + amlodipine
+NCT00350168,CVAA489A2403,Phase 3,Novartis,,,,,,,,amlodipine,drugs,valsartan + amlodipine,amlodipine,valsartan + amlodipine
+NCT00353912,CVAA489A2402,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan + amlodipine,valsartan,valsartan + amlodipine
+NCT00353912,CVAA489A2402,Phase 3,Novartis,,,,,,,,amlodipine,drugs,valsartan + amlodipine,amlodipine,valsartan + amlodipine
+NCT00385931,CVAS489A2301,Phase 3,Novartis,,,,,,,,valsartan,drugs,Valsartan and simvastatin,valsartan,valsartan and simvastatin
+NCT00385931,CVAS489A2301,Phase 3,Novartis,,,,,,,,simvastatin,drugs,Valsartan and simvastatin,simvastatin,valsartan and simvastatin
+NCT00386139,CSPP100A2332,Phase 3,Novartis,,,,,,,,aliskiren,drugs,Aliskiren/HCTZ,aliskiren,aliskiren/hctz
+NCT00386139,CSPP100A2332,Phase 3,Novartis,,,,,,,,hydrochlorothiazide,drugs,Aliskiren/HCTZ,hctz,aliskiren/hctz
+NCT00387517,CSPP100A2333,Phase 3,Novartis,,,,,,,,aliskiren,drugs,Aliskiren/HCTZ,aliskiren,aliskiren/hctz
+NCT00387517,CSPP100A2333,Phase 3,Novartis,,,,,,,,hydrochlorothiazide,drugs,Aliskiren/HCTZ,hctz,aliskiren/hctz
+NCT00400777,CVEA489ABR01,Phase 4,Novartis,,,,,,,,valsartan,drugs,"Valsartan, hydrochlorothiazide and amlodipine",valsartan,"valsartan, hydrochlorothiazide and amlodipine"
+NCT00400777,CVEA489ABR01,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,"Valsartan, hydrochlorothiazide and amlodipine",hydrochlorothiazide,"valsartan, hydrochlorothiazide and amlodipine"
+NCT00400777,CVEA489ABR01,Phase 4,Novartis,,,,,,,,amlodipine,drugs,"Valsartan, hydrochlorothiazide and amlodipine",amlodipine,"valsartan, hydrochlorothiazide and amlodipine"
+NCT00409643,CVAA489A2307,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan+amlodipine combination,valsartan,valsartan+amlodipine combination
+NCT00409643,CVAA489A2307,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan,valsartan,valsartan
+NCT00409643,CVAA489A2307,Phase 3,Novartis,,,,,,,,amlodipine,drugs,amlodipine,amlodipine,amlodipine
+NCT00409643,CVAA489A2307,Phase 3,Novartis,,,,,,,,amlodipine,drugs,valsartan+amlodipine combination,amlodipine combination,valsartan+amlodipine combination
+NCT00409760,CVAA489A2201,Phase 3,Novartis,,,,,,,,valsartan,drugs,"valsartan+amlodipine combination, valsartan, amlodipine",valsartan,"valsartan+amlodipine combination, valsartan, amlodipine"
+NCT00409760,CVAA489A2201,Phase 3,Novartis,,,,,,,,amlodipine,drugs,"valsartan+amlodipine combination, valsartan, amlodipine",amlodipine combination,"valsartan+amlodipine combination, valsartan, amlodipine"
+NCT00409760,CVAA489A2201,Phase 3,Novartis,,,,,,,,valsartan,drugs,"valsartan+amlodipine combination, valsartan, amlodipine",valsartan,"valsartan+amlodipine combination, valsartan, amlodipine"
+NCT00409760,CVAA489A2201,Phase 3,Novartis,,,,,,,,amlodipine,drugs,"valsartan+amlodipine combination, valsartan, amlodipine",amlodipine,"valsartan+amlodipine combination, valsartan, amlodipine"
+NCT00409851,CVAA489A2201E1,Phase 3,Novartis,,,,,,,,valsartan,drugs,valsartan+amlodipine,valsartan,valsartan+amlodipine
+NCT00409851,CVAA489A2201E1,Phase 3,Novartis,,,,,,,,amlodipine,drugs,valsartan+amlodipine,amlodipine,valsartan+amlodipine
+NCT00425997,CVAH631BUS07,Phase 4,Novartis,,,,,,,,amlodipine,drugs,amlodipine,amlodipine,amlodipine
+NCT00425997,CVAH631BUS07,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,HCTZ,hctz,hctz
+NCT00425997,CVAH631BUS07,Phase 4,Novartis,,,,,,,,valsartan,drugs,Valsartan/HCTZ,valsartan,valsartan/hctz
+NCT00425997,CVAH631BUS07,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,Valsartan/HCTZ,hctz,valsartan/hctz
+NCT00439738,CVAH631BUS06,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,HCTZ + Amlodipine,hctz,hctz + amlodipine
+NCT00439738,CVAH631BUS06,Phase 4,Novartis,,,,,,,,valsartan,drugs,Valsartan/HCTZ,valsartan,valsartan/hctz
+NCT00439738,CVAH631BUS06,Phase 4,Novartis,,,,,,,,amlodipine,drugs,HCTZ + Amlodipine,amlodipine,hctz + amlodipine
+NCT00439738,CVAH631BUS06,Phase 4,Novartis,,,,,,,,hydrochlorothiazide,drugs,Valsartan/HCTZ,hctz,valsartan/hctz
+NCT00134160,38457,Phase 4,OSCAR Study,,,,,,,,olmesartan,drugs,Olmesartan medoxomil,olmesartan medoxomil,olmesartan medoxomil
+NCT00134160,38457,Phase 4,OSCAR Study,,,,,,,,amlodipine,drugs,"Calcium channel blockers (amlodipine, azelnidipine)",calcium channel blockers (amlodipine,"calcium channel blockers (amlodipine, azelnidipine)"
+NCT00134160,38457,Phase 4,OSCAR Study,,,,,,,,azelnidipine,drugs,"Calcium channel blockers (amlodipine, azelnidipine)",azelnidipine),"calcium channel blockers (amlodipine, azelnidipine)"
+NCT00264212,R_8791,Phase 4,Sanofi,,,,,,,,irbesartan,drugs,irbesartan and irbesartan-hydrochlorothiazide,irbesartan,irbesartan and irbesartan-hydrochlorothiazide
+NCT00264212,R_8791,Phase 4,Sanofi,,,,,,,,hydrochlorothiazide,drugs,irbesartan and irbesartan-hydrochlorothiazide,irbesartan-hydrochlorothiazide,irbesartan and irbesartan-hydrochlorothiazide
+NCT00296218,PM_C_0024|EudraCT #: 2005-002161-36,Phase 3,Sanofi,,,,,,,,irbesartan,drugs,Irbesartan,irbesartan,irbesartan
+NCT00500604,IRBEH_R_02584,Phase 4,Sanofi,,,,,,,,irbesartan,drugs,Irbesartan/hydrochlorothiazide,irbesartan,irbesartan/hydrochlorothiazide
+NCT00500604,IRBEH_R_02584,Phase 4,Sanofi,,,,,,,,valsartan,drugs,Valsartan/hydrochlorothiazide,valsartan,valsartan/hydrochlorothiazide
+NCT00500604,IRBEH_R_02584,Phase 4,Sanofi,,,,,,,,hydrochlorothiazide,drugs,Hydrochlorothiazide,hydrochlorothiazide,hydrochlorothiazide
+NCT00500604,IRBEH_R_02584,Phase 4,Sanofi,,,,,,,,hydrochlorothiazide,drugs,Irbesartan/hydrochlorothiazide,hydrochlorothiazide,irbesartan/hydrochlorothiazide
+NCT00500604,IRBEH_R_02584,Phase 4,Sanofi,,,,,,,,hydrochlorothiazide,drugs,Valsartan/hydrochlorothiazide,hydrochlorothiazide,valsartan/hydrochlorothiazide
+NCT00956644,IRBAM_R_04220,Phase 3,Sanofi,,,,,,,,irbesartan,drugs,irbesartan/amlodipine,irbesartan,irbesartan/amlodipine
+NCT00956644,IRBAM_R_04220,Phase 3,Sanofi,,,,,,,,amlodipine,drugs,amlodipine,amlodipine,amlodipine
+NCT00956644,IRBAM_R_04220,Phase 3,Sanofi,,,,,,,,amlodipine,drugs,irbesartan/amlodipine,amlodipine,irbesartan/amlodipine
+NCT00957554,IRBAM_R_04219,Phase 3,Sanofi,,,,,,,,irbesartan,drugs,irbesartan/amlodipine,irbesartan,irbesartan/amlodipine
+NCT00957554,IRBAM_R_04219,Phase 3,Sanofi,,,,,,,,irbesartan,drugs,irbesartan,irbesartan,irbesartan
+NCT00957554,IRBAM_R_04219,Phase 3,Sanofi,,,,,,,,amlodipine,drugs,irbesartan/amlodipine,amlodipine,irbesartan/amlodipine
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,telmisartan,drugs,Telmisartan plus Metformin,telmisartan,telmisartan plus metformin
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,telmisartan,drugs,Telmisartan,telmisartan,telmisartan
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,candesartan,drugs,Candesartan,candesartan,candesartan
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,candesartan,drugs,Candesartan plus Metformin,candesartan,candesartan plus metformin
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,amlodipine,drugs,Amlodipine,amlodipine,amlodipine
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,amlodipine,drugs,Amlodipine plus Metformin,amlodipine,amlodipine plus metformin
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,metformin,drugs,Telmisartan plus Metformin,metformin,telmisartan plus metformin
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,metformin,drugs,Candesartan plus Metformin,metformin,candesartan plus metformin
+NCT00538486,HOT-ACME 1,Phase 4,Third Military Medical University,,,,,,,,metformin,drugs,Amlodipine plus Metformin,metformin,amlodipine plus metformin
