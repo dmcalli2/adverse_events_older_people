@@ -1,0 +1,123 @@
+Description of files
+--------------------
+
+Overview of files and tasks in relation to files.
+Much of this data is taken from clinicaltrials.gov (CTG).
+Where there is a task, this is asterisked.
+
+"01_trials_overview.csv"
+========================
+
+155 rows. One row per trial.
+
+col              name description
+1              nct_id Trial ID
+2      official_title Trial title
+3 first_received_date Date registered
+4        baseline_res Is there a baseline results table in CTG
+5             sae_res Is there an adverse events table in CTG
+6              source If there is no baseline/ae table in CTG
+7          csr_status If there is no baseline/ae table in CTG, what was the CSR status eg searched and not found
+8        other source ********** If the CSR does not contain AE/SAE data record where else searched and if data was found, free text
+
+
+"02_primary_outcomes.csv"
+=========================
+
+213 rows, 155 trials, some trials have multiple rows for primary outcome
+
+col     name  description
+1      nct_id Trial ID
+2     measure primary outcome measure
+3 description primary outcome description
+4   surrogate *** If the outcome is solely surrogate then code this as TRUE. If there are any hard outcomes code this as FALSE.
+
+
+"03_age_sex_criteria.csv"
+=========================
+
+155 rows.
+
+col      name description
+1      nct_id trial ID
+2 minimum_age minimum age eligibility
+3 maximum_age maximum age eligibility
+4      gender sex
+***** No tasks for this table, information only
+
+
+"04_drug_comparisons.csv"
+========================
+
+786 rows, 155 trials. Multiple rows for different arms and drugs. CTG has different information on drugs depending when it was created. Early on it just had a list of treatments. Later it added arm information. I also assinged the interventions in CTG to drug names based on the WHO ATC classification scheme.
+
+
+col               name description
+1               nct_id trial ID
+## Note that arm information may be missing, this is because it was not included in CTG
+2               arm_id arm ID from intervention design table     ***** if missing, assign this based on CSR
+3             arm_type arm type from intervention design table   ***** If missing, assign this based on CSR
+4             arm_name arm name from intervention design table   ***** If missing, assign this based on CSR
+## Intervention information was always present
+5      intervention_id intervention ID from intervention table
+6  intvn_text_original intervention text from intervention table
+7          intvn_txt_n intervention text, how many parts was it broken into
+8      intvn_txt_cmpnt intervention text, nth component
+9        intvn_txt_lbl label I assigned to intervention text
+10        who_atc_name WHO ATC standard name assigned to text
+
+
+"05_baseline_results.csv"
+=========================
+
+1041 rows. 60 trials. So 95 trials do not have baseline results data in CTG. This contains data in a long format on baseline results. There is one row per trial, arm, collapsed arms, and result name. For example if a trial has 2 arms and results for age (mean and sd), sex (% male and female) and BMI (mean and SD) there may be 8 rows.
+
+Col                     name description
+1                     nct_id trial ID
+2           ctgov_group_code code for baseline results arm
+3               arm_name_bas name for baseline results arm
+4  same_name_as_drug_compare tests if matches arm name in "04_drug_comparisons.csv"
+5          name_drug_compare if does, records name as per "04_drug_comparisons.csv" ***** If no match, need to assign a match manually
+6             classification sub-categories of baseline varaibles (eg male, < 65 years)
+7                   category Male and Female
+8                      title variable name 'Age', 'Age, Customized', 'Body Mass Index', 'Body Mass Index (BMI)', 'Body Mass Index Class', 
+                             'Gender', 'Gender, Customized', 'Sex: Female, Male'
+9                description details of variable name
+10                     units units
+11                param_type mean, number or count of participants
+12               param_value numeric result, eg mean age, count
+13           dispersion_type all of these are standard deviations
+14          dispersion_value eg standard deviation of age
+***** Task is to clean age, sex and BMI data so have one entry per arm and to
+***** add data in this format for the age, sex and BMI of the remaining 95 trials
+
+
+"06_ae_sae_results.csv"
+=======================
+
+390 rows for 59 trials (the same 60 trials as the baseline results table, missig one trial "NCT00439738"). So 96 trials do not have reults data in CTG. This contains data in a long format. There is one row per trial, arm, collapsed arms and result name. This table is shorter than the baseline results table as it is restricted to total AEs and total SAEs.
+
+Col                 name description
+1                 nct_id trial id
+2       ctgov_group_code code for ae results arm
+3            arm_name_ae name for ae results arm
+4  same_name_as_baseline tests if matches arm name in "05_baseline_results.csv" **** note if does not, need to append this manually
+5          name_baseline if does, records name as per "05_baseline_results.csv" ***** If no match, need to assign a match manually
+6     adverse_event_term total ae or total sae
+7    frequency_threshold NA
+8          default_vocab 
+9     subjects_affected
+10      subjects_at_risk
+11           description
+
+
+
+"07_ae_sae_results_time_frame.csv"
+==================================
+
+59 rows for 59 trials, takes time frame from SAE table as well as from primary outcome table. Where it is missing or unclear from primary outcome table will need to refer to primary outcome table. There are 27 trials without time frame data for the SAEs. Most likely will need to assume the primary outcome duration for these trials as unlikely to get extra data for this.
+
+col             name description
+1             nct_id trial id
+2         time_frame time frame from adverse events table
+3 time_frame_primary time frame from primary outcome

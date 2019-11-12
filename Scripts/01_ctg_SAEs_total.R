@@ -47,40 +47,12 @@ trial_comparison <- trial_comparison %>%
                select(nct_id, intervention_id = id, ctg_str_original) %>% 
                distinct())
 
-trial_comparison2 <- trial_comparison %>% 
+trial_comparison <- trial_comparison %>% 
   left_join(aact$design_group_interventions %>% select(-id) %>% distinct()) %>% 
-  left_join(aact$design_groups %>% select(arm_type = group_type, arm_title = title, design_group_id = id) %>% distinct()) %>% 
-  select(nct_id, arm_id = design_group_id, arm_type, arm_title, intervention_id, intvn_text_original = ctg_str_original,  everything()) %>% 
+  left_join(aact$design_groups %>% select(arm_type = group_type, arm_name = title, design_group_id = id) %>% distinct()) %>% 
+  select(nct_id, arm_id = design_group_id, arm_type, arm_name, intervention_id, intvn_text_original = ctg_str_original,  everything()) %>% 
   rename(intvn_txt_n = ctg_n,  intvn_txt_cmpnt = ctg_str, intvn_txt_lbl = type_label, who_atc_name = unq_name) %>% 
   arrange(nct_id, arm_id, intervention_id)
-
-
-intvn_arms <- aact$interventions %>% 
-  filter(name %in% trial_comparison$ctg_str_original)
-
-
-arms_known <- arms %>% 
-  mutate(arms_compare = str_sub(arms_compare, 4)) %>% 
-  separate(arms_compare, into = c("arm_a", "arm_b"), sep = "v")
-arms_a <- arms_known %>% 
-  select(nct_id, arm = arm_a, drug = a) 
-arms_b <- arms_known %>% 
-  select(nct_id, arm = arm_b, drug = b) 
-arms_new <- bind_rows(a = arms_a, b = arms_b) %>% 
-  arrange(nct_id, arm, drug) %>% 
-  distinct() %>% 
-  group_by(nct_id, drug) %>% 
-  summarise(probable_arm = paste(arm, collapse = ", ")) %>% 
-  ungroup()
-
-trial_comparison <- trial_comparison %>% 
-  left_join(arms_new %>% rename(unq_name = drug)) %>% 
-  left_join(atc_lbl %>% rename(unq_name = title)) %>% 
-  mutate(code_shrt = str_sub(code, 1, 5)) %>% 
-  left_join(atc_lbl %>% rename(code_shrt = code)) %>% 
-  select(-code_shrt)
-write_csv(trial_comparison, "Data_extraction/01_trial_drug_comparisons.csv")
-
 
 ## Primary outcome ----
 primary <- aact$design_outcomes %>% 
@@ -101,11 +73,24 @@ participants <- trials %>%
 ## Baseline results ----
 baseline <- aact$baseline_measurements %>% 
   filter(title %in% c("Age", "Age, Customized", "Body Mass Index", "Body Mass Index (BMI)",  "Body Mass Index Class",
-                      "Gender", "Gender, Customized")) %>% 
+                      "Gender", "Gender, Customized", "Sex: Female, Male")) %>% 
   left_join(aact$result_groups %>% select(nct_id, ctgov_group_code, result_type, group_name = title)) %>% 
   select(nct_id, ctgov_group_code, group_name, everything()) %>% 
   arrange(nct_id, title, ctgov_group_code)
 
+
+baseline_xmn <- baseline %>% 
+  select(nct_id, group_name) %>% 
+  distinct()
+
+baseline <- baseline %>% 
+  left_join(trial_comparison %>% select(nct_id, group_name = arm_name) %>% mutate(same_name_as_drug_compare = TRUE) %>% distinct()) %>% 
+  mutate(same_name_as_drug_compare = if_else(is.na(same_name_as_drug_compare), FALSE, same_name_as_drug_compare),
+         name_drug_compare = if_else(same_name_as_drug_compare, group_name, "" )) %>% 
+  select(nct_id, ctgov_group_code, arm_name_bas = group_name, same_name_as_drug_compare, name_drug_compare,
+         classification, category, title, description, units, 
+         param_type, param_value, 
+         dispersion_type, dispersion_value)
 
 ## Examine AEs/SAEs
 sae <- aact$reported_events %>%
@@ -116,31 +101,66 @@ sae <- sae %>%
   as_tibble()
 sae <- sae %>%
   inner_join(aact$result_groups %>% select(-id) %>% rename(group_name = title)) %>%
-  select(nct_id, group_name, ctgov_group_code, everything()) %>% 
-  arrange(nct_id, ctgov_group_code) 
+  select(nct_id, ctgov_group_code, arm_name_ae = group_name, everything()) %>% 
+  arrange(nct_id, ctgov_group_code)  %>% 
+  select(-id, -result_group_id, -result_type)
 
-## Identify trials for which have results
+sae <- sae %>% 
+  left_join(baseline %>% select(nct_id, arm_name_ae = arm_name_bas) %>% mutate(same_name_as_baseline = TRUE) %>% distinct()) %>% 
+  mutate(same_name_as_baseline = if_else(is.na(same_name_as_baseline), FALSE, same_name_as_baseline),
+         name_baseline = if_else(same_name_as_baseline, arm_name_ae, "" )) %>% 
+  select(nct_id, ctgov_group_code, arm_name_ae, same_name_as_baseline, name_baseline, everything())
 
-
-no_sae <- aact$studies %>% 
-  anti_join(sae) %>% 
-  select(nct_id, phase, source) 
-ids <- aact$id_information %>% 
+## Where time frame is missing pull this from outcomes data
+outcomes <- aact$outcomes %>% 
+  filter(outcome_type == "Primary") %>% 
+  distinct(nct_id, time_frame) %>% 
+  as_tibble()
+## two trials both are from baseline to 8 weeks
+outcomes_diff <- outcomes %>% 
   group_by(nct_id) %>% 
-  summarise(other_id = paste(id_value, collapse = "|")) %>% 
-  ungroup()
-no_sae <- no_sae %>% 
-  left_join(ids)
-no_sae$nct_id %>% unique()
+  mutate(n = length(time_frame)) %>% 
+  ungroup() %>% 
+  filter(n >=2)
 
-no_sae_intvn <- no_sae %>% 
-  inner_join(intvn_lbl %>% 
-               mutate(subjects_affected = "",
-                      subjects_at_risk = "") %>% 
-               select(nct_id, subjects_affected,
-                      subjects_at_risk,
-                      unq_name, type_label, name, ctg_str, ctg_str_original))
-write_csv(no_sae_intvn, "Scratch_data/sae_complete.csv")
+outcomes <- outcomes %>% 
+  filter(!nct_id %in% c("NCT00558428", "NCT00281580"))
+outcomes2 <- tibble(nct_id = c("NCT00558428", "NCT00281580"), time_frame = "Baseline and Week 8")
+
+outcomes <- bind_rows(outcomes, outcomes2)
+
+
+sae_time_frame <- sae %>% 
+  inner_join(outcomes %>% rename(time_frame_primary = time_frame)) %>% 
+  distinct(nct_id, time_frame, time_frame_primary)
+
+sae$time_frame <- NULL
+
+###
+csr_chk <- read_csv("Data/csr_status_current.csv") 
+
+
+## Identify trial overview
+trials_over <- trials %>% 
+  select(nct_id, official_title, first_received_date) %>% 
+  mutate(baseline_res = nct_id %in% baseline$nct_id,
+         sae_res = nct_id %in% sae$nct_id) %>%
+  arrange(first_received_date, nct_id) %>% 
+  left_join(csr_chk %>% select(nct_id, source, csr_status)) %>% 
+  mutate(csr_status = if_else(baseline_res & sae_res, "Not reqd, in clinicaltrials.gov", csr_status))
+
+ 
+## write files
+write_csv(trials_over, "Data_extraction/01_trials_overview.csv")
+write_csv(primary, "Data_extraction/02_primary_outcomes.csv")
+write_csv(elig, "Data_extraction/03_age_sex_criteria.csv")
+write_csv(trial_comparison, "Data_extraction/04_drug_comparisons.csv")
+write_csv(baseline, "Data_extraction/05_baseline_results.csv")
+write_csv(sae, "Data_extraction/06_ae_sae_results.csv")
+write_csv(sae_time_frame, "Data_extraction/07_ae_sae_results_time_frame.csv")
+
+
+
 ## Connect to CTG
 ## Checked on 29th October, no new AE reports
 # library(RPostgreSQL)
@@ -156,5 +176,4 @@ write_csv(no_sae_intvn, "Scratch_data/sae_complete.csv")
 #                                   paste(no_sae$nct_id, collapse = "', '"),
 #                                      "')"))
 # dbDisconnect(con)
-
 
