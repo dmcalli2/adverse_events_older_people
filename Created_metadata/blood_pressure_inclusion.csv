@@ -1,0 +1,87 @@
+inclusion_exclusion,negated,criteria_sentences,bp_inclusion
+Exclusion,FALSE,severe hypertension ( an office cuff msdbp > = 110 mmhg or mssbp > = 180 mmhg ) .,an office cuff msdbp < = 110 mmhg and mssbp < = 180 mmhg
+Inclusion,FALSE,mean cuff seated diastolic blood pressure ( bp ) must be > 95 mmhg and < 115 mmhg and a mean cuff seated systolic bp must be < 180 mmhg when measured at two consecutive qualification study visits during the placebo run-in phase .,mean cuff seated diastolic blood pressure ( bp ) must be > 95 mmhg and < 115 mmhg and a mean cuff seated systolic bp must be < 180 mmhg when measured at two consecutive qualification study visits during the placebo run-in phase .
+Inclusion,FALSE,diagnosed of having hypertension ; defined as a mean seated systolic bp > = 160 mmhg ( stage 2 hypertension ),mean seated systolic bp > = 160 mmhg
+Exclusion,FALSE,severe / malignant / secondary hypertensive patients,mild to moderate
+Exclusion,FALSE,severe hypertension,mild to moderate
+Exclusion,FALSE,severe hypertension .,mild to moderate
+Exclusion,FALSE,severe hypertension ; current diagnosis of heart failure ; history or evidence of a secondary form of hypertension ; participation in any investigational drug study within one month of planned participation ;,mild to moderate
+Exclusion,FALSE,symptomatic hypertension or severe hypertension,mild to moderate
+Exclusion,FALSE,significantly elevated blood pressure ( severe hypertension ),mild to moderate
+Exclusion,FALSE,secondary hypertension or severe hypertension,mild to moderate
+Exclusion,FALSE,malignant hypertension or severe hypertension ( grade 3 of who classification,mild to moderate
+Inclusion,FALSE,patients with mild to moderate hypertension,mild to moderate
+Inclusion,FALSE,mild to moderate essential hypertension,mild to moderate
+Inclusion,FALSE,patients with mild to moderate hypertension ; untreated or currently taking antihypertensive therapy,mild to moderate
+Inclusion,FALSE,history of mild-to-moderate hypertension,mild to moderate
+Inclusion,FALSE,moderate to severe high blood pressure,moderate to severe
+Inclusion,FALSE,moderate to severe hypertension,moderate to severe
+Inclusion,FALSE,patients with a diagnosis of stage 2 hypertension ( defined as an office cuff mssbp > = 160 mmhg and < 200 mmhg ) at visit 5 ( randomization ) . ;,mssbp > = 160 mmhg and < 200 mmhg 
+Inclusion,FALSE,untreated patients ( either newly diagnosed or those patients with a history of hypertension but have not been taking any antihypertensive drugs for at least 4 weeks prior to first visit ) must have an offcie mssbp > = 150 mmhg and < 180 mmhg at screening and 1 week after screening and must have an office mssbp > = 145 mmhg and < 180 mmhg after 4 weeks run-in epoch,offcie mssbp > = 150 mmhg and < 180 mmhg at screening and 1 week after screening and must have an office mssbp > = 145 mmhg and < 180 mmhg after 4 weeks run-in epoch
+Inclusion,FALSE,diagnosed severe hypertension,severe
+Exclusion,FALSE,malignant hypertension or sitting bp greater than 180 / 109 mmhg ;,sitting BP less thatn 180/019 mmHg
+Inclusion,FALSE,patients diagnosed with stage 1 or stage 2 essential hypertension,stage 1 or 2
+Inclusion,FALSE,patients with stage 2 systolic hypertension,stage 2
+Inclusion,FALSE,patients with stage 2 hypertension within protocol limits at randomization,stage 2
+Exclusion,FALSE,controlled blood pressure ( systolic bp < 140 mmhg ) taking more than 3 antihypertensive medications at screening,systolic bp >= 140 mmhg 
+Inclusion,FALSE,untreated grade 2 or grade 3 hypertension defined by mean diastolic blood pressure ( bp ) > / = 100 or mean systolic bp > / = 160 mmhg without anti-hypertensive treatment or treated grade 2 hypertension defined by mean diastolic bp > / = 100 or mean systolic bp > / = 160 mmhg with current diuretics or beta-blockers use for > / = 4 weeks,untreated grade 2 or grade 3 hypertension defined by mean diastolic blood pressure ( bp ) > / = 100 or mean systolic bp > / = 160 mmhg without anti-hypertensive treatment or treated grade 2 hypertension defined by mean diastolic bp > / = 100 or mean systolic bp > / = 160 mmhg with current diuretics or beta-blockers use for > / = 4 weeks
+Inclusion,TRUE,untreated grade 2 or grade 3 hypertension defined by mean diastolic blood pressure ( bp ) > / = 100 or mean systolic bp > / = 160 mmhg without anti-hypertensive treatment or treated grade 2 hypertension defined by mean diastolic bp > / = 100 or mean systolic bp > / = 160 mmhg with current diuretics or beta-blockers use for > / = 4 weeks,untreated grade 2 or grade 3 hypertension defined by mean diastolic blood pressure ( bp ) > / = 100 or mean systolic bp > / = 160 mmhg without anti-hypertensive treatment or treated grade 2 hypertension defined by mean diastolic bp > / = 100 or mean systolic bp > / = 160 mmhg with current diuretics or beta-blockers use for > / = 4 weeks
+Exclusion,FALSE,use of certain high blood pressure medications such as ace inhibitors ; angiotensin receptor blockers or aldosterone antagonists or other agents that may work in the same pathway ( raas ) as valsartan within the past 3 months .,
+Exclusion,FALSE,allergy to certain medications used to treat high blood pressure,
+Exclusion,FALSE,dislipidemia or hypertension due to secondary causes,
+Exclusion,FALSE,history or evidence of a secondary form of hypertension,
+Exclusion,FALSE,history of hypertensive encephalopathy accident or cerebrovascular accident,
+Exclusion,FALSE,history or evidence of a secondary form of hypertension .,
+Exclusion,FALSE,history of hypertensive encephalopathy accident or cerebrovascular accident .,
+Exclusion,FALSE,known secondary hypertension of any etiology ( eg ; uncorrected renal artery stenosis ) .,
+Exclusion,FALSE,secondary hypertension,
+Exclusion,FALSE,a history of malignant hypertension,
+Exclusion,FALSE,secondary hypertension or suspected of having secondary hypertension .,
+Exclusion,FALSE,evidence of a secondary form of hypertension ; to include coarctation of the aorta ; primary hyperaldosteronism ; renal artery stenosis ; or pheochromocytoma .,
+Exclusion,FALSE,known keith-wagener grade iii or grade iv hypertensive retinopathy .,
+Exclusion,FALSE,patients suspected of having malignant hypertension,
+Exclusion,FALSE,patients with or suspected of having secondary hypertension ( due to aortic coarctation ; primary aldosteronism ; etc ; ),
+Exclusion,FALSE,inability to stop all prior blood pressure medications safely,
+Exclusion,FALSE,history of hypertensive encephalopathy accident or cerebrovascular accident ; transient ischemic cerebral attack ( tia ) ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention ( pci ) .,
+Exclusion,FALSE,patients with a history of malignant hypertension .,
+Exclusion,FALSE,patients with secondary hypertension or suspected of having secondary hypertension .,
+Exclusion,FALSE,clinically known or suspected history of secondary hypertension,
+Exclusion,FALSE,office blood pressure measured by office machine cuff with a mean of 3 msdbp > = 120 mmhg at anytime during the screening / washout period .,
+Exclusion,FALSE,history of hypertensive encephalopathy accident or cerebrovascular accident ; or history of transient ischemic attack ( tia ) ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention,
+Exclusion,FALSE,malignant hypertension,
+Exclusion,FALSE,office blood pressure measured by cuff ( mssbp > = 200 mmhg or msdbp > = 110 mmhg ) at visits 1 - 5 .,
+Exclusion,FALSE,history of hypertensive encephalopathy or heart failure ( nyha class ii- .,
+Exclusion,FALSE,known keith-wagener grade iii or grade iv hypertensive retinopathy . ;,
+Exclusion,FALSE,history or evidence of secondary hypertension of any etiology ( eg ; uncorrected renal artery stenosis ; pheochromocytoma ) .,
+Exclusion,FALSE,refractory hypertension ; defined as unresponsive to triple drug therapy at the maximum dose of each drug ; one of which must be a diuretic ; and not at blood pressure goal ( 140 / 90 mmhg ) .,
+Exclusion,FALSE,evidence of secondary form of hypertension ( coarctation of the aorta ; hyperaldosteronism ; unilateral renal artery or bilateral renal artery stenosis ; cushing disease ; pheochromocytoma or polycystic kidney disease ),
+Exclusion,FALSE,administration of any agent indicated for the treatment of hypertension after visit 1,
+Exclusion,FALSE,history of hypertensive encephalopathy ; cerebrovascular accident ; or transient ischemic attack ; myocardial infarction or all types of revascularization ; angina pectoris of any type ; including unstable angina,
+Exclusion,FALSE,secondary form of hypertension,
+Exclusion,FALSE,secondary hypertension or malignant hypertension,
+Exclusion,FALSE,history or evidence of a secondary form of hypertension ; including but not limited to any of the following : renal parenchymal hypertension ; renovascular hypertension ( unilateral renal artery or bilateral renal artery stenosis ) ; coarctation of the aorta ; primary hyperaldosteronism ; cushing disease ; pheochromocytoma ; polycystic kidney disease ( pkd ) ; drug-induced hypertension,
+Exclusion,FALSE,patient with difference in repeatedly measured blood pressures from the selected arm at screening was sitsbp > = 20 mmhg or sitdbp > = 10 mmhg,
+Exclusion,FALSE,patients taking more than three anti-hypertensive medications at the screening visit,
+Exclusion,FALSE,concomitant administration of medications known to affect blood pressure ; except medications allowed by the protocol,
+Exclusion,FALSE,known or suspected secondary hypertension,
+Exclusion,FALSE,screening time ( visit 1 ) ; time of randomization ( visit 2 ) : sitdbp > = 120 mmhg ; patients with secondary blood pressure or suspected of secondary blood pressure ( for example ; aortic coarctation ; primary aldosteronism ; renal artery stenosis ; pheochromocytoma ),
+Exclusion,TRUE,refractory hypertension ; defined as unresponsive to triple drug therapy at the maximum dose of each drug ; one of which must be a diuretic ; and not at blood pressure goal ( 140 / 90 mmhg ) .,
+Inclusion,FALSE,clinical diagnosis of hypertension,
+Inclusion,FALSE,diagnosis / history of high blood pressure,
+Inclusion,FALSE,patients with uncomplicated hypertension ; essential hypertension,
+Inclusion,FALSE,essential hypertension,
+Inclusion,FALSE,patients with essential hypertension,
+Inclusion,FALSE,patients with essential hypertension .,
+Inclusion,FALSE,NA,
+Inclusion,FALSE,essential hypertension measured by mercury sphygmomanometer,
+Inclusion,FALSE,patients with a diagnosis of hypertension .,
+Inclusion,FALSE,patients with essential hypertension measured by electronic hemodynamometer,
+Inclusion,FALSE,male or female outpatients ; 50 years of age and older with a diagnosis of essential hypertension,
+Inclusion,FALSE,patients with hypertension prior to being randomized into study .,
+Inclusion,FALSE,newly diagnosed or currently treated hypertensive patients who have not attained their blood pressure target and require active pharmacological treatment as recommended by the local guidelines as judged by the general practitioner,
+Inclusion,FALSE,diagnosed as having essential diastolic hypertension ; as follows :,
+Inclusion,FALSE,patients with newly diagnosed hypertension or patients who have not received antihypertensive therapy for at least 4 weeks prior to screening,
+Inclusion,FALSE,patient with essential hypertension,
+Inclusion,FALSE,patients with uncontrolled essential hypertension at screening time ( visit 1 ),
+Inclusion,FALSE,patients with uncontrolled hypertension after telmisartamlodipine 40 / 5 mg treatment for 6 weeks at randomization ( visit 2 ),
+Inclusion,TRUE,newly diagnosed or currently treated hypertensive patients who have not attained their blood pressure target and require active pharmacological treatment as recommended by the local guidelines as judged by the general practitioner,

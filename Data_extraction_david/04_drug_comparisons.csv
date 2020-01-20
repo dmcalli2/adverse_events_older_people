@@ -1,0 +1,543 @@
+nct_id,in_jo,arm_id,arm_type,arm_name,intervention_id,intvn_text_original,who_names1,who_names2,who_names3,who_names4,who_names5
+NCT00034840,FALSE,NA,NA,NA,3314767,"telmisartan, valsartan",telmisartan,valsartan,NA,NA,NA
+NCT00095394,TRUE,3257741,Experimental,A1,3296333,irbesartan/hctz,irbesartan,hydrochlorothiazide,NA,NA,NA
+NCT00095394,TRUE,3257742,Active Comparator,A2,3296334,irbesartan monotherapy,irbesartan,NA,NA,NA,NA
+NCT00095550,FALSE,3257730,Experimental,A1,3296315,irbesartan/hctz,irbesartan,hydrochlorothiazide,NA,NA,NA
+NCT00095550,FALSE,3257731,Active Comparator,A2,3296316,irbesartan monotherapy,irbesartan,NA,NA,NA,NA
+NCT00095550,FALSE,3257732,Active Comparator,A3,3296317,hctz monotherapy,not a drug,NA,NA,NA,NA
+NCT00110422,FALSE,3256751,Experimental,A1,3294341,irbesartan,irbesartan,NA,NA,NA,NA
+NCT00110422,FALSE,3256752,Active Comparator,B1,3294342,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00129233,FALSE,3255359,Active Comparator,Valsartan,3291787,valsartan,valsartan,NA,NA,NA,NA
+NCT00129233,FALSE,3255360,Active Comparator,Amlodipine,3291788,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00134160,TRUE,3254985,Active Comparator,1,3291116,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00134160,TRUE,3254986,Active Comparator,2,3291117,"calcium channel blockers (amlodipine, azelnidipine)",amlodipine,azelnidipine,NA,NA,NA
+NCT00146341,FALSE,NA,NA,NA,3289709,telmisartan/hctz,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT00146341,FALSE,NA,NA,NA,3289710,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00149227,FALSE,3254165,Active Comparator,Non-ARB,3289355,non-arb,not a drug,NA,NA,NA,NA
+NCT00149227,FALSE,3254166,Experimental,Valsartan,3289354,valsartan,valsartan,NA,NA,NA,NA
+NCT00151827,FALSE,3254011,Experimental,Olmesartan medoxomil,3289043,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00151827,FALSE,3254011,Experimental,Olmesartan medoxomil,3289045,furosemide oral tablets,furosemide,NA,NA,NA,NA
+NCT00151827,FALSE,3254012,Experimental,Losartan,3289044,losartan,losartan,NA,NA,NA,NA
+NCT00151827,FALSE,3254012,Experimental,Losartan,3289045,furosemide oral tablets,furosemide,NA,NA,NA,NA
+NCT00153023,FALSE,NA,NA,NA,3288886,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00153023,FALSE,NA,NA,NA,3288887,valsartan,valsartan,NA,NA,NA,NA
+NCT00154271,FALSE,NA,NA,NA,3288731,"valsartan, valsartan hct",valsartan,NA,NA,NA,NA
+NCT00168779,FALSE,NA,NA,NA,3287270,telmisartan 80 mg / hydrochlorothiazide 25 mg,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT00168779,FALSE,NA,NA,NA,3287271,valsartan 160 mg / hydrochlorothiazide 25 mg,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00168779,FALSE,NA,NA,NA,3287272,placebo,placebo,NA,NA,NA,NA
+NCT00168857,FALSE,NA,NA,NA,3287256,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00168857,FALSE,NA,NA,NA,3287257,losartan,losartan,NA,NA,NA,NA
+NCT00170924,FALSE,NA,NA,NA,3287030,valsartan,valsartan,NA,NA,NA,NA
+NCT00170963,FALSE,NA,NA,NA,3287022,valsartan/amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT00170989,FALSE,NA,NA,NA,3287020,valsartan plus hydrochlorothiazide,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00171002,FALSE,NA,NA,NA,3287019,valsartan/amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT00171093,FALSE,NA,NA,NA,3287008,valsartan + simvastatin,valsartan,simvastatin,NA,NA,NA
+NCT00185133,TRUE,NA,NA,NA,3285651,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00185133,TRUE,NA,NA,NA,3285652,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00185172,TRUE,3252317,Placebo Comparator,1,3285645,placebo,placebo,NA,NA,NA,NA
+NCT00185172,TRUE,3252318,Experimental,2,3285646,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00185172,TRUE,3252319,Experimental,3,3285647,"olmesartan medoxomil oral tablets, hydrochlorothiazide oral tablets",olmesartan,hydrochlorothiazide,NA,NA,NA
+NCT00190580,FALSE,3251999,Experimental,1,3285060,valsartan,valsartan,NA,NA,NA,NA
+NCT00190580,FALSE,3251999,Experimental,1,3285061,conventional antihypertensive drugs,C02 ANTIHYPERTENSIVES,NA,NA,NA,NA
+NCT00190580,FALSE,3252000,Experimental,2,3285061,conventional antihypertensive drugs,C02 ANTIHYPERTENSIVES,NA,NA,NA,NA
+NCT00219024,FALSE,NA,NA,NA,3281720,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219037,FALSE,NA,NA,NA,3281719,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219063,FALSE,NA,NA,NA,3281717,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219076,FALSE,NA,NA,NA,3281716,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219089,FALSE,NA,NA,NA,3281715,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219102,FALSE,NA,NA,NA,3281714,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219115,FALSE,NA,NA,NA,3281713,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219128,FALSE,NA,NA,NA,3281712,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219141,FALSE,3250286,Experimental,Aliskiren 300 mg,3281708,aliskiren 150/300 mg,aliskiren,not a drug,NA,NA,NA
+NCT00219141,FALSE,3250286,Experimental,Aliskiren 300 mg,3281710,aliskiren placebo,placebo,NA,NA,NA,NA
+NCT00219141,FALSE,3250286,Experimental,Aliskiren 300 mg,3281711,losartan 50/100 mg placebo,losartan,placebo,NA,NA,NA
+NCT00219141,FALSE,3250287,Active Comparator,Losartan 100 mg,3281709,losartan 50/100 mg,losartan,not a drug,NA,NA,NA
+NCT00219141,FALSE,3250287,Active Comparator,Losartan 100 mg,3281710,aliskiren placebo,placebo,NA,NA,NA,NA
+NCT00219141,FALSE,3250288,Experimental,Aliskiren/losartan 300/100 mg,3281708,aliskiren 150/300 mg,aliskiren,not a drug,NA,NA,NA
+NCT00219141,FALSE,3250288,Experimental,Aliskiren/losartan 300/100 mg,3281709,losartan 50/100 mg,losartan,not a drug,NA,NA,NA
+NCT00219141,FALSE,3250288,Experimental,Aliskiren/losartan 300/100 mg,3281710,aliskiren placebo,placebo,NA,NA,NA,NA
+NCT00219154,FALSE,NA,NA,NA,3281707,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219167,TRUE,NA,NA,NA,3281706,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219180,FALSE,NA,NA,NA,3281705,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00219193,FALSE,NA,NA,NA,3281704,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00220220,TRUE,NA,NA,NA,3281598,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00220220,TRUE,NA,NA,NA,3281599,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00220233,FALSE,NA,NA,NA,3281595,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00220233,FALSE,NA,NA,NA,3281596,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00220233,FALSE,NA,NA,NA,3281597,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00239369,FALSE,NA,NA,NA,3279466,fixed dose combination telmisartan 80 mg + hctz 25 mg,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT00239369,FALSE,NA,NA,NA,3279467,fixed dose combination telmisartan 80 mg + hctz 12.5 mg,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT00240448,FALSE,NA,NA,NA,3279345,telmisartan 80 mg/hydrochlorothiazide 25 mg,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT00240448,FALSE,NA,NA,NA,3279346,valsartan 160 mg/hydrochlorothiazide 25 mg,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00240448,FALSE,NA,NA,NA,3279347,placebo,placebo,NA,NA,NA,NA
+NCT00240474,TRUE,NA,NA,NA,3279340,telmisartan 80 mg + hydrochlorothiazide 12.5 mg,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT00240474,TRUE,NA,NA,NA,3279341,amlodipine 10 mg + hydrochlorothiazide 12.5 mg,amlodipine,hydrochlorothiazide,NA,NA,NA
+NCT00260923,TRUE,NA,NA,NA,3276925,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00262236,FALSE,NA,NA,NA,3276781,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00264212,TRUE,NA,NA,NA,3276507,irbesartan and irbesartan-hydrochlorothiazide,irbesartan,hydrochlorothiazide,NA,NA,NA
+NCT00273299,FALSE,NA,NA,NA,3275437,valsartan plus hydrochlorothiazide,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00274599,TRUE,NA,NA,NA,3275288,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00274599,TRUE,NA,NA,NA,3275289,ramipril,ramipril,NA,NA,NA,NA
+NCT00274612,TRUE,NA,NA,NA,3275286,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00274612,TRUE,NA,NA,NA,3275287,ramipril,ramipril,NA,NA,NA,NA
+NCT00277472,FALSE,3246703,Experimental,valsartan HCTZ,3274866,valsartan/hydrochlorothiazide,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00277472,FALSE,3246704,Active Comparator,HCTZ,3274867,hctz,hydrochlorothiazide,NA,NA,NA,NA
+NCT00280540,TRUE,NA,NA,NA,3274492,valsartan/hydrochlorothiazide,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00281580,FALSE,3246404,Placebo Comparator,Placebo,3274355,placebo,placebo,NA,NA,NA,NA
+NCT00281580,FALSE,3246405,Experimental,Telmisartan 20 mg,3274356,telmisartan 20 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246406,Experimental,Telmisartan 40 mg,3274380,telmisartan 40 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246407,Experimental,Telmisartan 80 mg,3274372,telmisartan 80 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246408,Experimental,Amlodipine 2.5 mg,3274368,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246409,Experimental,Amlodipine 5 mg,3274364,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246410,Active Comparator,Amlodipine 10 mg,3274378,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246410,Active Comparator,Amlodipine 10 mg,3274382,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246411,Experimental,Telmisartan 20 / Amlodipine 2.5,3274359,telmisartan 20 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246411,Experimental,Telmisartan 20 / Amlodipine 2.5,3274375,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246412,Experimental,Telmisartan 20 / Amlodipine 5,3274365,telmisartan 20 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246412,Experimental,Telmisartan 20 / Amlodipine 5,3274367,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246413,Experimental,Telmisartan 20 / Amlodipine 10,3274358,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246413,Experimental,Telmisartan 20 / Amlodipine 10,3274362,telmisartan 20 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246413,Experimental,Telmisartan 20 / Amlodipine 10,3274363,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246414,Experimental,Telmisartan 40 / Amlodipine 2.5,3274371,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246414,Experimental,Telmisartan 40 / Amlodipine 2.5,3274376,telmisartan 40 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246415,Experimental,Telmisartan 40 / Amlodipine 5,3274366,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246415,Experimental,Telmisartan 40 / Amlodipine 5,3274377,telmisartan 40 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246416,Experimental,Telmisartan 40 / Amlodipine 10,3274357,telmisartan 40 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246416,Experimental,Telmisartan 40 / Amlodipine 10,3274370,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246416,Experimental,Telmisartan 40 / Amlodipine 10,3274374,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246417,Experimental,Telmisartan 80 / Amlodipine 2.5,3274369,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246417,Experimental,Telmisartan 80 / Amlodipine 2.5,3274381,telmisartan 80 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246418,Experimental,Telmisartan 80 / Amlodipine 5,3274373,telmisartan 80 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246418,Experimental,Telmisartan 80 / Amlodipine 5,3274379,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246419,Experimental,Telmisartan 80 / Amlodipine 10,3274354,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00281580,FALSE,3246419,Experimental,Telmisartan 80 / Amlodipine 10,3274360,telmisartan 80 mg,telmisartan,NA,NA,NA,NA
+NCT00281580,FALSE,3246419,Experimental,Telmisartan 80 / Amlodipine 10,3274361,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00281593,FALSE,NA,NA,NA,3274352,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00281593,FALSE,NA,NA,NA,3274353,ramipril,ramipril,NA,NA,NA,NA
+NCT00294710,FALSE,NA,NA,NA,3272720,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00296218,FALSE,NA,NA,NA,3272504,irbesartan,irbesartan,NA,NA,NA,NA
+NCT00311740,FALSE,NA,NA,NA,3270506,valsartan,valsartan,NA,NA,NA,NA
+NCT00311740,FALSE,NA,NA,NA,3270507,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00316095,FALSE,NA,NA,NA,3269976,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00316095,FALSE,NA,NA,NA,3269977,simvastatin,simvastatin,NA,NA,NA,NA
+NCT00327145,FALSE,NA,NA,NA,3268610,valsartan,valsartan,NA,NA,NA,NA
+NCT00327145,FALSE,NA,NA,NA,3268611,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00327145,FALSE,NA,NA,NA,3268612,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00333489,FALSE,NA,NA,NA,3267856,valsartan,valsartan,NA,NA,NA,NA
+NCT00343551,FALSE,NA,NA,NA,3266919,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00344110,FALSE,NA,NA,NA,3266840,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00350168,FALSE,NA,NA,NA,3266133,valsartan + amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT00353912,FALSE,NA,NA,NA,3265666,valsartan + amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT00368277,TRUE,3240077,Experimental,Aliskiren-based regimen,3263844,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00368277,TRUE,3240077,Experimental,Aliskiren-based regimen,3263846,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00368277,TRUE,3240077,Experimental,Aliskiren-based regimen,3263847,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00368277,TRUE,3240078,Active Comparator,Ramipril-based regimen,3263845,ramipril,ramipril,NA,NA,NA,NA
+NCT00368277,TRUE,3240078,Active Comparator,Ramipril-based regimen,3263846,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00368277,TRUE,3240078,Active Comparator,Ramipril-based regimen,3263847,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00385931,FALSE,NA,NA,NA,3261570,valsartan and simvastatin,valsartan,simvastatin,NA,NA,NA
+NCT00386139,FALSE,NA,NA,NA,3261538,aliskiren/hctz,aliskiren,hydrochlorothiazide,NA,NA,NA
+NCT00387517,FALSE,NA,NA,NA,3261379,aliskiren/hctz,aliskiren,hydrochlorothiazide,NA,NA,NA
+NCT00400777,FALSE,NA,NA,NA,3259543,"valsartan, hydrochlorothiazide and amlodipine",valsartan,hydrochlorothiazide,amlodipine,NA,NA
+NCT00409643,FALSE,NA,NA,NA,3258351,valsartan+amlodipine combination,valsartan,amlodipine,NA,NA,NA
+NCT00409643,FALSE,NA,NA,NA,3258352,valsartan,valsartan,NA,NA,NA,NA
+NCT00409643,FALSE,NA,NA,NA,3258353,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00409760,FALSE,NA,NA,NA,3258339,"valsartan+amlodipine combination, valsartan, amlodipine",valsartan,amlodipine,NA,NA,NA
+NCT00409851,FALSE,NA,NA,NA,3258326,valsartan+amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT00413049,FALSE,3236234,Experimental,Valsartan/amlodipine 80/5 mg,3257918,valsartan/amlodipine 80/5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT00413049,FALSE,3236235,Active Comparator,Amlodipine 5 mg,3257919,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00413413,FALSE,3236190,Experimental,Valsartan/amlodipine 80/5 mg,3257866,valsartan/amlodipine 80/5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT00413413,FALSE,3236191,Active Comparator,Valsartan 80 mg,3257867,valsartan 80 mg,valsartan,NA,NA,NA,NA
+NCT00413413,FALSE,3236192,Active Comparator,Valsartan 160 mg,3257868,valsartan 160 mg,valsartan,NA,NA,NA,NA
+NCT00425373,FALSE,3235107,Experimental,Valsartan + amlodipine 40/2.5 mg,3256257,valsartan + amlodipine 40/2.5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT00425373,FALSE,3235108,Experimental,Valsartan + amlodipine 40/5 mg,3256258,valsartan + amlodipine 40/5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT00425373,FALSE,3235109,Experimental,Valsartan + amlodipine 80/2.5 mg,3256259,valsartan + amlodipine 80/2.5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT00425373,FALSE,3235110,Experimental,Valsartan + amlodipine 80/5 mg,3256260,valsartan + amlodipine 80/5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT00425373,FALSE,3235111,Active Comparator,Valsartan 40 mg,3256261,valsartan 40 mg,valsartan,NA,NA,NA,NA
+NCT00425373,FALSE,3235112,Active Comparator,Valsartan 80 mg,3256262,valsartan 80 mg,valsartan,NA,NA,NA,NA
+NCT00425373,FALSE,3235113,Active Comparator,Amlodipine 2.5 mg,3256263,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT00425373,FALSE,3235114,Active Comparator,Amlodipine 5 mg,3256264,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00425373,FALSE,3235115,Placebo Comparator,Placebo,3256265,placebo,placebo,NA,NA,NA,NA
+NCT00425997,TRUE,NA,NA,NA,3256159,valsartan/hctz,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00425997,TRUE,NA,NA,NA,3256160,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00425997,TRUE,NA,NA,NA,3256161,hctz,hydrochlorothiazide,NA,NA,NA,NA
+NCT00439738,FALSE,3233795,Experimental,valsartan/HCTZ,3254288,valsartan/hctz,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00439738,FALSE,3233796,Active Comparator,HCTZ +Amlodipine,3254287,hctz + amlodipine,hydrochlorothiazide,amlodipine,NA,NA,NA
+NCT00454662,TRUE,3232438,Active Comparator,1,3252235,olmesartan medoxomil / amlodipine or azelnidipine,olmesartan,amlodipine,azelnidipine,NA,NA
+NCT00454662,TRUE,3232439,Active Comparator,2,3252236,olmesartan medoxomil / low dose thiazide type drug,olmesartan,"C03A LOW-CEILING DIURETICS, THIAZIDES",NA,NA,NA
+NCT00500604,TRUE,3228386,Experimental,A,3246295,irbesartan/hydrochlorothiazide,irbesartan,hydrochlorothiazide,NA,NA,NA
+NCT00500604,TRUE,3228386,Experimental,A,3246297,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00500604,TRUE,3228387,Active Comparator,B,3246296,valsartan/hydrochlorothiazide,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00500604,TRUE,3228387,Active Comparator,B,3246297,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00529451,TRUE,3225111,Experimental,Aliskiren 300 mg,3242487,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00529451,TRUE,3225112,Experimental,Aliskiren 150 mg,3242487,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00529451,TRUE,3225113,Experimental,Aliskiren 75 mg,3242487,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00529451,TRUE,3225114,Active Comparator,Ramipril 5 mg,3242488,ramipril,ramipril,NA,NA,NA,NA
+NCT00538486,FALSE,3224045,Experimental,Group T,3241233,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00538486,FALSE,3224046,Experimental,Group T+M,3241232,telmisartan plus metformin,telmisartan,metformin,NA,NA,NA
+NCT00538486,FALSE,3224047,Experimental,Group C,3241234,candesartan,candesartan,NA,NA,NA,NA
+NCT00538486,FALSE,3224048,Experimental,Group C+M,3241235,candesartan plus metformin,candesartan,metformin,NA,NA,NA
+NCT00538486,FALSE,3224049,Active Comparator,Group A,3241236,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00538486,FALSE,3224050,Experimental,Group A+M,3241237,amlodipine plus metformin,amlodipine,metformin,NA,NA,NA
+NCT00546754,FALSE,3223067,Experimental,1,3240070,losartan potassium (+) hydrochlorothiazide,losartan,hydrochlorothiazide,NA,NA,NA
+NCT00546754,FALSE,3223068,Active Comparator,2,3240071,comparator: valsartan (+) hydrochlorothiazide,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00550953,FALSE,NA,NA,NA,3239457,telmisartan+amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT00550953,FALSE,NA,NA,NA,3239458,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00553267,FALSE,NA,NA,NA,3239073,fixed dose combination of telmisartan+amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT00553267,FALSE,NA,NA,NA,3239074,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00558064,FALSE,NA,NA,NA,3238418,telmisartan+amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT00558064,FALSE,NA,NA,NA,3238419,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00558428,FALSE,NA,NA,NA,3238364,fixed dose combination of telmisartan+amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT00558428,FALSE,NA,NA,NA,3238365,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00591578,FALSE,3217543,Experimental,Azilsartan Medoxomil 40 mg QD,3234098,azilsartan medoxomil,azilsartan,NA,NA,NA,NA
+NCT00591578,FALSE,3217544,Experimental,Azilsartan Medoxomil 80 mg QD,3234099,azilsartan medoxomil,azilsartan,NA,NA,NA,NA
+NCT00591578,FALSE,3217545,Active Comparator,Valsartan 320 mg QD,3234100,valsartan,valsartan,NA,NA,NA,NA
+NCT00614380,FALSE,NA,NA,NA,3231162,telmisartan/amlodipine 40/5 mg fixed combination,telmisartan,amlodipine,not a drug,NA,NA
+NCT00614380,FALSE,NA,NA,NA,3231163,telmisartan/amlodipine 80/5 mg fixed combination,telmisartan,amlodipine,not a drug,NA,NA
+NCT00624052,FALSE,NA,NA,NA,3229772,fixed-dose combination of telmisartan 40mg+amlodipine 10mg,telmisartan,amlodipine,NA,NA,NA
+NCT00624052,FALSE,NA,NA,NA,3229773,fixed-dose combination of telmisartan 80mg+amlodipine10mg,telmisartan,amlodipine,NA,NA,NA
+NCT00631917,FALSE,3212278,Experimental,Aliskiren,3228627,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00631917,FALSE,3212278,Experimental,Aliskiren,3228629,placebo to ramipril,placebo,NA,NA,NA,NA
+NCT00631917,FALSE,3212279,Active Comparator,Ramipril,3228628,ramipril,ramipril,NA,NA,NA,NA
+NCT00631917,FALSE,3212279,Active Comparator,Ramipril,3228630,placebo to aliskiren,placebo,NA,NA,NA,NA
+NCT00649389,FALSE,3209845,Experimental,OM40/AML10,3226100,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00649389,FALSE,3209845,Experimental,OM40/AML10,3226101,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00649389,FALSE,3209846,Active Comparator,OM40/HCTZ25,3226100,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00649389,FALSE,3209846,Active Comparator,OM40/HCTZ25,3226102,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00649389,FALSE,3209847,Active Comparator,AML10/HCTZ25,3226101,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00649389,FALSE,3209847,Active Comparator,AML10/HCTZ25,3226102,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00649389,FALSE,3209848,Active Comparator,OM40/AML10/HCTZ25,3226100,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00649389,FALSE,3209848,Active Comparator,OM40/AML10/HCTZ25,3226101,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00649389,FALSE,3209848,Active Comparator,OM40/AML10/HCTZ25,3226102,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00687973,FALSE,3204435,Experimental,Valsartan/amlodipine 160/10 mg,3220471,valsartan/amlodipine 80/5 mg tablets,valsartan,amlodipine,not a drug,NA,NA
+NCT00687973,FALSE,3204436,Active Comparator,Atenolol/amlodipine 100/10 mg,3220472,amlodipine 5 mg capsules,amlodipine,NA,NA,NA,NA
+NCT00687973,FALSE,3204436,Active Comparator,Atenolol/amlodipine 100/10 mg,3220473,amlodipine 10 mg capsules,amlodipine,NA,NA,NA,NA
+NCT00687973,FALSE,3204436,Active Comparator,Atenolol/amlodipine 100/10 mg,3220474,atenolol 50 mg tablets,atenolol,NA,NA,NA,NA
+NCT00687973,FALSE,3204436,Active Comparator,Atenolol/amlodipine 100/10 mg,3220475,atenolol 100 mg tablets,atenolol,NA,NA,NA,NA
+NCT00696241,FALSE,3203256,Experimental,Azilsartan Medoxomil 20 mg QD,3219360,azilsartan medoxomil and olmesartan,azilsartan,olmesartan,NA,NA,NA
+NCT00696241,FALSE,3203257,Experimental,Azilsartan Medoxomil 40 mg QD,3219361,azilsartan medoxomil and olmesartan,azilsartan,olmesartan,NA,NA,NA
+NCT00696241,FALSE,3203258,Experimental,Azilsartan Medoxomil 80 mg QD,3219362,azilsartan medoxomil and olmesartan,azilsartan,olmesartan,NA,NA,NA
+NCT00696241,FALSE,3203259,Active Comparator,Olmesartan 40 mg QD,3219363,olmesartan,olmesartan,NA,NA,NA,NA
+NCT00696241,FALSE,3203260,Placebo Comparator,Placebo QD,3219364,placebo,placebo,NA,NA,NA,NA
+NCT00696436,FALSE,3203232,Experimental,Azilsartan Medoxomil 40 mg QD,3219339,azilsartan medoxomil,azilsartan,NA,NA,NA,NA
+NCT00696436,FALSE,3203233,Experimental,Azilsartan Medoxomil 80 mg QD,3219340,azilsartan medoxomil,azilsartan,NA,NA,NA,NA
+NCT00696436,FALSE,3203234,Active Comparator,Valsartan 320 mg QD,3219341,valsartan,valsartan,NA,NA,NA,NA
+NCT00696436,FALSE,3203235,Active Comparator,Olmesartan 40 mg QD,3219342,olmesartan,olmesartan,NA,NA,NA,NA
+NCT00696436,FALSE,3203236,Placebo Comparator,Placebo QD,3219343,placebo,placebo,NA,NA,NA,NA
+NCT00698646,TRUE,3202862,Active Comparator,Valsartan,3219024,valsartan,valsartan,NA,NA,NA,NA
+NCT00698646,TRUE,3202863,Active Comparator,HCTZ,3219025,hctz,hydrochlorothiazide,NA,NA,NA,NA
+NCT00698646,TRUE,3202864,Experimental,Valsartan + HCTZ,3219023,valsartan + hctz,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00699192,TRUE,3202768,Experimental,Amlodipine/Valsartan 5/80 mg,3218942,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00699192,TRUE,3202768,Experimental,Amlodipine/Valsartan 5/80 mg,3218943,valsartan 80 mg,valsartan,NA,NA,NA,NA
+NCT00699192,TRUE,3202769,Active Comparator,Amlodipine/Valsartan 5/40 mg,3218942,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00699192,TRUE,3202769,Active Comparator,Amlodipine/Valsartan 5/40 mg,3218944,valsartan 40 mg,valsartan,NA,NA,NA,NA
+NCT00699192,TRUE,3202770,Active Comparator,Amlodipine 5 mg,3218942,amlodipine 5 mg,amlodipine,NA,NA,NA,NA
+NCT00699192,TRUE,3202770,Active Comparator,Amlodipine 5 mg,3218945,placebo,placebo,NA,NA,NA,NA
+NCT00705575,TRUE,3201833,Experimental,Aliskiren/hydrochlorothiazide (HCTZ) (300/25 mg),3218040,aliskiren/hydrochlorothiazide (hctz) (300/25 mg),aliskiren,hydrochlorothiazide,not a drug,NA,NA
+NCT00705575,TRUE,3201834,Active Comparator,Aliskiren (300 mg),3218041,aliskiren (300 mg),aliskiren,NA,NA,NA,NA
+NCT00706134,TRUE,3201741,Placebo Comparator,Placebo,3217960,placebo,placebo,NA,NA,NA,NA
+NCT00706134,TRUE,3201742,Experimental,Aliskiren 75 mg,3217961,aliskiren 75 mg,aliskiren,NA,NA,NA,NA
+NCT00706134,TRUE,3201743,Experimental,Aliskiren 150 mg,3217962,aliskiren 150 mg,aliskiren,NA,NA,NA,NA
+NCT00706134,TRUE,3201744,Experimental,Aliskiren 300 mg,3217963,aliskiren 300 mg,aliskiren,NA,NA,NA,NA
+NCT00739973,TRUE,3197081,Placebo Comparator,Placebo,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197082,Experimental,Aliskiren 150 mg tablet,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197082,Experimental,Aliskiren 150 mg tablet,3213399,aliskiren 150 mg tablet,aliskiren,NA,NA,NA,NA
+NCT00739973,TRUE,3197083,Experimental,Aliskiren 300 mg tablet,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197083,Experimental,Aliskiren 300 mg tablet,3213400,aliskiren 300 mg tablet,aliskiren,NA,NA,NA,NA
+NCT00739973,TRUE,3197084,Experimental,Amlodipine 5 mg capsule,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197084,Experimental,Amlodipine 5 mg capsule,3213401,amlodipine 5 mg capsule,amlodipine,NA,NA,NA,NA
+NCT00739973,TRUE,3197085,Experimental,Amlodipine 10 mg capsule,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197085,Experimental,Amlodipine 10 mg capsule,3213402,amlodipine 10 mg capsule,amlodipine,NA,NA,NA,NA
+NCT00739973,TRUE,3197086,Experimental,Aliskiren/amlodipine 150/5 mg tablet,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197086,Experimental,Aliskiren/amlodipine 150/5 mg tablet,3213403,aliskiren/amlodipine 150/5 mg tablet,aliskiren,amlodipine,not a drug,NA,NA
+NCT00739973,TRUE,3197087,Experimental,Aliskiren/amlodipine 150/10 mg tablet,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197087,Experimental,Aliskiren/amlodipine 150/10 mg tablet,3213404,aliskiren/amlodipine 150/10 mg tablet,aliskiren,amlodipine,not a drug,NA,NA
+NCT00739973,TRUE,3197088,Experimental,Aliskiren/amlodipine 300/5 mg tablet,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197088,Experimental,Aliskiren/amlodipine 300/5 mg tablet,3213405,aliskiren/amlodipine 300/5 mg tablet,aliskiren,amlodipine,not a drug,NA,NA
+NCT00739973,TRUE,3197089,Experimental,Aliskiren/amlodipine 300/10 mg tablet,3213398,placebo,placebo,NA,NA,NA,NA
+NCT00739973,TRUE,3197089,Experimental,Aliskiren/amlodipine 300/10 mg tablet,3213406,aliskiren/amlodipine 300/10 mg tablet,aliskiren,amlodipine,not a drug,NA,NA
+NCT00750113,FALSE,3195697,Experimental,Arm 1,3212103,nifidipine,nifedipine,NA,NA,NA,NA
+NCT00750113,FALSE,3195698,Experimental,Arm 2,3212104,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00750113,FALSE,3195699,Experimental,Arm 3,3212105,nifedipine/telmisartan,nifedipine,telmisartan,NA,NA,NA
+NCT00751751,TRUE,3195469,Experimental,1,3211894,"olmesartan medoxomil + hydrochlorothiazide, if necessary",olmesartan,hydrochlorothiazide,not a drug,NA,NA
+NCT00751751,TRUE,3195470,Active Comparator,2,3211895,"losartan + hydrochlorothiazide, if necessary",losartan,hydrochlorothiazide,not a drug,NA,NA
+NCT00751829,TRUE,3195457,Experimental,1,3211877,"olmesartan medoxomil + hydrochlorothiazide, if necessary",olmesartan,hydrochlorothiazide,not a drug,NA,NA
+NCT00751829,TRUE,3195458,Active Comparator,2,3211878,"nitrendipine + hydrochlorothiazide, if necessary",nitrendipine,hydrochlorothiazide,not a drug,NA,NA
+NCT00760266,FALSE,3194292,Experimental,Aliskiren/HCTZ 300/25 mg,3210770,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00760266,FALSE,3194293,Active Comparator,HCTZ 25 mg,3210771,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00765674,FALSE,3193505,Experimental,Aliskiren / amlodipine,3210016,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00765674,FALSE,3193505,Experimental,Aliskiren / amlodipine,3210017,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00765674,FALSE,3193505,Experimental,Aliskiren / amlodipine,3210019,placebo,placebo,NA,NA,NA,NA
+NCT00765674,FALSE,3193505,Experimental,Aliskiren / amlodipine,3210020,placebo,NA,placebo,NA,NA,NA
+NCT00765674,FALSE,3193506,Experimental,Aliskiren / hydrochlorothiazide,3210016,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00765674,FALSE,3193506,Experimental,Aliskiren / hydrochlorothiazide,3210018,hydrochlorothiazide (hctz),hydrochlorothiazide,NA,NA,NA,NA
+NCT00765674,FALSE,3193506,Experimental,Aliskiren / hydrochlorothiazide,3210019,placebo,placebo,NA,NA,NA,NA
+NCT00765674,FALSE,3193506,Experimental,Aliskiren / hydrochlorothiazide,3210020,placebo,NA,placebo,NA,NA,NA
+NCT00765674,FALSE,3193507,Experimental,Amlodipine / hydrochlorothiazide,3210017,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00765674,FALSE,3193507,Experimental,Amlodipine / hydrochlorothiazide,3210018,hydrochlorothiazide (hctz),hydrochlorothiazide,NA,NA,NA,NA
+NCT00765674,FALSE,3193507,Experimental,Amlodipine / hydrochlorothiazide,3210019,placebo,placebo,NA,NA,NA,NA
+NCT00765674,FALSE,3193508,Experimental,Aliskiren / amlodipine / hydrochlorothiazide,3210016,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00765674,FALSE,3193508,Experimental,Aliskiren / amlodipine / hydrochlorothiazide,3210017,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00765674,FALSE,3193508,Experimental,Aliskiren / amlodipine / hydrochlorothiazide,3210018,hydrochlorothiazide (hctz),hydrochlorothiazide,NA,NA,NA,NA
+NCT00765674,FALSE,3193508,Experimental,Aliskiren / amlodipine / hydrochlorothiazide,3210019,placebo,placebo,NA,NA,NA,NA
+NCT00777946,FALSE,3191800,Experimental,Aliskiren 300 mg/Amlodipine 5 mg,3208375,aliskiren/amlodipine 300/5 mg,aliskiren,amlodipine,not a drug,NA,NA
+NCT00777946,FALSE,3191800,Experimental,Aliskiren 300 mg/Amlodipine 5 mg,3208377,placebo to aliskiren,placebo,NA,NA,NA,NA
+NCT00777946,FALSE,3191801,Experimental,Aliskiren 300 mg/Amlodipine 10 mg,3208376,aliskiren/amlodipine 300/10 mg,aliskiren,amlodipine,not a drug,NA,NA
+NCT00777946,FALSE,3191801,Experimental,Aliskiren 300 mg/Amlodipine 10 mg,3208377,placebo to aliskiren,placebo,NA,NA,NA,NA
+NCT00777946,FALSE,3191802,Active Comparator,Aliskiren 300 mg,3208374,aliskiren 300 mg,aliskiren,NA,NA,NA,NA
+NCT00777946,FALSE,3191802,Active Comparator,Aliskiren 300 mg,3208378,placebo to aliskiren/amlodipine,placebo,amlodipine,NA,NA,NA
+NCT00778921,FALSE,3191638,Experimental,Amlodipine 10 mg,3208254,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00778921,FALSE,3191639,Experimental,Aliskiren/Amlodipine 150/10 mg,3208254,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00778921,FALSE,3191639,Experimental,Aliskiren/Amlodipine 150/10 mg,3208255,aliskiren 150,aliskiren,NA,NA,NA,NA
+NCT00778921,FALSE,3191640,Experimental,Aliskiren/Amlodipine 300/10 mg,3208254,amlodipine 10 mg,amlodipine,NA,NA,NA,NA
+NCT00778921,FALSE,3191640,Experimental,Aliskiren/Amlodipine 300/10 mg,3208256,amlodipine 300,amlodipine,NA,NA,NA,NA
+NCT00787605,FALSE,3190451,Active Comparator,Amlodipine,3207166,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00787605,FALSE,3190452,Experimental,Aliskiren / HCTZ,3207167,hydrochlorothiazide (hctz),hydrochlorothiazide,NA,NA,NA,NA
+NCT00787605,FALSE,3190452,Experimental,Aliskiren / HCTZ,3207168,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00797316,FALSE,3189143,Experimental,Aliskiren plus Hydrochlorothiazide,3205812,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00797316,FALSE,3189143,Experimental,Aliskiren plus Hydrochlorothiazide,3205813,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00797316,FALSE,3189144,Active Comparator,Aliskiren,3205812,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00809926,FALSE,3187327,Experimental,Valsartan/aliskiren,3204023,valsartan/aliskiren,valsartan,aliskiren,NA,NA,NA
+NCT00809926,FALSE,3187328,Active Comparator,Valsartan,3204024,valsartan,valsartan,NA,NA,NA,NA
+NCT00841672,FALSE,3182841,Experimental,Aliskiren/amlodipine 300/10 mg tablet,3199702,aliskiren/amlodipine 300/10 mg tablet,aliskiren,amlodipine,not a drug,NA,NA
+NCT00841672,FALSE,3182842,Active Comparator,Amlodipine 10 mg capsule,3199703,amlodipine 10 mg capsule,amlodipine,NA,NA,NA,NA
+NCT00846365,FALSE,3182233,Experimental,Azilsartan Medoxomil 20-40mg plus Chlorthalidone 12.5-25 mg QD,3199138,azilsartan medoxomil and chlorthalidone,azilsartan,chlorthalidone,NA,NA,NA
+NCT00846365,FALSE,3182234,Experimental,Azilsartan Medoxomil 40-80mg plus Chlorthalidone 12.5-25 mg QD,3199139,azilsartan medoxomil and chlorthalidone,azilsartan,chlorthalidone,NA,NA,NA
+NCT00846365,FALSE,3182235,Active Comparator,Olmesartan medoxomil 20-40mg/hydrochlorothiazide 12.5-25mg QD,3199140,olmesartan medoxomil-hydrochlorothiazide,olmesartan,NA,NA,NA,NA
+NCT00853957,FALSE,3181138,Experimental,Aliskiren/Amlodipine,3198105,aliskiren/amlodipine,aliskiren,amlodipine,NA,NA,NA
+NCT00853957,FALSE,3181139,Active Comparator,Amlodipine,3198106,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00860262,FALSE,3180268,Experimental,telmisartan and amlodipine,3197298,telmisartan and amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT00860262,FALSE,3180269,Active Comparator,amlodipine,3197296,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00860262,FALSE,3180270,Active Comparator,telmisartan,3197297,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00865020,FALSE,3179585,Experimental,Aliskiren 300 mg,3196629,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00865020,FALSE,3179585,Experimental,Aliskiren 300 mg,3196631,placebo to aliskiren,placebo,NA,NA,NA,NA
+NCT00865020,FALSE,3179586,Active Comparator,Telmisartan 80 mg,3196630,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00865020,FALSE,3179586,Active Comparator,Telmisartan 80 mg,3196632,placebo to telmisartan,placebo,NA,NA,NA,NA
+NCT00872586,TRUE,3178538,Experimental,1,3195555,olmesartan medoxomil + hydrochlorothiazide,olmesartan,hydrochlorothiazide,NA,NA,NA
+NCT00872586,TRUE,3178539,Active Comparator,2,3195556,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00877929,FALSE,3177809,Experimental,Telmisartan 80 / Amlodipine 10,3194841,telmisartan 80,telmisartan,NA,NA,NA,NA
+NCT00877929,FALSE,3177809,Experimental,Telmisartan 80 / Amlodipine 10,3194842,amlodipine 10,amlodipine,NA,NA,NA,NA
+NCT00877929,FALSE,3177810,Active Comparator,Amlodipine 10,3194843,amlodipine 10,amlodipine,NA,NA,NA,NA
+NCT00902304,FALSE,3174771,Active Comparator,Usual care,3191305,usual care,standard care,NA,NA,NA,NA
+NCT00902304,FALSE,3174772,Experimental,Monotherapy (initial monotherapy arm),3191303,valsartan and hydrochlorothiazide (hctz) - monotherapy,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00902304,FALSE,3174772,Experimental,Monotherapy (initial monotherapy arm),3191306,valsartan,valsartan,NA,NA,NA,NA
+NCT00902304,FALSE,3174773,Experimental,Combination (initial combination therapy arm),3191304,valsartan and amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT00902304,FALSE,3174773,Experimental,Combination (initial combination therapy arm),3191307,valsartan and hydrochlorothiazide (hctz) - combination arm,valsartan,hydrochlorothiazide,NA,NA,NA
+NCT00902538,FALSE,3174725,Experimental,Olmesartan (OLM) 40mg-Amlodipine (AML) 10mg,3191263,olmesartan medoxomil 40 mg - amlodipine 10 mg,olmesartan,NA,NA,NA,NA
+NCT00902538,FALSE,3174726,Experimental,Olmesartan 40mg-Amlodipine 10mg-Hydrochlorothiazide 12.5mg,3191264,olmesartan 40mg-amlodipine 10mg-hydrochlorothiazide 12.5mg,hydrochlorothiazide,NA,NA,NA,NA
+NCT00902538,FALSE,3174727,Experimental,Olmesartan 40mg-Amlodipine 10mg-Hydrochlorothiazide 25mg,3191265,olmesartan 40mg-amlodipine 10mg-hydrochlorothiazide 25mg,hydrochlorothiazide,NA,NA,NA,NA
+NCT00902538,FALSE,3174728,Experimental,OLM 40mg-AML 10mg-Hydrochlorothiazide 12.5mg (Responders),3191266,olm 40mg-aml 10mg-hydrochlorothiazide 12.5mg,hydrochlorothiazide,NA,NA,NA,NA
+NCT00902538,FALSE,3174729,Experimental,OLM 40mg-AML 10mg-Hydrochlorothiazide 12.5mg (Non-responders),3191267,olm 40mg-aml 10mg-hydrochlorothiazide 12.5mg,hydrochlorothiazide,NA,NA,NA,NA
+NCT00902538,FALSE,3174730,Experimental,OLM 40mg-AML 10mg-Hydrochlorothiazide 25mg (Non-responders),3191268,olm 40mg-aml 10mg-hydrochlorothiazide 25mg,hydrochlorothiazide,NA,NA,NA,NA
+NCT00923091,FALSE,3171930,Experimental,olmesartan/amlodipine/hydrochlorothiazide 20mg/5mg/12.5mg,3188572,olmesartan medoxomil + amlodipine + hydroclororthiazide + placebo,olmesartan,amlodipine,hydrochlorothiazide,placebo,NA
+NCT00923091,FALSE,3171931,Experimental,olmesartan/amlodipine/hydrochlorothiazide 40mg/5mg/12.5mg,3188573,olmesartan medoxomil + amlodipine + hydrochlorothiazide + placebo,olmesartan,amlodipine,hydrochlorothiazide,placebo,NA
+NCT00923091,FALSE,3171932,Experimental,olmesartan/amlodipine/hydrochlorothiazide 40mg/5mg/25mg,3188574,olmesartan medoxomil + amlodipine + hydroclororthiazide,olmesartan,amlodipine,hydrochlorothiazide,NA,NA
+NCT00923091,FALSE,3171933,Experimental,olmesartan/amlodipine/hydrochlorothiazide 40mg/10mg/12.5mg,3188575,olmesartan medoxomil + amlodipine + hydroclororthiazide,olmesartan,amlodipine,hydrochlorothiazide,NA,NA
+NCT00923091,FALSE,3171934,Experimental,olmesartan/amlodipine/hydrochlorothiazide 40mg/10mg/25mg,3188576,olmesartan medoxomil + amlodipine + hydroclororthiazide,olmesartan,amlodipine,hydrochlorothiazide,NA,NA
+NCT00923091,FALSE,3171935,Experimental,olmesartan/amlodipine 20mg/5mg,3188577,olmesartan medoxomil + amlodipine,olmesartan,amlodipine,NA,NA,NA
+NCT00923091,FALSE,3171936,Experimental,olmesartan/amlodipine 40mg/5mg,3188578,olmesartan medoxomil + amlodipine,olmesartan,amlodipine,NA,NA,NA
+NCT00923091,FALSE,3171937,Experimental,olmesartan/amlodipine 40mg/10mg,3188579,olmesartan medoxomil + amlodipine,olmesartan,amlodipine,NA,NA,NA
+NCT00926289,FALSE,3171550,Active Comparator,Telmisartan,3188180,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00926289,FALSE,3171551,Experimental,Telmisartan/hydrochlorothiazide,3188181,telmisartan,telmisartan,NA,NA,NA,NA
+NCT00926289,FALSE,3171551,Experimental,Telmisartan/hydrochlorothiazide,3188182,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT00927394,FALSE,3171371,Experimental,Combination Therapy: Aliskiren + Valsartan,3188035,aliskiren,aliskiren,NA,NA,NA,NA
+NCT00927394,FALSE,3171371,Experimental,Combination Therapy: Aliskiren + Valsartan,3188036,valsartan,valsartan,NA,NA,NA,NA
+NCT00927394,FALSE,3171371,Experimental,Combination Therapy: Aliskiren + Valsartan,3188037,placebo for aliskiren,placebo,NA,NA,NA,NA
+NCT00927394,FALSE,3171371,Experimental,Combination Therapy: Aliskiren + Valsartan,3188038,placebo for valsartan,placebo,NA,NA,NA,NA
+NCT00927394,FALSE,3171372,Active Comparator,Monotherapy: Valsartan,3188036,valsartan,valsartan,NA,NA,NA,NA
+NCT00927394,FALSE,3171372,Active Comparator,Monotherapy: Valsartan,3188037,placebo for aliskiren,placebo,NA,NA,NA,NA
+NCT00927394,FALSE,3171372,Active Comparator,Monotherapy: Valsartan,3188038,placebo for valsartan,placebo,NA,NA,NA,NA
+NCT00931710,TRUE,3170719,Experimental,Valsartan/amlodipine/HCTZ,3187398,"valsartan, amlodipine, hctz",valsartan,amlodipine,hydrochlorothiazide,NA,NA
+NCT00931710,TRUE,3170720,Active Comparator,Losartan/HCTZ,3187399,"losartan, hctz followed by valsartan, amlodipine, hctz",losartan,valsartan,amlodipine,hydrochlorothiazide,NA
+NCT00942994,FALSE,3169144,Experimental,Triple Therapy (Aliskiren/Amlodipine/HCTZ),3185845,aliskiren/amlodipine and hydrochlorothiazide (hctz),aliskiren,amlodipine,hydrochlorothiazide,NA,NA
+NCT00942994,FALSE,3169145,Active Comparator,Dual Therapy (Aliskiren/Amlodipine),3185844,aliskiren/amlodipine,aliskiren,amlodipine,NA,NA,NA
+NCT00949884,TRUE,3168160,Experimental,Olmesartan,3184871,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00949884,TRUE,3168161,Placebo Comparator,Placebo followed by Olmesartan,3184871,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT00949884,TRUE,3168161,Placebo Comparator,Placebo followed by Olmesartan,3184872,placebo,placebo,NA,NA,NA,NA
+NCT00949884,TRUE,3168162,Active Comparator,Losartan,3184873,losartan potassium,losartan,NA,NA,NA,NA
+NCT00956644,FALSE,3167220,Experimental,irbesartan/amlodipine,3183931,irbesartan/amlodipine,irbesartan,amlodipine,NA,NA,NA
+NCT00956644,FALSE,3167221,Active Comparator,amlodipine,3183932,amlodipine,amlodipine,NA,NA,NA,NA
+NCT00957554,FALSE,3167090,Experimental,irbesartan/amlodipine,3183822,irbesartan/amlodipine,irbesartan,amlodipine,NA,NA,NA
+NCT00957554,FALSE,3167091,Active Comparator,irbesartan,3183823,irbesartan,irbesartan,NA,NA,NA,NA
+NCT00993109,FALSE,3162026,Experimental,Arm 1,3178735,"adalat (nifedipine, baya1040)",nifedipine,NA,NA,NA,NA
+NCT00993109,FALSE,3162027,Active Comparator,Arm 2,3178736,diovan (valsartan),valsartan,NA,NA,NA,NA
+NCT00996281,FALSE,3161574,Experimental,Azilsartan Medoxomil and Chlorthalidone,3178296,azilsartan medoxomil and chlorthalidone,azilsartan,chlorthalidone,NA,NA,NA
+NCT00996281,FALSE,3161575,Active Comparator,Olmesartan Medoxomil and Hydrochlorothiazide QD,3178297,olmesartan medoxomil and hydrochlorothiazide,olmesartan,hydrochlorothiazide,NA,NA,NA
+NCT01001572,FALSE,3160833,Active Comparator,Valsartan 160 mg,3177605,valsartan 160 mg,valsartan,NA,NA,NA,NA
+NCT01001572,FALSE,3160833,Active Comparator,Valsartan 160 mg,3177606,placebo,placebo,NA,NA,NA,NA
+NCT01001572,FALSE,3160834,Experimental,Valsartan/amlodipine 160/5 mg,3177604,valsartan/amlodipine 160/5 mg,valsartan,amlodipine,not a drug,NA,NA
+NCT01001572,FALSE,3160834,Experimental,Valsartan/amlodipine 160/5 mg,3177606,placebo,placebo,NA,NA,NA,NA
+NCT01001572,FALSE,3160835,Other,Single-Blind Run-In Valsartan 160 mg,3177605,valsartan 160 mg,valsartan,NA,NA,NA,NA
+NCT01033071,FALSE,3156424,Experimental,Azilsartan Medoxomil 20-40mg/Chlorthalidone 12.5-25mg QD,3173342,azilsartan medoxomil and chlorthalidone,azilsartan,chlorthalidone,NA,NA,NA
+NCT01033071,FALSE,3156425,Experimental,Azilsartan Medoxomil 40-80mg/Chlorthalidone 12.5-25mg QD,3173343,azilsartan medoxomil and chlorthalidone,azilsartan,chlorthalidone,NA,NA,NA
+NCT01033071,FALSE,3156426,Active Comparator,Olmesartan Medoxomil 20-40mg/Hydrochlorothiazide 12.5-25mg QD,3173344,olmesartan medoxomil and hydrochlorothiazide,olmesartan,hydrochlorothiazide,NA,NA,NA
+NCT01042392,TRUE,3155162,Active Comparator,Ramipril,3172220,ramipril,ramipril,NA,NA,NA,NA
+NCT01042392,TRUE,3155162,Active Comparator,Ramipril,3172221,matching placebo to aliskiren,placebo,NA,NA,NA,NA
+NCT01042392,TRUE,3155163,Experimental,Aliskiren,3172219,aliskiren,aliskiren,NA,NA,NA,NA
+NCT01042392,TRUE,3155163,Experimental,Aliskiren,3172222,matching placebo to ramipril,placebo,NA,NA,NA,NA
+NCT01042392,TRUE,3155164,Placebo Comparator,Placebo to Ramipril,3172222,matching placebo to ramipril,placebo,NA,NA,NA,NA
+NCT01042392,TRUE,3155165,Placebo Comparator,Placebo to Aliskiren,3172221,matching placebo to aliskiren,placebo,NA,NA,NA,NA
+NCT01071122,FALSE,3151078,Experimental,Arm 1,3168501,"nifedipine (adalat, baya1040) and valsartan",nifedipine,valsartan,NA,NA,NA
+NCT01071122,FALSE,3151079,Active Comparator,Arm 2,3168502,"nifedipine (adalat, baya1040)",nifedipine,NA,NA,NA,NA
+NCT01071122,FALSE,3151080,Active Comparator,Arm 3,3168503,valsartan,valsartan,NA,NA,NA,NA
+NCT01075698,FALSE,3150433,Active Comparator,Non-ARB group,3167928,non-arb (standard therapy),not a drug,NA,NA,NA,NA
+NCT01075698,FALSE,3150434,Active Comparator,ARB group,3167929,arb (telmisartan),telmisartan,NA,NA,NA,NA
+NCT01101009,FALSE,3146817,Active Comparator,Perindopril+amlodipine,3164709,"perindopril + amlodipine + if necessary, hydrochlorothiazide",perindopril,amlodipine,not a drug,hydrochlorothiazide,NA
+NCT01101009,FALSE,3146818,Active Comparator,Olmesartan/amlodipine,3164710,"olmesartan/amlodipine + hydrochlorothiazide, if necessary.",olmesartan,amlodipine,hydrochlorothiazide,not a drug,NA
+NCT01167153,TRUE,3137487,Experimental,Valsartan/amlodipine,3156150,valsartan/amlodipine,valsartan,amlodipine,NA,NA,NA
+NCT01167153,TRUE,3137488,Active Comparator,Nifedipine,3156151,nifedipine,nifedipine,NA,NA,NA,NA
+NCT01237223,FALSE,3127585,Placebo Comparator,Placebo,3146952,placebo of aliskiren,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127585,Placebo Comparator,Placebo,3146953,placebo of amlodipine,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127585,Placebo Comparator,Placebo,3146954,placebo of aliskiren/amlodipine 150/2.5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127585,Placebo Comparator,Placebo,3146955,placebo of aliskiren/amlodipine 150/5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127586,Active Comparator,Aliskiren 150 mg,3146950,aliskiren 150 mg,aliskiren,NA,NA,NA,NA
+NCT01237223,FALSE,3127586,Active Comparator,Aliskiren 150 mg,3146953,placebo of amlodipine,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127586,Active Comparator,Aliskiren 150 mg,3146954,placebo of aliskiren/amlodipine 150/2.5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127586,Active Comparator,Aliskiren 150 mg,3146955,placebo of aliskiren/amlodipine 150/5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127587,Active Comparator,Amlodipine 2.5 mg,3146951,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT01237223,FALSE,3127587,Active Comparator,Amlodipine 2.5 mg,3146952,placebo of aliskiren,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127587,Active Comparator,Amlodipine 2.5 mg,3146953,placebo of amlodipine,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127587,Active Comparator,Amlodipine 2.5 mg,3146954,placebo of aliskiren/amlodipine 150/2.5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127587,Active Comparator,Amlodipine 2.5 mg,3146955,placebo of aliskiren/amlodipine 150/5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127588,Active Comparator,Amlodipine 5 mg,3146951,amlodipine 2.5 mg,amlodipine,NA,NA,NA,NA
+NCT01237223,FALSE,3127588,Active Comparator,Amlodipine 5 mg,3146952,placebo of aliskiren,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127588,Active Comparator,Amlodipine 5 mg,3146954,placebo of aliskiren/amlodipine 150/2.5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127588,Active Comparator,Amlodipine 5 mg,3146955,placebo of aliskiren/amlodipine 150/5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127589,Experimental,Aliskiren/amlodipine 150/2.5 mg,3146948,aliskiren/amlodipine 150/2.5 mg,aliskiren,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127589,Experimental,Aliskiren/amlodipine 150/2.5 mg,3146952,placebo of aliskiren,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127589,Experimental,Aliskiren/amlodipine 150/2.5 mg,3146953,placebo of amlodipine,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127589,Experimental,Aliskiren/amlodipine 150/2.5 mg,3146955,placebo of aliskiren/amlodipine 150/5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127590,Experimental,Aliskiren/amlodipine 150/5 mg,3146949,aliskiren/amlodipine 150/5 mg,aliskiren,amlodipine,not a drug,NA,NA
+NCT01237223,FALSE,3127590,Experimental,Aliskiren/amlodipine 150/5 mg,3146952,placebo of aliskiren,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127590,Experimental,Aliskiren/amlodipine 150/5 mg,3146953,placebo of amlodipine,placebo,NA,NA,NA,NA
+NCT01237223,FALSE,3127590,Experimental,Aliskiren/amlodipine 150/5 mg,3146954,placebo of aliskiren/amlodipine 150/2.5 mg,placebo,amlodipine,not a drug,NA,NA
+NCT01368536,FALSE,3109050,Experimental,Valturna,3130190,valturna,valsartan,aliskiren,NA,NA,NA
+NCT01368536,FALSE,3109050,Experimental,Valturna,3130193,placebo of valturna tablet,valsartan,aliskiren,placebo,NA,NA
+NCT01368536,FALSE,3109050,Experimental,Valturna,3130194,placebo capsule,placebo,NA,NA,NA,NA
+NCT01368536,FALSE,3109051,Active Comparator,Valturna + Amlodipine,3130190,valturna,valsartan,aliskiren,NA,NA,NA
+NCT01368536,FALSE,3109051,Active Comparator,Valturna + Amlodipine,3130191,amlodipine,amlodipine,NA,NA,NA,NA
+NCT01368536,FALSE,3109051,Active Comparator,Valturna + Amlodipine,3130193,placebo of valturna tablet,valsartan,aliskiren,placebo,NA,NA
+NCT01368536,FALSE,3109051,Active Comparator,Valturna + Amlodipine,3130194,placebo capsule,placebo,NA,NA,NA,NA
+NCT01368536,FALSE,3109052,Active Comparator,Valturna + chlorthalidone,3130190,valturna,valsartan,aliskiren,NA,NA,NA
+NCT01368536,FALSE,3109052,Active Comparator,Valturna + chlorthalidone,3130192,chlorthalidone,chlorthalidone,NA,NA,NA,NA
+NCT01368536,FALSE,3109052,Active Comparator,Valturna + chlorthalidone,3130193,placebo of valturna tablet,valsartan,aliskiren,placebo,NA,NA
+NCT01368536,FALSE,3109052,Active Comparator,Valturna + chlorthalidone,3130194,placebo capsule,placebo,NA,NA,NA,NA
+NCT01508026,FALSE,3089235,Experimental,Nebivolol and Valsartan Fixed Dose Combination 1,3112147,nebivolol and valsartan 1,nebivolol,valsartan,NA,NA,NA
+NCT01508026,FALSE,3089236,Experimental,Nebivolol and Valsartan Fixed Dose Combination 2,3112148,nebivolol and valsartan 2,nebivolol,valsartan,NA,NA,NA
+NCT01508026,FALSE,3089237,Experimental,Nebivolol and Valsartan Fixed Dose Combination 3,3112149,nebivolol and valsartan 3,nebivolol,valsartan,NA,NA,NA
+NCT01508026,FALSE,3089238,Experimental,Nebivolol Low Dose,3112150,nebivolol 1,nebivolol,NA,NA,NA,NA
+NCT01508026,FALSE,3089239,Experimental,Nebivolol High Dose,3112151,nebivolol 2,nebivolol,NA,NA,NA,NA
+NCT01508026,FALSE,3089240,Experimental,Valsartan Low Dose,3112152,valsartan 1,valsartan,NA,NA,NA,NA
+NCT01508026,FALSE,3089241,Experimental,Valsartan High Dose,3112153,valsartan 2,valsartan,NA,NA,NA,NA
+NCT01508026,FALSE,3089242,Placebo Comparator,Placebo,3112154,placebo,placebo,NA,NA,NA,NA
+NCT01518855,FALSE,3087680,Experimental,Arm 1,3110707,"nifedipine (adalat, baya1040)",nifedipine,NA,NA,NA,NA
+NCT01518855,FALSE,3087680,Experimental,Arm 1,3110709,diovan,valsartan,NA,NA,NA,NA
+NCT01518855,FALSE,3087681,Active Comparator,Arm 2,3110708,amlodipine (norvasc),amlodipine,NA,NA,NA,NA
+NCT01518855,FALSE,3087681,Active Comparator,Arm 2,3110709,diovan,valsartan,NA,NA,NA,NA
+NCT01599104,TRUE,3075971,Experimental,LCZ696 200 mg,3100209,lcz696,valsartan and sacubitril,valsartan,NA,NA,NA
+NCT01599104,TRUE,3075971,Experimental,LCZ696 200 mg,3100211,placebo,placebo,NA,NA,NA,NA
+NCT01599104,TRUE,3075972,Experimental,LCZ696 400 mg,3100209,lcz696,valsartan and sacubitril,valsartan,NA,NA,NA
+NCT01599104,TRUE,3075972,Experimental,LCZ696 400 mg,3100211,placebo,placebo,NA,NA,NA,NA
+NCT01599104,TRUE,3075973,Active Comparator,Olmesartan 20 mg,3100210,olmesartan,olmesartan,NA,NA,NA,NA
+NCT01599104,TRUE,3075973,Active Comparator,Olmesartan 20 mg,3100211,placebo,placebo,NA,NA,NA,NA
+NCT01615198,TRUE,3073682,Experimental,LCZ696,3098255,placebo,placebo,NA,NA,NA,NA
+NCT01615198,TRUE,3073682,Experimental,LCZ696,3098256,lcz696,valsartan and sacubitril,valsartan,NA,NA,NA
+NCT01615198,TRUE,3073683,Active Comparator,Olmesartan,3098254,olmesartan,olmesartan,NA,NA,NA,NA
+NCT01615198,TRUE,3073683,Active Comparator,Olmesartan,3098255,placebo,placebo,NA,NA,NA,NA
+NCT01785472,FALSE,3048781,Experimental,LCZ696 200 mg,3076717,lcz696,valsartan and sacubitril,valsartan,NA,NA,NA
+NCT01785472,FALSE,3048781,Experimental,LCZ696 200 mg,3076719,placebo of lcz696,valsartan and sacubitril,valsartan,placebo,NA,NA
+NCT01785472,FALSE,3048781,Experimental,LCZ696 200 mg,3076720,placebo of olmesartan,placebo,NA,NA,NA,NA
+NCT01785472,FALSE,3048782,Experimental,LCZ696 400 mg,3076717,lcz696,valsartan and sacubitril,valsartan,NA,NA,NA
+NCT01785472,FALSE,3048782,Experimental,LCZ696 400 mg,3076719,placebo of lcz696,valsartan and sacubitril,valsartan,placebo,NA,NA
+NCT01785472,FALSE,3048782,Experimental,LCZ696 400 mg,3076720,placebo of olmesartan,placebo,NA,NA,NA,NA
+NCT01785472,FALSE,3048783,Active Comparator,Olmesartan 20 mg,3076718,olmesartan,olmesartan,NA,NA,NA,NA
+NCT01785472,FALSE,3048783,Active Comparator,Olmesartan 20 mg,3076719,placebo of lcz696,valsartan and sacubitril,valsartan,placebo,NA,NA
+NCT01838850,FALSE,3041114,Experimental,CS8635 20/5/12.5mg and placebo,3069924,cs8635 20/5/12.5mg and placebo,amlodipine,hydrochlorothiazide,olmesartan,not a drug,placebo
+NCT01838850,FALSE,3041115,Active Comparator,OlmetecÂ® Plus 20/12.5mg and placebo,3069925,olmetecâ® plus 20/12.5mg and placebo,olmesartan,not a drug,placebo,NA,NA
+NCT01876368,TRUE,3035625,Experimental,LCZ696 200 mg,3065020,lcz696,valsartan and sacubitril,valsartan,NA,NA,NA
+NCT01876368,TRUE,3035625,Experimental,LCZ696 200 mg,3065022,placebo of lcz696,valsartan and sacubitril,valsartan,placebo,NA,NA
+NCT01876368,TRUE,3035626,Active Comparator,Olmesartan 20 mg,3065021,olmesartan,olmesartan,NA,NA,NA,NA
+NCT01876368,TRUE,3035626,Active Comparator,Olmesartan 20 mg,3065023,placebo of olmesartan,placebo,NA,NA,NA,NA
+NCT01928628,FALSE,3027907,Active Comparator,Lercanidipine 10mg,3058149,lercanidipine 10mg,lercanidipine,NA,NA,NA,NA
+NCT01928628,FALSE,3027907,Active Comparator,Lercanidipine 10mg,3058153,lercanidipine10mg /valsartan 80mg placebo,lercanidipine,placebo,NA,NA,NA
+NCT01928628,FALSE,3027907,Active Comparator,Lercanidipine 10mg,3058154,lercanidipine 10mg /valsartan 160mg placebo,lercanidipine,placebo,NA,NA,NA
+NCT01928628,FALSE,3027908,Experimental,Lercanidipine10mg /Valsartan 80mg,3058150,lercanidipine10mg /valsartan 80mg,lercanidipine,valsartan,NA,NA,NA
+NCT01928628,FALSE,3027908,Experimental,Lercanidipine10mg /Valsartan 80mg,3058152,lercanidipin 10mg placebo,placebo,NA,NA,NA,NA
+NCT01928628,FALSE,3027908,Experimental,Lercanidipine10mg /Valsartan 80mg,3058154,lercanidipine 10mg /valsartan 160mg placebo,lercanidipine,placebo,NA,NA,NA
+NCT01928628,FALSE,3027909,Experimental,Lercanidipine 10mg /Valsartan 160mg,3058151,lercanidipine 10mg /valsartan 160mg,lercanidipine,valsartan,NA,NA,NA
+NCT01928628,FALSE,3027909,Experimental,Lercanidipine 10mg /Valsartan 160mg,3058152,lercanidipin 10mg placebo,placebo,NA,NA,NA,NA
+NCT01928628,FALSE,3027909,Experimental,Lercanidipine 10mg /Valsartan 160mg,3058153,lercanidipine10mg /valsartan 80mg placebo,lercanidipine,placebo,NA,NA,NA
+NCT01975246,FALSE,3020970,Experimental,Telmisartan+amlodipine+HCTZ,3052051,telmisartan + amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT01975246,FALSE,3020970,Experimental,Telmisartan+amlodipine+HCTZ,3052052,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT01975246,FALSE,3020971,Active Comparator,Telmisartan+amlodipine,3052053,telmisartan + amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT01975246,FALSE,3020971,Active Comparator,Telmisartan+amlodipine,3052054,placebo,placebo,NA,NA,NA,NA
+NCT02172586,FALSE,2991726,Experimental,Telmisartan,3026347,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02172586,FALSE,2991727,Experimental,Telmisartan + Hydrochlorothiazide,3026347,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02172586,FALSE,2991727,Experimental,Telmisartan + Hydrochlorothiazide,3026349,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT02172586,FALSE,2991728,Active Comparator,Losartan,3026348,losartan,losartan,NA,NA,NA,NA
+NCT02172586,FALSE,2991729,Active Comparator,Losartan + Hydrochlorothiazide,3026348,losartan,losartan,NA,NA,NA,NA
+NCT02172586,FALSE,2991729,Active Comparator,Losartan + Hydrochlorothiazide,3026349,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT02175355,FALSE,2991307,Experimental,Low dose of MicardisÂ®,3025970,low dose of micardisâ®,telmisartan,NA,NA,NA,NA
+NCT02175355,FALSE,2991308,Experimental,Medium dose of MicardisÂ®,3025971,medium dose of micardisâ®,telmisartan,NA,NA,NA,NA
+NCT02175355,FALSE,2991309,Experimental,High dose of MicardisÂ®,3025972,high dose of micardisâ®,telmisartan,NA,NA,NA,NA
+NCT02175355,FALSE,2991310,Active Comparator,Hydrochlorothiazide,3025973,hydrochlorothiazide,hydrochlorothiazide,NA,NA,NA,NA
+NCT02175355,FALSE,2991311,Placebo Comparator,Placebo,3025974,placebo,placebo,NA,NA,NA,NA
+NCT02177396,FALSE,2991002,Experimental,Telmisartan,3025698,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02177396,FALSE,2991002,Experimental,Telmisartan,3025700,placebo,placebo,NA,NA,NA,NA
+NCT02177396,FALSE,2991003,Active Comparator,Valsartan,3025699,valsartan,valsartan,NA,NA,NA,NA
+NCT02177396,FALSE,2991003,Active Comparator,Valsartan,3025700,placebo,placebo,NA,NA,NA,NA
+NCT02177409,FALSE,2991000,Experimental,Telmisartan,3025695,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02177409,FALSE,2991000,Experimental,Telmisartan,3025697,placebo,placebo,NA,NA,NA,NA
+NCT02177409,FALSE,2991001,Active Comparator,Amlodipine,3025696,amlodipine,amlodipine,NA,NA,NA,NA
+NCT02177409,FALSE,2991001,Active Comparator,Amlodipine,3025697,placebo,placebo,NA,NA,NA,NA
+NCT02177435,TRUE,2990997,Experimental,Telmisartan plus Hydrochlorothiazide,3025691,telmisartan/hydrochlorothiazide,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT02177435,TRUE,2990997,Experimental,Telmisartan plus Hydrochlorothiazide,3025692,placebo,placebo,NA,NA,NA,NA
+NCT02177435,TRUE,2990998,Experimental,Telmisartan,3025690,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02177435,TRUE,2990998,Experimental,Telmisartan,3025692,placebo,placebo,NA,NA,NA,NA
+NCT02177461,TRUE,2990991,Experimental,Telmisartan,3025679,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02177461,TRUE,2990992,Active Comparator,Enalapril,3025680,enalapril,enalapril,NA,NA,NA,NA
+NCT02177461,TRUE,2990993,Experimental,Telmisartan + clonidine TTS1,3025679,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02177461,TRUE,2990993,Experimental,Telmisartan + clonidine TTS1,3025681,clonidine,clonidine,NA,NA,NA,NA
+NCT02177461,TRUE,2990994,Active Comparator,Enalapril + clonidine TTS1,3025680,enalapril,enalapril,NA,NA,NA,NA
+NCT02177461,TRUE,2990994,Active Comparator,Enalapril + clonidine TTS1,3025681,clonidine,clonidine,NA,NA,NA,NA
+NCT02177500,TRUE,2990986,Experimental,Telmisartan + hydrochlorothiazide and matching placebo,3025674,telmisartan + hydrochlorothiazide,telmisartan,hydrochlorothiazide,NA,NA,NA
+NCT02177500,TRUE,2990986,Experimental,Telmisartan + hydrochlorothiazide and matching placebo,3025676,placebo,placebo,NA,NA,NA,NA
+NCT02177500,TRUE,2990987,Experimental,Telmisartan and matching placebo,3025675,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02177500,TRUE,2990987,Experimental,Telmisartan and matching placebo,3025676,placebo,placebo,NA,NA,NA,NA
+NCT02183701,FALSE,2990038,Experimental,Telmisartan,3024766,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02183701,FALSE,2990038,Experimental,Telmisartan,3024768,placebo,placebo,NA,NA,NA,NA
+NCT02183701,FALSE,2990039,Active Comparator,Losartan + Hydrochlorothiazide,3024767,losartan + hydrochlorothiazide,losartan,hydrochlorothiazide,NA,NA,NA
+NCT02183701,FALSE,2990039,Active Comparator,Losartan + Hydrochlorothiazide,3024768,placebo,placebo,NA,NA,NA,NA
+NCT02200640,FALSE,2987481,Experimental,Low dose of MicardisÂ®,3022540,"low dose of micardisâ®, once daily",telmisartan,not a drug,NA,NA,NA
+NCT02200640,FALSE,2987481,Experimental,Low dose of MicardisÂ®,3022543,placebo,placebo,NA,NA,NA,NA
+NCT02200640,FALSE,2987482,Experimental,High dose of MicardisÂ®,3022539,"high dose of micardisâ®, once daily",telmisartan,not a drug,NA,NA,NA
+NCT02200640,FALSE,2987482,Experimental,High dose of MicardisÂ®,3022543,placebo,placebo,NA,NA,NA,NA
+NCT02200640,FALSE,2987483,Active Comparator,Low dose of COZAARÂ®,3022541,"low dose of cozaarâ®, once daily",losartan,not a drug,NA,NA,NA
+NCT02200640,FALSE,2987483,Active Comparator,Low dose of COZAARÂ®,3022543,placebo,placebo,NA,NA,NA,NA
+NCT02200640,FALSE,2987484,Active Comparator,High dose of COZAARÂ®,3022542,"high dose of cozaarâ®, once daily",losartan,not a drug,NA,NA,NA
+NCT02200640,FALSE,2987484,Active Comparator,High dose of COZAARÂ®,3022543,placebo,placebo,NA,NA,NA,NA
+NCT02200653,FALSE,2987477,Experimental,Low dose of MICARDISÂ®,3022535,"low dose of micardisâ®, once daily",telmisartan,not a drug,NA,NA,NA
+NCT02200653,FALSE,2987477,Experimental,Low dose of MICARDISÂ®,3022538,placebo,placebo,NA,NA,NA,NA
+NCT02200653,FALSE,2987478,Experimental,High dose of MICARDISÂ®,3022534,"high dose of micardisâ®, once daily",telmisartan,not a drug,NA,NA,NA
+NCT02200653,FALSE,2987478,Experimental,High dose of MICARDISÂ®,3022538,placebo,placebo,NA,NA,NA,NA
+NCT02200653,FALSE,2987479,Active Comparator,Low dose of COZAARÂ® / LORZAARÂ®,3022536,"low dose of cozaarâ® / lorzaarâ®, once daily",losartan,hydrochlorothiazide,not a drug,NA,NA
+NCT02200653,FALSE,2987479,Active Comparator,Low dose of COZAARÂ® / LORZAARÂ®,3022538,placebo,placebo,NA,NA,NA,NA
+NCT02200653,FALSE,2987480,Active Comparator,High dose of COZAARÂ® / LORZAARÂ®,3022537,"high dose of cozaarâ® / lorzaarâ®, once daily",losartan,hydrochlorothiazide,not a drug,NA,NA
+NCT02200653,FALSE,2987480,Active Comparator,High dose of COZAARÂ® / LORZAARÂ®,3022538,placebo,placebo,NA,NA,NA,NA
+NCT02242318,FALSE,2981230,Experimental,Telmisartan,3016899,telmisartan,telmisartan,NA,NA,NA,NA
+NCT02242318,FALSE,2981230,Experimental,Telmisartan,3016901,placebo,placebo,NA,NA,NA,NA
+NCT02242318,FALSE,2981231,Active Comparator,Valsartan,3016900,valsartan,valsartan,NA,NA,NA,NA
+NCT02242318,FALSE,2981231,Active Comparator,Valsartan,3016901,placebo,placebo,NA,NA,NA,NA
+NCT02242318,FALSE,2981232,Placebo Comparator,Placebo,3016901,placebo,placebo,NA,NA,NA,NA
+NCT02269176,FALSE,2977080,Experimental,Telmisartan,3013069,low dose of telmisartan,telmisartan,NA,NA,NA,NA
+NCT02269176,FALSE,2977080,Experimental,Telmisartan,3013070,high dose of telmisartan,telmisartan,NA,NA,NA,NA
+NCT02269176,FALSE,2977081,Active Comparator,Losartan,3013071,low dose of losartan,losartan,NA,NA,NA,NA
+NCT02269176,FALSE,2977081,Active Comparator,Losartan,3013072,high dose of losartan,losartan,NA,NA,NA,NA
+NCT02495324,FALSE,2943667,Experimental,Fimasartan,2982120,placebo,placebo,NA,NA,NA,NA
+NCT02495324,FALSE,2943667,Experimental,Fimasartan,2982121,fimasartan,fimasartan,NA,NA,NA,NA
+NCT02495324,FALSE,2943668,Active Comparator,Valsartan,2982120,placebo,placebo,NA,NA,NA,NA
+NCT02495324,FALSE,2943668,Active Comparator,Valsartan,2982122,valsartan,valsartan,NA,NA,NA,NA
+NCT02495324,FALSE,2943669,Other,Olmesartan medoxomil,2982120,placebo,placebo,NA,NA,NA,NA
+NCT02495324,FALSE,2943669,Other,Olmesartan medoxomil,2982123,olmesartan medoxomil,olmesartan,NA,NA,NA,NA
+NCT02738632,FALSE,2907383,Experimental,Telmisartan/Amlodipine+Hydrochlorothiazide,2948123,telmisartan/amlodipine+hydrochlorothiazide,telmisartan,amlodipine,hydrochlorothiazide,NA,NA
+NCT02738632,FALSE,2907384,Active Comparator,Telmisartan/Amlodipine,2948124,telmisartan/amlodipine,telmisartan,amlodipine,NA,NA,NA
+NCT02738632,FALSE,2907384,Active Comparator,Telmisartan/Amlodipine,2948125,placebo for hydrochlorothiazide,placebo,NA,NA,NA,NA

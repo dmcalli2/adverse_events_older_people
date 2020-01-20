@@ -1,0 +1,31 @@
+condition,index_condition
+Alzheimer's Disease,Alzheimer's Disease
+Alzheimer's Disease,Dementia (any)
+"Arthroplasty, Replacement, Hip",Hip arthroplasty
+"Arthroplasty, Replacement, Knee",Knee arthroplasty
+Asthma,Asthma
+Atrial Fibrillation,Atrial Fibrillation
+Axial Spondyloarthritis,Axial Spondyloarthritis
+Benign Prostatic Hyperplasia,Benign Prostatic Hyperplasia
+Chronic Idiopathic Urticaria (CIU),
+"Diabetes Mellitus, Type 2","Diabetes Mellitus, Type 2"
+"Erectile Dysfunction, Benign Prostatic Hyperplasia",Erectile dysfunction
+Hypertension,Hypertension
+"Hypertension, Pulmonary","Hypertension, Pulmonary"
+Inflammatory bowel disease,Inflammatory bowel disease
+Migraine,Migraine
+Osteoarthritis,Osteoarthritis
+Osteoporosis,Osteoporosis
+Parkinson Disease,Parkinson's disease (all)
+Parkinson Disease,Parkinson's disease (excluding secondary)
+Psoriasis,Psoriasis
+Psoriatic arthritis,Psoriatic arthropathy
+"Pulmonary Disease, Chronic Obstructive","Pulmonary Disease, Chronic Obstructive"
+Pulmonary Fibrosis,Pulmonary fibrosis
+Restless Legs Syndrome,Restless legs syndrome
+rheumatoid arthritis,Rheumatoid arthritis
+Solid tumor,
+Systemic Lupus Erythematosus,Systemic Lupus Erythematosus
+Thromboembolism,Thromboembolism
+,Epilepsy
+,Myocardial infarction
