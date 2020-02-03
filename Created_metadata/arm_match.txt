@@ -1,0 +1,54 @@
+nct_id	arm_name_sae	arm_name_base	arm_name_base_new	comment
+NCT00170989	Double blind phase: Valsartan 320mg		Valsartan 320mg	one to one
+NCT00170989	Double blind phase: Valsartan/HCTZ 320/12.5mg		Val/HCTZ 320/12.5mg	one to one
+NCT00170989	Double blind phase: Valsartan/HCTZ 320/25mg		Val/HCTZ 320/25mg	one to one
+NCT00170989	Single blind phase: Valsartan 320mg			exclude
+NCT00219037	Aliskiren 150mg	Aliskiren 150mg		as is
+NCT00219037	Aliskiren 300mg	Aliskiren 300mg		as is
+NCT00219037	Aliskiren/Hydrochlorothiazide 300/12.5mg		Combo therapy	"collapse ae to ""Combo therapy"""
+NCT00219037	Aliskiren/Hydrochlorothiazide 300/25mg		Combo therapy	collapse ae to base
+NCT00220233	Olmesartan/Amlodipine 40/10mg	Olmesartan/Amlodipine 40/10mg		sum to total and sum base to total
+NCT00220233	Olmesartan/Amlodipine 40/5mg			sum to total and sum base to total
+NCT00240448	Total			"this is total, sum base to total"
+NCT00400777	valsartan/HCTZ 160/12.5mg			"sum to total, base is total"
+NCT00400777	valsartan/HCTZ 160/12.5mg + amlodipine 10mg			"sum to total, base is total"
+NCT00400777	valsartan/HCTZ 160/12.5mg + amlodipine 5mg			"sum to total, base is total"
+NCT00400777	valsartan/HCTZ 160/25mg + amlodipine 5mg			"sum to total, base is total"
+NCT00409760	Amlodipine 2.5mg	Amlodipine 2.5mg		"ignore, is composite and have matching components"
+NCT00409760	Amlodipine 5mg	Amlodipine 5mg		"ignore, is composite and have matching components"
+NCT00409760	Placebo	Placebo		"ignore, is composite and have matching components"
+NCT00409760	Total amlodipine monotherapy			"ignore, is composite and have matching components"
+NCT00409760	Total Placebo			"ignore, is composite and have matching components"
+NCT00409760	Total valsartan monotherapy			"ignore, is composite and have matching components"
+NCT00409760	Total valsartan/amlodipine combinations			"ignore, is composite and have matching components"
+NCT00409760	Valsartan 160mg	Valsartan 160mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan 320mg	Valsartan 320mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan 40mg	Valsartan 40mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan 80mg	Valsartan 80mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 160/2.5mg	Valsartan/Amlodipine 160/2.5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 160/5mg	Valsartan/Amlodipine 160/5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 320/2.5mg	Valsartan/Amlodipine 320/2.5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 320/5mg	Valsartan/Amlodipine 320/5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 40/2.5mg	Valsartan/Amlodipine 40/2.5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 40/5mg	Valsartan/Amlodipine 40/5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 80/2.5mg	Valsartan/Amlodipine 80/2.5mg		"ignore, is composite and have matching components"
+NCT00409760	Valsartan/Amlodipine 80/5mg	Valsartan/Amlodipine 80/5mg		"ignore, is composite and have matching components"
+NCT01071122	"nifedipine (adalat, baya1040) 30mg"		"nifedipine (adalat, baya1040) 30mg"	"one to one, typo"
+NCT01071122	"nifedipine (adalat, baya1040) 60mg"	"nifedipine (adalat, baya1040) 60mg"		
+NCT01071122	"nifedipine (adalat, baya1040) and valsartan"	"nifedipine (adalat, baya1040) and valsartan"		
+NCT01071122	"nifedipine (adalat, baya1040) and valsartan"	"nifedipine (adalat, baya1040) and valsartan"		
+NCT01071122	valsartan 80mg	valsartan 80mg		
+NCT01071122	valsartanÂ 160mg		valsartan 160mg	"one to one, typo"
+NCT01928628	Lercanidipine 10mg	Lercanidipine 10mg		
+NCT01928628	Lercanidipine 10mg /Valsartan 160mg	Lercanidipine 10mg /Valsartan 160mg		
+NCT01928628	Lercanidipine 10mg /Valsartan 80mg	Lercanidipine 10mg /Valsartan 80mg		
+NCT01928628	Lercanidipine 20mg /Valsartan 160mg			exclude
+NCT02177409	Total			"this is total, sum base to total"
+NCT02200653	Losartan 50mg	Losartan 50mg		
+NCT02200653	Telmisartan 40mg	Telmisartan 40mg		
+NCT02200653	Telmisartan 80mg	Telmisartan 80mg		
+NCT02200653	Total			"ignore, is composite and have matching components"
+NCT02242318	Telmisartan	Telmisartan		
+NCT02242318	Valsartan 160mg		Valsartan	one to one
+NCT02269176	Losartan			"sum to total, base is total"
+NCT02269176	Telmisartan			"sum to total, base is total"

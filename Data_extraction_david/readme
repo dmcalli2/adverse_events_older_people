@@ -30,7 +30,7 @@ col     name  description
 1      nct_id Trial ID
 2     measure primary outcome measure
 3 description primary outcome description
-4   surrogate *** If the outcome is solely surrogate then code this as TRUE. If there are any hard outcomes code this as FALSE.
+4   surrogate *** If the outcome is solely surrogate then code this as surrogate otherwise code as hard ** next will aggreagte this in R so assign as hard if any hard primary outcome/
 
 
 "03_age_sex_criteria.csv"

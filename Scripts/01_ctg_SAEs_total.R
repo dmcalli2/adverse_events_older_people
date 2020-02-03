@@ -278,15 +278,15 @@ drug_elig <- elig %>%
   inner_join(drug_elig)
 drug_elig %>% distinct(criteria_sentences, drug_class, inclusion_exclusion, negated) %>% write_csv("temp.csv")
 
-## write files
-write_csv(trials_over, "Data_extraction/01_trials_overview.csv")
-write_csv(primary, "Data_extraction/02_primary_outcomes.csv")
-write_csv(elig, "Data_extraction/03_age_sex_criteria.csv")
-write_csv(trial_comparison_wide, "Data_extraction/04_drug_comparisons.csv")
-write_csv(baseline, "Data_extraction/05_baseline_results.csv")
-write_csv(sae, "Data_extraction/06_ae_sae_results.csv")
-write_csv(sae_time_frame, "Data_extraction/07_ae_sae_results_time_frame.csv")
-write_csv(text_info, "Data_extraction/08_text_summaries.csv")
+# ## write files
+# write_csv(trials_over, "Data_extraction/01_trials_overview.csv")
+# write_csv(primary, "Data_extraction/02_primary_outcomes.csv")
+# write_csv(elig, "Data_extraction/03_age_sex_criteria.csv")
+# write_csv(trial_comparison_wide, "Data_extraction/04_drug_comparisons.csv")
+# write_csv(baseline, "Data_extraction/05_baseline_results.csv")
+# write_csv(sae, "Data_extraction/06_ae_sae_results.csv")
+# write_csv(sae_time_frame, "Data_extraction/07_ae_sae_results_time_frame.csv")
+# write_csv(text_info, "Data_extraction/08_text_summaries.csv")
 
 
 ## Connect to CTG

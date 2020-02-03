@@ -150,7 +150,7 @@ write_csv(ae_no_mtch, "clipboard")
 ## reviewed do for each trial
 mtch_rvd <- read_tsv("Created_metadata/arm_match.txt")
 mtch_rvd %>% distinct(nct_id)
-mtch_rvd %>% filter(nct_id == "NCT02200653")
+mtch_rvd %>% filter(nct_id == "NCT02269176")
 ## 
 NCT00170989 <- ae_sae %>% 
   filter(nct_id == "NCT00170989") %>% 
@@ -196,7 +196,6 @@ NCT00400777b <- all_base %>%
   rename(arm_name_sae = arm_name_base)
 NCT00400777 <- NCT00400777 %>% 
   inner_join(NCT00400777b)
-rm(list = ls(patt = "^NCT"))
 
 NCT00409760 <- ae_sae %>% 
   filter(nct_id == "NCT00409760") %>% 
@@ -247,3 +246,27 @@ NCT02242318 <- ae_sae %>%
   filter(nct_id == "NCT02242318") %>% 
   mutate(arm_name_sae = if_else(arm_name_sae == "Valsartan 160mg", "Valsartan", arm_name_sae)) %>% 
   inner_join(all_base %>% rename(arm_name_sae = arm_name_base)) 
+
+NCT02269176 <- ae_sae %>% 
+  filter(nct_id == "NCT02269176") %>% 
+  mutate(arm_name_sae = "Total") %>% 
+  group_by(nct_id, arm_name_sae) %>% 
+  summarise_all(sum) %>% 
+  ungroup() %>% 
+  inner_join(all_base %>% rename(arm_name_sae = arm_name_base)) 
+
+no_match_resolve <- bind_rows(NCT00170989, NCT00219037, NCT00220233, NCT00240448, 
+                              NCT00400777, NCT00409760, NCT01928628, NCT02177409, 
+                              NCT02200653, NCT02242318, NCT02269176)
+setdiff(ae_no_mtch$nct_id, no_match_resolve$nct_id)
+setdiff(no_match_resolve$nct_id, ae_no_mtch$nct_id)
+
+ae_sae_all <- bind_rows(ae_sae_mtch %>% filter(!is.na(arm_name_base)) %>% rename(arm_name = arm_name_sae) %>% select(-arm_name_base),
+                        no_match_resolve  %>% rename(arm_name = arm_name_sae))
+
+## Next step need to calcualte total for events, (ns and %s)
+saveRDS(ae_sae_all, "Scratch_data/cleaned_guy_neave_combined.Rds")
+
+rm(list = ls())
+
+

@@ -6,11 +6,11 @@ library(here)
 setwd(here())
 
 
-ls_shts <- excel_sheets("Data/sae_extraction_20200120.xlsx")
+ls_shts <- excel_sheets("Data/sae_extraction_20200131.xlsx")
 
 ls_shts <- ls_shts[-1]
 names(ls_shts) <- ls_shts
-shts <- map(ls_shts, ~ read_excel(path = "Data/sae_extraction_20200120.xlsx", sheet = .x)) 
+shts <- map(ls_shts, ~ read_excel(path = "Data/sae_extraction_20200131.xlsx", sheet = .x)) 
 
 ## rename "comment" columns so differs across sheets
 shts <- map2(shts, names(shts), ~ .x %>% set_names(str_replace_all(names(.x), "comment", 
@@ -181,7 +181,8 @@ rslts_prcnt %>%
 
 rslts_prcnt <- rslts_prcnt %>% 
   inner_join(bline_main) %>% 
-  mutate(value = as.double(value),
+  mutate(
+         value = as.double(value),
          value = value * n_participants/100,
          measure_type = "n")
 
