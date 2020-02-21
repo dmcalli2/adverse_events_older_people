@@ -1,0 +1,346 @@
+nct_id	tru	inclusion_exclusion	negated	criteria_sentences	essential_secondary
+NCT00110422	FALSE	Inclusion	NA	subjects must be willing and able to provide written informed consent	unrecorded
+NCT00110422	TRUE	Inclusion	FALSE	subjects must read ; sign ; and receive a copy of the informed consent prior to any study procedures ; including withdrawal of any antihypertensive medication .	
+NCT00110422	TRUE	Inclusion	FALSE	males and females > = 18 years of age .	
+NCT00110422	TRUE	Inclusion	FALSE	uncontrolled hypertension defined as an average systolic blood pressure > = 140 mmhg or an average diastolic blood pressure > = 90 mmhg	
+NCT00110422	TRUE	Inclusion	FALSE	this applies to both people not taking any blood pressure medications and people taking just one blood pressure medication .	
+NCT00110422	TRUE	Inclusion	TRUE	this applies to both people not taking any blood pressure medications and people taking just one blood pressure medication .	
+NCT00110422	TRUE	Inclusion	NA	presenting at least 2 of the following :	
+NCT00110422	TRUE	Inclusion	FALSE	obesity ;	
+NCT00110422	TRUE	Inclusion	FALSE	high triglycerides ;	
+NCT00110422	TRUE	Inclusion	FALSE	low hdl cholesterol ;	
+NCT00110422	TRUE	Inclusion	FALSE	elevated fasting glucose .	
+NCT00110422	TRUE	Exclusion	FALSE	women of child bearing potential who are not using adequate birth control .	
+NCT00110422	TRUE	Exclusion	TRUE	women of child bearing potential who are not using adequate birth control .	
+NCT00110422	TRUE	Exclusion	FALSE	women who are pregnant or breastfeeding	
+NCT00110422	TRUE	Exclusion	NA	diabetics	
+NCT00110422	TRUE	Exclusion	FALSE	systolic blood pressure > = 180 mmhg .	
+NCT00110422	TRUE	Exclusion	FALSE	diastolic blood pressure > = 110 mmhg .	
+NCT00110422	TRUE	Exclusion	NA	stroke within past 12 months .	
+NCT00110422	TRUE	Exclusion	FALSE	myocardial infarction and heart revascularization procedure or acute angina within past 6 months .	
+NCT00110422	TRUE	Exclusion	FALSE	moderate to severe heart failure .	
+NCT00110422	TRUE	Exclusion	FALSE	significant kidney or liver disease .	
+NCT00110422	TRUE	Exclusion	FALSE	cancer in past 5 years .	
+NCT00110422	TRUE	Exclusion	FALSE	drug or alcohol abuse .	
+NCT00110422	TRUE	Exclusion	FALSE	gout	
+NCT00110422	TRUE	Exclusion	FALSE	lupus	
+NCT00151827	FALSE	Inclusion	FALSE	mean sitting bp prior to randomization of 140 - 180 / 90 - 109 mmhg ;	unrecorded
+NCT00151827	TRUE	Inclusion	FALSE	renal impairment prior to randomization of mild ( 50 < = clcr > = 80 ml / min ) to moderate ( 30 < = clcr > = 50 ml / min ) severity	
+NCT00151827	TRUE	Exclusion	FALSE	malignant hypertension or sitting bp greater than 180 / 109 mmhg ;	
+NCT00151827	TRUE	Exclusion	FALSE	severe heart failure ; severe renal disease ;	
+NCT00151827	TRUE	Exclusion	FALSE	recent history of myocardial infarction ; stroke or transient ischemic attack ;	
+NCT00151827	TRUE	Exclusion	FALSE	history ; clinical evidence or current evidence of any significant gastrointestinal ; respiratory ; hematological ; metabolic ; immunological or any other underlying disease which in the opinion of the investigator would interfere with the patient participation in the trial ;	
+NCT00151827	TRUE	Exclusion	FALSE	hypersensitivity or contraindications to arbs or ace inhibitors or any cross allergy ;	
+NCT00151827	TRUE	Exclusion	FALSE	treatment with dis-allowed medication ;	
+NCT00151827	TRUE	Exclusion	FALSE	pregnant females or breastfeeding females or females of childbearing potential without adequate contraception ;	
+NCT00151827	TRUE	Exclusion	TRUE	pregnant females or breastfeeding females or females of childbearing potential without adequate contraception ;	
+NCT00151827	TRUE	Exclusion	FALSE	history of drug or alcohol abuse	
+NCT00153023	FALSE	Inclusion	FALSE	type 2 diabetes mellitus	unrecorded
+NCT00153023	TRUE	Inclusion	FALSE	aged 30 - 70 years of age	
+NCT00153023	TRUE	Inclusion	FALSE	hypertension at screening defined as :	
+NCT00153023	TRUE	Inclusion	FALSE	an average cuff systolic blood pressure > 130 mmhg or diastolic blood pressure > 80 mmhg in untreated patients or	
+NCT00153023	TRUE	Inclusion	FALSE	patients receiving antihypertensive therapy ( ie ; medications specifically prescribed to treat hypertension )	
+NCT00153023	TRUE	Inclusion	FALSE	overt nephropathy defined by 24 hour proteinuria > = 900 mg and by serum creatinine below 265 mol / l ( 3.00 mg / dl )	
+NCT00170924	FALSE	Inclusion	FALSE	diagnosis / history of high blood pressure	
+NCT00170924	TRUE	Inclusion	FALSE	male or female age 45 years or older	
+NCT00170924	TRUE	Exclusion	FALSE	history of stroke ; transient ischemic attack or heart attack within the last 6 months	
+NCT00170924	TRUE	Exclusion	FALSE	a hospital admission for congestive heart failure within the last year	
+NCT00170924	TRUE	Exclusion	FALSE	use of certain high blood pressure medications such as ace inhibitors ; angiotensin receptor blockers or aldosterone antagonists or other agents that may work in the same pathway ( raas ) as valsartan within the past 3 months .	
+NCT00170924	TRUE	Exclusion	FALSE	other protocol-defined may apply	
+NCT00170989	FALSE	Inclusion	FALSE	patients with mild to moderate hypertension	unrecorded
+NCT00170989	TRUE	Exclusion	FALSE	severe hypertension	
+NCT00170989	TRUE	Exclusion	FALSE	history of stroke ; myocardial infarction ; heart failure ; chest pain ; abnormal heart rhythm	
+NCT00170989	TRUE	Exclusion	FALSE	liver ; kidney ; or pancreas disease	
+NCT00170989	TRUE	Exclusion	FALSE	insulin dependent diabetes	
+NCT00170989	TRUE	Exclusion	FALSE	allergy to certain medications used to treat high blood pressure	
+NCT00170989	TRUE	Exclusion	FALSE	other protocol-defined may apply	
+NCT00185133	FALSE	Inclusion	FALSE	male or female patients	unrecorded
+NCT00185133	TRUE	Inclusion	FALSE	18 years of age or older ( 20 % equal to or older than 65 years )	
+NCT00185133	TRUE	Inclusion	FALSE	with mild to severe hypertension defined as seated diastolic blood pressure of 95 - 120 mmhg while off any hypertensive medication	
+NCT00185133	TRUE	Exclusion	TRUE	patients should not have serious concomitant conditions that could interfere with the analysis of the results or that could interfere with the well-being of the patients	
+NCT00185133	TRUE	Exclusion	FALSE	patients should not have serious concomitant conditions that could interfere with the analysis of the results or that could interfere with the well-being of the patients	
+NCT00190580	FALSE	Inclusion	FALSE	ckd with serum creatinine more than 2.0 mg / dl	unrecorded
+NCT00190580	TRUE	Inclusion	FALSE	blood pressure more than 130 / 85 mmhg	
+NCT00190580	TRUE	Inclusion	NA	20 years old or above	
+NCT00190580	TRUE	Exclusion	FALSE	end-stage renal disease with maintenance dialysis	
+NCT00190580	TRUE	Exclusion	FALSE	polycystic kidney disease	
+NCT00190580	TRUE	Exclusion	FALSE	collagen disease	
+NCT00190580	TRUE	Exclusion	FALSE	malignant or accelerated hypertension	
+NCT00273299	FALSE	Inclusion	FALSE	diagnosed severe hypertension	unrecorded
+NCT00273299	TRUE	Exclusion	FALSE	inability to discontinue all prior antihypertensive medications	
+NCT00273299	TRUE	Exclusion	FALSE	heart failure of any kind	
+NCT00273299	TRUE	Exclusion	FALSE	history of stroke ; transient ischemic attack ; myocardial infarction ; chest pain ; abnormal heart rhythm liver ; kidney ; or pancreas disease	
+NCT00273299	TRUE	Exclusion	FALSE	diabetes with poor glucose control	
+NCT00273299	TRUE	Exclusion	FALSE	allergy to certain medications used to treat high blood pressure	
+NCT00273299	TRUE	Exclusion	FALSE	other protocol-defined may apply	
+NCT00277472	FALSE	Inclusion	FALSE	male or female 18 years of age and older	unrecorded
+NCT00277472	TRUE	Inclusion	FALSE	diagnosed as having hypertension ( mean seated systolic blood pressure > = 150 mm hg but < 180 mm hg and mean seated diastolic blood pressure > = 95 mm hg and < 110 mm hg	
+NCT00277472	TRUE	Exclusion	FALSE	patients with sever hypertension : systolic > = 180 mm hg or diastolic > = 110 mm hg	
+NCT00277472	TRUE	Exclusion	FALSE	diabetes with fasting glucose > 126 mg / dl or on existing anti-diabetic medication	
+NCT00277472	TRUE	Exclusion	FALSE	history of stroke ; transient ischemic attack ; or myocardial infarction within the last 6 months ; or diagnosed with congestive heart failure .	
+NCT00277472	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00296218	FALSE	Inclusion	FALSE	the following information on clinical trials is provided for information purposes only to allow patients and physicians to have an initial discussion about the trial	unrecorded
+NCT00296218	TRUE	Inclusion	TRUE	this information is not intended to be complete information about the trial ; to contain all considerations that may be relevant to potential participation in the trial ; or to replace the advice of a personal physician or health professional .	
+NCT00296218	TRUE	Inclusion	FALSE	this information is not intended to be complete information about the trial ; to contain all considerations that may be relevant to potential participation in the trial ; or to replace the advice of a personal physician or health professional .	
+NCT00296218	TRUE	Inclusion	NA	main criteria are listed hereafter :	
+NCT00296218	TRUE	Inclusion	FALSE	patient hospitalised with ischemic symptoms ( last episode within the last 48 hours before randomization ) and at least one of the following characteristics of nsteacs ( non-st-segment-elevation acute coronary syndromes ) :	
+NCT00296218	TRUE	Inclusion	FALSE	ecg st or t changes ( st depression or transient elevation of at least 1 mm or t wave changes in at least 2 leads )	
+NCT00296218	TRUE	Inclusion	FALSE	positive troponin ( according to local threshold )	
+NCT00296218	TRUE	Exclusion	FALSE	women of child bearing potential who are unwilling or unable to use an acceptable method to avoid pregnancy for the entire study period and for up to 4 weeks after the study wocbp using a prohibited contraceptive method ( not applicable )	
+NCT00296218	TRUE	Exclusion	FALSE	women who are pregnant or breast feeding	
+NCT00296218	TRUE	Exclusion	FALSE	women with a positive pregnancy test on enrolment or prior to study drug administration	
+NCT00296218	TRUE	Exclusion	FALSE	patient with dementia	
+NCT00296218	TRUE	Exclusion	FALSE	persistent st segment elevation at ecg	
+NCT00296218	TRUE	Exclusion	FALSE	systolic blood pressure < 100 mmhg	
+NCT00296218	TRUE	Exclusion	FALSE	bilateral stenosis of renal artery	
+NCT00296218	TRUE	Exclusion	FALSE	creatinine clearance < or = 30 ml / mn	
+NCT00296218	TRUE	Exclusion	FALSE	congestive heart failure with symptoms consistent with new york heart association ( nyha ) class iii or class iv .	
+NCT00296218	TRUE	Exclusion	FALSE	aortic valve stenosis or mitral valve stenosis	
+NCT00296218	TRUE	Exclusion	FALSE	hypertrophic cardiomyopathy	
+NCT00296218	TRUE	Exclusion	FALSE	connective tissue disease with vascular involvement	
+NCT00296218	TRUE	Exclusion	FALSE	angioplasty ; surgery or trauma within the last 3 months	
+NCT00296218	TRUE	Exclusion	FALSE	coronarography or angioplasty planned to be performed or performed before baseline sampling	
+NCT00296218	TRUE	Exclusion	FALSE	febrile ( > = 38 c ) disease ; known concomitant viral infection or bacterial infection ; chronic auto immune disease ; chronic inflammatory disease ; known cancer in evolution	
+NCT00296218	TRUE	Exclusion	FALSE	hyperkalemia : serum potassium > 5.5 mmol / l	
+NCT00296218	TRUE	Exclusion	FALSE	sensitivity or intolerance to angiotensin receptor blockers ( arbs ) : olmesartan ; candesartan ; irbesartan ; eprosartan ; losartan ; telmisartan ; valsartan or any other arb currently or previously in development .	
+NCT00296218	TRUE	Exclusion	FALSE	sensitivity or intolerance to angiotensin-converting enzyme inhibitors ( ace : benazepril ; captopril ; enalapril ; lisinopril ; trandolapril ; ramipril ; quinapril ; or any other ace-i currently or previously in development .	
+NCT00296218	TRUE	Exclusion	FALSE	chronic steroid or non-steroidal anti inflammatory drugs ( nsaids ) use	
+NCT00296218	TRUE	Exclusion	FALSE	aspirin is permitted .	
+NCT00296218	TRUE	Exclusion	FALSE	treatment with allopurinol or proca namide	
+NCT00296218	TRUE	Exclusion	FALSE	concomitant use of potassium sparing diuretics ( eg ; spironolactone ; triamterene or amiloride ) ; potassium preparations or salt substitutes containing potassium	
+NCT00296218	TRUE	Exclusion	FALSE	treatment with lithium	
+NCT00296218	TRUE	Exclusion	NA	immunosupressive medication	
+NCT00296218	TRUE	Exclusion	FALSE	administration of any other investigational drug in the last 30 days before enrolment and during the course of the study	
+NCT00296218	TRUE	Exclusion	FALSE	treatment with arb or ace inhibitor within the last 3 days	
+NCT00343551	FALSE	Inclusion	FALSE	outpatients 18 years of age and older .	unrecorded
+NCT00343551	TRUE	Inclusion	FALSE	at visit 2 : office mean sitting diastolic blood pressure > = 90 mmhg and < 110 mmhg at visit 3 : office mean sitting diastolic blood pressure > = 95 mmhg and < 110 mmhg before application of ambulatory blood pressure measurement device at visit 3 : 24 - hr mean ambulatory diastolic blood pressure > = 85 mmhg	
+NCT00343551	TRUE	Inclusion	FALSE	patient must have an absolute difference of < = 10 mmhg in their office mean sitting diastolic blood pressure between visit 2 and 3 .	
+NCT00343551	TRUE	Inclusion	FALSE	male or female patients are eligible	
+NCT00343551	TRUE	Inclusion	FALSE	female patients must be either post-menopausal for at least one year ; surgically sterile or using effective contraceptive methods such as oral contraceptives ; barrier method with spermicide or an intrauterine device	
+NCT00343551	TRUE	Inclusion	FALSE	reliable contraception should be maintained throughout the study and for 7 days after study drug discontinuation .	
+NCT00343551	TRUE	Inclusion	FALSE	patients who are eligible and able to participate in the study ; and who consent to do so after the purpose and nature of the investigation has been clearly explained to them ( written informed consent ) .	
+NCT00343551	TRUE	Exclusion	FALSE	severe hypertension [ office mean sitting diastolic blood pressure > = 110 mmhg or office mean sitting systolic blood pressure ( mssbp ) > = 180 mmhg ] .	
+NCT00343551	TRUE	Exclusion	FALSE	current diagnosis of heart failure ( nyha class ii- .	
+NCT00343551	TRUE	Exclusion	FALSE	history of myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention ( pci ) during the 12 months prior to visit 1 .	
+NCT00343551	TRUE	Exclusion	FALSE	known or suspected contraindications to the study medications ; including history of allergy to ace-inhibitors or arbs .	
+NCT00343551	TRUE	Exclusion	FALSE	upper arm circumference > 42 cm .	
+NCT00343551	TRUE	Exclusion	FALSE	third shift or night workers .	
+NCT00343551	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00343551	TRUE	Inclusion	FALSE	patients must meet following blood pressure criteria :	
+NCT00350168	FALSE	Inclusion	NA	18 years of age or older .	unrecorded
+NCT00350168	TRUE	Inclusion	FALSE	moderate to severe high blood pressure	
+NCT00350168	TRUE	Inclusion	FALSE	this is defined as a systolic pressure ( the top number ) greater than or equal to 160 mmhg and less than 200 mmhg .	
+NCT00350168	TRUE	Exclusion	FALSE	history of allergy or hypersensitivity to arbs ; ccbs ; thiazide diuretics	
+NCT00350168	TRUE	Exclusion	FALSE	inability to stop all prior blood pressure medications safely	
+NCT00350168	TRUE	Exclusion	FALSE	systolic bp > = 200 mmhg or diastolic bp > = 120 mmhg	
+NCT00350168	TRUE	Exclusion	FALSE	controlled blood pressure ( systolic bp < 140 mmhg ) taking more than 3 antihypertensive medications at screening	
+NCT00350168	TRUE	Exclusion	FALSE	systolic bp > = 140 mmhg and < 180 mmhg taking more than two antihypertensive medications at screening	
+NCT00350168	TRUE	Exclusion	FALSE	systolic bp > = 180 mmhg taking more than one antihypertensive medication at screening	
+NCT00350168	TRUE	Exclusion	FALSE	history of stroke ; angioplasty ; coronary artery bypass graft surgery ; heart attack or unstable angina	
+NCT00350168	TRUE	Exclusion	FALSE	type 1 diabetes	
+NCT00350168	TRUE	Exclusion	FALSE	poorly controlled type 2 diabetes	
+NCT00350168	TRUE	Exclusion	FALSE	history of heart failure	
+NCT00350168	TRUE	Exclusion	FALSE	arrhythmia	
+NCT00350168	TRUE	Exclusion	FALSE	significant valvular heart disease	
+NCT00350168	TRUE	Exclusion	FALSE	active gout	
+NCT00350168	TRUE	Exclusion	FALSE	history of autoimmune diseases	
+NCT00350168	TRUE	Exclusion	FALSE	history of multiple drug allergies	
+NCT00350168	TRUE	Exclusion	FALSE	liver disease	
+NCT00350168	TRUE	Exclusion	FALSE	pancreatic injury within 1 year of screening	
+NCT00350168	TRUE	Exclusion	FALSE	evidence of kidney impairment or history of dialysis	
+NCT00350168	TRUE	Exclusion	FALSE	any surgical condition or medical condition which might alter the absorption ; distribution ; metabolism ; or excretion of any drug	
+NCT00350168	TRUE	Exclusion	FALSE	this could include currently active gastritis ; ulcers ; or gastrointestinal / rectal bleeding ; or urinary tract obstruction .	
+NCT00350168	TRUE	Exclusion	FALSE	women of child-bearing potential ( wocbp ) ; defined as all women physiologically capable of becoming pregnant ; would be excluded unless they are post-menopausal ; surgically sterile or are using acceptable methods of contraception	
+NCT00350168	TRUE	Exclusion	NA	the use of hormonal contraceptives is not allowed	
+NCT00350168	TRUE	Exclusion	FALSE	pregnant or nursing ( lactating ) women	
+NCT00350168	TRUE	Exclusion	FALSE	history of malignancy of any organ system within the past five years	
+NCT00350168	TRUE	Exclusion	FALSE	any severe disease ; life-threatening disease within the past five years	
+NCT00350168	TRUE	Exclusion	FALSE	history of drug or alcohol abuse within the last 2 years .	
+NCT00350168	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00353912	FALSE	Inclusion	NA	18 years of age or older .	unrecorded
+NCT00353912	TRUE	Inclusion	FALSE	moderate to severe high blood pressure	
+NCT00353912	TRUE	Inclusion	FALSE	this is defined as a systolic pressure ( the top number ) greater than or equal to 160 mmhg and less than 200 mmhg .	
+NCT00353912	TRUE	Exclusion	FALSE	history of allergy or hypersensitivity to arbs ; ccbs ; thiazide diuretics	
+NCT00353912	TRUE	Exclusion	FALSE	inability to stop all prior blood pressure medications safely	
+NCT00353912	TRUE	Exclusion	FALSE	systolic bp > = 200 mmhg or diastolic bp > = 120 mmhg	
+NCT00353912	TRUE	Exclusion	FALSE	controlled blood pressure ( systolic bp < 140 mmhg ) taking more than 3 antihypertensive medications at screening	
+NCT00353912	TRUE	Exclusion	FALSE	systolic bp > = 140 mmhg and < 180 mmhg taking more than two antihypertensive medications at screening	
+NCT00353912	TRUE	Exclusion	FALSE	systolic bp > = 180 mmhg taking more than one antihypertensive medication at screening	
+NCT00353912	TRUE	Exclusion	FALSE	history of autoimmune diseases	
+NCT00353912	TRUE	Exclusion	FALSE	history of multiple drug allergies	
+NCT00353912	TRUE	Exclusion	FALSE	liver disease	
+NCT00353912	TRUE	Exclusion	FALSE	pancreatic injury within 1 year of screening	
+NCT00353912	TRUE	Exclusion	FALSE	evidence of kidney impairment or history of dialysis	
+NCT00353912	TRUE	Exclusion	FALSE	any surgical condition or medical condition which might alter the absorption ; distribution ; metabolism ; or excretion of any drug	
+NCT00353912	TRUE	Exclusion	FALSE	this could include currently active gastritis ; ulcers ; or gastrointestinal / rectal bleeding ; or urinary tract obstruction .	
+NCT00353912	TRUE	Exclusion	FALSE	women of child-bearing potential ( wocbp ) ; defined as all women physiologically capable of becoming pregnant ; would be excluded unless they are post-menopausal ; surgically sterile or are using acceptable methods of contraception	
+NCT00353912	TRUE	Exclusion	NA	the use of hormonal contraceptives is not allowed	
+NCT00353912	TRUE	Exclusion	FALSE	pregnant or nursing ( lactating ) women	
+NCT00353912	TRUE	Exclusion	FALSE	history of malignancy of any organ system within the past five years	
+NCT00353912	TRUE	Exclusion	FALSE	any severe disease ; life-threatening disease within the past five years	
+NCT00353912	TRUE	Exclusion	FALSE	history of drug or alcohol abuse within the last 2 years .	
+NCT00353912	TRUE	Exclusion	FALSE	history of stroke ; angioplasty ; coronary artery bypass graft surgery ; heart attack or unstable angina	
+NCT00353912	TRUE	Exclusion	FALSE	type 1 diabetes	
+NCT00353912	TRUE	Exclusion	FALSE	poorly controlled type 2 diabetes	
+NCT00353912	TRUE	Exclusion	FALSE	history of heart failure	
+NCT00353912	TRUE	Exclusion	FALSE	arrhythmia	
+NCT00353912	TRUE	Exclusion	FALSE	significant valvular heart disease	
+NCT00353912	TRUE	Exclusion	FALSE	active gout	
+NCT00353912	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00386139	FALSE	Inclusion	FALSE	male or female outpatients 18 years old or older .	unrecorded
+NCT00386139	TRUE	Inclusion	FALSE	patients with a diagnosis of hypertension .	
+NCT00386139	TRUE	Inclusion	NA	patients who are eligible and consent to participate in the study	
+NCT00386139	TRUE	Exclusion	FALSE	severe hypertension	
+NCT00386139	TRUE	Exclusion	FALSE	previous diagnosis or current diagnosis of heart failure .	
+NCT00386139	TRUE	Exclusion	FALSE	history of hypertensive encephalopathy accident or cerebrovascular accident ; transient ischemic cerebral attack ( tia ) ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention ( pci ) .	
+NCT00386139	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00387517	FALSE	Inclusion	FALSE	male or female outpatients 18 years old or older .	unrecorded
+NCT00387517	TRUE	Inclusion	FALSE	patients with a diagnosis of hypertension defined as follows :	
+NCT00387517	TRUE	Inclusion	TRUE	newly diagnosed patients or patients who have not been treated for hypertension within the 4 weeks prior to visit 1 must have a msdbp > = mmhg and < 110 mmhg at visit 1 .	
+NCT00387517	TRUE	Inclusion	FALSE	all patients who have been treated for hypertension within the 4 weeks prior to visit 1 must have a msdbp > = 85 mmhg and < 110 mmhg at visit 2 .	
+NCT00387517	TRUE	Inclusion	NA	all patients must have a msdbp > = 90 mmhg and < 110 mmhg at visit 5 .	
+NCT00387517	TRUE	Inclusion	NA	patients who are eligible and consent to participate in the study	
+NCT00387517	TRUE	Exclusion	FALSE	severe hypertension ( msdbp > = 110 mmhg or mssbp > = 180 mmhg ) .	
+NCT00387517	TRUE	Exclusion	FALSE	previous diagnosis or current diagnosis of heart failure .	
+NCT00387517	TRUE	Exclusion	FALSE	history of hypertensive encephalopathy accident or cerebrovascular accident ; transient ischemic cerebral attack ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention .	
+NCT00387517	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00409851	FALSE	Inclusion	FALSE	successful completion of vaa489a2201 core trial	unrecorded
+NCT00409851	TRUE	Inclusion	FALSE	visit 7 blood pressure must be msdbp < = 95 mmhg and mssbp < = 150 mmhg	
+NCT00409851	TRUE	Exclusion	FALSE	patients who experienced any adverse events considered serious and drug related in vaa489a2201 core	
+NCT00409851	TRUE	Exclusion	FALSE	other protocol-defined may apply	
+NCT00439738	FALSE	Inclusion	NA	40 years of age or older	unrecorded
+NCT00439738	TRUE	Inclusion	FALSE	moderate high blood or severe high blood pressure defined as systolic blood pressure ( the top number ) greater than or equal to 150 mmhg and diastolic blood pressure ( the bottom number ) less then 110 mmhg	
+NCT00439738	TRUE	Inclusion	FALSE	central ( abdominal ) obesity	
+NCT00439738	TRUE	Exclusion	FALSE	systolic blood pressure ( the top number ) greater than or equal to 180 mmhg blood pressure and diastolic blood pressure ( the bottom number ) greater than or equal to 110 mmhg	
+NCT00439738	TRUE	Exclusion	FALSE	currently taking more then 3 medications to treat high blood pressure	
+NCT00439738	TRUE	Exclusion	FALSE	inability to stop all current blood pressure medications if any up to 4 weeks	
+NCT00439738	TRUE	Exclusion	FALSE	history of type 1 diabetes or type 2 diabetes	
+NCT00439738	TRUE	Exclusion	FALSE	history of stroke ; mini-stroke ( transient ischemic attack ) or heart attack within the last 6 months	
+NCT00439738	TRUE	Exclusion	FALSE	history of or current diagnosis of congestive heart failure	
+NCT00439738	TRUE	Exclusion	TRUE	history of cancer within the past 5 years with the exception of localized basal cell carcinoma or squamous cell carcinoma	
+NCT00439738	TRUE	Exclusion	FALSE	history of cancer within the past 5 years with the exception of localized basal cell carcinoma or squamous cell carcinoma	
+NCT00439738	TRUE	Exclusion	FALSE	women who are pregnant or nursing	
+NCT00439738	TRUE	Exclusion	FALSE	alcohol or drug abuse within the last 2 years	
+NCT00439738	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00538486	FALSE	Inclusion	FALSE	grade 1 or grade 2 hypertension : 140 mmhg < = sbp < 180 mmhg ; or 90 mmhg < = dbp < 110 mmhg	unrecorded
+NCT00538486	TRUE	Inclusion	FALSE	waist circumference higher than 90 cm in men ; 80 cm in women	
+NCT00538486	TRUE	Exclusion	FALSE	diabetes	
+NCT00538486	TRUE	Exclusion	FALSE	grade 3 hypertension : sbp > = 180 mmhg ; or dbp > = 110 mmhg	
+NCT00538486	TRUE	Exclusion	FALSE	known allergy or hypersensitivity to trial drugs	
+NCT00538486	TRUE	Exclusion	FALSE	myocardial infarction or cerebrovascular accident in the year preceding the trial	
+NCT00538486	TRUE	Exclusion	FALSE	clinical congestive heart failure	
+NCT00538486	TRUE	Exclusion	FALSE	history of hepatitis or cirrhosis	
+NCT00538486	TRUE	Exclusion	FALSE	history of kidney disease	
+NCT00698646	FALSE	Inclusion	FALSE	age 70 years or older .	unrecorded
+NCT00698646	TRUE	Inclusion	FALSE	patients with hypertension prior to being randomized into study .	
+NCT00698646	TRUE	Inclusion	FALSE	patients must have an office cuff mssbp > = 140 and < = 200 mmhg systolic .	
+NCT00698646	TRUE	Inclusion	FALSE	have the ability to communicate and comply with all study requirements .	
+NCT00698646	TRUE	Inclusion	NA	provide written informed consent to participate in the study prior to any screening or study procedures .	
+NCT00698646	TRUE	Exclusion	FALSE	use of other investigational drugs within 30 days of enrollment .	
+NCT00698646	TRUE	Exclusion	FALSE	history of hypersensitivity to any of the study drugs or to drugs of similar chemical classes .	
+NCT00698646	TRUE	Exclusion	FALSE	office blood pressure measured by office machine cuff with a mean of 3 msdbp > = 120 mmhg at anytime during the screening / washout period .	
+NCT00698646	TRUE	Exclusion	FALSE	patients taking 3 or more antihypertensive drugs and mssbp > = 160 mmhg at the time of visit 1 .	
+NCT00698646	TRUE	Exclusion	FALSE	other protocol-defined may apply	
+NCT00739973	FALSE	Inclusion	NA	msdbp > = 90 mmhg and < 110 mmhg at the visit prior to visit 3 ( visit 2 or optional visit 201 )	unrecorded
+NCT00739973	TRUE	Inclusion	NA	msdbp > = 95 mmhg and < 110 mmhg at visit 3 ( day 1 / randomization ) .	
+NCT00739973	TRUE	Inclusion	FALSE	all patients must have an absolute difference of < = 10 mmhg in their msdbp during the last 2 visits of the single-blind run-in period ( visit 2 and 3 or visits 201 and 3 ) .	
+NCT00739973	TRUE	Exclusion	FALSE	severe hypertension	
+NCT00739973	TRUE	Exclusion	FALSE	pregnant or nursing ( lactating ) women	
+NCT00739973	TRUE	Exclusion	FALSE	women of child-bearing potential	
+NCT00739973	TRUE	Exclusion	FALSE	previous diagnosis or current diagnosis of heart failure ( nyha class ii- .	
+NCT00739973	TRUE	Exclusion	FALSE	serum potassium > = 5.3 meq / l ( mmol / l ) at visit 1 .	
+NCT00739973	TRUE	Exclusion	FALSE	uncontrolled type 1 diabetes or type 2 diabetesmellitus	
+NCT00739973	TRUE	Exclusion	FALSE	hypersensitivity to renin inhibitors ; calcium channel blockers ; or to drugs with similar chemical structures	
+NCT00739973	TRUE	Exclusion	FALSE	history of malignancy within 5 years	
+NCT00739973	TRUE	Exclusion	FALSE	history of hypertensive encephalopathy accident or cerebrovascular accident ; or history of transient ischemic attack ( tia ) ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention	
+NCT00777946	FALSE	Inclusion	FALSE	newly diagnosed patients or patients who have not been treated for hypertension within the 4 weeks prior to visit 1 must have a mean sitting diastolic blood pressure ( msdbp ) > = 95 mmhg and < 110 mmhg at visits 1 and 2	unrecorded
+NCT00777946	TRUE	Inclusion	TRUE	newly diagnosed patients or patients who have not been treated for hypertension within the 4 weeks prior to visit 1 must have a mean sitting diastolic blood pressure ( msdbp ) > = 95 mmhg and < 110 mmhg at visits 1 and 2	
+NCT00777946	TRUE	Inclusion	FALSE	patients who have been treated for hypertension within the 4 weeks prior to visit 1 must have a msdbp > = 90 mmhg and < 110 mmhg at visit 2	
+NCT00777946	TRUE	Inclusion	NA	all patients must have a msdbp > = 90 mmhg and < 110 mmhg at visit 4	
+NCT00777946	TRUE	Exclusion	FALSE	severe hypertension	
+NCT00777946	TRUE	Exclusion	FALSE	pregnant or nursing ( lactating ) women	
+NCT00777946	TRUE	Exclusion	FALSE	women of child-bearing potential	
+NCT00777946	TRUE	Exclusion	FALSE	previous diagnosis or current diagnosis of heart failure new york heart association ( nyha class ii-	
+NCT00777946	TRUE	Exclusion	FALSE	serum potassium > = 5.3 meq / l ( mmol / l ) at visit 1	
+NCT00777946	TRUE	Exclusion	FALSE	uncontrolled type 1 diabetes or type 2 diabetesmellitus	
+NCT00777946	TRUE	Exclusion	FALSE	hypersensitivity to renin inhibitors ; calcium channel blockers ; or to drugs with similar chemical structures	
+NCT00777946	TRUE	Exclusion	FALSE	history of hypertensive encephalopathy accident or cerebrovascular accident ; or history of transient ischemic attack ( tia ) ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention	
+NCT00777946	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00778921	FALSE	Inclusion	TRUE	newly diagnosed patients or patients who have not been treated for hypertension within the 4 weeks prior to visit 1 must have a msdbp > = 95 mmhg and < 110 mmhg at visits 1 and 2	unrecorded
+NCT00778921	TRUE	Inclusion	FALSE	patients who have been treated for hypertension within the 4 weeks prior to visit 1 must have a msdbp > = 90 mmhg and < 110 mmhg at visit 2	
+NCT00778921	TRUE	Inclusion	NA	all patients must have a msdbp > = 90 mmhg and < 110 mmhg at visit 5 ( randomization )	
+NCT00778921	TRUE	Exclusion	FALSE	severe hypertension	
+NCT00778921	TRUE	Exclusion	FALSE	pregnant or nursing ( lactating ) women	
+NCT00778921	TRUE	Exclusion	FALSE	pre-menopausal women not taking accepted form of birth control	
+NCT00778921	TRUE	Exclusion	TRUE	pre-menopausal women not taking accepted form of birth control	
+NCT00778921	TRUE	Exclusion	FALSE	serum potassium > = 5.3 meq / l ( mmol / l ) at visit 1	
+NCT00778921	TRUE	Exclusion	NA	history of cardiovascular conditions	
+NCT00778921	TRUE	Exclusion	FALSE	uncontrolled type 1 diabetes or type 2 diabetesmellitus	
+NCT00778921	TRUE	Exclusion	FALSE	hypersensitivity to renin inhibitors ; calcium channel blockers ; or to drugs with similar chemical structures	
+NCT00778921	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00841672	FALSE	Inclusion	FALSE	outpatients > = 18 years of age	unrecorded
+NCT00841672	TRUE	Inclusion	FALSE	patients with a diagnosis of moderate to severe hypertension ; defined as mssbp > = 160 mmhg and < 200 mmhg at visit 2	
+NCT00841672	TRUE	Exclusion	FALSE	mild to moderate hypertension	
+NCT00841672	TRUE	Exclusion	FALSE	pregnant or nursing ( lactating ) women	
+NCT00841672	TRUE	Exclusion	FALSE	women of child-bearing potential	
+NCT00841672	TRUE	Exclusion	FALSE	previous diagnosis or current diagnosis of heart failure new york heart association ( nyha ) class ii - class iv .	
+NCT00841672	TRUE	Exclusion	FALSE	serum potassium > = 5.3 meq / l ( mmol / l ) at visit 1 .	
+NCT00841672	TRUE	Exclusion	FALSE	uncontrolled type 1 diabetes or type 2 diabetesmellitus	
+NCT00841672	TRUE	Exclusion	FALSE	hypersensitivity to renin inhibitors ; calcium channel blockers ; or to drugs with similar chemical structures	
+NCT00841672	TRUE	Exclusion	FALSE	history of hypertensive encephalopathy accident or cerebrovascular accident ; or history of transient ischemic attack ( tia ) ; myocardial infarction ; coronary bypass surgery ; or any percutaneous coronary intervention	
+NCT00841672	TRUE	Exclusion	FALSE	patients on a combination of 3 or more antihypertensive medications	
+NCT00841672	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00860262	FALSE	Inclusion	FALSE	ability to provide written informed consent in accordance with good clinical practice and local legislation	unrecorded
+NCT00860262	TRUE	Inclusion	FALSE	age 18 years or older	
+NCT00860262	TRUE	Inclusion	FALSE	patients with severe hypertension as defined sbp greater than 180 mmhg and dbp greater than 95 mmhg at randomisation	
+NCT00860262	TRUE	Inclusion	FALSE	ability to stop any current antihypertensive therapy without unacceptable risk to the patient ( investigators discretion )	
+NCT00860262	TRUE	Exclusion	FALSE	mean in-clinic seated cuff sbp > / = 200 mmhg or diastolic blood pressure [ dbp ] > / = 95 mmhg	
+NCT00902304	FALSE	Inclusion	FALSE	newly diagnosed or currently treated hypertensive patients who have not attained their blood pressure target and require active pharmacological treatment as recommended by the local guidelines as judged by the general practitioner	unrecorded
+NCT00902304	TRUE	Inclusion	TRUE	newly diagnosed or currently treated hypertensive patients who have not attained their blood pressure target and require active pharmacological treatment as recommended by the local guidelines as judged by the general practitioner	
+NCT00902304	TRUE	Exclusion	FALSE	significantly elevated blood pressure ( severe hypertension )	
+NCT00902304	TRUE	Exclusion	FALSE	requiring 3 or more antihypertensive drugs	
+NCT00902304	TRUE	Exclusion	FALSE	severe kidney disease or dialyses	
+NCT00902304	TRUE	Exclusion	FALSE	clinical diagnosis requiring concomitant therapy with antihypertensive treatment that would be outside the therapies allowed under study protocol	
+NCT00902304	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00931710	FALSE	Inclusion	FALSE	male or female outpatient of 18 years of age or greater	unrecorded
+NCT00931710	TRUE	Inclusion	FALSE	stage 2 systolic hypertension defined as office mean sitting systolic blood pressure ( mssbp ) greater than or equal to 160 and < 200 mmhg at randomization	
+NCT00931710	TRUE	Inclusion	FALSE	patients who were able to participate in the study ; and who gave written informed consent before any study assessment was performed .	
+NCT00931710	TRUE	Exclusion	FALSE	office systolic blood pressure > 200 or mean sitting diastolic blood pressure ( msdbp ) greater than or equal to 110 mmhg at visit 1 .	
+NCT00931710	TRUE	Exclusion	FALSE	use of four 4 or more antihypertensive medications within 30 days of visit 1 .	
+NCT00931710	TRUE	Exclusion	FALSE	refractory hypertension ; defined as blood pressure > 140 / 90 mmhg while taking three 3 drugs at the maximum dose of each drug ; one of which must be a diuretic	
+NCT00931710	TRUE	Exclusion	FALSE	( therapy with a fixed-dose combination of two active medications represents two drugs ) .	
+NCT00931710	TRUE	Exclusion	FALSE	inability to safely discontinue all antihypertensive medications for 1 - 2 weeks prior to randomization .	
+NCT00931710	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT00942994	FALSE	Inclusion	FALSE	patients who are newly diagnosed or have a history of hypertension ; who are eligible and able to participate in the study ; and who give written informed consent before any assessment is performed .	
+NCT00942994	TRUE	Inclusion	FALSE	men or women 18 years and older of minority background	
+NCT00942994	TRUE	Inclusion	FALSE	self-identified .	
+NCT00942994	TRUE	Inclusion	FALSE	patients with stage 2 hypertension defined as mssbp > = 160 mmhg and < 200 mmhg at visit 5 ( randomization ) .	
+NCT00942994	TRUE	Exclusion	FALSE	patients with msdbp > = 110 mmhg or mssbp > = 200 mmhg as measured by office cuff at any visit .	
+NCT00942994	TRUE	Exclusion	FALSE	patients on 4 or more antihypertensive medications .	
+NCT00942994	TRUE	Exclusion	FALSE	patients with uncontrolled hypertension ( mssbp > 180 mmhg ) taking more than 1 antihypertensive medication at visit	
+NCT00949884	FALSE	Inclusion	FALSE	males or females aged > 18 years who are not institutionalized and have signed informed consent .	unrecorded
+NCT00949884	TRUE	Inclusion	TRUE	males or females aged > 18 years who are not institutionalized and have signed informed consent .	
+NCT00949884	TRUE	Inclusion	FALSE	mean cuff seated diastolic blood pressure ( bp ) must be > 95 mmhg and < 115 mmhg and a mean cuff seated systolic bp must be < 180 mmhg when measured at two consecutive qualification study visits during the placebo run-in phase .	
+NCT00949884	TRUE	Inclusion	FALSE	the difference in mean cuff seated diastolic bp must be < 7 mmhg between two consecutive qualification study visits during the placebo run-in phase .	
+NCT00949884	TRUE	Exclusion	FALSE	subjects with type 2 diabetes mellitus with an hba1c > = 9.5 % at screening .	
+NCT00949884	TRUE	Exclusion	FALSE	subjects with serious disorders which may limit the ability to evaluate the efficacy or safety of olmesartan medoxomil and losartan potassium ; including cardiovascular ; renal ( including the absence of one kidney ) ; pulmonary ; hepatic ; gastrointestinal ( including clinically significant malabsorption ) ; endocrine / metabolic ( with the exception of non-insulin ; dependent type 2 diabetes mellitus with hba1c < 9.55 % at screening ) ; hematologic / oncologic ( including an active malignancy other than basal cell carcinoma ) ; neurologic and psychiatric diseases .	
+NCT00949884	TRUE	Exclusion	TRUE	subjects with serious disorders which may limit the ability to evaluate the efficacy or safety of olmesartan medoxomil and losartan potassium ; including cardiovascular ; renal ( including the absence of one kidney ) ; pulmonary ; hepatic ; gastrointestinal ( including clinically significant malabsorption ) ; endocrine / metabolic ( with the exception of non-insulin ; dependent type 2 diabetes mellitus with hba1c < 9.55 % at screening ) ; hematologic / oncologic ( including an active malignancy other than basal cell carcinoma ) ; neurologic and psychiatric diseases .	
+NCT00949884	TRUE	Exclusion	FALSE	subjects with a history of myocardial infarction ; angina ; coronary angioplasty ; bypass surgery or heart failure within the last 12 months .	
+NCT00949884	TRUE	Exclusion	FALSE	subjects with any history of new york heart association class iii or class iv congestive heart failure ( chf )	
+NCT00949884	TRUE	Exclusion	FALSE	a history of new york heart association class i or class ii chf may be exclusionary at the discretion of the investigator .	
+NCT00949884	TRUE	Exclusion	FALSE	subjects with a history of cerebrovascular accident or transient ischemic attack within the last 1 year .	
+NCT00949884	TRUE	Exclusion	FALSE	subjects with clinically significant cardiac conduction defects ; including second degree or third degree atrioventricular ( av ) block ; left bundle branch block ; sick sinus syndrome ; atrial fibrillation ; atrial flutter ; an accessory bypass tract ; or any arrhythmia requiring medication	
+NCT01368536	FALSE	Inclusion	FALSE	patients with stage 2 hypertension within protocol limits at randomization	unrecorded
+NCT01368536	TRUE	Inclusion	FALSE	patients with type 2 diabetes mellitus with hga1c less than or equal to 9 %	
+NCT01368536	TRUE	Inclusion	TRUE	patients with newly diagnosed hypertension or patients who have not received antihypertensive therapy for at least 4 weeks prior to screening	
+NCT01368536	TRUE	Inclusion	FALSE	patients with newly diagnosed hypertension or patients who have not received antihypertensive therapy for at least 4 weeks prior to screening	
+NCT01368536	TRUE	Exclusion	FALSE	patients taking 4 or more antihypertensive medications at screening visit	
+NCT01368536	TRUE	Exclusion	FALSE	patients with uncontrolled bp ( > 140 / 90 mmhg ) while taking 3 or more antihypertensives at their maximum approved doses	
+NCT01368536	TRUE	Exclusion	FALSE	type 2 diabetes mellitus requiring insulin treatment	
+NCT01368536	TRUE	Exclusion	NA	patients with hga1c > 9 %	
+NCT01368536	TRUE	Exclusion	FALSE	patients with known gout	
+NCT01368536	TRUE	Exclusion	FALSE	known history of cancer within the past 5 years	
+NCT01368536	TRUE	Exclusion	FALSE	patients who are pregnant mothers or nursing mothers	
+NCT01368536	TRUE	Exclusion	FALSE	patients who have participated in an investigational clinical trial within the 30 days prior to screening .	
+NCT01368536	TRUE	Exclusion	FALSE	other protocol-defined inclusion / may apply	
+NCT02269176	FALSE	Inclusion	FALSE	mild to moderate primary hypertension ; the mean sitting valley value of diastolic blood pressure ( dbp ) > = 95 and < 110 mmhg ; and the mean sitting valley value of systolic blood pressure ( sbp ) < 180 mmhg	unrecorded

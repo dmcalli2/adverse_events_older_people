@@ -264,9 +264,31 @@ elig_not_secondary <- bind_rows(essential_inclusion = elig_essential,
 
 elig_not_secondary %>% 
   distinct(nct_id)
+## Reviewed
+# I manually reviewed the eligibility criteria for the 30 trials which could not find mention of "essential|idiopathic" or secondary.
+# None of these included or excluded based on either (one trial mentioned renal artery stenosis, but not more general than that)
+remaining_unclear %>% distinct(nct_id)
+remaining_unclear <- trials_over %>% 
+  inner_join(elig) %>% 
+  anti_join(elig_not_secondary %>% select(nct_id)) %>% 
+  distinct(nct_id, inclusion_exclusion, negated, criteria_sentences)
+# write_tsv(remaining_unclear, "temp.tsv")
+
+## any secondary
+xmn <- elig %>% 
+  semi_join(secondary_txt) %>% 
+  filter( (inclusion_exclusion == "Exclusion" & negated == TRUE ) |
+            (inclusion_exclusion == "Inclusion" & negated == FALSE))
+## None are secondary, the "limited" refers 
 elig_not_secondary <- trials_over %>% 
   select(nct_id) %>% 
   left_join(elig_not_secondary)
+## Any exclude essential
+xmn <- elig %>% 
+  semi_join(essential) %>% 
+  filter( (inclusion_exclusion == "Exclusion" & negated == FALSE ) |
+            (inclusion_exclusion == "Inclusion" & negated == TRUE))
+
 
 ## Find drug usage ----
 drug_elig <- elig %>% 
@@ -277,6 +299,36 @@ drug_elig <- read_csv("Created_metadata/drugs_eligibility.csv")
 drug_elig <- elig %>% 
   inner_join(drug_elig)
 drug_elig %>% distinct(criteria_sentences, drug_class, inclusion_exclusion, negated) %>% write_csv("temp.csv")
+
+## Read in sentences with interpretations
+drug_interp <- read_csv("Created_metadata/drugs_eligibility_criteria_sentences.csv") 
+concomitant <- drug_interp %>% 
+  filter(sentence_meaning == "concomitant") %>% 
+  mutate(included = (inclusion_exclusion == "Inclusion" & negated == FALSE ) |
+                    (inclusion_exclusion == "Exclusion" & negated == TRUE),
+         excluded = (inclusion_exclusion == "Exclusion" & negated == FALSE ) |
+                    (inclusion_exclusion == "Inclusion" & negated == TRUE)) %>% 
+  select(criteria_sentences, drug_class, sentence_meaning, included, excluded)
+concomitant <- elig %>% 
+  select(nct_id, criteria_sentences) %>% 
+  inner_join(concomitant) %>% 
+  select(-criteria_sentences) %>% 
+  distinct()
+## should be zero contradictory, is the case
+concomitant <- concomitant %>% 
+  select(-sentence_meaning) %>% 
+  group_by(nct_id, drug_class) %>% 
+  summarise_all(any) %>% 
+  ungroup()
+
+concomitant %>% 
+  filter(included == excluded)
+
+concomitant <- concomitant %>% 
+  mutate(status = case_when(included == TRUE & excluded == FALSE ~ "inclusion",
+                            included == FALSE & excluded == TRUE ~ "exclusion",
+                            TRUE ~ "unrecorded")) %>% 
+  select(-included, -excluded)
 
 # ## write files
 # write_csv(trials_over, "Data_extraction/01_trials_overview.csv")
