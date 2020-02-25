@@ -73,5 +73,5 @@ rv2 %>%
   mutate(n_measures = length(arm_name)) %>% 
   ungroup() %>% 
   filter(n_measures >=2)
-write_csv(rv, "Data/final_nv_guy.csv")
-write_csv(rv, "../adverse_events_older_people_ng/sae_extraction_20200131_rearranged.csv", na = "")
+write_csv(rv2, "Data/final_nv_guy.csv")
+write_csv(rv2, "../adverse_events_older_people_ng/sae_extraction_20200131_rearranged.csv", na = "")

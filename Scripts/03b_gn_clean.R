@@ -265,7 +265,7 @@ ae_sae_all <- bind_rows(ae_sae_mtch %>% filter(!is.na(arm_name_base)) %>% rename
                         no_match_resolve  %>% rename(arm_name = arm_name_sae))
 
 ## Next step need to calcualte total for events, (ns and %s)
-saveRDS(ae_sae_all, "Scratch_data/cleaned_guy_neave_combined.Rds")
+saveRDS(list(ae_sae_all = ae_sae_all, fu, "Scratch_data/cleaned_guy_neave_combined.Rds")
 
 rm(list = ls())
 

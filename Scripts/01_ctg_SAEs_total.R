@@ -10,7 +10,7 @@ nrowR <- function(x) {
   x
 }
 
-#  Read in all trials with drugs that are in older people trials
+#  Read in all trials with drugs that are in older people trials ----
 drugsearch <- c("telmisartan", "valsartan", "olmesartan", "aliskiren", "irbesartan")
 
 trials_htn <- intvn_lbl %>% 
@@ -116,7 +116,7 @@ baseline <- baseline %>%
          param_type, param_value, 
          dispersion_type, dispersion_value)
 
-## Examine AEs/SAEs
+## Examine AEs/SAEs ----
 sae <- aact$reported_events %>%
   filter(adverse_event_term %in% c("Total, serious adverse events", "Total, other adverse events"))
 sae <- sae %>%
@@ -159,7 +159,7 @@ sae_time_frame <- sae %>%
   distinct(nct_id, time_frame, time_frame_primary)
 
 sae$time_frame <- NULL
-
+# sveRDS(sae, "Scratch_data/")
 ###
 csr_chk <- read_csv("Data/csr_status_current.csv") 
 
@@ -174,7 +174,7 @@ trials_over <- trials %>%
   mutate(csr_status = case_when(in_jo ~ "extracted_jo",
                             baseline_res & sae_res ~ "Not reqd, in clinicaltrials.gov", 
                             TRUE ~ csr_status))
-
+write_csv(trials_over, "Supporting/Overview_trial_extaction.csv")
  
 ## Add text fields for review 
 text_info <- aact$studies %>% 

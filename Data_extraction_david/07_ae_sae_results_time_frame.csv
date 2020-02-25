@@ -1,60 +1,60 @@
-nct_id,time_frame,time_frame_primary
-NCT00149227,,five years
-NCT00219141,,Baseline to end of study (Week 36)
-NCT00281580,,Baseline and Week 8
-NCT00368277,36 weeks,Baseline and Week 12
-NCT00413049,,Baseline to end of study (Week 8)
-NCT00413413,,Baseline to end of study (Week 8)
-NCT00425373,,Baseline to end of study (Week 8)
-NCT00529451,8 weeks,Baseline and Week 8
-NCT00546754,,Baseline and Week 12
-NCT00550953,From drug administration until 24 hours after last drug administration,Baseline and 8 Weeks
-NCT00553267,,Baseline and end of study (8 weeks or last value on treatment)
-NCT00558064,First administration of randomised treatment to 24 hours post last dose of randomised treatment,Baseline and 8 Weeks
-NCT00558428,From day of first dose until one day after last dose,Baseline and Week 8
-NCT00591578,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 24.
-NCT00614380,From day of first dose until one day after last dose,End of study (34 weeks or last value on treatment)
-NCT00624052,From day of first dose through to the day after last dose,End of study (34 weeks or last value on treatment)
-NCT00631917,,54 weeks
-NCT00649389,12 weeks,baseline to 12 weeks
-NCT00687973,,Baseline and Week 24
-NCT00696241,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 6.
-NCT00696436,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 6.
-NCT00698646,16 weeks,Baseline and Week 4
-NCT00699192,8 weeks,Baseline to end of study (Week 8)
-NCT00705575,,Baseline to end of study (Week 12)
-NCT00706134,End of study (week 8),Baseline to end of study (Week 8)
-NCT00739973,Baseline to end of study (Week 8),Baseline to end of study (Week 8)
-NCT00760266,,Baseline and Week 4
-NCT00765674,During the 8 week double blind treatment,Baseline to end of study (Week 8)
-NCT00777946,8 weeks,"Baseline, End of Study (Week 8)"
-NCT00778921,,Baseline and Week 8
-NCT00787605,,Baseline and Week 8
-NCT00797316,,Baseline and Week 8
-NCT00809926,Baseline through week 8,Baseline to Week 8
-NCT00841672,,Baseline to end of study (Week 8)
-NCT00846365,Treatment-emergent adverse events are adverse events that started on or after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 8.
-NCT00853957,8 weeks,"Baseline, 8 weeks"
-NCT00860262,"First study medication intake, last study medication intake + 6 days",baseline and week 8
-NCT00865020,13 weeks,"12 weeks, 13 weeks"
-NCT00877929,,"Baseline, week 8"
-NCT00902304,,26 weeks
-NCT00902538,Adverse events were collected from screening to 14 days after the last dose of study medication. Adverse events are reported for week 1 through week 16.,baseline (8 weeks) to 16 weeks
-NCT00923091,Week 1 to week 54,Baseline to week 10
-NCT00926289,7 weeks,Baseline and Week 7
-NCT00927394,,"baseline, week 8"
-NCT00931710,,Baseline to Week 6
-NCT00942994,8 weeks,Baseline and week 8
-NCT00949884,"Day 1 to Week 8, or until the adverse event resolved or the condition stabilized.","Day 0, Week 8"
-NCT00996281,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of study drug.,From Week 0 (Day 1) to Week 52.
-NCT01001572,Week 8,Baseline and Week 8
-NCT01033071,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 12.
-NCT01042392,8 weeks of period II + 1 day of Period III,Baseline to 8 weeks
-NCT01167153,,"Baseline, 12 weeks"
-NCT01237223,,"Baseline, Week 8"
-NCT01368536,,"Baseline, 12 weeks"
-NCT01599104,,"Baseline, 8 weeks"
-NCT01615198,,"Baseline, 10 weeks"
-NCT01785472,,"baseline, 8 weeks"
-NCT01876368,,"baseline, 8 weeks"
-NCT01975246,"From first drug administration until 24 hours after the last drug administration, up to 71 days.",baseline and week 8
+nct_id,time_frame,time_frame_primary,weeks
+NCT00149227,,five years,260
+NCT00219141,,Baseline to end of study (Week 36),36
+NCT00281580,,Baseline and Week 8,8
+NCT00368277,36 weeks,Baseline and Week 12,36
+NCT00413049,,Baseline to end of study (Week 8),8
+NCT00413413,,Baseline to end of study (Week 8),8
+NCT00425373,,Baseline to end of study (Week 8),8
+NCT00529451,8 weeks,Baseline and Week 8,8
+NCT00546754,,Baseline and Week 12,12
+NCT00550953,From drug administration until 24 hours after last drug administration,Baseline and 8 Weeks,8
+NCT00553267,,Baseline and end of study (8 weeks or last value on treatment),8
+NCT00558064,First administration of randomised treatment to 24 hours post last dose of randomised treatment,Baseline and 8 Weeks,8
+NCT00558428,From day of first dose until one day after last dose,Baseline and Week 8,8
+NCT00591578,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 24.,24
+NCT00614380,From day of first dose until one day after last dose,End of study (34 weeks or last value on treatment),34
+NCT00624052,From day of first dose through to the day after last dose,End of study (34 weeks or last value on treatment),34
+NCT00631917,,54 weeks,54
+NCT00649389,12 weeks,baseline to 12 weeks,12
+NCT00687973,,Baseline and Week 24,24
+NCT00696241,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 6.,6
+NCT00696436,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 6.,6
+NCT00698646,16 weeks,Baseline and Week 4,16
+NCT00699192,8 weeks,Baseline to end of study (Week 8),8
+NCT00705575,,Baseline to end of study (Week 12),12
+NCT00706134,End of study (week 8),Baseline to end of study (Week 8),8
+NCT00739973,Baseline to end of study (Week 8),Baseline to end of study (Week 8),8
+NCT00760266,,Baseline and Week 4,4
+NCT00765674,During the 8 week double blind treatment,Baseline to end of study (Week 8),8
+NCT00777946,8 weeks,"Baseline, End of Study (Week 8)",8
+NCT00778921,,Baseline and Week 8,8
+NCT00787605,,Baseline and Week 8,8
+NCT00797316,,Baseline and Week 8,8
+NCT00809926,Baseline through week 8,Baseline to Week 8,8
+NCT00841672,,Baseline to end of study (Week 8),8
+NCT00846365,Treatment-emergent adverse events are adverse events that started on or after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 8.,8
+NCT00853957,8 weeks,"Baseline, 8 weeks",8
+NCT00860262,"First study medication intake, last study medication intake + 6 days",baseline and week 8,8
+NCT00865020,13 weeks,"12 weeks, 13 weeks",13
+NCT00877929,,"Baseline, week 8",8
+NCT00902304,,26 weeks,26
+NCT00902538,Adverse events were collected from screening to 14 days after the last dose of study medication. Adverse events are reported for week 1 through week 16.,baseline (8 weeks) to 16 weeks,16
+NCT00923091,Week 1 to week 54,Baseline to week 10,54
+NCT00926289,7 weeks,Baseline and Week 7,7
+NCT00927394,,"baseline, week 8",8
+NCT00931710,,Baseline to Week 6,6
+NCT00942994,8 weeks,Baseline and week 8,8
+NCT00949884,"Day 1 to Week 8, or until the adverse event resolved or the condition stabilized.","Day 0, Week 8",8
+NCT00996281,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of study drug.,From Week 0 (Day 1) to Week 52.,52
+NCT01001572,Week 8,Baseline and Week 8,8
+NCT01033071,Treatment-emergent adverse events are adverse events that started after the first dose of double-blind study drug and no more than 14 days (or 30 days for a serious adverse event) after the last dose of double-blind study drug.,Baseline and Week 12.,12
+NCT01042392,8 weeks of period II + 1 day of Period III,Baseline to 8 weeks,8
+NCT01167153,,"Baseline, 12 weeks",12
+NCT01237223,,"Baseline, Week 8",8
+NCT01368536,,"Baseline, 12 weeks",12
+NCT01599104,,"Baseline, 8 weeks",8
+NCT01615198,,"Baseline, 10 weeks",10
+NCT01785472,,"baseline, 8 weeks",8
+NCT01876368,,"baseline, 8 weeks",8
+NCT01975246,"From first drug administration until 24 hours after the last drug administration, up to 71 days.",baseline and week 8,8
