@@ -1,0 +1,28 @@
+drug_name	who_atc	comment
+atenolol	C07AB03	
+amlodipine	C08CA01	
+enalapril	C09AA02	
+perindopril	C09AA04	
+ramipril	C09AA05	
+angiotensin receptor blocker	C09C	
+losartan	C09CA01	
+valsartan	C09CA03	
+irbesartan	C09CA04	
+telmisartan	C09CA07	
+olmesartan	C09CA08	
+azilsartan	C09CA09	
+aliskiren	C09XA02	
+chlorthalidone	C03BA04	
+hydrochlorothiazide	C03AA03	
+lercanidipine	C08CA13	
+metformin	A10BA02	
+nebivolol	C07AB12	
+nifedipine	C08CA05	
+Non-ARB	non_C09C	
+placebo	placebo_usual_care	
+sacubitril	C09DX04	note includes valsartan in code
+simvastatin	C10AA01	
+total	total	
+usual care	placebo_usual_care	
+azelnidipine	C08CAZ1	I made up ATC code although is in correct class
+lisinopril	C09AA03	

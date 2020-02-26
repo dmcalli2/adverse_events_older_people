@@ -1,0 +1,82 @@
+nct_id	arm_type	arm_name	assigned1	assigned2	assigned3
+NCT00095394	treatment	Irbesartan/HCTZ	irbesartan	hydrochlorothiazide	
+NCT00095394	comparison	Irbesartan	irbesartan		
+NCT00134160	treatment	Olmesartan	olmesartan		
+NCT00219167	treatment	Aliskiren	aliskiren		
+NCT00240474	treatment	Telmisartan+HCTZ	telmisartan	hydrochlorothiazide	
+NCT00264212	treatment	Irbesartan+/-HCTZ	irbesartan	hydrochlorothiazide	
+NCT00368277	treatment	Aliskiren+/- HCTZ+/-amlodipine	aliskiren	amlodipine	
+NCT00454662	treatment	Olmesartan/amlodipine/almizedipine	olmesartan	amlodipine	azelnidipine
+NCT00698646	treatment	Valsartan+HCTZ	valsartan	hydrochlorothiazide	
+NCT00699192	treatment	Amlodipine/Valsartan	amlodipine	valsartan	
+NCT00706134	treatment	Aliskiren	aliskiren		
+NCT00751751	treatment	Olmesartan+/-HCTZ	olmesartan	hydrochlorothiazide	
+NCT00751829	treatment	Olmesartan+/-HCTZ	olmesartan	hydrochlorothiazide	
+NCT00274599	treatment	Telmisartan	telmisartan		
+NCT00274612	treatment	Telmisartan	telmisartan		
+NCT00185172	treatment	Olmesartan+/- HCTZ	olmesartan	hydrochlorothiazide	
+NCT00185133	treatment	Olmesartan+amlodipine	olmesartan	amlodipine	
+NCT00872586	treatment	Olmesartan+ HCTZ	olmesartan	hydrochlorothiazide	
+NCT00949884	treatment	Olmesartan	olmesartan		
+NCT00529451	treatment	Aliskiren	aliskiren		
+NCT00931710	treatment	Valsartan/ Amlodipine/HCTZ	valsartan	amlodipine	hydrochlorothiazide
+NCT00425997	treatment	Valsartan/HCTZ	valsartan	hydrochlorothiazide	
+NCT00280540	treatment	Valsartan/HCTZ	valsartan	hydrochlorothiazide	
+NCT00185133	treatment	Olmesartan/amlodipine	olmesartan	amlodipine	
+NCT00220220	treatment	Olmesartan/amlodipine	olmesartan	amlodipine	
+NCT00739973	treatment	Aliskiren+/-amlodipine	aliskiren	amlodipine	
+NCT00500604	treatment	Irbesartan/ HCTZ	irbesartan	hydrochlorothiazide	
+NCT00705575	treatment	Aliskiren/HCTZ	aliskiren	hydrochlorothiazide	
+NCT00260923	treatment	Aliskiren	aliskiren		
+NCT00220220	treatment	Olmesartan/amlodipine	olmesartan	amlodipine	
+NCT00185133	treatment	Olmesartan/amlodipine	olmesartan	amlodipine	
+NCT00134160	comparison	Olmesartan+amlodipine or azelnidipine	olmesartan	amlodipine	azelnidipine
+NCT00219167	comparison	Lisinopril	lisinopril		
+NCT00240474	comparison	Amlodipine+HCTZ	amlodipine	hydrochlorothiazide	
+NCT00264212	comparison	Amlodipine+/-HCTZ	amlodipine	hydrochlorothiazide	
+NCT00368277	comparison	Ramipril+/-HCTZ+/-amlodipine	ramipril	hydrochlorothiazide	amlodipine
+NCT00454662	comparison	Olmesartan/thiazide	olmesartan	hydrochlorothiazide	
+NCT00698646	comparison	Valsartan	valsartan		
+NCT00699192	comparison	Amlodipine/Valsartan (dosage difference)	amlodipine	valsartan	
+NCT00706134	comparison	Placebo	placebo		
+NCT00751751	comparison	Losartan+HCTZ	losartan	hydrochlorothiazide	
+NCT00751829	comparison	Nitrendapine+HCTZ	nifedipine	hydrochlorothiazide	
+NCT00274599	comparison	Ramipril	ramipril		
+NCT00274612	comparison	Ramipril	ramipril		
+NCT00185172	comparison	Placebo	placebo		
+NCT00185133	comparison	Olmesartan	olmesartan		
+NCT00872586	comparison	olmesartan	olmesartan		
+NCT00949884	comparison	Placebo/Losartan	placebo	losartan	
+NCT00529451	comparison	Ramipril	ramipril		
+NCT00931710	comparison	Losartan/HCTZ	losartan	hydrochlorothiazide	
+NCT00425997	comparison	Amlodipine/HCTZ	amlodipine	hydrochlorothiazide	
+NCT00280540	comparison	Valsartan	valsartan		
+NCT00185133	comparison	olmesartan	olmesartan		
+NCT00220220	comparison	olmesartan	olmesartan		
+NCT00739973	comparison	placebo	placebo		
+NCT00500604	comparison	Valsartan/HCTZ	valsartan	hydrochlorothiazide	
+NCT00705575	comparison	Alsikiren	aliskiren		
+NCT00260923	comparison	Placebo	placebo		
+NCT00220220	comparison	Olmesartan/Placebo	olmesartan	placebo	
+NCT00185133	comparison	Olmesartan	olmesartan		
+NCT01615198	treatment	LCZ696	sacubitril	valsartan	
+NCT02177461	treatment	Telmisartan	telmisartan		
+NCT01876368	treatment	LCZ696	sacubitril	valsartan	
+NCT01599104	treatment	LCZ696	sacubitril	valsartan	
+NCT01042392	treatment	Aliskiren	aliskiren		
+NCT01167153	treatment	Valsartan/Amlodipine	valsartan	amlodipine	
+NCT01042392	treatment	Aliskiren	aliskiren		
+NCT02177435	treatment	Telmisartan+/-HCTZ	telmisartan	hydrochlorothiazide	
+NCT02177500	treatment	Telmisartan+/HCTZ	telmisartan	hydrochlorothiazide	
+NCT01615198	comparison	Olmesartan	olmesartan		
+NCT02177461	comparison	Enalapril	enalapril		
+NCT01876368	comparison	Olmesartan	olmesartan		
+NCT01599104	comparison	Placebo	placebo		
+NCT01042392	comparison	Ramipril/Placebo	ramipril	placebo	
+NCT01167153	comparison	Nifedipine	nifedipine		
+NCT01042392	comparison	Ramipril/placebo	ramipril	placebo	
+NCT02177435	comparison	placebo	placebo		
+NCT02177500	comparison	placebo	placebo		
+NCT00240448	treatment	telmisartan	telmisartan		
+NCT00240448	comparison	valsartan	valsartan		
+NCT00240448	comparison	placebo	placebo		

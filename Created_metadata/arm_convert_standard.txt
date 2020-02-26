@@ -1,0 +1,256 @@
+arm_name	assigned1	assigned2	assigned3
+"adalat (nifedipine, baya1040) and valsartan"	nifedipine	valsartan	
+Aliskiren	aliskiren		
+Aliskiren 300 mg	aliskiren		
+Aliskiren 150 mg	aliskiren		
+Aliskiren 75 mg	aliskiren		
+Aliskiren 150 mg Tablet	aliskiren		
+Aliskiren 300 mg Tablet	aliskiren		
+Aliskiren 300 mg/Amlodipine 10 mg	aliskiren	amlodipine	
+Aliskiren 300 mg/Amlodipine 5 mg	aliskiren	amlodipine	
+Aliskiren (300 mg)	aliskiren		
+Aliskiren (active-controlled period)	aliskiren		
+Aliskiren (Period II and III)	aliskiren		
+Aliskiren (placebo-controlled period)	aliskiren		
+Aliskiren / Amlodipine	aliskiren	amlodipine	hydrochlorothiazide
+Aliskiren / Amlodipine / HCTZ	aliskiren	amlodipine	hydrochlorothiazide
+Aliskiren / Amlodipine / Hydrochlorothiazide	aliskiren	amlodipine	hydrochlorothiazide
+Aliskiren / HCTZ	aliskiren	hydrochlorothiazide	
+Aliskiren / Hydrochlorothiazide	aliskiren	hydrochlorothiazide	
+Aliskiren 150mg	aliskiren		
+Aliskiren 300mg	aliskiren		
+Aliskiren 600mg	aliskiren		
+Aliskiren 75mg	aliskiren		
+Aliskiren 150mg + Amlodipine 5mg	aliskiren	amlodipine	
+Aliskiren 150mg/ Amlodipine 10mg	aliskiren	amlodipine	
+Aliskiren 300mg/ Amlodipine 10mg	aliskiren	amlodipine	
+Aliskiren/Amlodipine	aliskiren	amlodipine	
+Aliskiren/Amlodipine 150/5 mg	aliskiren	amlodipine	
+Aliskiren/Amlodipine 150/10 mg Tablet	aliskiren	amlodipine	
+Aliskiren/Amlodipine 150/5 mg Tablet	aliskiren	amlodipine	
+Aliskiren/Amlodipine 300/10 mg Tablet	aliskiren	amlodipine	
+Aliskiren/Amlodipine 300/5 mg Tablet	aliskiren	amlodipine	
+Aliskiren/Amlodipine 150/2.5 mg	aliskiren	amlodipine	
+Aliskiren/Atenolol	aliskiren	atenolol	
+Aliskiren/HCTZ	aliskiren	hydrochlorothiazide	
+Aliskiren/HCTZ 300/12.5mg	aliskiren	hydrochlorothiazide	
+Aliskiren/HCTZ 300/25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/HCTZ 150/25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide (HCTZ) (300/25 mg)	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 150/12.5mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 150/6.25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 300/12.5mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 75/12.5mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 75/6.25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 150/25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 300/25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Hydrochlorothiazide 75/25mg	aliskiren	hydrochlorothiazide	
+Aliskiren/Losartan 300/100 mg	aliskiren	losartan	
+Aliskiren/Ramipril	aliskiren	ramipril	
+Aliskiren/Valsartan	aliskiren	valsartan	
+Aliskiren/Valsartan/HCTZ	aliskiren	valsartan	hydrochlorothiazide
+Aliskiren/Valsartan/Hydrochlorothiazide 300/160/25mg	aliskiren	valsartan	hydrochlorothiazide
+AML10/HCTZ25	amlodipine		
+Amlodipine	amlodipine		
+amlodipine	amlodipine		
+Amlodipine 5 mg	amlodipine		
+Amlodipine 10 mg	amlodipine		
+Amlodipine 10 mg (A10)	amlodipine		
+Amlodipine 5 mg (A5)	amlodipine		
+Amlodipine 10 mg Capsule	amlodipine		
+Amlodipine 5 mg Capsule	amlodipine		
+Amlodipine 5 mg Monotherapy	amlodipine		
+Amlodipine 2.5 mg	amlodipine		
+Amlodipine 2.5 mg (A2.5)	amlodipine		
+Amlodipine 2.5mg	amlodipine		
+Amlodipine / Hydrochlorothiazide	amlodipine	hydrochlorothiazide	
+Amlodipine 10mg	amlodipine		
+Amlodipine 5mg	amlodipine		
+amlodipine 10mg/valsartan 160mg	amlodipine	valsartan	
+amlodipine 5mg/valsartan 160mg	amlodipine	valsartan	
+Amlodipine/HCTZ 10/25mg	amlodipine	hydrochlorothiazide	
+Amlodipine/Valsartan	amlodipine	valsartan	
+Amlodipine/Valsartan 5/40 mg	amlodipine	valsartan	
+Amlodipine/Valsartan 5/80 mg	amlodipine	valsartan	
+ARB group	angiotensin receptor blocker		
+Atenolol	atenolol		
+Atenolol/Amlodipine 100/10 mg	atenolol	amlodipine	
+Azilsartan Medoxomil 40 mg QD	azilsartan		
+Azilsartan Medoxomil 80 mg QD	azilsartan		
+Azilsartan Medoxomil 20 mg QD	azilsartan		
+Azilsartan Medoxomil and Chlorthalidone	azilsartan	chlorthalidone	
+Azilsartan Medoxomil 20-40mg Plus Chlorthalidone 12.5-25 mg QD	azilsartan	chlorthalidone	
+Azilsartan Medoxomil 40-80mg Plus Chlorthalidone 12.5-25 mg QD	azilsartan	chlorthalidone	
+Azilsartan Medoxomil 20-40mg/Chlorthalidone 12.5-25mg QD	azilsartan	chlorthalidone	
+Azilsartan Medoxomil 40-80mg/Chlorthalidone 12.5-25mg QD	azilsartan	chlorthalidone	
+Combination (Initial Combination Therapy Arm)			
+Combination Therapy: Aliskiren + Valsartan	aliskiren	valsartan	
+Combo therapy			
+diovan (valsartan)	valsartan		
+Enalapril	enalapril		
+HCTZ	hydrochlorothiazide		
+HCTZ +Amlodipine	hydrochlorothiazide	amlodipine	
+HCTZ 25mg	hydrochlorothiazide		
+hydrochlorothiazide	hydrochlorothiazide		
+irbesartan	irbesartan		
+Irbesartan	irbesartan		
+Irbesartan 300mg	irbesartan		
+irbesartan/amlodipine	irbesartan	amlodipine	
+Irbesartan/HCTZ 300/25mg	irbesartan	hydrochlorothiazide	
+LCZ696	sacubitril	valsartan	
+LCZ696 200 mg	sacubitril	valsartan	
+LCZ696 400 mg	sacubitril	valsartan	
+Lercanidipine 10mg	lercanidipine		
+Lercanidipine 10mg /Valsartan 160mg	lercanidipine		
+Lercanidipine 10mg /Valsartan 80mg	lercanidipine		
+Losartan	losartan		
+Losartan 100 mg	losartan		
+Losartan 50 mg/HCTZ 12.5 mg	losartan		
+Losartan / HCTZ	losartan	hydrochlorothiazide	
+Losartan + Hydrochlorothiazide 50/12.5mg	losartan	hydrochlorothiazide	
+Losartan 100mg	losartan		
+Losartan 50mg	losartan		
+Metformin	metformin		
+Monotherapy (Initial Monotherapy Arm)	metformin		
+Monotherapy: Valsartan	valsartan		
+Nebivolol and Valsartan Fixed Dose Combination 1	nebivolol	valsartan	
+Nebivolol and Valsartan Fixed Dose Combination 2	nebivolol	valsartan	
+Nebivolol and Valsartan Fixed Dose Combination 3	nebivolol	valsartan	
+Nebivolol High Dose	nebivolol		
+Nebivolol Low Dose	nebivolol		
+nifedipine	nifedipine		
+Nifedipine	nifedipine		
+"nifedipine (adalat, baya1040) and valsartan"	nifedipine	valsartan	
+"nifedipine (adalat, baya1040) 30mg"	nifedipine		
+"nifedipine (adalat, baya1040) 60mg"	nifedipine		
+nifedipine/telmisartan	nifedipine	telmisartan	
+Nifedipine/Valsartan	nifedipine	valsartan	
+Non-ARB	Non-ARB		
+Non-ARB group	Non-ARB		
+OLM 40-AML 10-HCTZ 25	olmesartan	amlodipine	hydrochlorothiazide
+OLM 40-AML 10-Hydrochlorothiazide (HCTZ) 12.5	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan	olmesartan		
+Olmesartan 20 mg	olmesartan		
+Olmesartan 40 mg QD	olmesartan		
+Olmesartan Medoxomil and Hydrochlorothiazide	olmesartan	hydrochlorothiazide	
+Olmesartan Medoxomil 20-40mg/Hydrochlorothiazide 12.5-25mg QD	olmesartan	hydrochlorothiazide	
+Olmesartan(OLM) 40 Mg-Amlodipine(AML) 10 mg	olmesartan	amlodipine	
+Olmesartan/amlodipine	olmesartan	amlodipine	
+Olmesartan/Amlodipine 40/10mg	olmesartan	amlodipine	
+Olmesartan/Amlodipine 20mg/5mg	olmesartan	amlodipine	
+Olmesartan/Amlodipine 40mg/10mg	olmesartan	amlodipine	
+Olmesartan/Amlodipine 40mg/5mg	olmesartan	amlodipine	
+Olmesartan/Amlodipine/Hydrochlorothiazide 20/5/12.5mg	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan/Amlodipine/Hydrochlorothiazide 20mg/5mg/12.5 mg	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/10mg/12.5mg	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/5mg/12.5mg	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/10mg/25mg	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/5mg/25mg	olmesartan	amlodipine	hydrochlorothiazide
+Olmesartan/Hydrochlorothiazide 20/12.5mg	olmesartan	hydrochlorothiazide	
+OM40/AML10	olmesartan	amlodipine	
+OM40/AML10/HCTZ25	olmesartan	amlodipine	
+OM40/HCTZ25	olmesartan	hydrochlorothiazide	
+Perindopril+amlodipine	perindopril	amlodipine	
+Placebo	placebo		
+PLACEBO	placebo		
+Placebo (Double Blind)	placebo		
+Placebo (subgroup aliskiren placebo-controlled period)	placebo		
+Placebo (subgroup ramipril placebo-controlled period)	placebo		
+Placebo Followed by Olmesartan	placebo		
+Placebo QD	placebo		
+Placebo/Valsartan/Hydrochlorothiazide 160/25mg	placebo		
+Ramipril	ramipril		
+Ramipril 5 mg	ramipril		
+Ramipril (active-controlled period)	ramipril		
+Ramipril (Period II and III)	ramipril		
+Ramipril (placebo-controlled period)	ramipril		
+Ramipril 10mg	ramipril		
+T80+A10	telmisartan	amlodipine	
+Telmisartan	telmisartan		
+telmisartan	telmisartan		
+Telmisartan 80 mg	telmisartan		
+Telmisartan 20 mg (T20)	telmisartan		
+Telmisartan 40 mg (T40)	telmisartan		
+Telmisartan 80 mg (T80)	telmisartan		
+Telmisartan 80 mg + Amlodipine 10 mg	telmisartan	amlodipine	
+Telmisartan 40 mg Monotherapy	telmisartan		
+Telmisartan 20 mg Plus Amlodipine 10 mg (T20+A10)	telmisartan	amlodipine	
+Telmisartan 20 mg Plus Amlodipine 5 mg (T20+A5)	telmisartan	amlodipine	
+Telmisartan 40 mg Plus Amlodipine 10 mg (T40+A10)	telmisartan	amlodipine	
+Telmisartan 40 mg Plus Amlodipine 5 mg (T40+A5)	telmisartan	amlodipine	
+Telmisartan 80 mg Plus Amlodipine 10 mg (T80+A10)	telmisartan	amlodipine	
+Telmisartan 80 mg Plus Amlodipine 5 mg (T80+A5)	telmisartan	amlodipine	
+Telmisartan 40 mg Plus Amlodipine 5 mg Fixed-dose Combination	telmisartan	amlodipine	
+Telmisartan 20 mg Plus Amlodipine 2.5 mg (T20+A2.5)	telmisartan	amlodipine	
+Telmisartan 40 mg Plus Amlodipine 2.5 mg (T40+A2.5)	telmisartan	amlodipine	
+Telmisartan 80 mg Plus Amlodipine 2.5 mg (T80+A2.5)	telmisartan	amlodipine	
+Telmisartan (Micardis)	telmisartan		
+Telmisartan 40/80 mg	telmisartan		
+Telmisartan 40/80 mg + HCTZ 12.5/25 mg	telmisartan	hydrochlorothiazide	
+Telmisartan and Amlodipine+HCTZ	telmisartan	amlodipine	hydrochlorothiazide
+Telmisartan 80mg	telmisartan		
+Telmisartan 40mg	telmisartan		
+Telmisartan 40mg and Amlodipine 10mg	telmisartan	amlodipine	
+Telmisartan 80mg and Amlodipine 10mg	telmisartan	amlodipine	
+Telmisartan 40mg and Amlodipine 5mg	telmisartan	amlodipine	
+Telmisartan 80mg and Amlodipine 5mg	telmisartan	amlodipine	
+Telmisartan/Amlodipine	telmisartan	amlodipine	
+Telmisartan/Amlodipine+Hydrochlorothiazide	telmisartan	amlodipine	hydrochlorothiazide
+Telmisartan/hctz	telmisartan	hydrochlorothiazide	
+Telmisartan/HCTZ 80/25mg	telmisartan	hydrochlorothiazide	
+Telmisartan/Hydrochlorothiazide 80/12.5mg	telmisartan	hydrochlorothiazide	
+Telmisartan/Hydrochlorothiazide 80/25mg	telmisartan	hydrochlorothiazide	
+Telmisartan+Amlodipine	telmisartan	amlodipine	
+Total	total		
+Usual Care	usual care		
+Val/HCTZ 320/12.5mg	valsartan	hydrochlorothiazide	
+Val/HCTZ 320/25mg	valsartan	hydrochlorothiazide	
+Valsartan	valsartan		
+valsartan	valsartan		
+Valsartan 160 mg	valsartan		
+Valsartan 80 mg	valsartan		
+Valsartan 40 mg	valsartan		
+Valsartan 320 mg QD	valsartan		
+Valsartan 80 mg/HCTZ 12.5 mg	valsartan		
+Valsartan (Diovan)	valsartan		
+Valsartan / Amlodipine / HCTZ	valsartan	amlodipine	hydrochlorothiazide
+Valsartan + Amlodipine 40/5 mg	valsartan	amlodipine	
+Valsartan + Amlodipine 80/5 mg	valsartan	amlodipine	
+Valsartan + Amlodipine 40/2.5 mg	valsartan	amlodipine	
+Valsartan + Amlodipine 80/2.5 mg	valsartan	amlodipine	
+Valsartan + HCTZ	valsartan	hydrochlorothiazide	
+Valsartan High Dose	valsartan		
+Valsartan Low Dose	valsartan		
+Valsartan 320mg	valsartan		
+Valsartan 160mg	valsartan		
+Valsartan 40mg	valsartan		
+Valsartan 80mg	valsartan		
+valsartan 160mg	valsartan		
+valsartan 80mg	valsartan		
+Valsartan 160mg + Simvastatin 20mg	valsartan	simvastatin	
+Valsartan 160mg + Simvastatin 80mg	valsartan	simvastatin	
+Valsartan/ Aliskiren	valsartan	aliskiren	
+Valsartan/Amlodipine	valsartan	amlodipine	
+Valsartan/Amlodipine 80/5 mg	valsartan	amlodipine	
+Valsartan/Amlodipine 160/10 mg	valsartan	amlodipine	
+Valsartan/Amlodipine 160/5 mg	valsartan	amlodipine	
+Valsartan/Amlodipine 160/2.5mg	valsartan	amlodipine	
+Valsartan/Amlodipine 320/2.5mg	valsartan	amlodipine	
+Valsartan/Amlodipine 40/2.5mg	valsartan	amlodipine	
+Valsartan/Amlodipine 80/2.5mg	valsartan	amlodipine	
+valsartan/amlodipine 160/10mg	valsartan	amlodipine	
+valsartan/amlodipine 160/5mg	valsartan	amlodipine	
+Valsartan/amlodipine 160/10mg	valsartan	amlodipine	
+Valsartan/Amlodipine 160/10mg	valsartan	amlodipine	
+Valsartan/Amlodipine 320/10mg	valsartan	amlodipine	
+Valsartan/Amlodipine 160/5mg	valsartan	amlodipine	
+Valsartan/Amlodipine 320/5mg	valsartan	amlodipine	
+Valsartan/Amlodipine 40/5mg	valsartan	amlodipine	
+Valsartan/Amlodipine 80/5mg	valsartan	amlodipine	
+Valsartan/hctz	valsartan	hydrochlorothiazide	
+Valsartan/HCTZ	valsartan	hydrochlorothiazide	
+valsartan/HCTZ	valsartan	hydrochlorothiazide	
+Valsartan/NCTZ 160/25mg	valsartan	hydrochlorothiazide	
+Valturna	valsartan	aliskiren	
+Valturna + Amlodipine	valsartan	aliskiren	amlodipine
+Valturna + Chlorthalidone	valsartan	aliskiren	chlorthalidone

@@ -1,0 +1,29 @@
+nct_id	ctgov_group_code_bas	arm_name	match	note
+NCT00281580	B1	Placebo (Pl)	PLACEBO	
+NCT00368277	B1	Aliskiren Based Treatment Regimen	Aliskiren	
+NCT00368277	B2	Ramipril Based Treatment Regimen	Ramipril	
+NCT00439738	B1	Valsartan/HCTZ (Hydrochlorothiazide)		
+NCT00439738	B2	HCTZ +Amlodipine		
+NCT00439738	B3	Total		
+NCT00614380	B3	Telmisartan 40mg and Amlodipine 5mg + add-on Antihypertensive	Telmisartan 40mg and Amlodipine 5mg	
+NCT00614380	B4	Telmisartan 80mg and Amlodipine 5mg + add-on Antihypertensive	Telmisartan 80mg and Amlodipine 5mg	
+NCT00624052	B2	Randomised Telmisartan 80mg and Amlodipine 10mg	Telmisartan 80mg and Amlodipine 10mg	
+NCT00624052	B3	Titrated Telmisartan 80mg and Amlodipine 10mg		"from clincialtrials.gov ""The 838 participants in the telmisartan 40mg/amlodipine 10mg group includes all participants"". Not matching groups. Ignore and use ""total"""
+NCT00624052	B4	Telmisartan 40mg or 80mg and Amlodipine 10mg + add-on		"from clinicaltrials.gov ""The 611 participants in the telmisartan 80mg/amlodipine 10mg (T80/A10) group include 436 patients in the randomised T80/A10 group + 91 patients in the uptitrated T80/A10 group + XX patients in the T80/A10 + add-on group"". Not matchign groups, ignore and use ""Total"""
+NCT00739973	B2	Aliskiren 150 mg	Aliskiren 150 mg Tablet	
+NCT00739973	B3	Aliskiren 300 mg	Aliskiren 300 mg Tablet	
+NCT00739973	B4	Amlodipine 5 mg	Amlodipine 5 mg Capsule	
+NCT00739973	B5	Amlodipine 10 mg	Amlodipine 10 mg Capsule	
+NCT00739973	B6	Aliskiren/Amlodipine 150/5 mg	Aliskiren/Amlodipine 150/5 mg Tablet	
+NCT00739973	B7	Aliskiren/Amlodipine 150/10 mg	Aliskiren/Amlodipine 150/10 mg Tablet	
+NCT00739973	B8	Aliskiren/Amlodipine 300/5 mg	Aliskiren/Amlodipine 300/5 mg Tablet	
+NCT00760266	B1	Aliskiren/HCTZ	Aliskiren / HCTZ	
+NCT00778921	B1	Aliskiren/Amlodipine 300/10 mg	Aliskiren 300mg/ Amlodipine 10mg	
+NCT00778921	B2	Aliskiren/Amlodipine 150/10 mg	Aliskiren 150mg/ Amlodipine 10mg	
+NCT00778921	B3	Amlodipine 10 mg	Amlodipine 10mg	
+NCT00809926	B1	Valsartan/Aliskiren	Valsartan/ Aliskiren	
+NCT00931710	B1	Valsartan/Amlodipine/HCTZ	Valsartan / Amlodipine / HCTZ	
+NCT00931710	B2	Losartan/HCTZ	Losartan / HCTZ	
+NCT01042392	B1	Ramipril	Ramipril (Period II and III)	
+NCT01042392	B2	Aliskiren	Aliskiren (Period II and III)	
+NCT01237223	B1	Placebo	Placebo (Double Blind)	

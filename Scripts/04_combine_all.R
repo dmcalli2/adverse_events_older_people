@@ -281,6 +281,106 @@ bas_aes <- bind_rows(bas_aes, NCT00538486) %>%
   arrange(nct_id, arm_name)
 rm(NCT00538486)
 
+## add in age_sex_elig ----
+age_sex_elig <- readRDS("Scratch_data/age_sex_elig.Rds")
+age_sex_elig <- age_sex_elig %>% 
+  mutate_at(vars(minimum_age, maximum_age), ~ .x %>% str_replace_all("Years|N\\/A", "") %>% str_trim() %>% parse_integer()) %>% 
+  rename(gender_elig = gender)
+  as_tibble() 
+
+bas_aes <- bas_aes %>% 
+  inner_join(age_sex_elig) 
+
+## Examine minimumn age, 13 of these, all are in Jo dataset
+bas_aes %>% filter(minimum_age >= 60) %>% 
+  distinct(nct_id, source) %>% 
+  mutate(v = "yes") %>% 
+  spread(source, v, fill = "")
+
+## Add in type of primary outcome ----
+primary <- read_csv("Data_extraction_david/02_primary_outcomes.csv")
+primary <- primary %>% 
+  group_by(nct_id) %>% 
+  summarise(hard_outcome = if_else(
+    any(outcome_surrogacy %in% c("hard", "partial hard")), 1L, 0L)) %>% 
+  ungroup()
+
+bas_aes <- bas_aes %>% 
+  inner_join(primary)
+
+bas_aes <- bas_aes %>% 
+  select(source, nct_id, minimum_age, maximum_age, everything())
+
+## Add in drug arm names
+myarms <- bas_aes %>% 
+  distinct(arm_name) 
+# write_tsv(myarms, "clipboard")
+myarms <- read_tsv("Created_metadata/arm_convert_standard.txt")
+myarms <- myarms %>% 
+  gather(key = "drug_order", "drug_name", -arm_name, na.rm = TRUE)
+# myarms %>% 
+#   distinct(drug_name) %>% 
+#   write_csv("clipboard")
+
+who_atc <- read_tsv("Created_metadata/drug_atc_lkp.txt")
+who_atc %>% 
+  filter(!is.na(comment))
+myarms <- myarms %>% 
+  inner_join(who_atc %>% select(drug_name, who_atc))
+
+bas_aes_arms <- bas_aes %>% 
+  select(nct_id, arm_name) %>% 
+  inner_join(myarms)
+bas_aes_arms <- bas_aes_arms %>% 
+  filter(!drug_name == "total")
+bas_aes %>% 
+  anti_join(bas_aes_arms %>% select(nct_id))
+
+## Note that one of the trial arms is actually a total, so drop
+bas_aes %>% filter(nct_id == "NCT00220233")
+bas_aes <- bas_aes %>% 
+  filter(!(nct_id == "NCT00220233" & arm_name != "Total"))
+
+## Read in ones not got already (from Jo's table mostly)
+myarms_manual <- read_tsv("Data/jo_pls_one_ng_drug_arm_compare.txt")
+myarms_manual <- myarms_manual %>% 
+  anti_join(bas_aes_arms %>% rename(arm_name_other = arm_name))
+myarms_manual <- myarms_manual %>% 
+  select(-arm_type) %>% 
+  gather(key = "drug_order", "drug_name", -arm_name, -nct_id, na.rm = TRUE) 
+myarms_manual <- myarms_manual %>% 
+  inner_join(who_atc)
+
+arms <- bind_rows(bas_aes_arms, myarms_manual)
+rm(age_sex_elig, bas_aes_arms, myarms_manual, myarms, primary, who_atc)
+## There are 25 unique drugs, including placebo/usual care which is listed as the drug name placebo and drug name usual care
+arms$drug_name  %>% unique() %>% sort()
+arms$who_atc  %>% unique() %>% sort()
+## 13 unique drug classes to 5 digit level
+arms$who_atc %>% str_sub(1, 5) %>% unique()  %>% sort()
+
+comparison_type <- arms %>% 
+  select(nct_id, arm_name, who_atc) %>%
+  group_by(nct_id, arm_name) %>% 
+  mutate(n_drugs_in_arm = length(who_atc)) %>% 
+  ungroup() %>% 
+  nest(data = c(who_atc))
+comparison_type <- comparison_type %>% 
+  group_by(nct_id) %>% 
+  mutate(arm_seq = (seq_along(arm_name))) %>% 
+  ungroup() 
+
+comparison_type_smry <- comparison_type %>% 
+  group_by(nct_id) %>% 
+  summarise(arm_seq_max = max(arm_seq)) %>% 
+  ungroup()
+
+comparison_type_smry$perms <- map(comparison_type_smry$arm_seq_max, ~ combn(1:.x, 2))
+
+
 ## Final data with age, sex, bmi and adverse events for all trials
 saveRDS(bas_aes, "Processed_data/age_sex_bmi_ae_sae.Rds")
 write_tsv(bas_aes, "Processed_data/age_sex_bmi_ae_sae.csv")
+
+
+

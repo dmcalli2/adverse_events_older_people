@@ -89,7 +89,7 @@ primary <- aact$design_outcomes %>%
 elig <- aact$eligibilities %>% 
   select(nct_id, minimum_age, maximum_age, gender) %>% 
   distinct()
-
+saveRDS(elig, "Scratch_data/age_sex_elig.Rds")
 ## participants for all ----
 participants <- trials %>% 
   select(nct_id, enrollment)
