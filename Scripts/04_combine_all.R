@@ -15,7 +15,7 @@ ng <- read_csv("Data/final_nv_guy.csv")
 
 ## Combine Jo and ng
 jo <- jo %>% 
-  mutate(arm_name = "to do",
+  mutate(arm_name = "Total",
          female = numberpart - male,
          total_derived = "jo",
          fu_days = followupweeks*7) %>% 
@@ -135,11 +135,39 @@ no_bmi <- c("NCT00149227", "NCT00219141", "NCT00281580", "NCT00368277",
             "NCT01042392", "NCT01167153", "NCT01237223", "NCT01368536", "NCT01599104", 
             "NCT01615198", "NCT01785472", "NCT01876368", "NCT01975246")
 
-## These are all categorical, ignore for now
-no_age2 <-  ctg_base %>% 
-  filter(nct_id %in% no_age)
-no_age2 %>% distinct(title)
-no_age2 <- no_age2 %>% filter(title %in% c("Age", "Age, Customized"))
+## These are all categorical so got from published papers identified from clinicaltrials.gov except
+# NCT00706134 which got from systematic review https://www.nature.com/articles/hr2012185/tables/1
+# For that one only presented age for selcted 300mg and placebo, so assume is same for all treatment arms
+age_bmi_ctg_manual <- read_csv(
+"nct_id,ctgov_group_code,arm_name_bas,age_m,age_s,bmi_m,bmi_s
+NCT00439738,B1,Valsartan/HCTZ (Hydrochlorothiazide),55.4,8.5,35.2,7.3
+NCT00439738,B2,HCTZ +Amlodipine,56.5,8.6,34.8,6.9
+NCT00439738,B3,Total,55.95,8.55,35,7.1
+NCT00591578,B1,Azilsartan Medoxomil 40 mg QD,57.8,12.1,30.8,5.7
+NCT00591578,B2,Azilsartan Medoxomil 80 mg QD,56.8,10.7,30.7,5.3
+NCT00591578,B3,Valsartan 320 mg QD,58.1,10.9,31.2,5.8
+NCT00591578,B4,Total,57.56666667,11.23333333,30.9,5.6
+NCT00696241,B1,Azilsartan Medoxomil 20 mg QD,57.1,11.02,30.4,5.67
+NCT00696241,B2,Azilsartan Medoxomil 40 mg QD,57.4,9.62,30.6,5.94
+NCT00696241,B3,Azilsartan Medoxomil 80 mg QD,58.1,11.56,30,5.48
+NCT00696241,B4,Olmesartan 40 mg QD,58.9,11.57,29.8,5.25
+NCT00696241,B5,Placebo QD,59.4,10.53,30,4.93
+NCT00696241,B6,Total,58.04439216,10.89703529,30.17772549,5.51214902
+NCT00696436,B1,Azilsartan Medoxomil 40 mg QD,57,12,31.7,6
+NCT00696436,B2,Azilsartan Medoxomil 80 mg QD,56,11,30.7,5.9
+NCT00696436,B3,Valsartan 320 mg QD,55,11,31.1,5.5
+NCT00696436,B4,Olmesartan 40 mg QD,56,11,31.1,5.5
+NCT00696436,B5,Placebo QD,56,11,30.5,5.4
+NCT00696436,B6,Total,55.99845081,11.21688613,31.07025562,5.684817971
+NCT00706134,B1,Placebo,72.3,5.25,,
+NCT00706134,B2,Aliskiren 75 mg,72.1,5.47,,
+NCT00706134,B3,Aliskiren 150 mg,72.1,5.47,,
+NCT00706134,B4,Aliskiren 300 mg,72.1,5.47,,
+NCT00706134,B5,Total,72.1,5.47,,"
+)
+
+ctg_age <- bind_rows(ctg_age,
+                      age_bmi_ctg_manual %>% select(-bmi_m, -bmi_s))
 
 ## For sex, one trial is very unusally coded take this one separately, add in adverse event data at this point
 NCT00591578 <- ctg_base %>% 
@@ -149,7 +177,10 @@ NCT00591578 <- ctg_base %>%
   mutate(classification = if_else(classification == "Male (Double Blind Phase)", "male", "female")) %>% 
   select(nct_id, arm_name = arm_name_bas, subjects_at_risk, sae, ae, fu_days, classification, param_value) %>% 
   spread(classification, param_value, fill = 0L)
+NCT00591578 <- NCT00591578 %>% 
+  inner_join(ctg_age %>% filter(nct_id == "NCT00591578") %>% rename(arm_name = arm_name_bas))
 
+## Remainder are very straightforward
 no_sex2 <- ctg_base %>% 
   filter(nct_id %in% no_sex,
          !nct_id == "NCT00591578",
@@ -161,3 +192,95 @@ names(no_sex2) <- str_to_lower(names(no_sex2))
 ctg_sex <- bind_rows(ctg_sex,
                      no_sex2)
 rm(no_sex2)
+
+## check bmi, just categories, not feasible to find all
+ctg_bmi <- bind_rows(ctg_bmi,
+                     age_bmi_ctg_manual %>% select(-age_m, -age_s) %>% filter(!is.na(bmi_m)))
+
+no_bmi2 <- ctg_base %>% 
+  filter(nct_id %in% no_bmi, title == "Body Mass Index") 
+
+## Combine data without missing rows
+ctg_bas_final <- bind_rows(
+                      ctg_age,
+                      ctg_sex,
+                      ctg_bmi) %>% 
+  distinct(nct_id, ctgov_group_code, arm_name_bas)
+ctg_bas_final <- ctg_bas_final %>% 
+  left_join(ctg_age) %>% 
+  left_join(ctg_sex) %>% 
+  left_join(ctg_bmi) %>% 
+  arrange(nct_id, ctgov_group_code) %>% 
+  rename(arm_name = arm_name_bas)
+
+## 60 to being with, NCT00591578 missing sex is in separate file NCT00591578
+ctg_base %>% 
+  distinct(nct_id)
+# 60 at end, none missing for age, 
+ctg_bas_final %>% 
+  filter(arm_name == "Total") %>% 
+  mutate_at(vars(age_m:bmi_s), is.na) %>% 
+  summarise_at(vars(age_m:bmi_s), mean)
+# age_m age_s female   male bmi_m bmi_s
+# <dbl> <dbl>  <dbl>  <dbl> <dbl> <dbl>
+#   1     0     0 0.0167 0.0167 0.817 0.817
+
+## Join base and adverse events, one in bas that is not in aes, none in aes that is not in bas
+setdiff(ctg_bas_final$nct_id, ctg_aes_wide$nct_id)
+setdiff(ctg_aes_wide$nct_id, ctg_bas_final$nct_id)
+
+ctg_aes_bas_mtch <- ctg_bas_final %>% 
+  filter(!nct_id == "NCT00591578") %>% 
+  rename(ctgov_group_code_bas = ctgov_group_code) %>% 
+  inner_join(ctg_aes_wide %>% rename(ctgov_group_code_aes = ctgov_group_code))
+
+ctg_aes_bas_no_mtch <- ctg_bas_final %>% 
+  filter(!nct_id == "NCT00591578") %>% 
+  rename(ctgov_group_code_bas = ctgov_group_code) %>% 
+  anti_join(ctg_aes_bas_mtch) 
+
+ctg_ae_rematch <- read_tsv("Created_metadata/arm_match_ctg.txt") %>% 
+  filter(!is.na(match)) %>% 
+  select(nct_id, arm_name, match)
+
+ctg_aes_bas_no_mtch2 <- ctg_aes_bas_no_mtch %>% 
+  inner_join(ctg_ae_rematch) %>% 
+  select(-arm_name) %>% 
+  rename(arm_name = match) %>% 
+  inner_join(ctg_aes_wide %>% rename(ctgov_group_code_aes = ctgov_group_code))
+
+ctg_aes_bas <- bind_rows(ctg_aes_bas_mtch,
+                          ctg_aes_bas_no_mtch2)
+rm(age_bmi_ctg_manual, ctg_ae_rematch, ctg_aes, ctg_aes_bas_mtch, ctg_aes_bas_no_mtch,
+   ctg_aes_bas_no_mtch2, ctg_aes_wide, ctg_age, ctg_bas_final,
+   ctg_bas2, ctg_base, ctg_bmi, ctg_sex, no_age, no_bmi, no_bmi2, no_sex, trials_over)
+
+bas_aes <- bind_rows(ngj, 
+                     ctg_aes_bas %>% mutate(source = "ctg"), 
+                     NCT00591578 %>% rename(ctgov_group_code_bas = ctgov_group_code) %>% mutate(source = "ctg"))
+rm(ngj, ctg_aes_bas, NCT00591578)
+bas_aes %>% 
+  # filter(arm_name == "Total") %>% 
+  distinct(nct_id)
+
+bas_aes %>%
+  group_by(nct_id) %>% 
+  mutate(total = any(arm_name == "Total")) %>% 
+  ungroup() %>% 
+  filter(!total)
+
+## One trial without totals NCT00538486, calcualte this, same number in each arm
+NCT00538486 <- bas_aes %>% 
+  filter(nct_id == "NCT00538486") %>% 
+  mutate_at(vars(subjects_at_risk, female, male, ae, sae), sum, na.rm = TRUE) %>% 
+  mutate_at(vars(age_m, age_s, bmi_m, bmi_s, fu_days), mean, na.rm = TRUE) %>% 
+  slice(1) %>% 
+  mutate(arm_name = "Total")
+
+bas_aes <- bind_rows(bas_aes, NCT00538486) %>% 
+  arrange(nct_id, arm_name)
+rm(NCT00538486)
+
+## Final data with age, sex, bmi and adverse events for all trials
+saveRDS(bas_aes, "Processed_data/age_sex_bmi_ae_sae.Rds")
+write_tsv(bas_aes, "Processed_data/age_sex_bmi_ae_sae.csv")
