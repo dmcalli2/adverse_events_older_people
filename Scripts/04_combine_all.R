@@ -1,5 +1,27 @@
 # 04_combine_all.R
 
+## functions ----
+MakeComparison <- function(data_frame_chose = "data_5"){
+  res <- map(comparison_type$nct_id %>% unique(), function(nct_id_choose){
+    print(nct_id_choose)
+    a <- comparison_type %>% 
+      filter(nct_id == nct_id_choose)
+    
+    perms_list <- a$perms[[1]]
+    res <- map(perms_list, function(perms){
+      t1 <- perms[1]
+      t2 <- perms[2]
+      union(setdiff(a[[data_frame_chose]][[t1]], a[[data_frame_chose]][[t2]]),
+            setdiff(a[[data_frame_chose]][[t2]], a[[data_frame_chose]][[t1]]))
+    })
+    names(res) <- map_chr(perms_list, ~ paste(.x, collapse = "_"))
+    res
+  })
+  res
+}
+
+
+
 library(tidyverse)
 trials_over <- read_csv("Supporting/Overview_trial_extaction.csv")
 
@@ -316,7 +338,6 @@ bas_aes <- bas_aes %>%
 
 ## Add in drug arm names ----
 ## Note that only placebo is noted where it is the sole "drug" in a comparison
-
 myarms <- bas_aes %>% 
   distinct(arm_name) 
 # write_tsv(myarms, "clipboard")
@@ -326,7 +347,6 @@ myarms <- myarms %>%
 # myarms %>% 
 #   distinct(drug_name) %>% 
 #   write_csv("clipboard")
-
 who_atc <- read_tsv("Created_metadata/drug_atc_lkp.txt")
 who_atc %>% 
   filter(!is.na(comment))
@@ -358,9 +378,9 @@ myarms_manual <- bind_rows(myarms_manual, NCT00219037)
 myarms_manual <- myarms_manual %>% 
   inner_join(who_atc)
 
-## 142 trials have arm information, all also ahve baseline information
+## 142 trials have arm information, this means that all of the ones with baseline/ae information have arm information
 arms <- bind_rows(bas_aes_arms, myarms_manual)
-rm(age_sex_elig, bas_aes_arms, myarms_manual, myarms, primary, who_atc)
+rm(age_sex_elig, bas_aes_arms, myarms_manual, myarms, primary, who_atc, NCT00219037)
 
 ## There are 25 unique drugs, including placebo/usual care which is listed as the drug name placebo and drug name usual care
 arms$drug_name  %>% unique() %>% sort()
@@ -395,38 +415,40 @@ comparison_type$data <- map(comparison_type$data, pull)
 map_lgl(comparison_type$data, ~ all(.x == "placebo_usual_care") | !any(.x == "placebo_usual_care")) %>% all()
 placebo <- map_lgl(comparison_type$data, ~ all(.x == "placebo_usual_care"))
 names(placebo) <- comparison_type$nct_id
-placebo <- names(placebo[placebo])
 
-## Drop placebo controlled trials
+## Identify placebo controlled trials
+placebo <- names(placebo[placebo])
+compare_plac <- comparison_type %>% 
+  filter(nct_id %in% placebo, !str_detect(arm_name %>%  str_to_lower(), "placebo|usual"))
+ClassCompareCollapse <- function(list_trials, class_comparison = "") {
+  map(list_trials, ~ .x %>% unique() %>% sort() %>% paste(collapse = "|")) %>% 
+    stack() %>% 
+    as_tibble() %>% 
+    set_names(nm = c(paste0("cmprsn"), "nct_id"))
+}
+
+cc_plac <- compare_plac$data
+names(cc_plac) <- compare_plac$nct_id
+cc_plac <- stack(cc_plac) %>% 
+  distinct()
+cc_plac <- tapply(cc_plac$values, cc_plac$ind, function(x) x %>% sort() %>% unique() %>% paste(collapse = "|"))
+cc_plac <- stack(cc_plac) %>% 
+  as_tibble()
+names(cc_plac) <- c("cmprsn", "nct_id")
+
 comparison_type <- comparison_type %>% 
   filter(!nct_id %in% placebo)
 
-MakeComparison <- function(data_frame_chose = "data_5"){
-  res <- map(comparison_type$nct_id %>% unique(), function(nct_id_choose){
-    print(nct_id_choose)
-    a <- comparison_type %>% 
-      filter(nct_id == nct_id_choose)
-    
-    perms_list <- a$perms[[1]]
-    res <- map(perms_list, function(perms){
-      t1 <- perms[1]
-      t2 <- perms[2]
-      union(setdiff(a[[data_frame_chose]][[t1]], a[[data_frame_chose]][[t2]]),
-            setdiff(a[[data_frame_chose]][[t2]], a[[data_frame_chose]][[t1]]))
-    })
-    names(res) <- map_chr(perms_list, ~ paste(.x, collapse = "_"))
-    res
-  })
-  res
-}
-res <- MakeComparison("data")
+## Identify different class trials at 3-character ATC level
+comparison_type$data_3 <- map(comparison_type$data, ~ str_sub(.x, 1, 3))
+res <- MakeComparison("data_3")
 names(res) <- comparison_type$nct_id %>% unique()
-comparison_type_agent <- map(res, ~ .x %>% unlist() %>% unique()) 
-## Where is zero - 4 trials all same drugs against different doses - checked original record on CTG
-xmn <- map_int(comparison_type_agent, length)
-xmn[xmn ==0]
-same_drugs <- names(xmn[xmn ==0])
-rm(res)
+comparison_type_class <- map(res, ~ .x %>% unlist() %>% unique())
+same_class3 <- map_lgl(comparison_type_class, ~ length(.x) ==0L)
+diff_class3 <- names(same_class3)[!same_class3]
+comparison_type <- comparison_type %>% 
+  filter(!nct_id %in% diff_class3)
+cc3 <- ClassCompareCollapse(comparison_type_class, 3)
 
 ## Compare 5-digit WHOATC codes for each arm
 comparison_type$data_5 <- map(comparison_type$data, ~ str_sub(.x, 1, 5))
@@ -434,47 +456,63 @@ res <- MakeComparison("data_5")
 names(res) <- comparison_type$nct_id %>% unique()
 comparison_type_class <- map(res, ~ .x %>% unlist() %>% unique())
 same_class5 <- map_lgl(comparison_type_class, ~ length(.x) ==0L)
-same_class5 <- names(same_class5)[same_class5]
+diff_class5 <- names(same_class5)[!same_class5]
+cc5 <- ClassCompareCollapse(comparison_type_class, 5)
 
-## Compare 3-digit WHOATC codes for each arm
-comparison_type$data_3 <- map(comparison_type$data, ~ str_sub(.x, 1, 3))
-res <- MakeComparison("data_3")
+comparison_type <- comparison_type %>% 
+  filter(!nct_id %in% diff_class5)
+  
+## Compare 7-digit WHOATC codes for each arm
+res <- MakeComparison("data")
 names(res) <- comparison_type$nct_id %>% unique()
-comparison_type_class <- map(res, ~ .x %>% unlist() %>% unique())
-same_class3 <- map_lgl(comparison_type_class, ~ length(.x) ==0L)
-diff_cls_vect <- comparison_type_class[!same_class3]
-diff_cls_vect <- map(diff_cls_vect, sort)
-diff_cls_vect <- map_chr(diff_cls_vect, paste, collapse = "|")
-table(diff_cls_vect)
-same_class3 <- names(same_class3)[same_class3]
+comparison_type_agent <- map(res, ~ .x %>% unlist() %>% unique()) 
+same_class7 <- map_lgl(comparison_type_agent, ~ length(.x) ==0L)
+diff_class7 <- names(same_class7)[!same_class7]
+cc7 <- ClassCompareCollapse(comparison_type_agent, 7)
 
-sames <- list(drug = same_drugs, who5 = same_class5, who3 = same_class3, placebo = placebo)
+## leftover should all be same drug comparison (ie different dose); this is correct
+comparison_type <- comparison_type %>% 
+  filter(!nct_id %in% diff_class7)
+same_class7 <- names(same_class7)[same_class7]
+sm7 <- comparison_type$data 
+names(sm7) <- comparison_type$nct_id
+sm7 <- map(sm7, ~ .x %>% sort() %>% paste(collapse = "|"))
+sm7 <- stack(sm7) %>% 
+  set_names(c("cmprsn", "nct_id")) %>% 
+  as_tibble() %>% 
+  distinct()
+
+cmprsn <- bind_rows(cc_plac = cc_plac, cc3 = cc3, cc5 = cc5, cc7 = cc7, sm7 = sm7,
+                    .id = "comparison_type") %>% 
+  filter(!cmprsn == "")
+
+
+sames <- list(placebo = placebo, diff_class3 = diff_class3, diff_class5 = diff_class5, diff_class7 = diff_class7, same_class7 = same_class7)
 all_trials <- bas_aes %>% distinct(nct_id)
 sames[] <- map(sames, ~ all_trials$nct_id %in% .x)
 sames <- bind_cols(sames)
 sames <- bind_cols(all_trials, sames)
-sames$who3[(sames$drug | sames$who5)] <- FALSE
-sames$who5[(sames$drug)] <- FALSE
+sames %>% count(placebo, diff_class3, diff_class5, diff_class7, same_class7)
+sames <- list(placebo = placebo, diff_class3 = diff_class3, diff_class5 = diff_class5, diff_class7 = diff_class7, same_class7 = same_class7)
+sames <- stack(sames) %>% 
+  as_tibble() %>% 
+  distinct()
+names(sames) <- c("nct_id", "type_comparison")
 
-sames %>% count(drug, who3, who5, placebo)
 
-## Leftovers shoudl be different classes, on review all are correct. Are mostly trials of adjunct therapy (eg, C03, C08, C09, C10), but some 
-# are across class heads exclusively
-diff_cls <- sames %>% 
-  filter(!(drug|who5|who3|placebo)) %>% 
-  select(nct_id) %>% 
-  inner_join(arms)
-# diff_cls_vect
-# C03     C03|C08 C03|C08|C09     C03|C09     C07|C09         C08     C08|C09         C09     C09|C10     C09|non         C10 
-# 18           2           3           4           2          13          10          21           1           2           1 
-adjunct <- names(diff_cls_vect)[str_length(diff_cls_vect) == 3]
-diff_cls %>% 
-  filter(nct_id %in% adjunct) %>% 
-  distinct(nct_id, arm_name)
+## No duplicates, and is completed
+bas_aes <- bas_aes %>% 
+  inner_join(sames) %>% 
+  inner_join(cmprsn)
+
+## Add column of class comparisons at level 3 within a trial
+bas_aes %>% 
+  filter(arm_name == "Total") %>% 
+  distinct(nct_id, .keep_all = TRUE)
 
 ## Final data with age, sex, bmi and adverse events for all trials
 saveRDS(bas_aes, "Processed_data/age_sex_bmi_ae_sae.Rds")
-write_tsv(bas_aes, "Processed_data/age_sex_bmi_ae_sae.csv")
+write_tsv(bas_aes, "Processed_data/age_sex_bmi_ae_sae.txt")
 
 
 870 + 1085
