@@ -12,7 +12,7 @@ Aliskiren (300 mg)	aliskiren
 Aliskiren (active-controlled period)	aliskiren		
 Aliskiren (Period II and III)	aliskiren		
 Aliskiren (placebo-controlled period)	aliskiren		
-Aliskiren / Amlodipine	aliskiren	amlodipine	hydrochlorothiazide
+Aliskiren / Amlodipine	aliskiren	amlodipine	
 Aliskiren / Amlodipine / HCTZ	aliskiren	amlodipine	hydrochlorothiazide
 Aliskiren / Amlodipine / Hydrochlorothiazide	aliskiren	amlodipine	hydrochlorothiazide
 Aliskiren / HCTZ	aliskiren	hydrochlorothiazide	
@@ -101,8 +101,8 @@ LCZ696	sacubitril	valsartan
 LCZ696 200 mg	sacubitril	valsartan	
 LCZ696 400 mg	sacubitril	valsartan	
 Lercanidipine 10mg	lercanidipine		
-Lercanidipine 10mg /Valsartan 160mg	lercanidipine		
-Lercanidipine 10mg /Valsartan 80mg	lercanidipine		
+Lercanidipine 10mg /Valsartan 160mg	lercanidipine	valsartan	
+Lercanidipine 10mg /Valsartan 80mg	lercanidipine	valsartan	
 Losartan	losartan		
 Losartan 100 mg	losartan		
 Losartan 50 mg/HCTZ 12.5 mg	losartan		
@@ -158,7 +158,7 @@ Placebo (subgroup aliskiren placebo-controlled period)	placebo
 Placebo (subgroup ramipril placebo-controlled period)	placebo		
 Placebo Followed by Olmesartan	placebo		
 Placebo QD	placebo		
-Placebo/Valsartan/Hydrochlorothiazide 160/25mg	placebo		
+Placebo/Valsartan/Hydrochlorothiazide 160/25mg	valsartan	hydrochlorothiazide	
 Ramipril	ramipril		
 Ramipril 5 mg	ramipril		
 Ramipril (active-controlled period)	ramipril		

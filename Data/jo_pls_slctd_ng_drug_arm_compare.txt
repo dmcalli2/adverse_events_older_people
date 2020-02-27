@@ -57,7 +57,7 @@ NCT00739973	comparison	placebo	placebo
 NCT00500604	comparison	Valsartan/HCTZ	valsartan	hydrochlorothiazide	
 NCT00705575	comparison	Alsikiren	aliskiren		
 NCT00260923	comparison	Placebo	placebo		
-NCT00220220	comparison	Olmesartan/Placebo	olmesartan	placebo	
+NCT00220220	comparison	Olmesartan/Placebo	olmesartan		
 NCT00185133	comparison	Olmesartan	olmesartan		
 NCT01615198	treatment	LCZ696	sacubitril	valsartan	
 NCT02177461	treatment	Telmisartan	telmisartan		
@@ -80,3 +80,14 @@ NCT02177500	comparison	placebo	placebo
 NCT00240448	treatment	telmisartan	telmisartan		
 NCT00240448	comparison	valsartan	valsartan		
 NCT00240448	comparison	placebo	placebo		
+NCT00220233	treatment	olmesartan/amlodipine	olmesartan	amlodipine	
+NCT00220233	comparison	amlodipine	amlodipine		
+NCT00316095	treatment	telmisartan/simvastatin	telmisartan	simvastatin	
+NCT00316095	comparison	telmisartan	telmisartan		
+NCT00316095	comparison	simvastatin	simvastatin		
+NCT00400777	treatment	valsartan/amlodipine/hydrochlorothiazide	valsartan	amlodipine	hydrochlorothiazide
+NCT00400777	comparison	valsartan/hydrochlorothiazide	valsartan	hydrochlorothiazide	
+NCT02177409	treatment	telmisartan	telmisartan		
+NCT02177409	comparison	amlodipine	amlodipine		
+NCT02269176	treatment	telmisartan	telmisartan		
+NCT02269176	comparison	losartan	losartan		

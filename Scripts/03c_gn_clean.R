@@ -3,9 +3,14 @@ library(tidyverse)
 
 ## review "totals"
 source("Scripts/03b_gn_clean.R")
+rm(list = ls())
 source("Scripts/00_functions.R")
 
-ae <- readRDS("Scratch_data/cleaned_guy_neave_combined.Rds")
+ae_all <- readRDS("Scratch_data/cleaned_guy_neave_combined.Rds")
+ae <- ae_all$ae_sae_all
+fup <- ae_all$follow_up
+rm(ae_all)
+
 
 ## remove duplicates introduced in merging
 ae <- ae %>% 
@@ -61,10 +66,6 @@ rv <- ae %>%
   mutate(arrange_by = if_else(arm_name == "Total", "ZZZ_total", arm_name)) %>% 
   arrange(nct_id, arrange_by)%>% 
   select(-arrange_by)
-
-mydf_lst <- readRDS("Scratch_data/cleaned_guy_neave.Rds")
-fup <- mydf_lst$follow_up
-rm(mydf_lst)
 
 rv2 <- rv %>% 
   left_join(fup %>% filter(!is.na(fu_days)) %>% distinct())

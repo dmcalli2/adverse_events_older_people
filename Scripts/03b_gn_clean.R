@@ -123,7 +123,7 @@ bmi_other <- bmi %>%
 
 ## save participants (by sex), age and bmi data
 all_base <- list(age = age_m_s, prtcpts = prtcpts, bmi = bmi_m_s)
-rm(list = setdiff(ls(), c("all_base", "ae_sae")))
+rm(list = setdiff(ls(), c("all_base", "ae_sae", "follow_up")))
 
 ## Spread base to wide
 all_base <- bind_rows(all_base) %>% 
@@ -264,8 +264,7 @@ setdiff(no_match_resolve$nct_id, ae_no_mtch$nct_id)
 ae_sae_all <- bind_rows(ae_sae_mtch %>% filter(!is.na(arm_name_base)) %>% rename(arm_name = arm_name_sae) %>% select(-arm_name_base),
                         no_match_resolve  %>% rename(arm_name = arm_name_sae))
 
-## Next step need to calcualte total for events, (ns and %s)
-saveRDS(list(ae_sae_all = ae_sae_all, fu, "Scratch_data/cleaned_guy_neave_combined.Rds")
+saveRDS(list(ae_sae_all = ae_sae_all, follow_up = follow_up), "Scratch_data/cleaned_guy_neave_combined.Rds")
 
 rm(list = ls())
 

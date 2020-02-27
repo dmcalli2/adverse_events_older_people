@@ -12,7 +12,6 @@ jo <- jo %>%
 ## Neave and Guy ----
 ng <- read_csv("Data/final_nv_guy.csv")
 
-
 ## Combine Jo and ng
 jo <- jo %>% 
   mutate(arm_name = "Total",
@@ -311,7 +310,13 @@ bas_aes <- bas_aes %>%
 bas_aes <- bas_aes %>% 
   select(source, nct_id, minimum_age, maximum_age, everything())
 
-## Add in drug arm names
+## Note that one of the trial arms is actually a total, so drop
+bas_aes <- bas_aes %>% 
+  filter(!(nct_id == "NCT00220233" & arm_name != "Total"))
+
+## Add in drug arm names ----
+## Note that only placebo is noted where it is the sole "drug" in a comparison
+
 myarms <- bas_aes %>% 
   distinct(arm_name) 
 # write_tsv(myarms, "clipboard")
@@ -336,23 +341,27 @@ bas_aes_arms <- bas_aes_arms %>%
 bas_aes %>% 
   anti_join(bas_aes_arms %>% select(nct_id))
 
-## Note that one of the trial arms is actually a total, so drop
-bas_aes %>% filter(nct_id == "NCT00220233")
-bas_aes <- bas_aes %>% 
-  filter(!(nct_id == "NCT00220233" & arm_name != "Total"))
-
 ## Read in ones not got already (from Jo's table mostly)
-myarms_manual <- read_tsv("Data/jo_pls_one_ng_drug_arm_compare.txt")
+myarms_manual <- read_tsv("Data/jo_pls_slctd_ng_drug_arm_compare.txt")
 myarms_manual <- myarms_manual %>% 
   anti_join(bas_aes_arms %>% rename(arm_name_other = arm_name))
 myarms_manual <- myarms_manual %>% 
   select(-arm_type) %>% 
   gather(key = "drug_order", "drug_name", -arm_name, -nct_id, na.rm = TRUE) 
+
+## add in additional arm for one trial NCT00219037 as this is in baseline but not in SAE table (which only gives total)
+NCT00219037 <- tibble(nct_id = "NCT00219037", arm_name = "Aliskiren/HCTZ", x = 1:2, ) %>% 
+  mutate(drug_order = c("assigned1", "assigned2"), drug_name = c("aliskiren", "hydrochlorothiazide")) %>% 
+  select(-x)
+myarms_manual <- bind_rows(myarms_manual, NCT00219037)
+
 myarms_manual <- myarms_manual %>% 
   inner_join(who_atc)
 
+## 142 trials have arm information, all also ahve baseline information
 arms <- bind_rows(bas_aes_arms, myarms_manual)
 rm(age_sex_elig, bas_aes_arms, myarms_manual, myarms, primary, who_atc)
+
 ## There are 25 unique drugs, including placebo/usual care which is listed as the drug name placebo and drug name usual care
 arms$drug_name  %>% unique() %>% sort()
 arms$who_atc  %>% unique() %>% sort()
@@ -375,12 +384,98 @@ comparison_type_smry <- comparison_type %>%
   summarise(arm_seq_max = max(arm_seq)) %>% 
   ungroup()
 
-comparison_type_smry$perms <- map(comparison_type_smry$arm_seq_max, ~ combn(1:.x, 2))
+comparison_type_smry$perms <- map(comparison_type_smry$arm_seq_max, ~ combn(1:.x, 2, simplify = FALSE))
 
+comparison_type <- comparison_type %>% 
+  inner_join(comparison_type_smry %>% select(-arm_seq_max))
+
+## Loop through comparing WHOATC full 7-digit codes for each arm comparison, eg if 4 arms, 6 comparisons
+comparison_type$data <- map(comparison_type$data, pull)
+# Check placebo arms are purely placebo arms
+map_lgl(comparison_type$data, ~ all(.x == "placebo_usual_care") | !any(.x == "placebo_usual_care")) %>% all()
+placebo <- map_lgl(comparison_type$data, ~ all(.x == "placebo_usual_care"))
+names(placebo) <- comparison_type$nct_id
+placebo <- names(placebo[placebo])
+
+## Drop placebo controlled trials
+comparison_type <- comparison_type %>% 
+  filter(!nct_id %in% placebo)
+
+MakeComparison <- function(data_frame_chose = "data_5"){
+  res <- map(comparison_type$nct_id %>% unique(), function(nct_id_choose){
+    print(nct_id_choose)
+    a <- comparison_type %>% 
+      filter(nct_id == nct_id_choose)
+    
+    perms_list <- a$perms[[1]]
+    res <- map(perms_list, function(perms){
+      t1 <- perms[1]
+      t2 <- perms[2]
+      union(setdiff(a[[data_frame_chose]][[t1]], a[[data_frame_chose]][[t2]]),
+            setdiff(a[[data_frame_chose]][[t2]], a[[data_frame_chose]][[t1]]))
+    })
+    names(res) <- map_chr(perms_list, ~ paste(.x, collapse = "_"))
+    res
+  })
+  res
+}
+res <- MakeComparison("data")
+names(res) <- comparison_type$nct_id %>% unique()
+comparison_type_agent <- map(res, ~ .x %>% unlist() %>% unique()) 
+## Where is zero - 4 trials all same drugs against different doses - checked original record on CTG
+xmn <- map_int(comparison_type_agent, length)
+xmn[xmn ==0]
+same_drugs <- names(xmn[xmn ==0])
+rm(res)
+
+## Compare 5-digit WHOATC codes for each arm
+comparison_type$data_5 <- map(comparison_type$data, ~ str_sub(.x, 1, 5))
+res <- MakeComparison("data_5")
+names(res) <- comparison_type$nct_id %>% unique()
+comparison_type_class <- map(res, ~ .x %>% unlist() %>% unique())
+same_class5 <- map_lgl(comparison_type_class, ~ length(.x) ==0L)
+same_class5 <- names(same_class5)[same_class5]
+
+## Compare 3-digit WHOATC codes for each arm
+comparison_type$data_3 <- map(comparison_type$data, ~ str_sub(.x, 1, 3))
+res <- MakeComparison("data_3")
+names(res) <- comparison_type$nct_id %>% unique()
+comparison_type_class <- map(res, ~ .x %>% unlist() %>% unique())
+same_class3 <- map_lgl(comparison_type_class, ~ length(.x) ==0L)
+diff_cls_vect <- comparison_type_class[!same_class3]
+diff_cls_vect <- map(diff_cls_vect, sort)
+diff_cls_vect <- map_chr(diff_cls_vect, paste, collapse = "|")
+table(diff_cls_vect)
+same_class3 <- names(same_class3)[same_class3]
+
+sames <- list(drug = same_drugs, who5 = same_class5, who3 = same_class3, placebo = placebo)
+all_trials <- bas_aes %>% distinct(nct_id)
+sames[] <- map(sames, ~ all_trials$nct_id %in% .x)
+sames <- bind_cols(sames)
+sames <- bind_cols(all_trials, sames)
+sames$who3[(sames$drug | sames$who5)] <- FALSE
+sames$who5[(sames$drug)] <- FALSE
+
+sames %>% count(drug, who3, who5, placebo)
+
+## Leftovers shoudl be different classes, on review all are correct. Are mostly trials of adjunct therapy (eg, C03, C08, C09, C10), but some 
+# are across class heads exclusively
+diff_cls <- sames %>% 
+  filter(!(drug|who5|who3|placebo)) %>% 
+  select(nct_id) %>% 
+  inner_join(arms)
+# diff_cls_vect
+# C03     C03|C08 C03|C08|C09     C03|C09     C07|C09         C08     C08|C09         C09     C09|C10     C09|non         C10 
+# 18           2           3           4           2          13          10          21           1           2           1 
+adjunct <- names(diff_cls_vect)[str_length(diff_cls_vect) == 3]
+diff_cls %>% 
+  filter(nct_id %in% adjunct) %>% 
+  distinct(nct_id, arm_name)
 
 ## Final data with age, sex, bmi and adverse events for all trials
 saveRDS(bas_aes, "Processed_data/age_sex_bmi_ae_sae.Rds")
 write_tsv(bas_aes, "Processed_data/age_sex_bmi_ae_sae.csv")
 
 
+870 + 1085
 

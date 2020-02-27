@@ -33,9 +33,6 @@ NCT00219024	Aliskiren/Hydrochlorothiazide 75/12.5mg	193	1
 NCT00219024	Aliskiren/Hydrochlorothiazide 75/25mg	186	1
 NCT00219024	Aliskiren/Hydrochlorothiazide 75/6.25mg	188	1
 NCT00219024	Placebo	195	1
-NCT00219037	Aliskiren 150mg	1179	1
-NCT00219037	Aliskiren 300mg	776	1
-NCT00219037	Combo therapy	870	1
 NCT00219063	Aliskiren (active-controlled period)	420	1
 NCT00219063	Aliskiren (placebo-controlled period)	170	
 NCT00219063	Placebo (subgroup aliskiren placebo-controlled period)	163	
