@@ -675,3 +675,8 @@ trials_restrict <- trials %>%
   filter(type_comparison %in% c("placebo", "diff_class3", "diff_class5") | is.na(type_comparison)) %>% 
   NRowR() %>% 
   filter()
+
+trials_restrict %>% 
+  semi_join(tots %>% filter(!is.na(sae))) %>% 
+  mutate(older = minimum_age>=60) %>% 
+  count(older)
