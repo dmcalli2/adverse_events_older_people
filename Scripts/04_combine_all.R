@@ -1,4 +1,5 @@
 # 04_combine_all.R
+library(tidyverse)
 
 ## functions ----
 MakeComparison <- function(data_frame_chose = "data_5"){
@@ -20,19 +21,52 @@ MakeComparison <- function(data_frame_chose = "data_5"){
   res
 }
 
-
-
-library(tidyverse)
+NRowR <- function(x) {
+  print(nrow(x)) 
+  x
+}
+## All trials
 trials_over <- read_csv("Supporting/Overview_trial_extaction.csv")
+srchd_ctg <- read_csv("../Trial_identify/clinical_trials_august_2017/ctg/Output_data/older_younger_trials_specific_htn_drugs.csv")
 
-## Trials sources ----
-## Jo
+## Drop where conditions are not solely hypertension
+## note taken from ctg
+not_sole_htn <- read_csv("nct_id
+NCT00129233
+NCT00149227
+NCT00153023
+NCT00168857
+NCT00171093
+NCT00219089
+NCT00296218
+NCT00385931
+NCT00787605
+NCT00927394
+NCT01368536")
+
+## Gives us 144 trials
+trials_over <- trials_over %>% 
+  anti_join(not_sole_htn)
+
+## add in searched drugs, can be two
+trials_over <- trials_over %>% 
+  inner_join(srchd_ctg)
+rm(not_sole_htn, srchd_ctg)
+
+## Jo ----
 jo <- read_tsv("Data/jo_trials.tsv")
 names(jo) <- names(jo) %>% str_to_lower()
 jo <- jo %>% 
   rename(nct_id = id)
+## drop a single trial where only have number of participants
+jo <- jo %>% 
+  filter(!nct_id == "NCT00185133")
+
 ## Neave and Guy ----
+## note drops from 242 rows to 225 when apply hypertension only
 ng <- read_csv("Data/final_nv_guy.csv")
+ng <- ng %>% 
+  semi_join(trials_over)
 
 ## Combine Jo and ng
 jo <- jo %>% 
@@ -68,6 +102,12 @@ anti_join(trials_over, ngj %>% select(-source))
 ctg_aes <- read_csv("Data_extraction_david/06_ae_sae_results.csv")
 ctg_aes_tf <- read_csv("Data_extraction_david/07_ae_sae_results_time_frame.csv") %>% 
   select(nct_id, weeks)
+
+ctg_aes <- ctg_aes %>% 
+  semi_join(trials_over)
+ctg_aes_tf <- ctg_aes_tf %>% 
+  semi_join(trials_over)
+
 ctg_aes <- ctg_aes %>% 
   inner_join(ctg_aes_tf)
 rm(ctg_aes_tf)
@@ -99,6 +139,8 @@ rm(ctg_aes_wide_total)
 
 ## Need same baseline data from ctg ----
 ctg_base <- read_csv("Data_extraction_david/05_baseline_results.csv")
+ctg_base<- ctg_base %>% 
+  semi_join(trials_over)
 ## 55 with mean age, includes 55 with Total age
 ctg_age <- ctg_base %>% 
   filter(title == "Age", param_type == "Mean", dispersion_type == "Standard Deviation", units %in% c("years", "Years")) %>% 
@@ -237,7 +279,7 @@ ctg_bas_final <- ctg_bas_final %>%
 ## 60 to being with, NCT00591578 missing sex is in separate file NCT00591578
 ctg_base %>% 
   distinct(nct_id)
-# 60 at end, none missing for age, 
+# 56 at end, none missing for age, 
 ctg_bas_final %>% 
   filter(arm_name == "Total") %>% 
   mutate_at(vars(age_m:bmi_s), is.na) %>% 
@@ -274,7 +316,7 @@ ctg_aes_bas <- bind_rows(ctg_aes_bas_mtch,
                           ctg_aes_bas_no_mtch2)
 rm(age_bmi_ctg_manual, ctg_ae_rematch, ctg_aes, ctg_aes_bas_mtch, ctg_aes_bas_no_mtch,
    ctg_aes_bas_no_mtch2, ctg_aes_wide, ctg_age, ctg_bas_final,
-   ctg_bas2, ctg_base, ctg_bmi, ctg_sex, no_age, no_bmi, no_bmi2, no_sex, trials_over)
+   ctg_bas2, ctg_base, ctg_bmi, ctg_sex, no_age, no_bmi, no_bmi2, no_sex)
 
 bas_aes <- bind_rows(ngj, 
                      ctg_aes_bas %>% mutate(source = "ctg"), 
@@ -284,11 +326,6 @@ bas_aes %>%
   # filter(arm_name == "Total") %>% 
   distinct(nct_id)
 
-bas_aes %>%
-  group_by(nct_id) %>% 
-  mutate(total = any(arm_name == "Total")) %>% 
-  ungroup() %>% 
-  filter(!total)
 
 ## One trial without totals NCT00538486, calcualte this, same number in each arm
 NCT00538486 <- bas_aes %>% 
@@ -302,21 +339,107 @@ bas_aes <- bind_rows(bas_aes, NCT00538486) %>%
   arrange(nct_id, arm_name)
 rm(NCT00538486)
 
+## Check whether fu_days is unique per trial and source, it is
+## so move to trials over and drop from arm level data
+## however, the fu is different for Jo and ng, need to check why
+dbl_fu <- bas_aes %>% 
+  group_by(nct_id, source) %>% 
+  summarise(shouldbe1 = sum(!duplicated(fu_days))) %>% 
+  ungroup() %>% 
+  count(shouldbe1)
+
+fu_wide <- bas_aes %>% 
+  distinct(source, nct_id, fu_days) %>% 
+  spread(source, fu_days, fill = NA_integer_)
+
+## ONe is different for Jo and NG
+fu_wide_diff_ng_jo <- fu_wide %>% 
+  filter(!is.na(jo), !is.na(ng))
+# Same SAE, more detail (eg bmi SD) go with Jo
+
+fu_wide_diff_ng_ctg <- fu_wide %>% 
+  filter(!is.na(ctg), !is.na(ng))
+
+## three different for jo and ctg, review on CTG
+fu_wide_diff_jo_ctg <- fu_wide %>% 
+  filter(!is.na(ctg), !is.na(jo)) %>% 
+  mutate(diff = abs(jo - ctg)) %>% 
+  arrange(desc(diff))
+## Note I made these decision blinded to whether
+# Jo's trials were older people trials
+# For NCT00739973 two different FU times and AEs presented
+## Have longer fu in Jo than in CTG, Take Jo one
+# NCT00931710 is ambigous on CTG. COuld be primary FU (42 days)
+# or total study length (84 days)
+# Go with Jos of 84 days (SAE same for both)
+# NCT01615198 Jo is longer FU and higher SAE
+# Choose Jo
+## note same for all saes for Jo and ctg
+## Only AEs and FU sith discrepancies
+
+bas_aes <- bas_aes %>% 
+  filter(!(nct_id == "NCT00739973" & arm_name == "Total" & source == "ctg"),
+         !(nct_id == "NCT00931710" & arm_name == "Total" & source == "ctg"),
+         !(nct_id == "NCT01615198" & arm_name == "Total" & source == "ctg"),
+         !(nct_id == "NCT00260923" & arm_name == "Total" & source == "ng"))
+
+## 133 unique fu and 133 unique results, all of which have totals
+fu_unq <- bas_aes %>% 
+  filter(arm_name == "Total") %>% 
+  distinct(nct_id, fu_days)
+
+bas_aes %>% 
+  anti_join(fu_unq %>% select(nct_id))
+
+bas_aes2 <- bas_aes %>% 
+  select(-fu_days,-ctgov_group_code_bas, -ctgov_group_code_aes)
+
+tots <- bas_aes2 %>% 
+  filter(arm_name == "Total") %>% 
+  select(-arm_name) %>% 
+  distinct()
+
+## resolve between Jo and ctg for 11 trials, same for SAEs, different for AEs see if Jo knows why
+## Following code pulls bmi from Jo data into ctg data, and drops Jo data (selecting CTG AEs)
+tots_dups <- tots %>% 
+  group_by(nct_id) %>% 
+  mutate(ns = length(nct_id)) %>% 
+  ungroup() %>% 
+  filter(ns >=2) %>% 
+  select(-ns) %>% 
+  group_by(nct_id) %>% 
+  mutate_at(vars(bmi_m, bmi_s), function(x) mean(x, na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  filter(!source == "jo") 
+
+tots <- tots %>% 
+  anti_join(tots_dups %>% select(nct_id)) %>% 
+  bind_rows(tots_dups)
+rm(tots_dups)
+
+## Select arms
+arms <- bas_aes2 %>% 
+  filter(!arm_name == "Total")
+rm(bas_aes, bas_aes2, dbl_fu, fu_wide, fu_wide_diff_jo_ctg, fu_wide_diff_ng_ctg, fu_wide_diff_ng_jo)
+
+## merge fu into row level trial data
+trials <- trials_over %>% 
+  distinct(nct_id, official_title, first_received_date, aliskiren, irbesartan, olmesartan, telmisartan, valsartan) %>% 
+  left_join(fu_unq)
+rm(trials_over, fu_unq)
+
 ## add in age_sex_elig ----
 age_sex_elig <- readRDS("Scratch_data/age_sex_elig.Rds")
 age_sex_elig <- age_sex_elig %>% 
   mutate_at(vars(minimum_age, maximum_age), ~ .x %>% str_replace_all("Years|N\\/A", "") %>% str_trim() %>% parse_integer()) %>% 
-  rename(gender_elig = gender)
+  rename(gender_elig = gender) %>% 
   as_tibble() 
-
-bas_aes <- bas_aes %>% 
+trials <- trials %>% 
   inner_join(age_sex_elig) 
 
 ## Examine minimumn age, 13 of these, all are in Jo dataset
-bas_aes %>% filter(minimum_age >= 60) %>% 
-  distinct(nct_id, source) %>% 
-  mutate(v = "yes") %>% 
-  spread(source, v, fill = "")
+trials %>% filter(minimum_age >= 60) %>% 
+  distinct(nct_id) 
 
 ## Add in type of primary outcome ----
 primary <- read_csv("Data_extraction_david/02_primary_outcomes.csv")
@@ -326,19 +449,16 @@ primary <- primary %>%
     any(outcome_surrogacy %in% c("hard", "partial hard")), 1L, 0L)) %>% 
   ungroup()
 
-bas_aes <- bas_aes %>% 
+trials <- trials %>% 
   inner_join(primary)
 
-bas_aes <- bas_aes %>% 
-  select(source, nct_id, minimum_age, maximum_age, everything())
-
-## Note that one of the trial arms is actually a total, so drop
-bas_aes <- bas_aes %>% 
+## Note that one of the trial arms is actually a total, and is already in totals, so drop
+arms <- arms %>% 
   filter(!(nct_id == "NCT00220233" & arm_name != "Total"))
 
 ## Add in drug arm names ----
 ## Note that only placebo is noted where it is the sole "drug" in a comparison
-myarms <- bas_aes %>% 
+myarms <- arms %>% 
   distinct(arm_name) 
 # write_tsv(myarms, "clipboard")
 myarms <- read_tsv("Created_metadata/arm_convert_standard.txt")
@@ -353,12 +473,12 @@ who_atc %>%
 myarms <- myarms %>% 
   inner_join(who_atc %>% select(drug_name, who_atc))
 
-bas_aes_arms <- bas_aes %>% 
+bas_aes_arms <- arms %>% 
   select(nct_id, arm_name) %>% 
   inner_join(myarms)
 bas_aes_arms <- bas_aes_arms %>% 
   filter(!drug_name == "total")
-bas_aes %>% 
+arms %>% 
   anti_join(bas_aes_arms %>% select(nct_id))
 
 ## Read in ones not got already (from Jo's table mostly)
@@ -379,16 +499,16 @@ myarms_manual <- myarms_manual %>%
   inner_join(who_atc)
 
 ## 142 trials have arm information, this means that all of the ones with baseline/ae information have arm information
-arms <- bind_rows(bas_aes_arms, myarms_manual)
+arms_drugs <- bind_rows(bas_aes_arms, myarms_manual)
 rm(age_sex_elig, bas_aes_arms, myarms_manual, myarms, primary, who_atc, NCT00219037)
 
 ## There are 25 unique drugs, including placebo/usual care which is listed as the drug name placebo and drug name usual care
-arms$drug_name  %>% unique() %>% sort()
-arms$who_atc  %>% unique() %>% sort()
+arms_drugs$drug_name  %>% unique() %>% sort()
+arms_drugs$who_atc  %>% unique() %>% sort()
 ## 13 unique drug classes to 5 digit level
-arms$who_atc %>% str_sub(1, 5) %>% unique()  %>% sort()
+arms_drugs$who_atc %>% str_sub(1, 5) %>% unique()  %>% sort()
 
-comparison_type <- arms %>% 
+comparison_type <- arms_drugs %>% 
   select(nct_id, arm_name, who_atc) %>%
   group_by(nct_id, arm_name) %>% 
   mutate(n_drugs_in_arm = length(who_atc)) %>% 
@@ -499,21 +619,59 @@ sames <- stack(sames) %>%
   distinct()
 names(sames) <- c("nct_id", "type_comparison")
 
-
 ## No duplicates, and is completed
-bas_aes <- bas_aes %>% 
-  inner_join(sames) %>% 
-  inner_join(cmprsn)
+trials <- trials %>% 
+  left_join(sames) %>% 
+  left_join(cmprsn)
 
-## Add column of class comparisons at level 3 within a trial
-bas_aes %>% 
-  filter(arm_name == "Total") %>% 
-  distinct(nct_id, .keep_all = TRUE)
+rm(sames, cc_plac, cc3, cc5, cc7, sm7, cmprsn, compare_plac, 
+   comparison_type, comparison_type_agent, comparison_type_class, comparison_type_smry,
+   res, arms_drugs)
 
-## Final data with age, sex, bmi and adverse events for all trials
-saveRDS(bas_aes, "Processed_data/age_sex_bmi_ae_sae.Rds")
-write_tsv(bas_aes, "Processed_data/age_sex_bmi_ae_sae.txt")
+## Add missing data value
+tots <- tots %>% 
+  mutate(sae = if_else(nct_id == "NCT00134160",  98, sae))
 
 
-870 + 1085
+## add in phase
+phase <- read_csv("Data_extraction_david/phase.csv")
 
+trials <- trials %>% 
+  inner_join(phase)
+rm(phase)
+## Final data with age, sex, bmi and adverse events for all trials ----
+saveRDS(list(trials = trials, arms = arms, tots = tots), "Processed_data/age_sex_bmi_ae_sae.Rds")
+map(c("trials", "arms", "tots"), ~ write_tsv(get(.x), paste0("Processed_data/", .x, ".tsv"), na = ""))
+
+
+## Rstriction calculations
+trials %>% 
+  semi_join(tots %>% filter(!is.na(sae))) %>% 
+  group_by(type_comparison) %>% 
+  summarise(older = sum(minimum_age>=60, na.rm = TRUE),
+            total = length(minimum_age))
+
+trials %>% 
+  semi_join(tots %>% filter(!is.na(sae))) %>% 
+  group_by(phase) %>% 
+  summarise(older = sum(minimum_age>=60, na.rm = TRUE),
+            total = length(minimum_age))
+
+trials %>% 
+  semi_join(tots %>% filter(!is.na(sae))) %>% 
+  group_by(aliskiren) %>% 
+  summarise(older = sum(minimum_age>=60, na.rm = TRUE),
+            total = length(minimum_age))
+
+trials %>% 
+  semi_join(tots %>% filter(!is.na(sae))) %>% 
+  group_by(aliskiren) %>% 
+  summarise(older = sum(minimum_age>=60, na.rm = TRUE),
+            total = length(minimum_age))
+
+trials_restrict <- trials %>% 
+  filter(phase %in% c("Phase 3", "Phase 4")) %>%
+  NRowR() %>% 
+  filter(type_comparison %in% c("placebo", "diff_class3", "diff_class5") | is.na(type_comparison)) %>% 
+  NRowR() %>% 
+  filter()

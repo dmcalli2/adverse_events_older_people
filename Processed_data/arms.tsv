@@ -1,0 +1,346 @@
+source	nct_id	arm_name	ae	sae	subjects_at_risk	female	male	age_m	age_s	bmi_m	bmi_s	total_derived
+ng	NCT00034840	Telmisartan (Micardis)		4	244							
+ng	NCT00034840	Valsartan (Diovan)		2	246							
+ng	NCT00110422	hydrochlorothiazide		5	215	135	80	53.3	10.264014809030625			
+ng	NCT00110422	irbesartan		3	211	124	87	53.6	10.168087332433764			
+ng	NCT00146341	Telmisartan	6	0	170	65	105	51.2	9.6	25.9	3	
+ng	NCT00146341	Telmisartan/hctz	6	3	175	70	105	51.7	9.4	25.7	3.4	
+ng	NCT00154271	Valsartan		14	839	374.5535714285715	464.4464285714285	50.6	11.55			
+ng	NCT00154271	Valsartan/hctz		21	834	384.33179723502303	449.66820276497697	51	11.81			
+ng	NCT00168779	Placebo		0	132							
+ng	NCT00168779	Telmisartan/HCTZ 80/25mg		8	529							
+ng	NCT00168779	Valsartan/NCTZ 160/25mg		2	524							
+ng	NCT00170924	Placebo		10	198	97	101	60.2	9.5	30.7	6.1	
+ng	NCT00170924	Valsartan		25	186	98	88	61.1	9.4	30.1	5.4	
+ng	NCT00170963	valsartan		3	308	136	172	54.5	9.9			
+ng	NCT00170963	valsartan/amlodipine 160/10mg		1	317	146	171	53.9	10.8			
+ng	NCT00170963	valsartan/amlodipine 160/5mg		2	322	148	174	55.4	10.3			
+ng	NCT00170989	Val/HCTZ 320/12.5mg		15	903	388	515					
+ng	NCT00170989	Val/HCTZ 320/25mg		16	900	387	513					
+ng	NCT00170989	Valsartan 320mg		21	899	387	512					
+ng	NCT00171002	Amlodipine		1	471	218	253	54.1	12.2			
+ng	NCT00171002	Valsartan/amlodipine 160/10mg		4	473	222	251	54.1	12			
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 150/12.5mg		3	186	88	98	54.7	11.35	29.2	5.59	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 150/25mg		2	188	84	104	53.7	11.58	29.3	5.44	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 150/6.25mg		2	176	80	96	53.9	11.12	29.5	5.14	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 300/12.5mg		2	181	92	89	55.5	11.67	29.7	5.48	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 300/25mg		1	173	75	98	54.8	10.86	29.8	5.66	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 75/12.5mg		5	193	92	101	54.4	10.11	29.5	5.63	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 75/25mg		4	186	85	101	54.7	12.17	29.6	5.7	
+ng	NCT00219024	Aliskiren/Hydrochlorothiazide 75/6.25mg		0	188	80	108	55.1	10.63	29.1	4.85	
+ng	NCT00219024	Placebo		0	195	86	109	54.4	11.8	29.6	5.81	
+ng	NCT00219037	Aliskiren 150mg		33	1179	566	613	55.7	11.3	29.3	4.93	
+ng	NCT00219037	Aliskiren 300mg		35	776	362	414	55.9	11.48	29.2	5.2	
+ng	NCT00219063	Aliskiren (active-controlled period)		8	420	196	224	53.4	10.78	30.3	5.89	
+ng	NCT00219063	Aliskiren (placebo-controlled period)		0	170	75	95	54.2	9.88	29.6	6.01	
+ng	NCT00219063	Placebo (subgroup aliskiren placebo-controlled period)		2	163	82	81	53.2	11.28	30.7	5.85	
+ng	NCT00219063	Placebo (subgroup ramipril placebo-controlled period)		0	177	67	110	53.1	11.1	32	6.98	
+ng	NCT00219063	Ramipril (active-controlled period)		6	422	166	256	53.1	11.21	31.4	6.79	
+ng	NCT00219063	Ramipril (placebo-controlled period)		1	165	64	101	52.9	11.3	30.5	6.41	
+ng	NCT00219076	Aliskiren 150mg + Amlodipine 5mg	5		187	82	105	53	11.9	30	5.5	
+ng	NCT00219076	Amlodipine 10mg	5		178	86	92	54	10.6	30	5.7	
+ng	NCT00219076	Amlodipine 5mg	4		180	85	95	54	10.9	30	5.7	
+ng	NCT00219102	Aliskiren/Valsartan/Hydrochlorothiazide 300/160/25mg		3	184	85	99	56.8	8.62	33.13	5.735	
+ng	NCT00219102	Placebo/Valsartan/Hydrochlorothiazide 160/25mg		3	179	82	97	57.2	8.56	33.02	6.326	
+ng	NCT00219115	Aliskiren/HCTZ 300/25mg		2	122	62	60	53.1		34.8		
+ng	NCT00219115	Amlodipine/HCTZ 10/25mg		4	126	73	53	55.2		34.5		
+ng	NCT00219115	HCTZ 25mg		4	122	70	52	55.2		34		
+ng	NCT00219115	Irbesartan/HCTZ 300/25mg		3	119	71	48	53		34.3		
+ng	NCT00219128	Aliskiren 150mg		1	172	65	107	52	10.1	29	6.2	
+ng	NCT00219128	Aliskiren 300mg		2	169	63	106	54	10.5	29	5.4	
+ng	NCT00219128	Aliskiren 600mg		1	166	69	97	53	11	30	5.9	
+ng	NCT00219128	Placebo		0	165	61	104	53	10.5	30	6	
+ctg	NCT00219141	Aliskiren 300 mg	41	10	154	42	112	58.4	9.61			
+ctg	NCT00219141	Aliskiren/Losartan 300/100 mg	39	10	154	35	119	58.8	10.62			
+ctg	NCT00219141	Losartan 100 mg	44	13	152	35	117	59.2	11			
+ng	NCT00219154	Aliskiren		26	567	260	307	56.1	10.9	28.9	4.6	
+ng	NCT00219154	HCTZ		22	557	245	312	55.7	10.9	29.1	4.8	
+ng	NCT00219180	Aliskiren		8	437	182	255	51.9	10.4	30.6	5.8	
+ng	NCT00219180	Aliskiren/Valsartan		3	446	171	275	52.1	10.3	30.2	5.7	
+ng	NCT00219180	Placebo		5	459	178	281	52.6	10.4	30.4	5.6	
+ng	NCT00219180	Valsartan		6	455	174	281	52.4	10.4	30.7	5.5	
+ng	NCT00219193	Aliskiren/HCTZ		1	166	74	92	52.3	10.9	31.3	6.28	
+ng	NCT00219193	Aliskiren/Valsartan/HCTZ		0	168	77	91	52.9	10.83	31.9	6.21	
+ng	NCT00219193	HCTZ		1	152	58	94	52.6	9.93	31.8	6.13	
+ng	NCT00219193	Valsartan/HCTZ		5	155	67	88	55	11.4	31.3	5.85	
+ng	NCT00239369	Telmisartan/Hydrochlorothiazide 80/12.5mg		2.888	361	142	219	57.3	11.4	29.4	5.3	
+ng	NCT00239369	Telmisartan/Hydrochlorothiazide 80/25mg		4.928	352	165	187	57.1	10.5	28.9	5.4	
+ng	NCT00260923	Aliskiren 150mg		2	161	56	105			30.3		
+ng	NCT00260923	Aliskiren 300mg		1	158	67	91			29.7		
+ng	NCT00260923	Aliskiren 75mg		1	153	57	96			30.5		
+ng	NCT00260923	Placebo		2	160	67	93			30.9		
+ng	NCT00262236	Aliskiren		5	231	97	134	55.8	11.9	28.9	4.5	
+ng	NCT00262236	Aliskiren/Atenolol		2	232	112	120	55.2	10.9	29.5	5	
+ng	NCT00262236	Atenolol		7	231	118	113	54.7	11.5	29.2	5.1	
+ng	NCT00273299	Valsartan		0	301	138	163	51.6	11.2	31.2	6.8	
+ng	NCT00273299	Valsartan/HCTZ		1	307	123	184	51.6	10.5	31.4	6.8	
+ng	NCT00277472	HCTZ		1	145	59	86	52.6	10.6	33	7.24	
+ng	NCT00277472	Valsartan/HCTZ		3	146	52	94	52.9	10.6	31.9	5.66	
+ctg	NCT00281580	Amlodipine 10 mg (A10)	29	0	129	64	65	53.4	10.7			
+ctg	NCT00281580	Amlodipine 2.5 mg (A2.5)	3	1	50	23	27	55.3	10.4			
+ctg	NCT00281580	Amlodipine 5 mg (A5)	11	1	140	68	72	53.1	10.6			
+ctg	NCT00281580	PLACEBO	6	0	46	17	29	52.5	12.3			
+ctg	NCT00281580	Telmisartan 20 mg (T20)	5	0	42	16	26	53.6	10.4			
+ctg	NCT00281580	Telmisartan 20 mg Plus Amlodipine 10 mg (T20+A10)	6	0	44	18	26	51	11.2			
+ctg	NCT00281580	Telmisartan 20 mg Plus Amlodipine 2.5 mg (T20+A2.5)	4	0	44	18	26	54	10.8			
+ctg	NCT00281580	Telmisartan 20 mg Plus Amlodipine 5 mg (T20+A5)	5	0	46	25	21	54.4	10.2			
+ctg	NCT00281580	Telmisartan 40 mg (T40)	13	0	130	64	66	52	11			
+ctg	NCT00281580	Telmisartan 40 mg Plus Amlodipine 10 mg (T40+A10)	13	0	129	67	62	53.3	11.3			
+ctg	NCT00281580	Telmisartan 40 mg Plus Amlodipine 2.5 mg (T40+A2.5)	3	0	47	21	26	50.7	10.2			
+ctg	NCT00281580	Telmisartan 40 mg Plus Amlodipine 5 mg (T40+A5)	9	0	143	72	71	52.3	11.9			
+ctg	NCT00281580	Telmisartan 80 mg (T80)	6	1	135	75	60	53.1	11.3			
+ctg	NCT00281580	Telmisartan 80 mg Plus Amlodipine 10 mg (T80+A10)	23	0	142	78	64	53.9	11.6			
+ctg	NCT00281580	Telmisartan 80 mg Plus Amlodipine 2.5 mg (T80+A2.5)	3	2	48	26	22	54.8	9.7			
+ctg	NCT00281580	Telmisartan 80 mg Plus Amlodipine 5 mg (T80+A5)	12	2	146	72	74	52.7	11.9			
+ng	NCT00294710	Aliskiren		26	567	260	307	56.1	10.9	28.9	4.6	
+ng	NCT00294710	HCTZ		22	557	245	312	55.7	10.9	29.1	4.8	
+ng	NCT00327145	amlodipine 10mg/valsartan 160mg		13	451	240	211	58.6	12			
+ng	NCT00327145	amlodipine 5mg/valsartan 160mg		3	443	211	232	58.5	12.3			
+ng	NCT00343551	Aliskiren 300mg		1	218	81	137	53.5	10.71	28.9	4.4	
+ng	NCT00343551	Irbesartan 300mg		4	222	80	142	53.4	9.69	29	4.56	
+ng	NCT00343551	Ramipril 10mg		1	214	93	121	53.9	9.91	28.9	4.39	
+ng	NCT00344110	Aliskiren 150mg		0	302	82	220	52	10.24	25.4	3.78	
+ng	NCT00344110	Losartan 50mg		1	303	82	221	52.1	10.25	25.9	3.64	
+ng	NCT00344110	Placebo		1	156	40	116	52.1	9.85	25.4	4.03	
+ng	NCT00350168	Amlodipine		0	324	165	159	58.1	10.44	30.3	5.7	
+ng	NCT00350168	Valsartan/Amlodipine		3	322	157	165	58.1	10.24	29.6	5.42	
+ng	NCT00353912	Amlodipine		3	286	178	108	53.6	11.79			
+ng	NCT00353912	Valsartan/Amlodipine		3	286	166	120	52.9	10.18			
+ctg	NCT00368277	Aliskiren	205	35	452	235	222	72	5.56			
+ctg	NCT00368277	Ramipril	208	27	444	237	207	72.2	5.62			
+ng	NCT00386139	Aliskiren 300mg		4	298	139	159	55.5	10.6	29.2	4.53	
+ng	NCT00386139	Aliskiren/HCTZ 300/12.5mg		2	293	138	155	54.9	10.49	29.2	4.92	
+ng	NCT00386139	Aliskiren/HCTZ 300/25mg		3	289	117	172	54.4	10.25	28.9	4.55	
+ng	NCT00387517	Aliskiren/HCTZ 150/25mg		1	244	100	144	53.6	11.11	28.9	4.71	
+ng	NCT00387517	Aliskiren/HCTZ 300/25mg		1	232	92	140	54.1	9.45	29.9	5	
+ng	NCT00387517	HCTZ 25mg		0	246	103	143	52.9	11.49	29.7	4.99	
+ng	NCT00409643	Amlodipine 10mg	35	1	207	93	114	55.4				
+ng	NCT00409643	Placebo	13	3	209	116	93	58				
+ng	NCT00409643	Valsartan 160mg	14	1	207	115	92	56.8				
+ng	NCT00409643	Valsartan 320mg	12	1	208	100	108	56.7				
+ng	NCT00409643	Valsartan/Amlodipine 160/10mg	39	1	209	100	109	56.7				
+ng	NCT00409643	Valsartan/Amlodipine 320/10mg	29	2	210	97	113	58				
+ng	NCT00409760	Amlodipine 2.5mg		1	126	60	66	54.4				
+ng	NCT00409760	Amlodipine 5mg		1	128	60	68	53.8				
+ng	NCT00409760	Placebo		1	128	58	70	53.7				
+ng	NCT00409760	Valsartan 160mg		1	128	59	69	53				
+ng	NCT00409760	Valsartan 320mg		1	128	61	67	56.8				
+ng	NCT00409760	Valsartan 40mg		2	127	55	72	55				
+ng	NCT00409760	Valsartan 80mg		1	124	68	56	53.1				
+ng	NCT00409760	Valsartan/Amlodipine 160/2.5mg		0	127	60	67	55.1				
+ng	NCT00409760	Valsartan/Amlodipine 160/5mg		0	127	69	58	54.9				
+ng	NCT00409760	Valsartan/Amlodipine 320/2.5mg		1	129	54	75	55.1				
+ng	NCT00409760	Valsartan/Amlodipine 320/5mg		1	127	56	71	55.3				
+ng	NCT00409760	Valsartan/Amlodipine 40/2.5mg		2	129	53	76	54.5				
+ng	NCT00409760	Valsartan/Amlodipine 40/5mg		1	125	54	71	53.4				
+ng	NCT00409760	Valsartan/Amlodipine 80/2.5mg		1	130	51	79	54.1				
+ng	NCT00409760	Valsartan/Amlodipine 80/5mg		1	128	71	57	54.2				
+ctg	NCT00413049	Amlodipine 5 mg	2	2	349	109	240	54.2	9.1			
+ctg	NCT00413049	Valsartan/Amlodipine 80/5 mg	4	4	349	134	213	53.4	9.7			
+ctg	NCT00413413	Valsartan 160 mg	4	4	303	104	198	51.2	9.6			
+ctg	NCT00413413	Valsartan 80 mg	0	0	307	115	191	51.7	8.9			
+ctg	NCT00413413	Valsartan/Amlodipine 80/5 mg	4	4	308	127	181	51.6	10.8			
+ctg	NCT00425373	Amlodipine 2.5 mg	13	1	161	49	112	53.2	10.83			
+ctg	NCT00425373	Amlodipine 5 mg	12	0	161	40	121	54.4	10.67			
+ctg	NCT00425373	Placebo	19	2	166	55	111	51.5	10.58			
+ctg	NCT00425373	Valsartan + Amlodipine 40/2.5 mg	17	0	159	46	113	53.9	10.34			
+ctg	NCT00425373	Valsartan + Amlodipine 40/5 mg	21	1	167	49	118	52.8	10.7			
+ctg	NCT00425373	Valsartan + Amlodipine 80/2.5 mg	10	1	160	40	120	52.8	10.76			
+ctg	NCT00425373	Valsartan + Amlodipine 80/5 mg	14	0	162	39	123	54.1	9.75			
+ctg	NCT00425373	Valsartan 40 mg	23	0	169	38	131	52.9	10.08			
+ctg	NCT00425373	Valsartan 80 mg	19	0	163	49	114	52.6	11.29			
+ng	NCT00439738	HCTZ +Amlodipine		1	206	148	58	55.4	8.54	35.2	7.33	
+ng	NCT00439738	valsartan/HCTZ		0	206	124	82	56.5	8.63	34.8	6.86	
+ctg	NCT00529451	Aliskiren 150 mg	5	2	323	140	183	53.3	10.53			
+ctg	NCT00529451	Aliskiren 300 mg	5	1	331	150	181	53.8	9.45			
+ctg	NCT00529451	Aliskiren 75 mg	5	3	332	144	188	52.7	10.22			
+ctg	NCT00529451	Ramipril 5 mg	18	1	329	151	179	52.9	9.6			
+ng	NCT00538486	Metformin	34		180	118	62	58	7	27.7	2.9	
+ng	NCT00538486	Placebo	32		180	108	72	57	7	27.4	2.7	
+ctg	NCT00546754	Losartan 50 mg/HCTZ 12.5 mg	67	11	425	197	219	58.7	11.11			
+ctg	NCT00546754	Valsartan 80 mg/HCTZ 12.5 mg	62	5	383	180	193	58.3	10.26			
+ctg	NCT00550953	Telmisartan 40 mg Monotherapy	16	0	158	35	123	55.5	10.2			
+ctg	NCT00550953	Telmisartan 40 mg Plus Amlodipine 5 mg Fixed-dose Combination	20	1	156	42	114	55.4	9.1			
+ctg	NCT00553267	Amlodipine 10mg	23	1	-Inf	128	187	56.4	10.4			
+ctg	NCT00553267	Telmisartan 40mg and Amlodipine 10mg	24	3	-Inf	145	170	57.6	9.4			
+ctg	NCT00553267	Telmisartan 80mg and Amlodipine 10mg	27	0	-Inf	146	171	55.5	9.8			
+ctg	NCT00558064	Amlodipine 5 mg Monotherapy	36	2	262	76	186	56	9.9			
+ctg	NCT00558064	Telmisartan 40 mg Plus Amlodipine 5 mg Fixed-dose Combination	26	1	269	72	197	57	9.6			
+ctg	NCT00558428	Amlodipine 10mg	75	1	276	100	176	54.3	10.6			
+ctg	NCT00558428	Amlodipine 5mg	24	2	267	104	163	54	10.6			
+ctg	NCT00558428	Telmisartan 40mg and Amlodipine 5mg	16	2	277	117	160	53.9	11			
+ctg	NCT00558428	Telmisartan 80mg and Amlodipine 5mg	11	1	277	94	183	54.5	10.2			
+ctg	NCT00591578	Azilsartan Medoxomil 40 mg QD	85	8	327	163	164	57.8	12.1			
+ctg	NCT00591578	Azilsartan Medoxomil 80 mg QD	79	5	329	160	169	56.8	10.7			
+ctg	NCT00591578	Valsartan 320 mg QD	61	8	326	152	176	58.1	10.9			
+ctg	NCT00614380	Telmisartan 40mg and Amlodipine 5mg	79	22	976	240	324	54.8	10.9			
+ctg	NCT00614380	Telmisartan 40mg and Amlodipine 5mg	79	22	976	8	17	54.4	10.8			
+ctg	NCT00614380	Telmisartan 80mg and Amlodipine 5mg	51	6	397	72	134	52.9	10.6			
+ctg	NCT00614380	Telmisartan 80mg and Amlodipine 5mg	51	6	397	45	136	52.4	9.6			
+ctg	NCT00624052	Telmisartan 40mg and Amlodipine 10mg	4	4	838	93	126	56.2	9.9			
+ctg	NCT00624052	Telmisartan 80mg and Amlodipine 10mg	13	13	611	206	230	57.3	9.4			
+ctg	NCT00631917	Aliskiren	191	28	375	194	181	59.3	6.99			
+ctg	NCT00631917	Ramipril	198	22	399	194	205	59.3	6.65			
+ctg	NCT00649389	AML10/HCTZ25	221	9	552	266	334	54.6	10.82			
+ctg	NCT00649389	OM40/AML10	219	9	596	303	325	55.1	10.93			
+ctg	NCT00649389	OM40/AML10/HCTZ25	247	10	574	307	320	54.7	11.22			
+ctg	NCT00649389	OM40/HCTZ25	217	7	580	298	339	55.9	10.78			
+ctg	NCT00687973	Atenolol/Amlodipine 100/10 mg	35	4	200	101	99	56.2	11.09			
+ctg	NCT00687973	Valsartan/Amlodipine 160/10 mg	34	4	193	82	111	57.5	9.94			
+ctg	NCT00696241	Azilsartan Medoxomil 20 mg QD	31	8	283	150	133	57.1	11.02	30.4	5.67	
+ctg	NCT00696241	Azilsartan Medoxomil 40 mg QD	19	0	281	141	142	57.4	9.62	30.6	5.94	
+ctg	NCT00696241	Azilsartan Medoxomil 80 mg QD	33	1	284	136	149	58.1	11.56	30	5.48	
+ctg	NCT00696241	Olmesartan 40 mg QD	20	2	282	142	140	58.9	11.57	29.8	5.25	
+ctg	NCT00696241	Placebo QD	16	3	142	66	76	59.4	10.53	30	4.93	
+ctg	NCT00696436	Azilsartan Medoxomil 40 mg QD	20	2	280	133	147	57	12	31.7	6	
+ctg	NCT00696436	Azilsartan Medoxomil 80 mg QD	15	3	284	134	151	56	11	30.7	5.9	
+ctg	NCT00696436	Olmesartan 40 mg QD	27	4	290	131	159	56	11	31.1	5.5	
+ctg	NCT00696436	Placebo QD	16	2	155	64	90	56	11	30.5	5.4	
+ctg	NCT00696436	Valsartan 320 mg QD	24	3	277	130	152	55	11	31.1	5.5	
+ctg	NCT00698646	HCTZ	31	4	128	62	66	77.7	4.8			
+ctg	NCT00698646	Valsartan	26	3	128	81	47	77.7	4.22			
+ctg	NCT00698646	Valsartan + HCTZ	19	3	128	71	57	77.2	3.99			
+ctg	NCT00699192	Amlodipine 5 mg	1	1	272	142	130	71.4	5.44			
+ctg	NCT00699192	Amlodipine/Valsartan 5/40 mg	2	2	272	138	134	71.6	5.38			
+ctg	NCT00699192	Amlodipine/Valsartan 5/80 mg	5	5	274	152	123	71.8	5.01			
+ctg	NCT00705575	Aliskiren (300 mg)	38	4	339	172	167	56.4	10.73			
+ctg	NCT00705575	Aliskiren/Hydrochlorothiazide (HCTZ) (300/25 mg)	29	2	349	169	180	57.4	10.33			
+ctg	NCT00706134	Aliskiren 150 mg	3	3	189	106	83	72.1	5.47			
+ctg	NCT00706134	Aliskiren 300 mg	0	0	188	102	84	72.1	5.47			
+ctg	NCT00706134	Aliskiren 75 mg	2	2	191	109	83	72.1	5.47			
+ctg	NCT00706134	Placebo	1	1	186	100	89	72.3	5.25			
+ctg	NCT00739973	Aliskiren 150 mg Tablet	15	0	194	76	119	54.3	11.07			
+ctg	NCT00739973	Aliskiren 300 mg Tablet	18	0	203	108	95	54	9.99			
+ctg	NCT00739973	Aliskiren/Amlodipine 150/10 mg Tablet	21	2	181	96	87	53	10.59			
+ctg	NCT00739973	Aliskiren/Amlodipine 150/5 mg Tablet	16	1	181	84	97	53.9	10.82			
+ctg	NCT00739973	Aliskiren/Amlodipine 300/10 mg Tablet	31	1	184	78	106	54.4	10.86			
+ctg	NCT00739973	Aliskiren/Amlodipine 300/5 mg Tablet	9	1	178	100	78	54.8	10.29			
+ctg	NCT00739973	Amlodipine 10 mg Capsule	33	1	181	94	87	55	10.34			
+ctg	NCT00739973	Amlodipine 5 mg Capsule	19	1	185	86	99	54.2	11.61			
+ctg	NCT00739973	Placebo	24	2	198	108	90	53.7	10.32			
+ng	NCT00750113	nifedipine		3	103							
+ng	NCT00750113	nifedipine/telmisartan		3	201							
+ng	NCT00750113	telmisartan		2	101							
+ctg	NCT00760266	Aliskiren / HCTZ	21	4	227	127	101	64.5	7.57			
+ctg	NCT00760266	HCTZ	29	3	223	100	123	65.1	6.96			
+ctg	NCT00765674	Aliskiren / Amlodipine	35	3	287	115	172	54.4	11.33			
+ctg	NCT00765674	Aliskiren / Amlodipine / Hydrochlorothiazide	35	6	309	123	187	55.4	10.54			
+ctg	NCT00765674	Aliskiren / Hydrochlorothiazide	19	2	297	123	175	55.5	10.75			
+ctg	NCT00765674	Amlodipine / Hydrochlorothiazide	28	2	295	110	186	55.1	10.86			
+ctg	NCT00777946	Aliskiren 300 mg	2	1	260	103	157	54.7	10.99			
+ctg	NCT00777946	Aliskiren 300 mg/Amlodipine 10 mg	29	3	282	120	163	54.6	10.67			
+ctg	NCT00777946	Aliskiren 300 mg/Amlodipine 5 mg	10	4	276	101	176	54.4	10.69			
+ctg	NCT00778921	Aliskiren 150mg/ Amlodipine 10mg	36	1	283	113	172	54.4	10.7			
+ctg	NCT00778921	Aliskiren 300mg/ Amlodipine 10mg	35	4	279	116	163	55.2	10.19			
+ctg	NCT00778921	Amlodipine 10mg	40	0	281	99	184	54.3	10.92			
+ctg	NCT00797316	Aliskiren	22	4	265	129	136	53.5	10.87			
+ctg	NCT00797316	Aliskiren/HCTZ	16	3	267	128	139	54.4	11.09			
+ctg	NCT00809926	Valsartan	18	3	219	116	103	56.7	11			
+ctg	NCT00809926	Valsartan/ Aliskiren	19	5	232	107	125	57.5	11.1			
+ctg	NCT00841672	Aliskiren/Amlodipine 300/10 mg Tablet	41	0	243	136	108	59	10.38			
+ctg	NCT00841672	Amlodipine 10 mg Capsule	59	3	241	139	102	59	10.82			
+ctg	NCT00846365	Azilsartan Medoxomil 20-40mg Plus Chlorthalidone 12.5-25 mg QD	70	4	372	175	197	55.5	10.49	31.7	5.94	
+ctg	NCT00846365	Azilsartan Medoxomil 40-80mg Plus Chlorthalidone 12.5-25 mg QD	80	8	357	174	183	56.7	10.83	31.8	6.4	
+ctg	NCT00846365	Olmesartan Medoxomil 20-40mg/Hydrochlorothiazide 12.5-25mg QD	62	6	356	173	183	55.7	9.78	31.9	6.08	
+ctg	NCT00853957	Aliskiren/Amlodipine	26	1	220	123	97	53.2	9.33			
+ctg	NCT00853957	Amlodipine	32	1	223	115	108	52.4	10.57			
+ctg	NCT00860262	Amlodipine 10 mg	44	2	220	102	118	58.6	10.5	30.7	6.3	
+ctg	NCT00860262	T80+A10	70	3	421	202	219	58	10.4	30.6	5.9	
+ctg	NCT00860262	Telmisartan 80 mg	27	2	217	109	108	58.1	10.2	30.2	5.2	
+ctg	NCT00865020	Aliskiren 300 mg	18	3	411	206	208	55.8	11.46			
+ctg	NCT00865020	Telmisartan 80 mg	37	5	403	178	230	56	11.91			
+ctg	NCT00877929	Amlodipine 10 mg	75	4	354	169	185	60.5	9.7	31.8	6.1	
+ctg	NCT00877929	Telmisartan 80 mg + Amlodipine 10 mg	65	3	352	172	180	60.5	10.4	32.1	6	
+ctg	NCT00902304	Combination (Initial Combination Therapy Arm)	127	22	678	260	418	59	12			
+ctg	NCT00902304	Monotherapy (Initial Monotherapy Arm)	51	15	360	138	222	59	12			
+ctg	NCT00902304	Usual Care	71	24	524	201	323	59	12			
+ctg	NCT00902538	OLM 40-AML 10-HCTZ 25	10	3	270	116	154	54.9	10.44	30.44	4.87	
+ctg	NCT00902538	OLM 40-AML 10-Hydrochlorothiazide (HCTZ) 12.5	22	15	269	104	165	56.5	10.25	30.3	4.65	
+ctg	NCT00902538	Olmesartan(OLM) 40 Mg-Amlodipine(AML) 10 mg	131	18	2204	119	150	55.9	10.56	30.27	4.9	
+ctg	NCT00923091	Olmesartan/Amlodipine 20mg/5mg	27	1	333	185	152	56.1	10.22			
+ctg	NCT00923091	Olmesartan/Amlodipine 40mg/10mg	37	7	325	192	144	57	9.7			
+ctg	NCT00923091	Olmesartan/Amlodipine 40mg/5mg	43	5	332	170	167	56.4	10.4			
+ctg	NCT00923091	Olmesartan/Amlodipine/Hydrochlorothiazide 20mg/5mg/12.5 mg	67	55	329	182	153	56	10.81			
+ctg	NCT00923091	Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/10mg/12.5mg	42	3	329	181	155	57	10.72			
+ctg	NCT00923091	Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/10mg/25mg	52	7	332	178	158	55.9	11.08			
+ctg	NCT00923091	Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/5mg/12.5mg	53	9	334	171	165	56.8	10.36			
+ctg	NCT00923091	Olmesartan/Amlodipine/Hydrochlorothiazide 40mg/5mg/25mg	35	22	331	184	152	56.5	10.92			
+ctg	NCT00926289	Telmisartan 40/80 mg	1	1	294	125	169	57.6	11.9			
+ctg	NCT00926289	Telmisartan 40/80 mg + HCTZ 12.5/25 mg	0	0	594	285	309	56.8	11.3			
+ctg	NCT00931710	Losartan / HCTZ	10	2	247	111	136	57.1	9.69			
+ctg	NCT00931710	Valsartan / Amlodipine / HCTZ	14	1	241	102	139	55	9.83			
+ctg	NCT00942994	Aliskiren / Amlodipine	21	3	209	100	109	54.7	10.19			
+ctg	NCT00942994	Aliskiren / Amlodipine / HCTZ	22	0	202	107	95	55.7	9.79			
+ctg	NCT00949884	Losartan	152	4	469	211	258	52.1	9.76	32.28	6.619	
+ctg	NCT00949884	Olmesartan	133	0	420	190	230	52	9.84	32.41	6.089	
+ctg	NCT00949884	Placebo Followed by Olmesartan	21	0	52	27	25	49.9	8.67	33.62	8.103	
+ng	NCT00956644	amlodipine		0	143							
+ng	NCT00956644	irbesartan/amlodipine		2	144							
+ng	NCT00957554	irbesartan		1	165							
+ng	NCT00957554	irbesartan/amlodipine		1	155							
+ng	NCT00993109	adalat (nifedipine, baya1040) and valsartan	65	2	178	87.57600000000001	90.424	56.3				
+ng	NCT00993109	diovan (valsartan)	58	1	182	84.084	97.91599999999998	55.5				
+ctg	NCT00996281	Azilsartan Medoxomil and Chlorthalidone	241	24	418	192	226	58.5	10.79	31.4	6.21	
+ctg	NCT00996281	Olmesartan Medoxomil and Hydrochlorothiazide	209	26	419	173	246	57.6	10.8	31.9	6.63	
+ctg	NCT01001572	Valsartan 160 mg	1	1	325	150	173	53.1	9.41			
+ctg	NCT01001572	Valsartan/Amlodipine 160/5 mg	0	0	329	141	187	52.9	9.47			
+ctg	NCT01033071	Azilsartan Medoxomil 20-40mg/Chlorthalidone 12.5-25mg QD	142	1	355	132	223	56.4	10.49	31.4	5.94	
+ctg	NCT01033071	Azilsartan Medoxomil 40-80mg/Chlorthalidone 12.5-25mg QD	154	10	352	151	201	56.7	10.07	31.9	6.59	
+ctg	NCT01033071	Olmesartan Medoxomil 20-40mg/Hydrochlorothiazide 12.5-25mg QD	102	8	364	159	205	56.7	10.86	31.6	5.92	
+ctg	NCT01042392	Aliskiren (Period II and III)	1	1	248	133	116	61	11.4			
+ctg	NCT01042392	Ramipril (Period II and III)	3	3	257	142	115	59.8	11.6			
+ng	NCT01071122	nifedipine (adalat, baya1040) 30mg		2	184							
+ng	NCT01071122	nifedipine (adalat, baya1040) 60mg		1	68	15.0008	52.9992	48.01		25.81	3.36	
+ng	NCT01071122	nifedipine (adalat, baya1040) and valsartan		0	66	17.9982	48.0018	47.74		25.91	3.2	
+ng	NCT01071122	valsartan 160mg		0	69	20.292900000000003	48.707100000000004	49.88		26.27	4.34	
+ng	NCT01071122	valsartan 80mg		0	183							
+ng	NCT01075698	ARB group		0	615	256	359	66	9	25	4	
+ng	NCT01075698	Non-ARB group		0	613	257	356	66	10	25	4	
+ng	NCT01101009	Olmesartan/amlodipine		4	244	68	176	60.9	9.21	31.1	4.14	
+ng	NCT01101009	Perindopril+amlodipine		4	242	62	180	60.8	9.38	31.5	4.38	
+ctg	NCT01167153	Nifedipine	33	1	282	135	133	53.1	8.72			
+ctg	NCT01167153	Valsartan/Amlodipine	14	0	282	135	137	53.8	8.59			
+ctg	NCT01237223	Aliskiren 150 mg	21	0	157	39	118	55	9.96			
+ctg	NCT01237223	Aliskiren/Amlodipine 150/2.5 mg	17	0	159	51	108	54.6	11.11			
+ctg	NCT01237223	Aliskiren/Amlodipine 150/5 mg	20	1	159	57	102	55.5	9.86			
+ctg	NCT01237223	Amlodipine 2.5 mg	19	2	158	45	113	54.8	10.25			
+ctg	NCT01237223	Amlodipine 5 mg	22	1	158	51	107	55.8	10.05			
+ctg	NCT01237223	Placebo (Double Blind)	21	0	153	45	108	54.6	8.35			
+ng	NCT01508026	Nebivolol and Valsartan Fixed Dose Combination 1		2	555	255	300	50.9	10.1	31.9	6.3	
+ng	NCT01508026	Nebivolol and Valsartan Fixed Dose Combination 2		2	555	240	315	51.6	9.8	32	6	
+ng	NCT01508026	Nebivolol and Valsartan Fixed Dose Combination 3		1	554	241	313	50.8	9.7	32	6.5	
+ng	NCT01508026	Nebivolol High Dose		4	554	257	297	51.5	10.8	32	6.3	
+ng	NCT01508026	Nebivolol Low Dose		2	555	248	307	51.7	10.2	32.1	6.3	
+ng	NCT01508026	Placebo		27	277	129	148	51.1	10.4	32.6	6	
+ng	NCT01508026	Valsartan High Dose		5	554	259	295	51.1	10.7	32	6	
+ng	NCT01508026	Valsartan Low Dose		4	555	222	333	51.7	9.9	31.8	6	
+ng	NCT01518855	Amlodipine/Valsartan		4	260							
+ng	NCT01518855	Nifedipine/Valsartan		3	245							
+ctg	NCT01599104	LCZ696 200 mg	49	1	387	123	264	57.9	10.87			
+ctg	NCT01599104	LCZ696 400 mg	48	1	385	117	268	58.7	10.5			
+ctg	NCT01599104	Olmesartan 20 mg	53	7	389	103	286	59.6	10.5			
+ctg	NCT01615198	LCZ696	56	7	296	154	142	70.5	4.67			
+ctg	NCT01615198	Olmesartan	46	2	292	140	152	70.9	4.67			
+ctg	NCT01785472	LCZ696 200 mg	71	5	478	227	252	57.5	10.17			
+ctg	NCT01785472	LCZ696 400 mg	66	3	472	229	243	58.1	9.71			
+ctg	NCT01785472	Olmesartan 20 mg	72	6	484	223	261	57.4	10.14			
+ng	NCT01838850	Olmesartan/Amlodipine/Hydrochlorothiazide 20/5/12.5mg		2	167	52	115	56.1	10.1	26.5	3.3	
+ng	NCT01838850	Olmesartan/Hydrochlorothiazide 20/12.5mg		1	171	51	120	56.4	10.7	26.8	3.3	
+ctg	NCT01876368	LCZ696 200 mg	7	0	188	91	97	57.1	10.19			
+ctg	NCT01876368	Olmesartan 20 mg	12	2	187	92	95	58	9.09			
+ng	NCT01928628	Lercanidipine 10mg		0	151	47	104	56.5	9.6	25.8	3	
+ng	NCT01928628	Lercanidipine 10mg /Valsartan 160mg		0	156	48	108	55.1	9.9	25.7	2.7	
+ng	NCT01928628	Lercanidipine 10mg /Valsartan 80mg		2	159	50	109	54.9	10.2	25.5	3	
+ctg	NCT01975246	Telmisartan and Amlodipine+HCTZ	36	0	149	22	127	54.4	9.1			
+ctg	NCT01975246	Telmisartan+Amlodipine	14	0	160	30	130	55	9.7			
+ng	NCT02172586	Losartan		1.9800000000000002	180							
+ng	NCT02172586	Telmisartan		2.928	183							
+ng	NCT02183701	Losartan + Hydrochlorothiazide 50/12.5mg	91		363							
+ng	NCT02183701	Telmisartan 80mg	88		351							
+ng	NCT02200653	Losartan 50mg		2	199							
+ng	NCT02200653	Telmisartan 40mg		2	188							
+ng	NCT02200653	Telmisartan 80mg		1	113							
+ng	NCT02242318	Telmisartan		0	224							
+ng	NCT02242318	Valsartan		2	216							
+ng	NCT02738632	Telmisartan/Amlodipine		0	155	29	126	63.4	10.4	26.3	3.3	
+ng	NCT02738632	Telmisartan/Amlodipine+Hydrochlorothiazide		0	155	36	119	62	10.8	26.6	3.6	

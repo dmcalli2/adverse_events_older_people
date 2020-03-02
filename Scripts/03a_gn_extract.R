@@ -226,7 +226,11 @@ ae_sae %>% filter(nct_id == "NCT00409760")
 ## Folow-up
 ## Two trials with missingess on follow-up, take from CSDR
 rslts %>% filter(is.na(`follow-up`)) %>% distinct(nct_id)
+
+## Drop 112 from follow-up arm  from NCT01928628. The arm was already excluded from the total
+## now needs to be excluded from the fu
 fup <- rslts %>% 
+  filter(! (arm_name == "Lercanidipine 20mg /Valsartan 160mg" & nct_id == "NCT01928628")) %>% 
   mutate(fup_units = str_extract(`follow-up`, "[a-z]{1,}"),
          fup_x = str_extract(`follow-up`, "[0-9]{1,}") %>% as.double()) %>% 
   distinct(nct_id, `follow-up`, fup_units, fup_x) %>% 

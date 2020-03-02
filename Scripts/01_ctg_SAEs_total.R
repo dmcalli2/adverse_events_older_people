@@ -79,6 +79,11 @@ setdiff(jo_trials$nct_id, aact$studies$nct_id)
 jo_classes <- trial_comparison_wide %>% 
   filter(in_jo)
 
+## Phase
+phase <- aact$studies %>% 
+  select(nct_id, phase)
+# write_csv(phase, "Data_extraction_david/phase.csv")
+
 ## Primary outcome ----
 primary <- aact$design_outcomes %>% 
   filter(outcome_type == "primary") %>% 
