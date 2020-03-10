@@ -113,15 +113,17 @@ First, we will compare the age-sex dsitribution of older people in the community
 
 We will then estimate the age-sex specific incidence rate for first
 hospitalisation or death in the SAIL platform, which contains community
-data for people in Wales. From among our existing cohort of people with
-hypertension identified via primary care Read codes described previously
-(<https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1427-1>),
-we will exclude any patient who has not received a treatment with any
-drug in the RAAS class, and those with recent myocardial infarction,
-stroke or TIA (to attempt to exclude patients started on these drugs for
+data for people in Wales. We will identify first recorded prescription of a RAAS drug for any
+participant with an previous diagnostic Read for hypertension (using a code list described
+previously (<https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1427-1>)). 
+We will exclude participants who had been registered with a practice for less than 6 months, to
+avoid including people who were already established on a RAAS drug but who may have moved practice. 
+We will exclude those with myocardial infarction,
+stroke or TIA in the 6 months prior to starting the RAAS drug (to attempt to exclude patients started on these drugs for
 these indications rather than hypertension). We will then model the
 event rate in Poisson regression models. In sensitivity analyses we will
-repeat the modelling without these exclusions.
+repeat the modelling without excluding MI, stroke or TIA.
+
 
 ### Estimating expected SAE ratios
 
@@ -163,12 +165,24 @@ calcualte these values. We will then use the cumulative distribution
 function of the truncated normal distribution to estimate the proportion
 of participants at each age and apply the community linear predictors to these in order to estimate the trial-level expected SAE rates.
 
-    # https://www.r-bloggers.com/truncated-normal-distribution/
-    mean.tnorm<-function(mu,sd,lower,upper){
-      ##return the expectation of a truncated normal distribution
-      lower.std=(lower-mu)/sd
-      upper.std=(upper-mu)/sd
-      mean=mu+sd*(dnorm(lower.std)-dnorm(upper.std))/
-          (pnorm(upper.std)-pnorm(lower.std))
-      return(mean)
-    }
+```
+# https://www.r-bloggers.com/truncated-normal-distribution/
+mean.tnorm<-function(mu,sd,lower,upper){
+  ##return the expectation of a truncated normal distribution
+  lower.std=(lower-mu)/sd
+  upper.std=(upper-mu)/sd
+  mean=mu+sd*(dnorm(lower.std)-dnorm(upper.std))/
+      (pnorm(upper.std)-pnorm(lower.std))
+  return(mean)
+}
+var.tnorm<-function(mu,sd,lower,upper){
+  ##return the variance of a truncated normal distribution
+  lower.std=(lower-mu)/sd
+  upper.std=(upper-mu)/sd
+  variance=sd^2*(1+(lower.std*dnorm(lower.std)-upper.std*dnorm(upper.std))/
+    (pnorm(upper.std)-pnorm(lower.std))-((dnorm(lower.std)-dnorm(upper.std))/
+    (pnorm(upper.std)-pnorm(lower.std)))^2)
+  return(variance)
+}
+
+```
