@@ -182,33 +182,51 @@ tots <- tots %>%
   mutate(male_p = male/(male + female))
 tots$smpls <- map2(tots$smpls, tots$male_p, ~ .x %>% 
                     mutate(both = .y*men + (1-.y) * women))
-tots$rate_mean <- map_dbl(tots$smpls, ~ mean(.x$both))
-tots$rate_se <- map_dbl(tots$smpls, ~ sd(.x$both))
-tots$rate_lci <- map_dbl(tots$smpls, ~ quantile(.x$both, 0.025))
-tots$rate_uci <- map_dbl(tots$smpls, ~ quantile(.x$both, 0.975))
+
+## sample from beta distribution and multiple by number at risk to get CI for obserVED SAE
+tots$sae_smpls <- map2(tots$sae, tots$subjects_at_risk, ~ rbeta(10000, .x + 0.5, .y-.x+0.5) * .y)
+## Divide by person time to get rate
+tots$sae_smpls <- map2(tots$sae_smpls, tots$pt, ~ 1000 * .x/.y)
+
+## Produce ratios ----
+tots$smpls <- map(tots$smpls, ~ .x$both*1000)
+tots$ratios <- map2(tots$sae_smpls, tots$smpls, ~ .y/.x)
+
+## Summarise rates
+
+tots$rate_mean <- map_dbl(tots$smpls, mean)
+tots$rate_se <- map_dbl(tots$smpls, sd)
+tots$rate_lci <- map_dbl(tots$smpls, ~ quantile(.x, 0.025))
+tots$rate_uci <- map_dbl(tots$smpls, ~ quantile(.x, 0.975))
+
+## Summarise ratios 
+tots$ratio_mean <- map_dbl(tots$ratios, mean)
+tots$ratio_se <- map_dbl(tots$ratios, sd)
+tots$ratio_lci <- map_dbl(tots$ratios, ~ quantile(.x, 0.025))
+tots$ratio_uci <- map_dbl(tots$ratios, ~ quantile(.x, 0.975))
 
 tots <- tots %>% 
-  select(nct_id, subjects_at_risk, sae, fu_days, pt, rate, rate_mean, rate_se, rate_lci, rate_uci, older, phase)
+  select(nct_id, subjects_at_risk, sae, fu_days, pt, rate, 
+         rate_mean, rate_se, rate_lci, rate_uci, 
+         ratio_mean, ratio_se, ratio_lci, ratio_uci, 
+         older, phase)
 
 tots$v_line <- 1
 
-tots <- tots %>% 
-  mutate_at(vars(rate_mean, rate_lci, rate_uci, rate_se), function(x) 1000*x) %>% 
-  mutate(ratio_point = rate/rate_mean,
-         ratio_lower = rate/rate_lci,
-         ratio_upper = rate/rate_uci)
-
 tots$label <- ifelse(tots$older==1, "Older-people trials", "Standard trials")
 
-ggplot(tots, aes(x = nct_id, y = ratio_point,  colour = phase))+
+a <- ggplot(tots, aes(x = nct_id, y = ratio_mean,  colour = phase))+
   geom_point()+
-  geom_pointrange(aes(ymin = ratio_lower, ymax = ratio_upper))+
+  geom_pointrange(aes(ymin = ratio_lci, ymax = ratio_uci))+
   facet_grid(label~., scales = "free", space = "free")+
   geom_hline(aes(yintercept = v_line))+
   coord_flip()+
   ggtitle("Ratio of observed to expected counts")+
   ylab("Observed count / Expected count")+
   xlab("Trial ID")
-
+a
+a <- a +
+  coord_flip(ylim = c(0.9, 15))
+a
 saveRDS(tots, "Data/SAE_ratio_observed_expected.Rds")
 
