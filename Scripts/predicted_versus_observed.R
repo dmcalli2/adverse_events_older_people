@@ -184,7 +184,19 @@ tots$smpls <- map2(tots$smpls, tots$male_p, ~ .x %>%
                     mutate(both = .y*men + (1-.y) * women))
 
 ## sample from beta distribution and multiple by number at risk to get CI for obserVED SAE
-tots$sae_smpls <- map2(tots$sae, tots$subjects_at_risk, ~ rbeta(10000, .x + 0.5, .y-.x+0.5) * .y)
+tots$sae_smpls <- map2(tots$sae, tots$subjects_at_risk, ~ rbeta(10000, .x + 0.005, .y-.x+0.005) * .y)
+## or sample from Poisson
+tots$sae_smpls_pois <- map(tots$sae, ~ rpois(10000, .x))
+# compare beta and Poisson
+pois <- map(tots$sae_smpls_pois, ~ tibble(m = mean(.x), s = sd(.x))) %>% 
+  bind_rows(.id = "trial")
+beta <- map(tots$sae_smpls, ~ tibble(m_beta = mean(.x), s_beta = sd(.x)))%>% 
+  bind_rows(.id = "trial")
+cmpr <- bind_cols(pois, beta %>% select(-trial))
+plot(cmpr$m, cmpr$m_beta)
+abline(a = 0, b = 1)
+plot(cmpr$s, cmpr$s_beta)
+abline(a = 0, b = 1)
 ## Divide by person time to get rate
 tots$sae_smpls <- map2(tots$sae_smpls, tots$pt, ~ 1000 * .x/.y)
 
