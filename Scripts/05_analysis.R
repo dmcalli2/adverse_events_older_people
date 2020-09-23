@@ -5,8 +5,6 @@ dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
 expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
-expected <- expected %>% 
-  select(nct_id, expected_rate = expected_count, ratio, ratio_point, ratio_lower, ratio_upper)
 
 ## Restrict all trials ----
 trials <- trials %>% 
@@ -27,13 +25,20 @@ tots <- tots %>%
 
 
 ## run regression model, unadjusted no effect ----
+library(rstanarm)
 unad <- glm(sae ~ older + offset(log(pt)), data = tots, family = "poisson")
 summary(unad)
+unad_stan <- stan_glmer(sae ~ older + offset(log(pt)) + (1|nct_id), data = tots, family = "poisson")
+summary(unad_stan)
+
 tapply(1000*tots$sae/tots$pt, tots$older, identity)
 
 ## Adjusted model, same association as before in MPH analysis, 2.22 fold higher rate ----
 mod2 <- update(unad, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
 summary(mod2)
+mod2_stan <- update(unad_stan, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
+summary(mod2_stan)
+
 a <- broom::tidy(mod2)
 a$rr <- exp(a$estimate)
 a$rr[1] <- NA_real_
@@ -68,9 +73,10 @@ summary(mod2_5)
 model_age_again <- glm(sae ~ age_m + phase + offset(log(pt)), data = tots %>% filter(older == 0, hard_outcome == 0), family = "poisson")
 summary(model_age_again)
 
-## Run model with uncertainty in covariate ----
+## Run model with expected count as offset ----
 tots <- tots %>% 
-  mutate(expected_count = expected_rate * pt/1000)
+  mutate(expected_count = rate_mean * pt/1000,
+         ssaer = sae/expected_count)
 
 unad_e <- glm(sae ~ older + offset(log(expected_count)), data = tots, family = "poisson")
 summary(unad_e)
@@ -78,26 +84,66 @@ mod2_e <- update(unad_e, . ~ . + aliskiren + hard_outcome + type_comparison + ph
 summary(mod2_e)
 summary(mod2)
 
-## get standard errors
-tots <- tots %>% 
-  mutate(se1 = ratio_point-ratio_lower,
-         se2 = ratio_upper-ratio_point,
-         se_other = log(ratio_upper/ratio_lower)/(2*1.96))
-
-
 
 ## do plot
-plot1 <- ggplot(tots, aes(x = age_m, y = ratio, ymin = ratio_lower, ymax = ratio_upper, colour = factor(older), shape = type_comparison)) + 
+plot1 <- ggplot(tots, aes(x = age_m, y = ssaer, colour = factor(older), shape = type_comparison)) + 
   geom_point(alpha = 0.8) +
-  geom_errorbar() +
   facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase) 
 plot1
 
+library(rstanarm)
+mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id), data = tots, family = "poisson")
+summary(mod0_ratio)
+mod1_ratio <- update(mod0_ratio, . ~ . + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
+summary(mod1_ratio)
+mod2_ratio <- update(mod1_ratio, . ~ . + age_m, data = tots)
+summary(mod2_ratio)
+mod3_ratio <- update(mod2_ratio, . ~ . + age_m + I(age_m^2), data = tots)
+summary(mod3_ratio)
+# launch_shinystan(mod2_ratio)
 
-library(runjags)
+tots_new <- tots %>% 
+  filter(!is.na(expected_count))
 
+## do plot
+sims <- as.matrix(mod2_ratio)
+sims <- sims[, 
+             c('(Intercept)', 'aliskiren', 'hard_outcome', 'type_comparisondiff_class3', 'type_comparisondiff_class5', 'phasePhase 4', 'age_m', 'older')]
+tots_new2 <- tots_new %>% 
+  select(age_m, aliskiren, hard_outcome, type_comparison, phase, older) %>% 
+  group_by(aliskiren, hard_outcome, type_comparison, phase, older) %>% 
+  nest() %>% 
+  ungroup()
+tots_new2$data <- map(tots_new2$data, ~ tibble(age_m = min(.x$age_m):max(.x$age_m))) 
+tots_new2 <- tots_new2 %>% 
+  unnest(data)
+sim_pred <- model.matrix(~ aliskiren + hard_outcome + type_comparison + phase + age_m + older, tots_new2)
+sim_pred <- sim_pred[,colnames(sims)]
+res <- sims %*% t(sim_pred)
+res[] <- exp(res)
+res_m <- colMeans(res)
+res_lci <- apply(res, 2, quantile, probs = c(0.025))
+res_uci <- apply(res, 2, quantile, probs = c(0.975))
 
+tots_new2 <- tots_new2 %>% 
+  mutate(ratio_point = res_m,
+         ratio_lower = res_lci,
+         ratio_upper = res_uci)
 
-modelstring <- "
-"
+plot1 <- ggplot(tots_new2, aes(x = age_m, 
+                               y = ratio_point, 
+                               ymax = ratio_upper,
+                               ymin = ratio_lower, 
+                                colour = type_comparison, 
+                                linetype = factor(aliskiren), 
+                                shape = factor(aliskiren), 
+                                fill = type_comparison,
+                                group = interaction(type_comparison, older, aliskiren))) + 
+  geom_ribbon(alpha = 0.1, colour = NA) +
+  geom_line() +
+  geom_point() +
+  facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase) +
+  scale_y_log10()
+plot1
 
+summary(mod1_ratio)
