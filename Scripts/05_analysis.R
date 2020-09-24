@@ -1,5 +1,7 @@
 #05_analysis.R
 library(tidyverse)
+library(rstanarm)
+
 
 dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
@@ -19,10 +21,9 @@ tots <- tots %>%
   mutate(pt = fu_days * (subjects_at_risk-sae) + 0.5 * sae*fu_days,
          older = as.integer(minimum_age >=60),
          rate = 1000*sae/pt)
-## note many missing because has no mean age or sd age
+## note many missing expected because has no mean age or sd age
 tots <- tots %>% 
   left_join(expected)
-
 
 ## run regression model, unadjusted no effect ----
 library(rstanarm)
@@ -39,111 +40,69 @@ summary(mod2)
 mod2_stan <- update(unad_stan, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
 summary(mod2_stan)
 
-a <- broom::tidy(mod2)
-a$rr <- exp(a$estimate)
-a$rr[1] <- NA_real_
+ExportRes <- function(modelname){
+  a <- broom::tidy(modelname)
+  b <- posterior_interval(modelname, 0.95) %>% 
+    as_tibble(rownames = "term")
+  a <- a %>% 
+    inner_join(b)
+  a <- a %>% 
+    mutate_at(vars(estimate, `2.5%`, `97.5%`), function(x) x %>% 
+                exp() %>% 
+                formatC(digits = 2, format = "f", flag = "0")) %>% 
+    mutate(res = paste0(estimate, " (", `2.5%`, "-",`97.5%`, ")"))
+  a %>% 
+    select(term, res)
+}
+unad <- ExportRes(unad_stan)
+adj <- ExportRes(mod2_stan)
+
 ## do plot
 plot1 <- ggplot(tots, aes(x = age_m, y = rate, size = pt, colour = factor(older), shape = type_comparison)) + 
   geom_point(alpha = 0.8) +
   facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase)
 plot1
 
-## Adjust for age, simple imputation first, later consider more complex ----
-tots <- tots %>% 
-  mutate(age_imp = if_else(is.na(age_m), mean(age_m, na.rm = TRUE), age_m))
 
-mod3 <- update(mod2, . ~ . + age_imp)
-summary(mod3)
-
-## mod exploratory analysis, it is the "hard outcome" adjustment which makes the difference ----
-mod2_1 <- update(unad, . ~ . + aliskiren )
-summary(mod2_1)
-mod2_2 <- update(unad, . ~ . + hard_outcome )
-summary(mod2_2)
-mod2_3 <- update(unad, . ~ . + type_comparison  )
-summary(mod2_3)
-mod2_4 <- update(unad, . ~ . + phase  )
-summary(mod2_4)
-
-## do restricted model excluding hard outcome trials, similar associations ----
-mod2_5 <- update(mod2, . ~ . - hard_outcome, data = tots %>% filter(!hard_outcome==1))
-summary(mod2_5)
-
-## model association with age within older and non older ----
-model_age_again <- glm(sae ~ age_m + phase + offset(log(pt)), data = tots %>% filter(older == 0, hard_outcome == 0), family = "poisson")
-summary(model_age_again)
-
-## Run model with expected count as offset ----
+## Run model with expected count as offset to estimate ratio ----
 tots <- tots %>% 
   mutate(expected_count = rate_mean * pt/1000,
          ssaer = sae/expected_count)
 
-unad_e <- glm(sae ~ older + offset(log(expected_count)), data = tots, family = "poisson")
-summary(unad_e)
-mod2_e <- update(unad_e, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
-summary(mod2_e)
-summary(mod2)
-
-
-## do plot
-plot1 <- ggplot(tots, aes(x = age_m, y = ssaer, colour = factor(older), shape = type_comparison)) + 
-  geom_point(alpha = 0.8) +
-  facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase) 
-plot1
-
-library(rstanarm)
 mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id), data = tots, family = "poisson")
 summary(mod0_ratio)
 mod1_ratio <- update(mod0_ratio, . ~ . + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
 summary(mod1_ratio)
-mod2_ratio <- update(mod1_ratio, . ~ . + age_m, data = tots)
-summary(mod2_ratio)
-mod3_ratio <- update(mod2_ratio, . ~ . + age_m + I(age_m^2), data = tots)
-summary(mod3_ratio)
-# launch_shinystan(mod2_ratio)
 
-tots_new <- tots %>% 
-  filter(!is.na(expected_count))
+unad_ratio <- ExportRes(mod0_ratio)
+adj_ratio  <- ExportRes(mod1_ratio)
 
-## do plot
-sims <- as.matrix(mod2_ratio)
-sims <- sims[, 
-             c('(Intercept)', 'aliskiren', 'hard_outcome', 'type_comparisondiff_class3', 'type_comparisondiff_class5', 'phasePhase 4', 'age_m', 'older')]
-tots_new2 <- tots_new %>% 
-  select(age_m, aliskiren, hard_outcome, type_comparison, phase, older) %>% 
-  group_by(aliskiren, hard_outcome, type_comparison, phase, older) %>% 
-  nest() %>% 
-  ungroup()
-tots_new2$data <- map(tots_new2$data, ~ tibble(age_m = min(.x$age_m):max(.x$age_m))) 
-tots_new2 <- tots_new2 %>% 
-  unnest(data)
-sim_pred <- model.matrix(~ aliskiren + hard_outcome + type_comparison + phase + age_m + older, tots_new2)
-sim_pred <- sim_pred[,colnames(sims)]
-res <- sims %*% t(sim_pred)
-res[] <- exp(res)
-res_m <- colMeans(res)
-res_lci <- apply(res, 2, quantile, probs = c(0.025))
-res_uci <- apply(res, 2, quantile, probs = c(0.975))
+for_tbls <- bind_rows(rate_unad = unad,
+                      rate_adj = adj,
+                      ratio_unad = unad_ratio,
+                      ratio_adj = adj_ratio, .id = "tbl_type")
+for_tbls <- for_tbls %>% 
+  separate(tbl_type, into = c("measure", "model"))
+for_tbls %>% 
+  spread(measure, res)  %>% 
+  arrange(desc(model)) %>% 
+  filter(term == "older")
 
-tots_new2 <- tots_new2 %>% 
-  mutate(ratio_point = res_m,
-         ratio_lower = res_lci,
-         ratio_upper = res_uci)
+## Run sensitivity analysis dropping each variable in turn
+# sa1 <- map(tots$nct_id, ~ ExportRes(update(mod2_stan, data = tots %>% filter(!nct_id == .x))))
+# saveRDS(sa1, "Scratch_data/sensitivity_analysis.Rds")
+sa1 <- readRDS("Scratch_data/sensitivity_analysis.Rds")
+names(sa1) <- tots$nct_id
+# effect evident even when leave each out
+sa1_smry <- bind_rows(sa1, .id = "nct_id") %>% 
+  filter(term == "older") %>% 
+  inner_join(tots %>% select(nct_id, older))
 
-plot1 <- ggplot(tots_new2, aes(x = age_m, 
-                               y = ratio_point, 
-                               ymax = ratio_upper,
-                               ymin = ratio_lower, 
-                                colour = type_comparison, 
-                                linetype = factor(aliskiren), 
-                                shape = factor(aliskiren), 
-                                fill = type_comparison,
-                                group = interaction(type_comparison, older, aliskiren))) + 
-  geom_ribbon(alpha = 0.1, colour = NA) +
-  geom_line() +
-  geom_point() +
-  facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase) +
-  scale_y_log10()
-plot1
-
-summary(mod1_ratio)
+# sa2 <- map(tots$nct_id, ~ ExportRes(update(mod1_ratio, data = tots %>% filter(!nct_id == .x))))
+# saveRDS(sa2, "Scratch_data/sensitivity_analysis_ratio.Rds")
+sa2 <- readRDS("Scratch_data/sensitivity_analysis_ratio.Rds")
+names(sa2) <- tots$nct_id
+# effect evident even when leave each out
+sa2_smry <- bind_rows(sa2, .id = "nct_id") %>% 
+  filter(term == "older") %>% 
+  inner_join(tots %>% select(nct_id, older))
