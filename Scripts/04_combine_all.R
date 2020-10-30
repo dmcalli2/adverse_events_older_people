@@ -420,7 +420,7 @@ rm(tots_dups)
 ## Select arms
 arms <- bas_aes2 %>% 
   filter(!arm_name == "Total")
-rm(bas_aes, bas_aes2, dbl_fu, fu_wide, fu_wide_diff_jo_ctg, fu_wide_diff_ng_ctg, fu_wide_diff_ng_jo)
+rm(bas_aes2, dbl_fu, fu_wide, fu_wide_diff_jo_ctg, fu_wide_diff_ng_ctg, fu_wide_diff_ng_jo)
 
 ## merge fu into row level trial data
 trials <- trials_over %>% 
@@ -631,7 +631,6 @@ rm(sames, cc_plac, cc3, cc5, cc7, sm7, cmprsn, compare_plac,
 ## Add missing data value
 tots <- tots %>% 
   mutate(sae = if_else(nct_id == "NCT00134160",  98, sae))
-
 
 ## add in phase
 phase <- read_csv("Data_extraction_david/phase.csv")

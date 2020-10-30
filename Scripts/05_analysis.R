@@ -1,9 +1,9 @@
 #05_analysis.R
 library(tidyverse)
 library(rstanarm)
+library(broom.mixed)
 
-
-dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
+dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae2.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
 expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
@@ -39,9 +39,13 @@ mod2 <- update(unad, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
 summary(mod2)
 mod2_stan <- update(unad_stan, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
 summary(mod2_stan)
-
+mod2_stan_no_hard <- update(unad_stan, . ~ . + aliskiren + type_comparison + phase,
+                            data = tots %>% filter(hard_outcome ==0))
+mod3_stan <- update(unad_stan, . ~ . + aliskiren + type_comparison + phase)
+posterior_interval(mod2_stan_no_hard, 0.95)
 ExportRes <- function(modelname){
-  a <- broom::tidy(modelname)
+  # browser()
+  a <- broom.mixed::tidy(modelname)
   b <- posterior_interval(modelname, 0.95) %>% 
     as_tibble(rownames = "term")
   a <- a %>% 
@@ -55,19 +59,38 @@ ExportRes <- function(modelname){
     select(term, res)
 }
 unad <- ExportRes(unad_stan)
+minad <- ExportRes(mod3_stan)
 adj <- ExportRes(mod2_stan)
 
 ## do plot
-plot1 <- ggplot(tots, aes(x = age_m, y = rate, size = pt, colour = factor(older), shape = type_comparison)) + 
+plot1 <- ggplot(tots, aes(x = age_m, y = rate, colour =factor(older),
+                          shape = factor(hard_outcome))) + 
   geom_point(alpha = 0.8) +
-  facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase)
+  scale_color_discrete(guide = FALSE) +
+  scale_shape_discrete(guide = FALSE)
 plot1
-
 
 ## Run model with expected count as offset to estimate ratio ----
 tots <- tots %>% 
   mutate(expected_count = rate_mean * pt/1000,
          ssaer = sae/expected_count)
+
+## plot expected counts on same plot as tots
+tots_lng <- tots %>% 
+  gather("obs_exp", "point", rate, rate_mean)
+
+plot1 <- ggplot(tots, aes(x = age_m, y = rate, size = pt, colour = factor(older), shape = type_comparison)) + 
+  geom_point(alpha = 0.8) +
+  geom_point(mapping= aes(y = rate_mean), colour = "black", size = 1) +
+  geom_linerange(mapping= aes(ymin = rate_lci, ymax = rate_uci), colour = "black", size = 1) +
+  # geom_smooth(mapping= aes(y = rate_mean, group = hard_outcome), colour = "grey", se = FALSE) +
+  facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase) +
+  scale_size(guide = FALSE)
+plot1
+
+plot2 <- plot1 +
+  geom_point(mapping= aes(y = rate_mean), colour = "black", size = 1) 
+plot2  
 
 mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id), data = tots, family = "poisson")
 summary(mod0_ratio)

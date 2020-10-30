@@ -1,0 +1,31 @@
+## Hard outcome trials and SAEs
+
+Noticed low rates in trials with hard outcomes. HTerefore reviewed these trials to see whether or not primary outcomes were included or excluded from SAE counts.
+
+> tots %>% filter(hard_outcome ==1) %>% select(nct_id, fu_days, female, male, ae, sae, source)
+nct_id      fu_days female  male    ae   sae source
+<chr>         <dbl>  <dbl> <dbl> <dbl> <dbl> <chr> 
+1 NCT00134160   1092     649   515    NA    98 jo    
+2 NCT00454662   1201.   2488  2653  1399   464 jo    
+3 NCT00558428     56     415   682   126     6 ctg   
+
+# NCT00134160 - "PMID - 22503610 - https://www.sciencedirect.com/science/article/pii/S0002934312000113?casa_token=mHcMplX5TfsAAAAA:sqktBM1WtEPZu41CEyeZff20aesbtcPU6NAZ6mqSWZBnr__nXGHj_9kvOM6499c4fwVCTAm1
+"The number of serious adverse events, one of the secondary end
+points in this study, was 47 (8.1%) in the high-dose angiotensin II receptor
+blocker group and 51 (8.7%) in the angiotensin II receptor blocker+calcium
+channel blocker group, with no significant difference between the 2 groups
+(P=.75)"
+"There were 58 primary events"
+Not clear from either the numbers or text whether SAEs excluded or included primary events - UNCLEAR
+
+#NCT00454662 - 
+Ogihara T, Saruta T, Rakugi H, Shimamoto K, Ito S, Matsuoka H, et al. the COLM study investigators. Rationale, study design and implementation of the COLM study: the Combination of OLMesartan and calcium channel blocker or diuretic in high-risk elderly hypertensive patients. Hypertens Res 2009; 32:163–167. [PubMed] [Google Scholar]
+Ogihara T, Saruta T, Rakugi H, Saito I, Shimamoto K, Matsuoka H, et al. Teramukai S. for the COLM investigators. Combination of olmesartan and a calcium channel blocker or a diuretic in elderly hypertensive patients: a randomized, controlled trial. J Hypertens 2014; 32:2054–2063. [PMC free article] [PubMed] [Google Scholar]
+
+Appears not to include endpoints. "The three most frequent SAEs were malignancy (olmesartan plus CCB vs.
+olmesartan plus diuretic: 2.5 vs. 3.1%; P = 0.17), gastrointestinal disorders
+(1.1 vs. 1.1%; P = 0.79), and infection (0.9 vs. 0.9%; P = 0.76)" - EXCLUDED PRIMRY OUTCOMES
+
+#NCT00558428 - "from CTG hard outcome was general oedema. Clearly many more cases of general oedema than there were
+# SAEs so I think that these are not included within the SAEs - EXCLUDED PRIMARY OUTCOMES
+
