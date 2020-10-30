@@ -62,14 +62,6 @@ unad <- ExportRes(unad_stan)
 minad <- ExportRes(mod3_stan)
 adj <- ExportRes(mod2_stan)
 
-## do plot
-plot1 <- ggplot(tots, aes(x = age_m, y = rate, colour =factor(older),
-                          shape = factor(hard_outcome))) + 
-  geom_point(alpha = 0.8) +
-  scale_color_discrete(guide = FALSE) +
-  scale_shape_discrete(guide = FALSE)
-plot1
-
 ## Run model with expected count as offset to estimate ratio ----
 tots <- tots %>% 
   mutate(expected_count = rate_mean * pt/1000,
@@ -79,18 +71,16 @@ tots <- tots %>%
 tots_lng <- tots %>% 
   gather("obs_exp", "point", rate, rate_mean)
 
-plot1 <- ggplot(tots, aes(x = age_m, y = rate, size = pt, colour = factor(older), shape = type_comparison)) + 
-  geom_point(alpha = 0.8) +
+plot2 <- ggplot(tots, aes(x = age_m, y = rate, size = pt, colour = factor(older), 
+                          shape = type_comparison,
+                          alpha = factor(1- hard_outcome, labels = c("hard", "soft")))) + 
+  geom_point() +
   geom_point(mapping= aes(y = rate_mean), colour = "black", size = 1) +
-  geom_linerange(mapping= aes(ymin = rate_lci, ymax = rate_uci), colour = "black", size = 1) +
-  # geom_smooth(mapping= aes(y = rate_mean, group = hard_outcome), colour = "grey", se = FALSE) +
-  facet_grid(factor(hard_outcome, labels = c("soft", "hard")) ~phase) +
+  # geom_linerange(mapping= aes(ymin = rate_lci, ymax = rate_uci), colour = "black", size = 1) +
+  geom_smooth(mapping= aes(y = rate_mean, group = 1), colour = "grey", se = FALSE) +
+  # facet_grid( ~phase) +
   scale_size(guide = FALSE)
-plot1
-
-plot2 <- plot1 +
-  geom_point(mapping= aes(y = rate_mean), colour = "black", size = 1) 
-plot2  
+plot2
 
 mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id), data = tots, family = "poisson")
 summary(mod0_ratio)
