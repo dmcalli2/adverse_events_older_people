@@ -3,7 +3,7 @@ library(tidyverse)
 library(rstanarm)
 library(broom.mixed)
 
-dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae2.Rds")
+dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
 expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
@@ -119,3 +119,4 @@ names(sa2) <- tots$nct_id
 sa2_smry <- bind_rows(sa2, .id = "nct_id") %>% 
   filter(term == "older") %>% 
   inner_join(tots %>% select(nct_id, older))
+

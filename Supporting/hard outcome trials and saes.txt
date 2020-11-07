@@ -22,8 +22,9 @@ Not clear from either the numbers or text whether SAEs excluded or included prim
 Ogihara T, Saruta T, Rakugi H, Shimamoto K, Ito S, Matsuoka H, et al. the COLM study investigators. Rationale, study design and implementation of the COLM study: the Combination of OLMesartan and calcium channel blocker or diuretic in high-risk elderly hypertensive patients. Hypertens Res 2009; 32:163–167. [PubMed] [Google Scholar]
 Ogihara T, Saruta T, Rakugi H, Saito I, Shimamoto K, Matsuoka H, et al. Teramukai S. for the COLM investigators. Combination of olmesartan and a calcium channel blocker or a diuretic in elderly hypertensive patients: a randomized, controlled trial. J Hypertens 2014; 32:2054–2063. [PMC free article] [PubMed] [Google Scholar]
 
-Appears not to include endpoints. "The three most frequent SAEs were malignancy (olmesartan plus CCB vs.
-olmesartan plus diuretic: 2.5 vs. 3.1%; P = 0.17), gastrointestinal disorders
+Appears not to include endpoints. 
+"The primary endpoint occurred in 116/2568 patients (4.5%) in the olmesartan plus CCB group, and in 135/2573 patients (5.3%) in the olmesartan plus diuretic group (hazard ratio 0.83, 95% CI 0.65–1.07, P=0.16).
+The incidence of SAEs was lower in the olmesartan plus CCB group (211/2568 patients, 8.2%) than in the olmesartan plus diuretic group (253/2573 patients, 9.8%) (= 0.046). The three most frequent SAEs were malignancy (olmesartan plus CCB vs. olmesartan plus diuretic: 2.5 vs. 3.1%; P = 0.17), gastrointestinal disorders
 (1.1 vs. 1.1%; P = 0.79), and infection (0.9 vs. 0.9%; P = 0.76)" - EXCLUDED PRIMRY OUTCOMES
 
 #NCT00558428 - "from CTG hard outcome was general oedema. Clearly many more cases of general oedema than there were

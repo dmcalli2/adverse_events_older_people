@@ -230,9 +230,10 @@ NCT00706134,B5,Total,72.1,5.47,,"
 )
 
 ctg_age <- bind_rows(ctg_age,
-                      age_bmi_ctg_manual %>% select(-bmi_m, -bmi_s))
+                      age_bmi_ctg_manual %>% 
+                       select(-bmi_m, -bmi_s))
 
-## For sex, one trial is very unusally coded take this one separately, add in adverse event data at this point
+## For sex, one trial is very unusually coded take this one separately, add in adverse event data at this point
 NCT00591578 <- ctg_base %>% 
   filter(nct_id == "NCT00591578", title == "Gender, Customized", classification %in% c("Male (Double Blind Phase)",
                                                                                        "Female (Double Blind Phase)")) %>% 
