@@ -130,28 +130,32 @@ mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id),
 summary(mod0_ratio)
 mod1_ratio <- update(mod0_ratio, . ~ . + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
 summary(mod1_ratio)
-mod1_ratio_no_intercept <- update(mod0_ratio, . ~ . -1 + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
-summary(mod1_ratio_no_intercept)
 
 unad_ratio <- ExportRes(mod0_ratio)
 adj_ratio  <- ExportRes(mod1_ratio)
 
+GetCeptOldrDiff <- function(model){
+  a <- as.matrix(model)
+  a <- a[, c("(Intercept)", "older")]
+  ## obtain effect estimates for effect in older, standard and difference between the two.
+  res <- list(
+    cept = a[,1, drop = FALSE],
+    oldr = matrix(rowSums(a), ncol = 1),
+    dffr = a[, 2, drop = FALSE])
+  res_ci <- map(res, ~ rstantools::posterior_interval(.x, prob = 0.95) %>% exp() )
+  res_est <- map(res, ~ mean(.x) %>% exp())
+  res_est
+  res2 <- map2(res_est, res_ci, ~ tibble(est = .x, lci = .y[,1], uci = .y[,2]))
+  res2 <- bind_rows(res2, .id = "term")
+  res2 <- res2 %>% 
+    mutate_at(vars(-term), function(x) round(x, 2))
+  res2
+}
+GetCeptOldrDiff(mod0_ratio)
+GetCeptOldrDiff(mod1_ratio)
+
 ## need to combine intercept and older to get ratio for older
-a <- as.matrix(mod1_ratio)
-a <- a[, c("(Intercept)", "older")]
-## obtain effect estimates for effect in older, standard and difference between the two.
-res <- list(
-  cept = a[,1, drop = FALSE],
-  oldr = matrix(rowSums(a), ncol = 1),
-  dffr = a[, 2, drop = FALSE])
-res_ci <- map(res, ~ rstantools::posterior_interval(.x, prob = 0.95) %>% exp() )
-res_est <- map(res, ~ mean(.x) %>% exp())
-res_est
-res2 <- map2(res_est, res_ci, ~ tibble(est = .x, lci = .y[,1], uci = .y[,2]))
-res2 <- bind_rows(res2, .id = "term")
-res2 <- res2 %>% 
-  mutate_at(vars(-term), function(x) round(x, 2))
-res2
+
 
 for_tbls <- bind_rows(rate_unad = unad,
                       rate_adj = adj,
