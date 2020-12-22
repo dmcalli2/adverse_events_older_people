@@ -8,14 +8,38 @@ list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
 expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
 
-## Restrict all trials ----
-trials <- trials %>% 
-  filter(!type_comparison %in% c("same_class7", "diff_class7"),
-         !phase == "Phase 2/Phase 3") 
+## note reviewed CTG trial NCT02269176 includes children, adults and older adults
+trials$minimum_age[trials$nct_id == "NCT02269176"] <- min(trials$minimum_age, na.rm = TRUE)
 
+## Restrict all trials ----
+rstrct1 <- trials %>% 
+  filter(type_comparison %in% c("same_class7", "diff_class7")) 
+rstrct1 %>% 
+  count(minimum_age >=60) 
+trials <- trials %>% 
+  filter(!type_comparison %in% c("same_class7", "diff_class7"))
+trials %>% 
+  count(minimum_age >=60)
+trials %>% 
+  filter(phase == "Phase 2/Phase 3")
+trials <- trials %>% 
+  filter(!phase == "Phase 2/Phase 3") 
+
+## count how many have SAE
+restrict3 <- trials %>% 
+  anti_join(tots %>% filter(!is.na(sae))) %>% 
+  count(minimum_age >=60)
+trials <- trials %>% 
+  semi_join(tots %>% filter(!is.na(sae)))
+trials %>% 
+  count(minimum_age >=60)
+
+## Final dataset
 tots <- tots %>% 
   filter(!is.na(sae)) %>% 
   inner_join(trials %>% select(nct_id, aliskiren, minimum_age, maximum_age, hard_outcome, type_comparison, fu_days, phase))
+tots %>% 
+  count(minimum_age >=60)
 tots$subjects_at_risk[tots$nct_id == "NCT00553267"] <- 947
 tots <- tots %>% 
   mutate(pt = fu_days * (subjects_at_risk-sae) + 0.5 * sae*fu_days,
@@ -26,7 +50,6 @@ tots <- tots %>%
   left_join(expected)
 
 ## run regression model, unadjusted no effect ----
-library(rstanarm)
 unad <- glm(sae ~ older + offset(log(pt)), data = tots, family = "poisson")
 summary(unad)
 unad_stan <- stan_glmer(sae ~ older + offset(log(pt)) + (1|nct_id), data = tots, family = "poisson")
@@ -43,6 +66,13 @@ mod2_stan_no_hard <- update(unad_stan, . ~ . + aliskiren + type_comparison + pha
                             data = tots %>% filter(hard_outcome ==0))
 mod3_stan <- update(unad_stan, . ~ . + aliskiren + type_comparison + phase)
 posterior_interval(mod2_stan_no_hard, 0.95)
+
+mod2_age_sex_stan <- update(mod2_stan, . ~ . + age_m + male)
+mod2_age_sex_stan_cmpr <- update(mod2_stan, data = tots %>% filter(!is.na(age_m), !is.na(male)))
+
+summary(mod2_age_sex_stan)
+posterior_interval(mod2_age_sex_stan, 0.95)
+
 ExportRes <- function(modelname){
   # browser()
   a <- broom.mixed::tidy(modelname)
@@ -61,7 +91,8 @@ ExportRes <- function(modelname){
 unad <- ExportRes(unad_stan)
 minad <- ExportRes(mod3_stan)
 adj <- ExportRes(mod2_stan)
-
+adj_age_sex <- ExportRes(mod2_age_sex_stan)
+not_adj_age_sex <- ExportRes(mod2_age_sex_stan_cmpr)
 ## Run model with expected count as offset to estimate ratio ----
 tots <- tots %>% 
   mutate(expected_count = rate_mean * pt/1000,
@@ -71,24 +102,56 @@ tots <- tots %>%
 tots_lng <- tots %>% 
   gather("obs_exp", "point", rate, rate_mean)
 
-plot2 <- ggplot(tots, aes(x = age_m, y = rate, size = pt, colour = factor(older), 
-                          shape = type_comparison,
-                          alpha = factor(1- hard_outcome, labels = c("hard", "soft")))) + 
+tots <- tots %>% 
+  arrange(rate_mean) %>% 
+  mutate(trial_n = cumsum(!duplicated(nct_id)),
+         hard_t = if_else(hard_outcome ==1, "Hard outcome", "Surrogage outcome"))
+
+plot2 <- ggplot(tots, aes(x = age_m, y = rate, size = pt,
+                          # shape = type_comparison,
+                          # alpha = factor(1- hard_outcome, labels = c("hard", "soft")), 
+                          colour = hard_t)) + 
   geom_point() +
-  geom_point(mapping= aes(y = rate_mean), colour = "black", size = 1) +
+  # geom_text(aes(label = trial_n), size = 2) +
+  # geom_text(aes(y = rate_mean, label = trial_n), size = 2) +
+  geom_point(mapping= aes(y = rate_mean), size = 1) +
   # geom_linerange(mapping= aes(ymin = rate_lci, ymax = rate_uci), colour = "black", size = 1) +
-  geom_smooth(mapping= aes(y = rate_mean, group = 1), colour = "grey", se = FALSE) +
+  # geom_smooth(mapping= aes(y = rate_mean, group = 1), colour = "grey", se = FALSE) +
   # facet_grid( ~phase) +
-  scale_size(guide = FALSE)
+  scale_size(guide = FALSE) +
+  scale_color_manual("", values = c("red", "black")) +
+  scale_y_continuous("Rate of serious adverse events and \n rate of hospitalisation or death \n per 1000 person-years") +
+  scale_x_continuous("Mean age of trial participants") +
+  geom_vline(mapping=aes(xintercept = 68), linetype = "dotted") +
+  theme_bw()
 plot2
 
 mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id), data = tots, family = "poisson")
 summary(mod0_ratio)
 mod1_ratio <- update(mod0_ratio, . ~ . + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
 summary(mod1_ratio)
+mod1_ratio_no_intercept <- update(mod0_ratio, . ~ . -1 + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
+summary(mod1_ratio_no_intercept)
 
 unad_ratio <- ExportRes(mod0_ratio)
 adj_ratio  <- ExportRes(mod1_ratio)
+
+## need to combine intercept and older to get ratio for older
+a <- as.matrix(mod1_ratio)
+a <- a[, c("(Intercept)", "older")]
+## obtain effect estimates for effect in older, standard and difference between the two.
+res <- list(
+  cept = a[,1, drop = FALSE],
+  oldr = matrix(rowSums(a), ncol = 1),
+  dffr = a[, 2, drop = FALSE])
+res_ci <- map(res, ~ rstantools::posterior_interval(.x, prob = 0.95) %>% exp() )
+res_est <- map(res, ~ mean(.x) %>% exp())
+res_est
+res2 <- map2(res_est, res_ci, ~ tibble(est = .x, lci = .y[,1], uci = .y[,2]))
+res2 <- bind_rows(res2, .id = "term")
+res2 <- res2 %>% 
+  mutate_at(vars(-term), function(x) round(x, 2))
+res2
 
 for_tbls <- bind_rows(rate_unad = unad,
                       rate_adj = adj,
