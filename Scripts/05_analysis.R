@@ -8,6 +8,10 @@ list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
 expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
 
+# add clinical endpoints to SAE count ###
+tots$sae[tots$nct_id == "NCT00134160"] <- 144
+tots$sae[tots$nct_id == "NCT00454662"] <- 594
+
 ## note reviewed CTG trial NCT02269176 includes children, adults and older adults
 trials$minimum_age[trials$nct_id == "NCT02269176"] <- min(trials$minimum_age, na.rm = TRUE)
 
@@ -41,6 +45,7 @@ tots <- tots %>%
 tots %>% 
   count(minimum_age >=60)
 tots$subjects_at_risk[tots$nct_id == "NCT00553267"] <- 947
+
 tots <- tots %>% 
   mutate(pt = fu_days * (subjects_at_risk-sae) + 0.5 * sae*fu_days,
          older = as.integer(minimum_age >=60),
@@ -93,6 +98,7 @@ minad <- ExportRes(mod3_stan)
 adj <- ExportRes(mod2_stan)
 adj_age_sex <- ExportRes(mod2_age_sex_stan)
 not_adj_age_sex <- ExportRes(mod2_age_sex_stan_cmpr)
+
 ## Run model with expected count as offset to estimate ratio ----
 tots <- tots %>% 
   mutate(expected_count = rate_mean * pt/1000,
