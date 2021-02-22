@@ -6,7 +6,7 @@ library(broom.mixed)
 dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
-expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
+expected <- readRDS("data/SAE_ratio_observed_expected2.Rds") 
 
 # add clinical endpoints to SAE count ###
 tots$sae[tots$nct_id == "NCT00134160"] <- 144
@@ -49,7 +49,7 @@ tots$subjects_at_risk[tots$nct_id == "NCT00553267"] <- 947
 tots <- tots %>% 
   mutate(pt = fu_days * (subjects_at_risk-sae) + 0.5 * sae*fu_days,
          older = as.integer(minimum_age >=60),
-         rate = 1000*sae/pt)
+         rate = 365*sae/pt)
 ## note many missing expected because has no mean age or sd age
 tots <- tots %>% 
   left_join(expected)
@@ -60,7 +60,7 @@ summary(unad)
 unad_stan <- stan_glmer(sae ~ older + offset(log(pt)) + (1|nct_id), data = tots, family = "poisson")
 summary(unad_stan)
 
-tapply(1000*tots$sae/tots$pt, tots$older, identity)
+tapply(365*tots$sae/tots$pt, tots$older, identity)
 
 ## Adjusted model, same association as before in MPH analysis, 2.22 fold higher rate ----
 mod2 <- update(unad, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
@@ -101,7 +101,7 @@ not_adj_age_sex <- ExportRes(mod2_age_sex_stan_cmpr)
 
 ## Run model with expected count as offset to estimate ratio ----
 tots <- tots %>% 
-  mutate(expected_count = rate_mean * pt/1000,
+  mutate(expected_count = rate_mean * pt/365,
          ssaer = sae/expected_count)
 
 ## plot expected counts on same plot as tots
@@ -113,19 +113,21 @@ tots <- tots %>%
   mutate(trial_n = cumsum(!duplicated(nct_id)),
          hard_t = if_else(hard_outcome ==1, "Hard outcome", "Surrogage outcome"))
 
+tots$older2 <- ifelse(tots$older==1, "'Older people' trials", "'Standard' trials")
+
 plot2 <- ggplot(tots, aes(x = age_m, y = rate, size = pt,
                           # shape = type_comparison,
                           # alpha = factor(1- hard_outcome, labels = c("hard", "soft")), 
-                          colour = hard_t)) + 
+                          colour = as.factor(older2))) + 
   geom_point() +
   # geom_text(aes(label = trial_n), size = 2) +
   # geom_text(aes(y = rate_mean, label = trial_n), size = 2) +
-  geom_point(mapping= aes(y = rate_mean), size = 1) +
+  geom_point(mapping= aes(y = rate_mean, colour = "Community comparison"), size = 1) +
   # geom_linerange(mapping= aes(ymin = rate_lci, ymax = rate_uci), colour = "black", size = 1) +
   # geom_smooth(mapping= aes(y = rate_mean, group = 1), colour = "grey", se = FALSE) +
   # facet_grid( ~phase) +
   scale_size(guide = FALSE) +
-  scale_color_manual("", values = c("red", "black")) +
+  scale_color_manual("", values = c("cornflowerblue", "coral1", "black")) +
   scale_y_continuous("Rate of serious adverse events and \n rate of hospitalisation or death \n per 1000 person-years") +
   scale_x_continuous("Mean age of trial participants") +
   geom_vline(mapping=aes(xintercept = 68), linetype = "dotted") +
@@ -159,6 +161,20 @@ GetCeptOldrDiff <- function(model){
 }
 GetCeptOldrDiff(mod0_ratio)
 GetCeptOldrDiff(mod1_ratio)
+
+test <- GetCeptOldrDiff(mod0_ratio)
+test2 <- GetCeptOldrDiff(mod1_ratio)
+
+test%>%
+  mutate(est = 1/est, 
+         lci = 1/lci, 
+         uci = 1/uci)
+
+test2%>%
+  mutate(est = 1/est, 
+         lci = 1/lci, 
+         uci = 1/uci)
+
 
 ## need to combine intercept and older to get ratio for older
 

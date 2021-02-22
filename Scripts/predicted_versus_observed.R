@@ -14,6 +14,9 @@ dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
 
+tots$sae[tots$nct_id == "NCT00134160"] <- 144
+tots$sae[tots$nct_id == "NCT00454662"] <- 594
+
 ## Functions ----
 mean.tnorm<-function(mu,sd,lower,upper){
   ##return the expectation of a truncated normal distribution
@@ -41,10 +44,10 @@ predict_fn <- function(coefs, vcov, age, GNDR_CD, output){
   se <- c(t(cov) %*% vcov %*% cov)
   
   
-  pred <- exp(lp)*1000
+  pred <- exp(lp)*365
   
-  lci <- exp(lp-1.96*se)*1000
-  uci <- exp(lp+1.96*se)*1000
+  lci <- exp(lp-1.96*se)*365
+  uci <- exp(lp+1.96*se)*365
   
   if(output=="point"){
     pred
@@ -116,7 +119,7 @@ tots$subjects_at_risk[tots$nct_id == "NCT00553267"] <- 947
 tots <- tots %>% 
   mutate(pt = fu_days * (subjects_at_risk-sae) + 0.5 * sae*fu_days,
          older = as.integer(minimum_age >=60),
-         rate = 1000*sae/pt)
+         rate = 365*sae/pt)
 
 names(tots)
 
@@ -128,13 +131,13 @@ tots <- tots %>%
          
 # replace missing maximum ages with infinity. All have minimum ages
  tots <- tots %>% 
-   mutate(maximum_age = if_else(is.na(maximum_age), Inf, as.double(maximum_age)))
+   mutate(maximum_age = if_else(is.na(maximum_age), 120, as.double(maximum_age)))
 
 # # get parameters of truncated normal distribution, quite slow so run only when have to ----
-# tots$age_dist <- pmap(list(tots$age_m, tots$age_s, tots$minimum_age, tots$maximum_age),
-#                     function(mean, sd, min, max) get_parameters(maxage = max, minage = min, meanage = mean, sdage = sd))
-# saveRDS(tots, "Scratch_data/age_distributions.Rds")
-tots <- readRDS("Scratch_data/age_distributions.Rds")
+tots$age_dist <- pmap(list(tots$age_m, tots$age_s, tots$minimum_age, tots$maximum_age),
+                    function(mean, sd, min, max) get_parameters(maxage = max, minage = min, meanage = mean, sdage = sd))
+saveRDS(tots, "Scratch_data/age_distributions2.Rds")
+tots <- readRDS("Scratch_data/age_distributions2.Rds")
 
 ## limit data to minimum and maximum ages across all datasets then estimate rates for each of these ----
 min_age <- map_dbl(tots$age_dist, ~ .x %>% filter(.x$age_p >=0.01) %>% pull(age) %>% min()) %>% min()
@@ -198,10 +201,10 @@ abline(a = 0, b = 1)
 plot(cmpr$s, cmpr$s_beta)
 abline(a = 0, b = 1)
 ## Divide by person time to get rate
-tots$sae_smpls <- map2(tots$sae_smpls, tots$pt, ~ 1000 * .x/.y)
+tots$sae_smpls <- map2(tots$sae_smpls, tots$pt, ~ 365 * .x/.y)
 
 ## Produce ratios ----
-tots$smpls <- map(tots$smpls, ~ .x$both*1000)
+tots$smpls <- map(tots$smpls, ~ .x$both*365)
 tots$ratios <- map2(tots$sae_smpls, tots$smpls, ~ .y/.x)
 
 ## Summarise rates
@@ -240,5 +243,24 @@ a
 a <- a +
   coord_flip(ylim = c(0.9, 15))
 a
-saveRDS(tots, "Data/SAE_ratio_observed_expected.Rds")
+saveRDS(tots, "Data/SAE_ratio_observed_expected2.Rds")
+
+tots <- readRDS("Data/SAE_ratio_observed_expected2.Rds")
+tots$ratio_uci <- ifelse(tots$ratio_uci>20, 20, tots$ratio_uci)
+
+a <- ggplot(tots%>%filter(ratio_mean<15), aes(x = reorder(nct_id, ratio_mean), y = ratio_mean,  colour = label))+
+  geom_point()+
+  geom_pointrange(aes(ymin = ratio_lci, ymax = ratio_uci))+
+  scale_color_manual(values = c("#00BFC4", "#F8766D"))+
+  facet_grid(label~., scales = "free", space = "free")+
+  geom_hline(aes(yintercept = v_line))+
+  coord_flip()+
+  ggtitle("Ratio of expected to observed SAE count")+
+  ylab("Expected hospitalisations and deaths / Observed SAEs")+
+  xlab("Trial ID")+
+  labs(colour = "Older vs Standard trials", shape = "Phase")
+a
+a <- a +
+  coord_flip()
+a
 
