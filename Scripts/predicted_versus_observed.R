@@ -134,9 +134,9 @@ tots <- tots %>%
    mutate(maximum_age = if_else(is.na(maximum_age), 120, as.double(maximum_age)))
 
 # # get parameters of truncated normal distribution, quite slow so run only when have to ----
-tots$age_dist <- pmap(list(tots$age_m, tots$age_s, tots$minimum_age, tots$maximum_age),
-                    function(mean, sd, min, max) get_parameters(maxage = max, minage = min, meanage = mean, sdage = sd))
-saveRDS(tots, "Scratch_data/age_distributions2.Rds")
+# tots$age_dist <- pmap(list(tots$age_m, tots$age_s, tots$minimum_age, tots$maximum_age),
+#                     function(mean, sd, min, max) get_parameters(maxage = max, minage = min, meanage = mean, sdage = sd))
+# saveRDS(tots, "Scratch_data/age_distributions2.Rds")
 tots <- readRDS("Scratch_data/age_distributions2.Rds")
 
 ## limit data to minimum and maximum ages across all datasets then estimate rates for each of these ----
@@ -263,4 +263,11 @@ a
 a <- a +
   coord_flip()
 a
+
+## compare files
+samename <- intersect(names(tots_old), names(tots_new))
+tots_old <- tots_old[, samename]
+tots_new <- tots_new[, samename]
+cmpr <- map2(tots_old, tots_new, ~ .x == .y)
+
 

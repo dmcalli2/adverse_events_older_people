@@ -6,7 +6,7 @@ library(broom.mixed)
 dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
-expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
+expected <- readRDS("Data/SAE_ratio_observed_expected.Rds") 
 
 ## calculate expected count
 expected <- expected %>% 
