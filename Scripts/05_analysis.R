@@ -6,7 +6,7 @@ library(broom.mixed)
 dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
-expected <- readRDS("data/SAE_ratio_observed_expected2.Rds") 
+expected <- readRDS("data/SAE_ratio_observed_expected.Rds") 
 
 # add clinical endpoints to SAE count ###
 tots$sae[tots$nct_id == "NCT00134160"] <- 144

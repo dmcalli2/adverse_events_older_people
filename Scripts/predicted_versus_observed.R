@@ -243,9 +243,9 @@ a
 a <- a +
   coord_flip(ylim = c(0.9, 15))
 a
-saveRDS(tots, "Data/SAE_ratio_observed_expected2.Rds")
+saveRDS(tots, "Data/SAE_ratio_observed_expected.Rds")
 
-tots <- readRDS("Data/SAE_ratio_observed_expected2.Rds")
+tots <- readRDS("Data/SAE_ratio_observed_expected.Rds")
 tots$ratio_uci <- ifelse(tots$ratio_uci>20, 20, tots$ratio_uci)
 
 a <- ggplot(tots%>%filter(ratio_mean<15), aes(x = reorder(nct_id, ratio_mean), y = ratio_mean,  colour = label))+
