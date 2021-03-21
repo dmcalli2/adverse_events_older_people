@@ -3,6 +3,22 @@ library(tidyverse)
 library(rstanarm)
 library(broom.mixed)
 
+ExportRes <- function(modelname){
+  # browser()
+  a <- broom.mixed::tidy(modelname)
+  b <- posterior_interval(modelname, 0.95) %>% 
+    as_tibble(rownames = "term")
+  a <- a %>% 
+    inner_join(b)
+  a <- a %>% 
+    mutate_at(vars(estimate, `2.5%`, `97.5%`), function(x) x %>% 
+                exp() %>% 
+                formatC(digits = 2, format = "f", flag = "0")) %>% 
+    mutate(res = paste0(estimate, " (", `2.5%`, "-",`97.5%`, ")"))
+  a %>% 
+    select(term, res)
+}
+
 dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
@@ -60,6 +76,62 @@ tots <- tots %>%
 tots <- tots %>% 
   left_join(expected)
 
+## Compare SAEs across arms ----
+## restrict to trials with a placebo or usual care arm in full set, 20 trials of 21
+# NCT00240448 - 21 sae - only gives number of post treatment initiation SAEs by arm, just gives total for other post randomization period
+# NCT02177435 - 3  sae - 2 Telmisartan and 1 in  Telmisartan/Hydrochlorothiazide. Note that the treatment difference here is Hydrochlorothiazide versus usual care. Hence this classification
+# NCT02177500 - 1  sae - in treatment arm (telm 40), none in placebo Note that the treatment difference here is Hydrochlorothiazide versus usual care. Hence this classification
+arms_pl <- arms %>% 
+  semi_join(tots %>% filter(type_comparison == "placebo") %>% select(nct_id)) %>% 
+  select(nct_id, arm_name, sae, subjects_at_risk)
+arms_pl <- arms_pl %>% 
+  mutate(placebo = if_else(arm_name %>% 
+                             str_to_lower() %>% 
+                             str_detect("placebo|usual"),
+                           "placebo",
+                           "other")) %>% 
+  group_by(nct_id, placebo) %>% 
+  summarise_at(vars(sae, subjects_at_risk), sum) %>% 
+  ungroup() %>% 
+  arrange(nct_id, placebo)
+
+arms_pl_nst <- arms_pl %>% 
+  filter(!nct_id == "NCT00538486") %>% 
+  group_by(nct_id) %>% 
+  nest()
+arms_pl_nst$res <- map(arms_pl_nst$data, ~ stan_glm(cbind(sae, subjects_at_risk - sae) ~ placebo, data = .x, family = "binomial"))
+arms_pl_nst$res2 <- map(arms_pl_nst$res, ExportRes)
+arms_pl_unnst <- arms_pl_nst %>% 
+  select(nct_id, res2) %>% 
+  unnest(res2) %>% 
+  ungroup() %>% 
+  filter(term == "placeboplacebo")
+arms_pl_unnst <- arms_pl_unnst %>% 
+  separate(res, into = c("est", "lci", "uci"), sep = "\\(|\\-") %>% 
+  mutate_at(vars(est, lci, uci), ~ .x %>% str_remove("\\s|\\)") %>% as.double())
+
+plotplac <- ggplot(arms_pl_unnst, aes(x = nct_id, y = est, ymin = lci, ymax = uci)) +
+  geom_linerange() +
+  geom_point() +
+  scale_y_log10() +
+  geom_hline(yintercept = 1) +
+  coord_flip()
+plotplac
+
+## Run with and without NCT01508026, a trial where we correctly defined the number of SAEs as 27 in the placebo arm, but these were driven
+## by three individuals
+mod_pl_st <- stan_glmer(cbind(sae, subjects_at_risk - sae) ~ placebo + (1|nct_id), data = arms_pl, family = "binomial")
+ExportRes(mod_pl_st)
+mod_pl_st_sens <- stan_glmer(cbind(sae, subjects_at_risk - sae) ~ placebo + (1|nct_id), data = arms_pl %>% filter(!nct_id == "NCT01508026"), family = "binomial")
+ExportRes(mod_pl_st_sens)
+
+arms_pl %>% 
+  mutate(res = paste0(sae, "/", subjects_at_risk, " (", round(100* sae/subjects_at_risk, 2), "%)")) %>% 
+  select(-sae, -subjects_at_risk) %>% 
+  spread(placebo, res) %>% 
+  rename(Drug = other, Placebo =placebo)
+
+
 ## run regression model, unadjusted no effect ----
 unad <- glm(sae ~ older + offset(log(pt)), data = tots, family = "poisson")
 summary(unad)
@@ -84,21 +156,6 @@ mod2_age_sex_stan_cmpr <- update(mod2_stan, data = tots %>% filter(!is.na(age_m)
 summary(mod2_age_sex_stan)
 posterior_interval(mod2_age_sex_stan, 0.95)
 
-ExportRes <- function(modelname){
-  # browser()
-  a <- broom.mixed::tidy(modelname)
-  b <- posterior_interval(modelname, 0.95) %>% 
-    as_tibble(rownames = "term")
-  a <- a %>% 
-    inner_join(b)
-  a <- a %>% 
-    mutate_at(vars(estimate, `2.5%`, `97.5%`), function(x) x %>% 
-                exp() %>% 
-                formatC(digits = 2, format = "f", flag = "0")) %>% 
-    mutate(res = paste0(estimate, " (", `2.5%`, "-",`97.5%`, ")"))
-  a %>% 
-    select(term, res)
-}
 unad <- ExportRes(unad_stan)
 minad <- ExportRes(mod3_stan)
 adj <- ExportRes(mod2_stan)
