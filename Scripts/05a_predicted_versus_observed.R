@@ -263,11 +263,3 @@ a
 a <- a +
   coord_flip()
 a
-
-## compare files
-samename <- intersect(names(tots_old), names(tots_new))
-tots_old <- tots_old[, samename]
-tots_new <- tots_new[, samename]
-cmpr <- map2(tots_old, tots_new, ~ .x == .y)
-
-
