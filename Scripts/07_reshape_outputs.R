@@ -28,4 +28,4 @@ mydf_final <- mydf %>%
   select(-res) %>% 
   unnest(res2)
 
-write_csv(mydf_final, "Outputs/examine_impact_small_differences_in_data.Rds")
+write_csv(mydf_final, "Outputs/examine_impact_small_differences_in_data.csv")
