@@ -12,7 +12,7 @@ library(broom.mixed)
 toloop <- expand.grid(
   clin_end = TRUE:FALSE,
   min_age = TRUE:FALSE,
-  sar_impute = TRUE:FALSE) %>% 
+  sar_correct = TRUE:FALSE) %>% 
   as_tibble()
 toloop$res <- map(seq_along(toloop$clin_end), function(i){
 
@@ -85,7 +85,7 @@ tots <- tots %>%
 tots %>% 
   count(minimum_age >=60)
 
-if(toloop$sar_impute[i]){
+if(toloop$sar_correct[i]){
 tots$subjects_at_risk[tots$nct_id == "NCT00553267"] <- 947
 }
 
