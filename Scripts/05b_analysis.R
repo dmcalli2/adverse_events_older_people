@@ -1,7 +1,20 @@
-#05_analysis.R
+#05b_analysis.R
+
+## Main analysis where estiamte IRRs and SRs
+
 library(tidyverse)
 library(rstanarm)
 library(broom.mixed)
+
+
+## Small last minute differences in data choices (eg including hard clinical endpoints as SAEs versus not)
+## Check that these do not have an impact on the results by looping through these choices
+toloop <- expand.grid(
+  clin_end = TRUE:FALSE,
+  min_age = TRUE:FALSE,
+  sar_impute = TRUE:FALSE) %>% 
+  as_tibble()
+toloop$res <- map(seq_along(toloop$clin_end), function(i){
 
 ExportRes <- function(modelname){
   # browser()
@@ -19,6 +32,7 @@ ExportRes <- function(modelname){
     select(term, res)
 }
 
+## Read in data and expected counts ----
 dfs <- readRDS("Processed_data/age_sex_bmi_ae_sae.Rds")
 list2env(dfs, envir = .GlobalEnv)
 rm(dfs)
@@ -31,13 +45,17 @@ expected <- expected %>%
   select(nct_id, expected_count, rate_mean, ssaer)
 
 # add clinical endpoints to SAE count ###
+if(toloop$clin_end[i]){
 tots$sae[tots$nct_id == "NCT00134160"] <- 144
 tots$sae[tots$nct_id == "NCT00454662"] <- 594
+}
 
+if(toloop$min_age[i]){
 ## note reviewed CTG trial NCT02269176 includes children, adults and older adults
 trials$minimum_age[trials$nct_id == "NCT02269176"] <- min(trials$minimum_age, na.rm = TRUE)
+}
 
-## Restrict all trials ----
+## Restrict all trials to match standard ttrials to older trials ----
 rstrct1 <- trials %>% 
   filter(type_comparison %in% c("same_class7", "diff_class7")) 
 rstrct1 %>% 
@@ -52,7 +70,7 @@ trials <- trials %>%
   filter(!phase == "Phase 2/Phase 3") 
 
 ## count how many have SAE
-restrict3 <- trials %>% 
+trials %>% 
   anti_join(tots %>% filter(!is.na(sae))) %>% 
   count(minimum_age >=60)
 trials <- trials %>% 
@@ -66,7 +84,10 @@ tots <- tots %>%
   inner_join(trials %>% select(nct_id, aliskiren, minimum_age, maximum_age, hard_outcome, type_comparison, fu_days, phase))
 tots %>% 
   count(minimum_age >=60)
+
+if(toloop$sar_impute[i]){
 tots$subjects_at_risk[tots$nct_id == "NCT00553267"] <- 947
+}
 
 tots <- tots %>% 
   mutate(pt = fu_days * (subjects_at_risk-sae) + 0.5 * sae*fu_days,
@@ -124,7 +145,6 @@ mod_pl_st <- stan_glmer(cbind(sae, subjects_at_risk - sae) ~ placebo + (1|nct_id
 ExportRes(mod_pl_st)
 mod_pl_st_sens <- stan_glmer(cbind(sae, subjects_at_risk - sae) ~ placebo + (1|nct_id), data = arms_pl %>% filter(!nct_id == "NCT01508026"), family = "binomial")
 ExportRes(mod_pl_st_sens)
-
 arms_pl %>% 
   mutate(res = paste0(sae, "/", subjects_at_risk, " (", round(100* sae/subjects_at_risk, 2), "%)")) %>% 
   select(-sae, -subjects_at_risk) %>% 
@@ -132,15 +152,14 @@ arms_pl %>%
   rename(Drug = other, Placebo =placebo)
 
 
-## run regression model, unadjusted no effect ----
+## Estimate ratio between standard and older trials - unadjusted, unadjsuted RE and adjsuted RE ----
 unad <- glm(sae ~ older + offset(log(pt)), data = tots, family = "poisson")
 summary(unad)
 unad_stan <- stan_glmer(sae ~ older + offset(log(pt)) + (1|nct_id), data = tots, family = "poisson")
 summary(unad_stan)
-
 tapply(365*tots$sae/tots$pt, tots$older, identity)
 
-## Adjusted model, same association as before in MPH analysis, 2.22 fold higher rate ----
+## Adjusted model
 mod2 <- update(unad, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
 summary(mod2)
 mod2_stan <- update(unad_stan, . ~ . + aliskiren + hard_outcome + type_comparison + phase)
@@ -162,9 +181,7 @@ adj <- ExportRes(mod2_stan)
 adj_age_sex <- ExportRes(mod2_age_sex_stan)
 not_adj_age_sex <- ExportRes(mod2_age_sex_stan_cmpr)
 
-## Run model with expected count as offset to estimate ratio ----
-
-## plot expected counts on same plot as tots
+## plot expected counts on same plot as tots ----
 tots_lng <- tots %>% 
   gather("obs_exp", "point", rate, rate_mean)
 
@@ -199,6 +216,7 @@ plot2 <- ggplot(tots, aes(x = age_m, y = rate, size = pt,
   theme_bw()
 plot2
 
+## Run model with expected count as offset to estimate ratio between community and standard/older trials and ratio between these ratios ----
 mod0_ratio <- stan_glmer(sae ~ older + offset(log(expected_count)) + (1|nct_id), data = tots, family = "poisson")
 summary(mod0_ratio)
 mod1_ratio <- update(mod0_ratio, . ~ . + aliskiren + hard_outcome + type_comparison + phase, data = tots, family = "poisson")
@@ -210,7 +228,7 @@ adj_ratio  <- ExportRes(mod1_ratio)
 GetCeptOldrDiff <- function(model){
   a <- as.matrix(model)
   a <- a[, c("(Intercept)", "older")]
-  ## obtain effect estimates for effect in older, standard and difference between the two.
+  ## obtain effect estimates for effect in older trials, standard trials and difference between the two.
   res <- list(
     cept = a[,1, drop = FALSE],
     oldr = matrix(rowSums(a), ncol = 1),
@@ -242,20 +260,24 @@ test2%>%
 
 
 ## need to combine intercept and older to get ratio for older
-
-
 for_tbls <- bind_rows(rate_unad = unad,
                       rate_adj = adj,
                       ratio_unad = unad_ratio,
                       ratio_adj = adj_ratio, .id = "tbl_type")
 for_tbls <- for_tbls %>% 
   separate(tbl_type, into = c("measure", "model"))
-for_tbls %>% 
+
+list(for_tbls %>% 
   spread(measure, res)  %>% 
   arrange(desc(model)) %>% 
-  filter(term == "older")
+  filter(term == "older"),
+  test,
+  test2)
+})
+saveRDS(toloop , "Processed_data/check_variation_with_data_changes.Rds")
+## Run sensitivity analysis dropping each trial in turn ----
+## very slow so commented out
 
-## Run sensitivity analysis dropping each variable in turn
 # sa1 <- map(tots$nct_id, ~ ExportRes(update(mod2_stan, data = tots %>% filter(!nct_id == .x))))
 # saveRDS(sa1, "Scratch_data/sensitivity_analysis.Rds")
 sa1 <- readRDS("Scratch_data/sensitivity_analysis.Rds")
