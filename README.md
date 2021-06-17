@@ -13,3 +13,6 @@ David A McAllister, MD  †
 
 ## DOI
 https://doi.org/10.1016/S2666-7568(21)00092-1
+
+## Related editorial
+https://doi.org/10.1016/S2666-7568(21)00139-2
